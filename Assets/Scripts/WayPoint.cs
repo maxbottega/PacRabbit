@@ -21,14 +21,15 @@ public class CollisionEdge
 	}
 }
 
-// Waypoints are entities so we can select/move them in the scene...
+// Waypoints are entities so we can select/move them in the scene... TODO: Now it's quite a bad idea...
+
 // Waypoints are just points with connections, we could be smarter (one day) and make them be
 // elements with an area, so the path can be refined to be to any point inside a cell
 public class WayPoint : MonoBehaviour, IPathNode<WayPoint> 
 {
 	//[SerializeField, HideInInspector]
 	public List<WayPoint> connections = new List<WayPoint>();
-	public List<CollisionEdge> collisionEdges;
+	public List<CollisionEdge> collisionEdges = new List<CollisionEdge>();
 
     public Vector3 Position 
 	{ 

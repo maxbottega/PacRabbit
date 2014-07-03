@@ -118,9 +118,11 @@ public class WizardCreateNavMesh : ScriptableWizard
 			}
 		}
 
-		// Do some smoothing
+		// Do some laplacian smoothing
+		Vector3[] newPositions = new Vector3[numTriangles];
 		for (int pass=0; pass<3; pass++) 
 		{
+			// TODO
 		}
 	}
 }
