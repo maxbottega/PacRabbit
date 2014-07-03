@@ -89,8 +89,5 @@ public class WizardCreateNavMesh : ScriptableWizard
 			}
 		}
 
-		// instantiate all waypoints
-	
-
 	}
 }
