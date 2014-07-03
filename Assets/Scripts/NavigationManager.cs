@@ -110,7 +110,7 @@ public class NavigationManager : MonoBehaviour
             }
             openset.Remove(x);
             closedset.Add(x);
-            foreach(WayPoint y in x.Connections)
+            foreach(WayPoint y in x.connections)
             {
                 if(Invalid(y) || closedset.Contains(y))
 				{
@@ -140,9 +140,9 @@ public class NavigationManager : MonoBehaviour
 		return;
     }
 	
-	bool Invalid(WayPoint inNode)
+	bool Invalid(WayPoint inNode) // TODO: kill
     {
-        if(inNode == null || inNode.Invalid)
+        if(inNode == null /*|| inNode.Invalid*/)
             return true;
         return false;
     }  
