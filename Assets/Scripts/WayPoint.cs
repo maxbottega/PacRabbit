@@ -5,9 +5,7 @@ using System.Collections.Generic;
 // We make the player be a waypoint as well, so we need an interface
 public interface IPathNode<T>
 {
-//  List<T> Connections { get; }
-    Vector3 Position { get; }
-//  bool Invalid {get;}
+    Vector3 position { get; }
 }
 
 public class CollisionEdge
@@ -21,8 +19,8 @@ public class CollisionEdge
 	}
 }
 
-// Waypoints are entities so we can select/move them in the scene... TODO: Now it's quite a bad idea...
-
+// Waypoints are entities so we can select/move them in the scene... 
+// TODO: Now it's quite a bad idea... even more as we access transform.position which is not fast
 // Waypoints are just points with connections, we could be smarter (one day) and make them be
 // elements with an area, so the path can be refined to be to any point inside a cell
 public class WayPoint : MonoBehaviour, IPathNode<WayPoint> 
@@ -31,23 +29,11 @@ public class WayPoint : MonoBehaviour, IPathNode<WayPoint>
 	public List<WayPoint> connections = new List<WayPoint>();
 	public List<CollisionEdge> collisionEdges = new List<CollisionEdge>();
 
-    public Vector3 Position 
+	public Vector3 position
 	{ 
 		get { return transform.position; }
 	}
 	
-/*    
-    public bool Invalid
-    {
-        get { return (this == null); }
-    }
-
-	public List<WayPoint> Connections 
-	{ 
-		get { return connections; } 
-	}
-
-*/	
 	void OnDrawGizmosSelected()
 	{
 		Gizmos.color = Color.green;

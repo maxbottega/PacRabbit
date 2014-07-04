@@ -7,13 +7,71 @@ using System.Collections.Generic;
 
 public class NavigationManager : MonoBehaviour 
 {
-	List<WayPoint> m_WaypointList = new List<WayPoint>();
-
-	public List<WayPoint> WaypointList
-	{
-		get { return m_WaypointList; }
-	}
+	public List<WayPoint> waypointList = new List<WayPoint>();
 	
+	static public Vector3 PointSegmentCollision(Vector3 point, CollisionEdge edge, float radius)
+	{
+		Vector3 v0p = point - edge.v0;
+		Vector3 v0v1 = edge.v1 - edge.v0;
+		float len2 = v0v1.sqrMagnitude;
+		float dot = Vector3.Dot(v0p, v0v1);
+		float t = dot / len2;
+		
+		t = Mathf.Clamp01(t);
+		Vector3 closest = edge.v0 + v0v1 * t;
+	
+		Vector3 toClosest = point - closest;
+		
+		if(toClosest.sqrMagnitude < radius*radius)
+		{
+			toClosest.Normalize();
+			toClosest *= radius;
+			
+			return toClosest + closest;
+		}
+		else
+			return point;
+	}
+
+	public Vector3 PointNavMeshEdgesCollision(Vector3 point, float radius, WayPoint previousNearest, out WayPoint newNearest)
+	{
+		// find nearest waypoint
+		List<WayPoint> searchList;
+		float nearestdist2 = float.MaxValue;
+		
+		if (previousNearest == null)
+		{
+			searchList = waypointList;
+			newNearest = null;
+		}
+		else
+		{
+			searchList = previousNearest.connections;
+			newNearest = previousNearest;
+			nearestdist2 = Vector3.SqrMagnitude(newNearest.transform.position - point);
+		}
+		
+		foreach(WayPoint w in searchList)
+		{
+			float dist2 = Vector3.SqrMagnitude(w.transform.position - point);
+			if( dist2 < nearestdist2 )
+			{
+				newNearest = w;
+				nearestdist2 = dist2;
+			}
+		}
+		
+		// resolve collisions (TODO: could do multiple iterations...)
+		foreach(CollisionEdge e in newNearest.collisionEdges)
+			point = PointSegmentCollision(point, e, radius);
+			
+		foreach(WayPoint w in newNearest.connections)
+			foreach(CollisionEdge e in w.collisionEdges)
+				point = PointSegmentCollision(point, e, radius);
+				
+		return point;
+	}
+
 	void Awake()
 	{
 		
@@ -21,10 +79,10 @@ public class NavigationManager : MonoBehaviour
 	
 	void Start ()
 	{
-//		foreach(GameObject wp in GameObject.FindGameObjectsWithTag("way_point"))
-//		{
-//			m_WaypointList.Add(wp.GetComponent<WayPoint>());
-//		}	
+		foreach(GameObject wp in GameObject.FindGameObjectsWithTag("way_point"))
+		{
+			waypointList.Add(wp.GetComponent<WayPoint>());
+		}	
 	}
 
 //	public WayPoint FindClosestWaypoint(Vector3 position)
@@ -151,7 +209,7 @@ public class NavigationManager : MonoBehaviour
     {
         if(Invalid(start) || Invalid(goal))
             return float.MaxValue;
-        return Vector3.Distance(start.Position, goal.Position);
+		return Vector3.Distance(start.position, goal.position);
     }
    
     float HeuristicCostEstimate(WayPoint start, WayPoint goal)

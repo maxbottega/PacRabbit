@@ -118,11 +118,23 @@ public class WizardCreateNavMesh : ScriptableWizard
 			}
 		}
 
-		// Do some laplacian smoothing
+		// Do some Laplacian smoothing
 		Vector3[] newPositions = new Vector3[numTriangles];
 		for (int pass=0; pass<3; pass++) 
 		{
-			// TODO
+			for (int triIdx=0; triIdx<numTriangles; ++triIdx)
+			{
+				newPositions[triIdx] = Vector3.zero;
+
+				for (int i=0; i<waypoints[triIdx].connections.Count; i++)
+					newPositions[triIdx] += waypoints[triIdx].connections[i].transform.position;
+
+				newPositions[triIdx] *= 1.0f / waypoints[triIdx].connections.Count;
+				newPositions[triIdx] = Vector3.Lerp(newPositions[triIdx], waypoints[triIdx].transform.position, 0.5f);
+			}
+			
+			for (int triIdx=0; triIdx<numTriangles; ++triIdx)
+				waypoints[triIdx].transform.position = newPositions[triIdx];
 		}
 	}
 }
