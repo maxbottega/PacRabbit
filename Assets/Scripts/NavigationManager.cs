@@ -62,6 +62,9 @@ public class NavigationManager : MonoBehaviour
 		}
 		
 		// resolve collisions (TODO: could do multiple iterations...)
+		// TODO: not the smartest way as we don't check in which side we are
+		// -- A smart and easy way is to force point-in-triangle
+		// taking the result that have the least movement among the triangles we check
 		foreach(CollisionEdge e in newNearest.collisionEdges)
 			point = PointSegmentCollision(point, e, radius);
 			
