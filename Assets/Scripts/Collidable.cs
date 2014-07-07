@@ -1,12 +1,11 @@
 using UnityEngine;
 using System.Collections;
 
-public class Collidable : MonoBehaviour
+public class Collidable : MonoBehaviour, ISphereMoveController
 {
 	public Transform Pivot = null;
 	public float Mass = 1;
 	public bool Static = false;
-
 
 	[System.NonSerialized]
 	public Quaternion Rotation;
@@ -24,6 +23,11 @@ public class Collidable : MonoBehaviour
 	public float Radius = 1;
 	[System.NonSerialized]
 	public Quaternion CollisionError = Quaternion.identity;
+
+	public Vector3 GetUpVector()
+	{
+		return Up;
+	}
 	
 	[System.NonSerialized]
 	public bool Colliding = false;
@@ -102,10 +106,19 @@ public class Collidable : MonoBehaviour
 	{
 		mCollisionManager.RemoveCollider(this);
 	}
-	
+
+	public void Move(Quaternion rotation)
+	{
+		Rotation *= rotation;
+	}
+
+	public Quaternion GetCurrentRotation()
+	{
+		return Rotation;
+	}
+
 	void Update ()
 	{
-
 		if (!Static)
 		{
 			Up = Rotation * Vector3.up;

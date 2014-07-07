@@ -22,6 +22,8 @@ public class Planet : MonoBehaviour
 	
 	void Start()
 	{
+		Application.targetFrameRate = 60; // TODO: move somewhere else
+
 		mPlayer = FindObjectOfType(typeof(Character)) as Character;
 		mEnemies = FindObjectsOfType(typeof(Zombie)) as Zombie[];
 		mCollidables = FindObjectsOfType(typeof(Collidable)) as Collidable[];

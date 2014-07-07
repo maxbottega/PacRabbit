@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 [ExecuteInEditMode]
-public class Character : MonoBehaviour
+public class OldCharacter : MonoBehaviour
 {
 #region Public Variables
 	public float		m_WalkSpeed;
