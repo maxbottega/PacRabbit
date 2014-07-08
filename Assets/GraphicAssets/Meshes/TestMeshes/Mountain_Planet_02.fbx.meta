@@ -1,0 +1,120 @@
+fileFormatVersion: 2
+guid: f36d22ef229eac5419e7e2bdd35a1641
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Directional Light
+    100004: grass
+    100006: 'grass '
+    100008: Mesh
+    100010: 'Mesh '
+    100012: //RootNode
+    100014: Rocks
+    100016: rocks_full
+    100018: 'rocks_full '
+    100020: Texture Group
+    100022: Camera (2)
+    100024: grass (2)
+    100026: path
+    100028: rocks_full (2)
+    400000: Camera
+    400002: Directional Light
+    400004: grass
+    400006: 'grass '
+    400008: Mesh
+    400010: 'Mesh '
+    400012: //RootNode
+    400014: Rocks
+    400016: rocks_full
+    400018: 'rocks_full '
+    400020: Texture Group
+    400022: Camera (2)
+    400024: grass (2)
+    400026: path
+    400028: rocks_full (2)
+    2300000: grass
+    2300002: 'grass '
+    2300004: Mesh
+    2300006: 'Mesh '
+    2300008: Rocks
+    2300010: rocks_full
+    2300012: 'rocks_full '
+    2300014: grass (2)
+    2300016: path
+    2300018: rocks_full (2)
+    3300000: grass
+    3300002: 'grass '
+    3300004: Mesh
+    3300006: 'Mesh '
+    3300008: Rocks
+    3300010: rocks_full
+    3300012: 'rocks_full '
+    3300014: grass (2)
+    3300016: path
+    3300018: rocks_full (2)
+    4300000: Rocks
+    4300002: grass
+    4300004: Mesh
+    4300006: rocks_full
+    4300008: 'Mesh '
+    4300010: 'rocks_full '
+    4300012: 'grass '
+    4300014: rocks_full (2)
+    4300016: grass (2)
+    4300018: path
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 0
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
