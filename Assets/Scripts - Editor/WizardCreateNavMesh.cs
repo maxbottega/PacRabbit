@@ -103,7 +103,7 @@ public class WizardCreateNavMesh : ScriptableWizard
 		{
 			for(int edge=0; edge<3; edge++)
 			{
-				if(connectionEdges[triIdx*3+edge]==false)
+				if(connectionEdges[triIdx*3+edge] == false)
 				{
 					// Edge order is: 0 is 0-1 = 1, 1 is 0-2 = 2, 2 is 1-2 = 3
 					int v0idx = edge == 2 ? 1:0;

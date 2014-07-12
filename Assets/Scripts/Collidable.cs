@@ -52,7 +52,7 @@ public class Collidable : MonoBehaviour, ISphereMoveController
 
 	CollisionManager mCollisionManager;	
 
-	float PlanetRadius = 1;
+	float PlanetRadius = 1; // TODO get from planet
 	
 	void Awake()
 	{
@@ -116,12 +116,22 @@ public class Collidable : MonoBehaviour, ISphereMoveController
 	{
 		return Rotation;
 	}
+	
+	public Vector3 GetCurrentPosition()
+	{
+		return Rotation * Vector3.up * PlanetRadius; // y-axis
+	}
+
+	public void MoveFromPoint(Vector3 p)
+	{
+		Rotation = Quaternion.FromToRotation(Vector3.up, p);
+	}
 
 	void Update ()
 	{
 		if (!Static)
 		{
-			Up = Rotation * Vector3.up;
+			Up = Rotation * Vector3.up; // y-axis
 			
 			Min.x = Up.x * PlanetRadius - Radius;
 			Min.y = Up.y * PlanetRadius - Radius;
@@ -158,7 +168,7 @@ public class Collidable : MonoBehaviour, ISphereMoveController
 	public void Init ()
 	{
 		Rotation = Pivot.rotation;
-		Up = Rotation * Vector3.up;
+		Up = Rotation * Vector3.up; // TODO: ?!? rotation changes but these vectors won't
 		Right = Rotation * Vector3.right;
 		Fwd = Rotation * Vector3.forward;
 		Apply ();

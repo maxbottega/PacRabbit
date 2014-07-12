@@ -7,10 +7,16 @@ using System.Collections.Generic;
 
 public class NavigationManager : MonoBehaviour 
 {
+	[System.NonSerialized]
 	public List<WayPoint> waypointList = new List<WayPoint>();
+
+	[System.NonSerialized]
+	public static NavigationManager instance = null;
 	
 	static public Vector3 PointSegmentCollision(Vector3 point, CollisionEdge edge, float radius)
 	{
+Debug.DrawLine(edge.v0, edge.v1, Color.red, 1.0f);
+	
 		Vector3 v0p = point - edge.v0;
 		Vector3 v0v1 = edge.v1 - edge.v0;
 		float len2 = v0v1.sqrMagnitude;
@@ -18,21 +24,26 @@ public class NavigationManager : MonoBehaviour
 		float t = dot / len2;
 		
 		t = Mathf.Clamp01(t);
+		
 		Vector3 closest = edge.v0 + v0v1 * t;
-	
 		Vector3 toClosest = point - closest;
 		
-		if(toClosest.sqrMagnitude < radius*radius)
+		if(toClosest.sqrMagnitude < radius * radius)
 		{
 			toClosest.Normalize();
 			toClosest *= radius;
 			
+Debug.DrawLine(point, closest, Color.magenta, 1.0f);
 			return toClosest + closest;
 		}
 		else
+		{			
+Debug.DrawLine(point, closest, Color.grey, 0.25f);
 			return point;
+		}
 	}
 
+	// Note-TODO: assumes point is more or less on the plane of the navmesh!!!
 	public Vector3 PointNavMeshEdgesCollision(Vector3 point, float radius, WayPoint previousNearest, out WayPoint newNearest)
 	{
 		// find nearest waypoint
@@ -61,6 +72,8 @@ public class NavigationManager : MonoBehaviour
 			}
 		}
 		
+Debug.DrawLine(newNearest.transform.position, newNearest.connections[0].transform.position, Color.green, 1.0f);
+		
 		// resolve collisions (TODO: could do multiple iterations...)
 		// TODO: not the smartest way as we don't check in which side we are
 		// -- A smart and easy way is to force point-in-triangle
@@ -69,9 +82,11 @@ public class NavigationManager : MonoBehaviour
 			point = PointSegmentCollision(point, e, radius);
 			
 		foreach(WayPoint w in newNearest.connections)
+		{
+Debug.DrawLine(w.transform.position, w.connections[0].transform.position, Color.yellow, 1.0f);
 			foreach(CollisionEdge e in w.collisionEdges)
 				point = PointSegmentCollision(point, e, radius);
-				
+		}		
 		return point;
 	}
 
@@ -82,10 +97,18 @@ public class NavigationManager : MonoBehaviour
 	
 	void Start ()
 	{
+		if(instance == null)
+			instance = this;
+		else
+			Debug.LogError("There should be only one navigation manager!");
+	
 		foreach(GameObject wp in GameObject.FindGameObjectsWithTag("way_point"))
 		{
 			waypointList.Add(wp.GetComponent<WayPoint>());
-		}	
+		}
+		
+		if(waypointList.Count == 0)
+			Debug.LogError("No waypoints!");
 	}
 
 //	public WayPoint FindClosestWaypoint(Vector3 position)
@@ -131,7 +154,8 @@ public class NavigationManager : MonoBehaviour
 //#endif
 //		return;
 //	}
-	
+
+/*	
 	List<WayPoint> closedset = new List<WayPoint>(); 
 	List<WayPoint> openset = new List<WayPoint>();    
 	Dictionary<WayPoint, WayPoint> came_from = new Dictionary<WayPoint, WayPoint>();  
@@ -203,7 +227,7 @@ public class NavigationManager : MonoBehaviour
 	
 	bool Invalid(WayPoint inNode) // TODO: kill
     {
-        if(inNode == null /*|| inNode.Invalid*/)
+        if(inNode == null) // /*|| inNode.Invalid )
             return true;
         return false;
     }  
@@ -246,5 +270,5 @@ public class NavigationManager : MonoBehaviour
         }
         result.Add(current_node);
     }
-	
+*/
 }
