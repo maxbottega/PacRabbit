@@ -4452,7 +4452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e487de8d7134c14b6bd35d97e381bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pivot: {fileID: 111768835}
+  Pivot: {fileID: 0}
   Mass: 1
   Static: 0
 --- !u!114 &572575090
@@ -13997,7 +13997,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2011921437}
-  m_LocalRotation: {x: 0, y: .118941322, z: 0, w: .992901325}
+  m_LocalRotation: {x: 0, y: .130508319, z: 0, w: .99144721}
   m_LocalPosition: {x: 0, y: 11.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -14026,7 +14026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e487de8d7134c14b6bd35d97e381bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pivot: {fileID: 593448277}
+  Pivot: {fileID: 0}
   Mass: 1
   Static: 0
 --- !u!1 &2014345217
