@@ -1,120 +1,63 @@
 using UnityEngine;
 using System.Collections;
 
-public class Collidable : MonoBehaviour, ISphereMoveController
+
+public class SAPData
 {
-	public Transform Pivot = null;
-	public float Mass = 1;
-	public bool Static = false;
-
-	[System.NonSerialized]
-	public Quaternion Rotation;
-	[System.NonSerialized]
-	public Vector3 Up;
-	[System.NonSerialized]
-	public Vector3 Fwd;
-	[System.NonSerialized]
-	public Vector3 Right;
-	[System.NonSerialized]
-	public Vector3 Center;
-	[System.NonSerialized]
-	public float AngleRadius = 1;
-	[System.NonSerialized]
-	public float Radius = 1;
-	[System.NonSerialized]
-	public Quaternion CollisionError = Quaternion.identity;
-
-	public Vector3 GetUpVector()
-	{
-		return Up;
-	}
-	
-	[System.NonSerialized]
-	public bool Colliding = false;
-	
-	[System.NonSerialized]
-	public bool Active = true;
-	
-	[System.NonSerialized]
 	public Vector3 Min = Vector3.zero;
-	
-	[System.NonSerialized]
 	public Vector3 Max = Vector3.zero;
-	
-	[System.NonSerialized]
 	public float MinValue = 0.0f;
-	[System.NonSerialized]
 	public float MaxValue = 0.0f;
-	
-	public delegate void CollisionCallback(Collidable other);
-	
-	public CollisionCallback OnCollision;
+}
 
-	CollisionManager mCollisionManager;	
+[RequireComponent (typeof (SphereTransform))]
+public class Collidable : MonoBehaviour
+{
+	public float 				Radius 	= 1;
+	public float 				Mass 	= 1;
+	public bool 				Static 	= false;
 
-	float PlanetRadius = 1;
+	public SphereTransform 		m_SphereTransform = null;
+
+	[System.NonSerialized]
+	public Vector3 				Center 		= Vector3.zero;
+	[System.NonSerialized]
+	public float 				AngleRadius = 1;
+	[System.NonSerialized]
+	public bool 				Colliding 	= false;
+	[System.NonSerialized]
+	public bool 				Active 		= true;
+
+	SAPData 					SAPData 			= new SAPData();
+	float 						PlanetRadius 		= 1;
+	CollisionManager 			mCollisionManager 	= null;	
 	
+	public delegate void 		CollisionCallback(Collidable other);
+	public CollisionCallback 	OnCollision;
+
 	void Awake()
 	{
-		mCollisionManager = FindObjectOfType(typeof(CollisionManager)) as CollisionManager;
-		mCollisionManager.AddCollider(this);
+		m_SphereTransform = GetComponent<SphereTransform> ();
+		m_SphereTransform.Pivot = transform.parent;
+		mCollisionManager 		= FindObjectOfType(typeof(CollisionManager)) as CollisionManager;
 	}
 	
 	void Start ()
 	{	
-		PlanetRadius = Planet.GetRadius();
+		mCollisionManager.AddCollider(this);
 
-		Pivot = transform.parent;
-		
-		SphereCollider sphereCollider = GetComponent<SphereCollider>();
-		
-#if UNITY_EDITOR 
-		if (sphereCollider==null)
-			Debug.LogError("This object needs a sphere collider in order to collide");
-#endif
-		Radius = sphereCollider.radius * Pivot.lossyScale.x;
-		
-		AngleRadius = 2*Mathf.Asin(Radius/(2*PlanetRadius))*Mathf.Rad2Deg; 
-		
-		Init ();
-		
-		Destroy (collider);
-		Destroy(rigidbody);
-		
-		Min.x = Up.x * PlanetRadius - Radius;
-		Min.y = Up.y * PlanetRadius - Radius;
-		Min.z = Up.z * PlanetRadius - Radius;
-		
-		Max.x = Up.x * PlanetRadius + Radius;
-		Max.y = Up.y * PlanetRadius + Radius;
-		Max.z = Up.z * PlanetRadius + Radius;
-		
-		Center = Up * PlanetRadius;
-	}
-	
-	void OnEnable()
-	{
-		//mCollisionManager.AddCollider(this);
-	}
-	
-	void OnDisable()
-	{
-		//mCollisionManager.RemoveCollider(this);
-	}
-	
-	public void DisableCollisions()
-	{
-		mCollisionManager.RemoveCollider(this);
-	}
+		PlanetRadius 	= Planet.GetRadius();
+		Center 			= Up * PlanetRadius;
+		AngleRadius 			= 2*Mathf.Asin(Radius/(2*PlanetRadius))*Mathf.Rad2Deg; 
 
-	public void Move(Quaternion rotation)
-	{
-		Rotation *= rotation;
-	}
-
-	public Quaternion GetCurrentRotation()
-	{
-		return Rotation;
+		// These are used by the CollisionManager for SAP
+		SAPData.Min.x 	= Up.x * PlanetRadius - Radius;
+		SAPData.Min.y 	= Up.y * PlanetRadius - Radius;
+		SAPData.Min.z 	= Up.z * PlanetRadius - Radius;
+		
+		SAPData.Max.x 	= Up.x * PlanetRadius + Radius;
+		SAPData.Max.y 	= Up.y * PlanetRadius + Radius;
+		SAPData.Max.z 	= Up.z * PlanetRadius + Radius;
 	}
 
 	void Update ()
@@ -123,52 +66,75 @@ public class Collidable : MonoBehaviour, ISphereMoveController
 		{
 			Up = Rotation * Vector3.up;
 			
-			Min.x = Up.x * PlanetRadius - Radius;
-			Min.y = Up.y * PlanetRadius - Radius;
-			Min.z = Up.z * PlanetRadius - Radius;
+			SAPData.Min.x = Up.x * PlanetRadius - Radius;
+			SAPData.Min.y = Up.y * PlanetRadius - Radius;
+			SAPData.Min.z = Up.z * PlanetRadius - Radius;
 			
-			Max.x = Up.x * PlanetRadius + Radius;
-			Max.y = Up.y * PlanetRadius + Radius;
-			Max.z = Up.z * PlanetRadius + Radius;
+			SAPData.Max.x = Up.x * PlanetRadius + Radius;
+			SAPData.Max.y = Up.y * PlanetRadius + Radius;
+			SAPData.Max.z = Up.z * PlanetRadius + Radius;
 			
 			Center = Up * PlanetRadius;
 		}	
 	}
-	
-	void LateUpdate ()	
+
+	// Wrapper functions
+	public Vector3 Min
 	{
-		if (!Static)
-			Apply ();
+		get { return SAPData.Min; }
+		set { SAPData.Min = value; }
 	}
 	
-	public void Apply ()
+	public Vector3 Max
 	{
-		Pivot.rotation = Quaternion.Slerp(Pivot.rotation, Rotation, mCollisionManager.CollisionErrorInterpolation);
+		get { return SAPData.Max; }
+		set { SAPData.Max = value; }
 	}
 	
-	public void Init (Quaternion rotation)
+	public float MinValue
 	{
-		Rotation	= rotation;
-		Up = Rotation * Vector3.up;
-		Right = Rotation * Vector3.right;
-		Fwd = Rotation * Vector3.forward;
-		Apply();
+		get { return SAPData.MinValue; }
+		set { SAPData.MinValue = value; }
 	}
 	
-	public void Init ()
+	public float MaxValue
 	{
-		Rotation = Pivot.rotation;
-		Up = Rotation * Vector3.up;
-		Right = Rotation * Vector3.right;
-		Fwd = Rotation * Vector3.forward;
-		Apply ();
+		get { return SAPData.MaxValue; }
+		set { SAPData.MaxValue = value; }
 	}
 	
+	public Quaternion Rotation
+	{
+		get { return m_SphereTransform.Rotation; }
+		set { m_SphereTransform.Rotation = value; }
+	}
+	
+	public Vector3 Up
+	{
+		get { return m_SphereTransform.Up; }
+		set { m_SphereTransform.Up = value; }
+	}
+	
+	public Vector3 Right
+	{
+		get { return m_SphereTransform.Right; }
+		set { m_SphereTransform.Right = value; }
+	}
+	
+	public Vector3 Fwd
+	{
+		get { return m_SphereTransform.Fwd; }
+		set { m_SphereTransform.Fwd = value; }
+	}
+
+	// Debug
 #if UNITY_EDITOR 
 	void OnDrawGizmos() 
 	{
 		Gizmos.color = Colliding ? Color.red : Color.white;
-	    Gizmos.DrawSphere(transform.position, Radius);
+	    Gizmos.DrawSphere(Center, Radius);
 	}
 #endif
+
+
 }

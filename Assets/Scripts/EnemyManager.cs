@@ -43,7 +43,7 @@ public class EnemyManager : MonoBehaviour
 			instance.transform.parent = folder.transform;
 			//mEnemyMeshes.Add (meshFilter);
 			mEnemies.Add (instance.GetComponentInChildren<Enemy>());
-			mEnemies[mEnemies.Count-1].gameObject.SetActive(false);
+			mEnemies[mEnemies.Count-1].gameObject.SetActive(true);
 			
 			//m_AnimationSlot.Acquire(meshFilter);
 		}

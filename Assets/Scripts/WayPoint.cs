@@ -8,6 +8,7 @@ public interface IPathNode<T>
     Vector3 position { get; }
 }
 
+[System.Serializable]
 public class CollisionEdge
 {
 	public Vector3 v0, v1;

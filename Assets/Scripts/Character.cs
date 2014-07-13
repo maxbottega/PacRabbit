@@ -2,11 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class Character : MonoBehaviour
 {	
 	public float		m_WalkSpeed;
-	
+
+	// This will be useful on mobile
 	#if ((UNITY_IPHONE || UNITY_ANDROID) && !UNITY_EDITOR)	
 	public Joystick     m_LeftJoystick;
 	public Joystick     m_RightJoystick;
@@ -20,11 +21,11 @@ public class Character : MonoBehaviour
 	public Quaternion 	mRotation 		= Quaternion.identity;
 	
 	float					mFacingAngle 	= 0;
-	ISphereMoveController	mMoveController	= null;	
+	SphericalMoveController	mMoveController	= null;	
 
 	void Start () 
 	{
-		mMoveController = GetComponent (typeof(ISphereMoveController)) as ISphereMoveController;
+		mMoveController = GetComponent<SphericalMoveController>();
 		transform.position = transform.up * Planet.GetRadius();
 	}
 	
@@ -56,11 +57,12 @@ public class Character : MonoBehaviour
 			charPlane.Raycast(mouseRay, out distance);
 			Vector3 mousePoint = mouseRay.GetPoint(distance);
 			
-			mousePoint = Quaternion.Inverse(mMoveController.GetCurrentRotation()) * mousePoint;
+			mousePoint = Quaternion.Inverse(mMoveController.Rotation) * mousePoint;
 			mFacingAngle = Mathf.Atan2 (mousePoint.x, mousePoint.z) * Mathf.Rad2Deg;
 		}
 	}
-	
+
+	// Debug
 	#if UNITY_EDITOR 
 	void OnDrawGizmos() 
 	{
