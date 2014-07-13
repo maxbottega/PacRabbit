@@ -79,8 +79,8 @@ public class WizardCreateNavMesh : ScriptableWizard
 				int connected = 0;
 				for(int i=0;i<3;i++)
 					for(int j=0;j<3;j++)
-						if(navMesh.vertices[navMesh.triangles[triIdx * 3 + i]].AlmostEquals(
-							navMesh.vertices[navMesh.triangles[triIdx2 * 3 + j]], 0.000001f)
+						if(navMesh.vertices[navMesh.triangles[triIdx * 3 + i]] == 
+							navMesh.vertices[navMesh.triangles[triIdx2 * 3 + j]]
 						)
 						{
 							connectedIndex[connected] = i;
