@@ -4,12 +4,17 @@ using System.Collections;
 [RequireComponent (typeof (SphereTransform))]
 public class SphericalMoveController : MonoBehaviour
 {
-	public SphereTransform m_SphereTransform = null;
+	// ------------ Public, editable in the GUI, serialized
+	
+	// ------------ Public, serialized
+		
+	// ------------ Public, non-serialized
+	[System.NonSerialized] public SphereTransform 		mSphereTransform = null;
 
 	void Awake()
 	{
-		m_SphereTransform = GetComponent<SphereTransform> ();
-		m_SphereTransform.Pivot = transform.parent;
+		mSphereTransform = GetComponent<SphereTransform> ();
+		mSphereTransform.Pivot = transform.parent;
 	}
 
 	void Start()
@@ -27,7 +32,7 @@ public class SphericalMoveController : MonoBehaviour
 
 	public void Move (Quaternion deltaRotation)
 	{
-		m_SphereTransform.Rotation *= deltaRotation;
+		mSphereTransform.Rotation *= deltaRotation;
 	}
 
 	public void Move (Vector3 targetPosition, float speed)
@@ -44,36 +49,24 @@ public class SphericalMoveController : MonoBehaviour
 	
 	public void Move (Vector3 targetPosition)
 	{
-		m_SphereTransform.Rotation = Quaternion.FromToRotation(Vector3.up, targetPosition.normalized);
+		mSphereTransform.Rotation = Quaternion.FromToRotation(Vector3.up, targetPosition.normalized);
 	}
 
 	public void Apply ()
 	{
 		//m_SphereTransform.Pivot.rotation = Quaternion.Slerp(m_SphereTransform.Pivot.rotation, m_SphereTransform.Rotation, 1);
-		m_SphereTransform.Pivot.rotation = m_SphereTransform.Rotation;
+		mSphereTransform.Pivot.rotation = mSphereTransform.Rotation;
 	}
 
-	//Wrapper Functions
 	public Quaternion Rotation
 	{
-		get { return m_SphereTransform.Rotation; }
+		get { return mSphereTransform.Rotation; }
 	}
 	
 	public Vector3 Up
 	{
-		get { return m_SphereTransform.Up; }
+		get { return mSphereTransform.Up; }
 	}
-	
-	/*	
-	public Vector3 Right
-	{
-		get { return m_SphereTransform.Right; }
-	}
-	
-	public Vector3 Fwd
-	{
-		get { return m_SphereTransform.Fwd; }
-	}*/
 }
 
 

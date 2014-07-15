@@ -4,18 +4,22 @@ using System.Collections.Generic;
 
 public class CollisionManager : MonoBehaviour 
 {
-	public int 			NumColliders = 0;
-	public bool 		m_SAP = false;
-	public bool 		m_CompareTo = true;
-	public bool	 		m_BreakSAPCycle = false;
-	public bool 		m_AdaptiveSweepAxis = true;
-	public int 			m_IterationCount = 10;
-	public float 		m_Relaxation = 0.8f;
-	public bool    	 	m_CheckSort = false;
-	public float		m_CollisionErrorInterpolation = 1.0f;
-	public bool    		m_LinearTest = true;
+	// ------------ Public, editable in the GUI, serialized
 	
-	List<Collidable> 	mColliders = new List<Collidable>();
+	// ------------ Public, serialized
+	
+	// ------------ Public, non-serialized
+	[System.NonSerialized] public int 			mNumColliders = 0;
+	[System.NonSerialized] public bool 			m_SAP = false;
+	[System.NonSerialized] public bool 			m_CompareTo = true;
+	[System.NonSerialized] public bool	 		m_BreakSAPCycle = false;
+	[System.NonSerialized] public bool 			m_AdaptiveSweepAxis = true;
+	[System.NonSerialized] public int 			m_IterationCount = 10;
+	[System.NonSerialized] public float 		m_Relaxation = 0.8f;
+	[System.NonSerialized] public bool    	 	m_CheckSort = false;
+	[System.NonSerialized] public float			m_CollisionErrorInterpolation = 1.0f;
+	[System.NonSerialized] public bool    		m_LinearTest = true;
+	[System.NonSerialized] List<Collidable> 	mColliders = new List<Collidable>();
 
 	delegate void 		SweepFuncion();
 	SweepFuncion 		mSweepFunction;
@@ -34,13 +38,13 @@ public class CollisionManager : MonoBehaviour
 	
 	public void AddCollider(Collidable collider)
 	{
-		++NumColliders;
+		++mNumColliders;
 		mColliders.Add (collider);
 	}
 	
 	public void RemoveCollider(Collidable collider)
 	{
-		--NumColliders;
+		--mNumColliders;
 		mColliders.Remove (collider);
 	}
 	
@@ -120,10 +124,11 @@ public class CollisionManager : MonoBehaviour
 			
 			if (m_CheckSort)
 			{
-				float minX = -100000000000000000000000.0f;
+				float minX = float.MinValue;
 				foreach (Collidable coll in mColliders)
 				{
-					if (coll.Min.x < minX) Debug.LogError("Sort is wrong");
+					if (coll.Min.x < minX) 
+						Debug.LogError("Sort is wrong");
 					minX = coll.Min.x;
 				}
 			}

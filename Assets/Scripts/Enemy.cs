@@ -2,15 +2,19 @@ using UnityEngine;
 using System.Collections;
 
 //[ExecuteInEditMode]
+[RequireComponent (typeof (SphericalMoveController))]
 public class Enemy : MonoBehaviour 
 {
-	[System.NonSerialized]
-	public Transform 		Target 				= null;
-	public float 			m_Speed 			= 5;
-	SphericalMoveController	mMoveController 	= null;	
-	Collidable				mCollidable 		= null;
+	// ------------ Public, editable in the GUI, serialized
+	public float 									Speed 				= 5;
 	
-	//EnemyManager mEnemyManager = null;
+	// ------------ Public, serialized
+	
+	// ------------ Public, non-serialized
+	[System.NonSerialized] public Transform 		Target 				= null;
+	[System.NonSerialized] SphericalMoveController	mMoveController 	= null;	
+	[System.NonSerialized] Collidable				mCollidable 		= null;
+	//[System.NonSerialized] EnemyManager 			mEnemyManager 		= null;
 
 	void Awake ()
 	{
@@ -32,7 +36,7 @@ public class Enemy : MonoBehaviour
 	void Update () 
 	{
 		if (mMoveController)
-			UpdateLocomotion(Time.deltaTime, m_Speed);
+			UpdateLocomotion(Time.deltaTime, Speed);
 	}
 	
 	virtual protected void UpdateLocomotion(float dt, float speed)

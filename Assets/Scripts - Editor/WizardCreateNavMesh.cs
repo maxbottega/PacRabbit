@@ -4,8 +4,9 @@ using System.Collections.Generic;
 
 public class WizardCreateNavMesh : ScriptableWizard
 {
-   	public GameObject 	m_NavMesh = null;
-	public GameObject	m_WayPointPrefab = null;
+	// ------------ Public, editable in the GUI
+   	public GameObject 	NavMesh = null;
+	public GameObject	WayPointPrefab = null;
     
     [MenuItem ("GameObject/Create Nav Mesh Wizard")]
     static void CreateWizard () 
@@ -40,7 +41,7 @@ public class WizardCreateNavMesh : ScriptableWizard
 		DestroyImmediate(wayPoints);
 
 		GameObject containerFolder = new GameObject("WAYPOINTS");
-		Mesh navMesh = m_NavMesh.GetComponent<MeshFilter>().mesh;
+		Mesh navMesh = NavMesh.GetComponent<MeshFilter>().mesh;
 	
 		int numTriangles = navMesh.triangles.Length / 3;
 		WayPoint[] waypoints = new WayPoint[numTriangles];
@@ -54,7 +55,7 @@ public class WizardCreateNavMesh : ScriptableWizard
 		for (int triIdx=0; triIdx<numTriangles; ++triIdx)
 		{
 
-			WayPoint wp = (Instantiate(m_WayPointPrefab) as GameObject).GetComponent<WayPoint>();
+			WayPoint wp = (Instantiate(WayPointPrefab) as GameObject).GetComponent<WayPoint>();
 			wp.name = "WP-index:" + triIdx;
 			wp.transform.parent = containerFolder.transform;
 		

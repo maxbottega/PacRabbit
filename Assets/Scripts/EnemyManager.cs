@@ -4,24 +4,27 @@ using System.Collections.Generic;
 
 public class EnemyManager : MonoBehaviour 
 {
-	public GameObject 	m_EnemyPrefab;
-	public int			m_NumEnemies;
-	public EnemyWave[]	m_Waves;
+	// ------------ Public, editable in the GUI, serialized
+	public GameObject 								EnemyPrefab;
+	public int										NumEnemies = 1;
+	public EnemyWave[]								Waves;
+		
+	// ------------ Public, serialized
 	
-	//List<MeshFilter> mEnemyMeshes = new List<MeshFilter>();
-	List<Enemy> mEnemies = new List<Enemy>();
-	
-	int m_CurrentWaveId = 0;
+	// ------------ Public, non-serialized
+	//[System.NonSerialized] List<MeshFilter> 		mEnemyMeshes = new List<MeshFilter>();
+	[System.NonSerialized] List<Enemy> 				mEnemies = new List<Enemy>();
+	[System.NonSerialized] int 						m_CurrentWaveId = 0;
 	
 	void Start () 
 	{
 
 		GameObject folder = new GameObject ("ENEMIES");
-		m_EnemyPrefab.SetActive(true);
+		EnemyPrefab.SetActive(true);
 	
-		for (int i=0; i<m_NumEnemies; ++i)
+		for (int i=0; i<NumEnemies; ++i)
 		{
-			GameObject instance = Instantiate(m_EnemyPrefab, m_EnemyPrefab.transform.position, m_EnemyPrefab.transform.rotation) as GameObject;
+			GameObject instance = Instantiate(EnemyPrefab, EnemyPrefab.transform.position, EnemyPrefab.transform.rotation) as GameObject;
 
 //			SkinnedMeshRenderer skinnedMesh = instance.GetComponentInChildren<SkinnedMeshRenderer>();
 //			GameObject renderObj = skinnedMesh.gameObject;
@@ -51,7 +54,7 @@ public class EnemyManager : MonoBehaviour
 		//m_EnemyPrefab.GetComponentInChildren<Zombie>().SetAnimatedDummy();
 		
 		//Waves
-		foreach (EnemyWave wave in m_Waves)
+		foreach (EnemyWave wave in Waves)
 		{
 			wave.Init();
 		}
@@ -62,9 +65,9 @@ public class EnemyManager : MonoBehaviour
 	void Update () 
 	{
 
-		if (m_CurrentWaveId < m_Waves.Length) 
+		if (m_CurrentWaveId < Waves.Length) 
 		{
-			WaveState state = m_Waves [m_CurrentWaveId].UpdateWave (Time.deltaTime);
+			WaveState state = Waves [m_CurrentWaveId].UpdateWave (Time.deltaTime);
 			if (state == WaveState.Done)
 				++m_CurrentWaveId;
 		}
@@ -75,7 +78,7 @@ public class EnemyManager : MonoBehaviour
 	
 	public void NotifyEnemyDeath()
 	{
-		m_Waves[m_CurrentWaveId].EnemyKilled("digger");
+		Waves[m_CurrentWaveId].EnemyKilled("digger");
 	}
 	
 	public void SpawnEnemy()

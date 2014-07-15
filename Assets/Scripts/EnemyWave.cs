@@ -8,29 +8,28 @@ public enum WaveState
 
 public class EnemyWave : MonoBehaviour
 {
-	public EnemyManager m_EnemyManager;
+	// ------------ Public, editable in the GUI, serialized
+	public int 		Round;
+	public int 		Wave;
+	public int 		Phase;
+	public int 		StartDelay;
+	public float 	StartTime;
+	public float 	SpawnCircleRadius;
+	public float 	SpawnTime;
+	public float 	SpawnTimeVariance;
+	public int 		NumMinions;
+	public int	 	MaxActiveMinions;
+	public float 	SpeedVariance;
+		
+	// ------------ Public, serialized
 	
-	public int 		m_Round;
-	public int 		m_Wave;
-	public int 		m_Phase;
-	public int 		m_StartDelay;
-	public float 	m_StartTime;
-	public float 	m_SpawnCircleRadius;
-	public float 	m_SpawnTime;
-	public float 	m_SpawnTimeVariance;
-	
-	public int 		m_NumMinions;
-	public int	 	m_MaxActiveMinions;
-
-	public float 	m_SpeedVariance;
-
-	int m_SpawnedMinions;
-	
-	int	m_ActiveMinions;
-	
-	float m_Timer;
-	float m_TimerLimit;
-	float m_StartTimer = 0;
+	// ------------ Public, non-serialized
+	[System.NonSerialized] public EnemyManager 	m_EnemyManager = null;
+	[System.NonSerialized] int 					m_SpawnedMinions = 0;
+	[System.NonSerialized] int					m_ActiveMinions = 0;
+	[System.NonSerialized] float 				m_Timer = 0.0f;
+	[System.NonSerialized] float 				m_TimerLimit = 0.0f;
+	[System.NonSerialized] float 				m_StartTimer = 0.0f;
 	
 	WaveState m_State = WaveState.None;
 	
@@ -51,7 +50,7 @@ public class EnemyWave : MonoBehaviour
 	
 	public void EndWave()
 	{	
-		m_SpawnedMinions = m_NumMinions;
+		m_SpawnedMinions = NumMinions;
 		m_ActiveMinions = 0;
 	}
 	
@@ -70,13 +69,13 @@ public class EnemyWave : MonoBehaviour
 	
 	bool IsWaveFinished()
 	{
-		return (m_SpawnedMinions == m_NumMinions);
+		return (m_SpawnedMinions == NumMinions);
 	}
 	
 	public WaveState UpdateWave(float dt)
 	{
 		m_StartTimer += dt;
-		if (m_StartTimer>m_StartTime)
+		if (m_StartTimer>StartTime)
 		{
 			if (m_State == WaveState.Waiting)
 			{
@@ -94,12 +93,12 @@ public class EnemyWave : MonoBehaviour
 			if (m_Timer>m_TimerLimit)
 			{
 				m_Timer = 0;
-				if (m_ActiveMinions < m_MaxActiveMinions)
+				if (m_ActiveMinions < MaxActiveMinions)
 				{
 					OnSpawnedEnemy("Enemy");
 					m_EnemyManager.SpawnEnemy();
 				}
-				m_TimerLimit = m_SpawnTime + m_SpawnTimeVariance * Random.Range(-1, 1);
+				m_TimerLimit = SpawnTime + SpawnTimeVariance * Random.Range(-1, 1);
 			}
 			
 			m_State = WaveState.Running;

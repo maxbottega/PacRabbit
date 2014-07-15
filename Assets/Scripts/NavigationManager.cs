@@ -7,11 +7,13 @@ using System.Collections.Generic;
 
 public class NavigationManager : MonoBehaviour 
 {
-	[System.NonSerialized]
-	public List<WayPoint> waypointList = new List<WayPoint>();
-
-	[System.NonSerialized]
-	public static NavigationManager instance = null;
+	// ------------ Public, editable in the GUI, serialized
+	
+	// ------------ Public, serialized
+	
+	// ------------ Public, non-serialized
+	[System.NonSerialized] public List<WayPoint> 			waypointList = new List<WayPoint>();
+	[System.NonSerialized] public static NavigationManager 	instance = null;
 	
 	static public Vector3 PointSegmentCollision(Vector3 point, CollisionEdge edge, float radius)
 	{

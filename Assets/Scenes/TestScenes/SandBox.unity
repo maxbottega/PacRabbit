@@ -1999,7 +1999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea81bdc716e4b4a239e13be5b3c87ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Radius: 11.5
+  Radius: 11
 --- !u!114 &249330859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2011,16 +2011,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99125b06607d14026a6235614ec2a92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumColliders: 0
-  m_SAP: 1
-  m_CompareTo: 0
-  m_BreakSAPCycle: 0
-  m_AdaptiveSweepAxis: 1
-  m_IterationCount: 2
-  m_Relaxation: .5
-  m_CheckSort: 0
-  m_CollisionErrorInterpolation: 1
-  m_LinearTest: 0
 --- !u!114 &249330860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2032,9 +2022,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d438884e2dc3749af926a036f27db936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EnemyPrefab: {fileID: 100000, guid: 0255a40c82aaf414b851ea0a10ad5a54, type: 2}
-  m_NumEnemies: 1
-  m_Waves: []
+  EnemyPrefab: {fileID: 100000, guid: 0255a40c82aaf414b851ea0a10ad5a54, type: 2}
+  NumEnemies: 1
+  Waves: []
 --- !u!114 &249330861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7529,18 +7519,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b0b770fa6cc45fe95e8a126df5d273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EnemyManager: {fileID: 249330860}
-  m_Round: 0
-  m_Wave: 0
-  m_Phase: 0
-  m_StartDelay: 0
-  m_StartTime: 0
-  m_SpawnCircleRadius: 0
-  m_SpawnTime: 0
-  m_SpawnTimeVariance: 0
-  m_NumMinions: 0
-  m_MaxActiveMinions: 0
-  m_SpeedVariance: 0
+  Round: 0
+  Wave: 0
+  Phase: 0
+  StartDelay: 0
+  StartTime: 0
+  SpawnCircleRadius: 0
+  SpawnTime: 0
+  SpawnTimeVariance: 0
+  NumMinions: 0
+  MaxActiveMinions: 0
+  SpeedVariance: 0
 --- !u!4 &997320475
 Transform:
   m_ObjectHideFlags: 0
@@ -13721,7 +13710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe2e4483d6224af896dece607848c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_WalkSpeed: 20
+  WalkSpeed: 20
 --- !u!23 &2011921439
 Renderer:
   m_ObjectHideFlags: 0
@@ -13773,8 +13762,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pivot: {fileID: 593448277}
-  Rotation: {x: 0, y: 0, z: 0, w: 1}
-  Up: {x: 0, y: 0, z: 0}
 --- !u!114 &2011921443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13805,7 +13792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 491671f92996f4508ad530348864cea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SphereTransform: {fileID: 2011921442}
 --- !u!1 &2022432195
 GameObject:
   m_ObjectHideFlags: 0

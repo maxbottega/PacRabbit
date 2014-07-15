@@ -5,22 +5,25 @@ using System.Collections.Generic;
 [RequireComponent (typeof (SphericalMoveController))]
 public class Character : MonoBehaviour
 {	
-	public float		m_WalkSpeed;
+	// ------------ Public, editable in the GUI, serialized
+	public float									WalkSpeed = 20.0f;
 
+	// ------------ Public, serialized
+	
+	
+	// ------------ Public, non-serialized
+	
 	// This will be useful on mobile
-	#if ((UNITY_IPHONE || UNITY_ANDROID) && !UNITY_EDITOR)	
-	public Joystick     m_LeftJoystick;
-	public Joystick     m_RightJoystick;
-	#endif
+	//#if ((UNITY_IPHONE || UNITY_ANDROID) && !UNITY_EDITOR)
+	//[System.NonSerialized] public Joystick     m_LeftJoystick;
+	//[System.NonSerialized] public Joystick     m_RightJoystick;
+	//#endif
 	
-	[System.NonSerialized]
-	public Vector3		mLightDirection = Vector3.right;
-	[System.NonSerialized]
-	public Quaternion 	mRotation 		= Quaternion.identity;
-	
-	//float					mFacingAngle 	= 0;
-	SphericalMoveController	mMoveController	= null;	
-	WayPoint				mCachedNearest = null;
+	[System.NonSerialized] public Vector3			mLightDirection = Vector3.right;
+	[System.NonSerialized] public Quaternion 		mRotation 		= Quaternion.identity;
+	//[System.NonSerialized] float					mFacingAngle 	= 0;
+	[System.NonSerialized] SphericalMoveController	mMoveController	= null;	
+	[System.NonSerialized] WayPoint					mCachedNearest = null;
 
 	void Start () 
 	{
@@ -30,25 +33,20 @@ public class Character : MonoBehaviour
 	void Update()
 	{
 		UpdateInput();
+		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
 		
-		mMoveController.Move(mRotation);
+		//mMoveController.Move(mRotation);
 		
-		Vector3 currentPos = mMoveController.Rotation * Vector3.up;
+		// TODO: move all this in the collision manager, after resolving sphere collisions
+		Vector3 currentPos = (mMoveController.Rotation * mRotation) * Vector3.up * Planet.GetRadius();
 		Vector3 newPos = 
 			NavigationManager.instance.PointNavMeshEdgesCollision(
-				currentPos * Planet.GetRadius(), 1.0f, mCachedNearest, out mCachedNearest);
+				currentPos, 0.75f, mCachedNearest, out mCachedNearest);
 
 		mMoveController.Move(newPos);
 		
-		//if( Vector3.Distance(currentPos, newPos)>0.01f )
-		//mMoveController.Move(Quaternion.FromToRotation(currentPos.normalized, newPos.normalized));
-		
-		//mMoveController.Move(Quaternion.AngleAxis(
-		//	Mathf.Acos (Vector3.Dot (currentPos.normalized, newPos.normalized)) * Mathf.Rad2Deg, 
-		//	Vector3.Cross (currentPos.normalized, newPos.normalized))
-		//);
-		
-		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
+		//if( Vector3.Distance(currentPos, newPos) > 0.000001f ) // TODO: use dot instead
+		//	mMoveController.Move(Quaternion.FromToRotation(mMoveController.Rotation * Vector3.up, newPos.normalized));
 	}	
 	
 	void UpdateInput()
@@ -56,11 +54,12 @@ public class Character : MonoBehaviour
 		Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 		direction.Normalize();
 
-		float speed = m_WalkSpeed * Time.deltaTime /* * direction.magnitude */;
+		float speed = WalkSpeed * Time.deltaTime /* * direction.magnitude */;
 		Vector3 perpendicular = new Vector3(direction.z, 0, -direction.x);
 		mRotation = Quaternion.AngleAxis (speed, perpendicular);
 		
 		// TODO: facing from direction, not from mouse
+		
 		/* Facing 1 frame late...because of camera LateUpdate
 		{
 			Vector3 planePoint = transform.up * Planet.GetRadius();
@@ -76,12 +75,9 @@ public class Character : MonoBehaviour
 		}*/
 	}
 
-	// Debug
 	#if UNITY_EDITOR 
 	void OnDrawGizmos() 
 	{
-		//Debug Draws
 	}
 	#endif
-
 }

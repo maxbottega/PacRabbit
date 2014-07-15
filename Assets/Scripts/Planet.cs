@@ -2,12 +2,18 @@ using UnityEngine;
 using System.Collections;
 
 [ExecuteInEditMode]
+[RequireComponent (typeof (NavigationManager))]
+[RequireComponent (typeof (CollisionManager))]
+[RequireComponent (typeof (EnemyManager))]
 public class Planet : MonoBehaviour 
 {
-	public float m_Radius = 0;
+	// ------------ Public, editable in the GUI, serialized
+	public float Radius = 10.0f;
 	
-	static Planet mInstance = null;
+	// ------------ Public, serialized
 	
+	// ------------ Public, non-serialized
+	[System.NonSerialized] static Planet mInstance = null;
 //	Character mPlayer = null;
 //	Zombie[] mEnemies = null;
 //	Collidable[] mCollidables = null;
@@ -42,15 +48,14 @@ public class Planet : MonoBehaviour
 //			collidable.DoUpdate();
 //		}
 //		
-//		mCollisionManager.DoUpdate();
-//		
+//		mCollisionManager.DoUpdate();		
 	}
 	
 	public static float GetRadius()
 	{
 		if (mInstance == null)
 			Debug.LogError ("Some object is querying the Planet for radius, but the Planet is not inititialized yet.");
-		return mInstance.m_Radius * mInstance.transform.lossyScale.x;	
+			
+		return mInstance.Radius * mInstance.transform.lossyScale.x;	
 	}
-	
 }

@@ -3,10 +3,14 @@ using System.Collections;
 
 public class SphereTransform : MonoBehaviour
 {
-	public Transform Pivot = null;
+	// ------------ Public, editable in the GUI, serialized
+	public Transform 							Pivot = null;
+		
+	// ------------ Public, serialized
 	
-	public Quaternion Rotation;
-	public Vector3 Up;
+	// ------------ Public, non-serialized
+	[System.NonSerialized] public Quaternion 	Rotation;
+	[System.NonSerialized] public Vector3 		Up;
 	
 	void Update()
 	{
