@@ -48,3 +48,45 @@ public class Enemy : MonoBehaviour
 		// Collision reaction
 	}
 }
+
+/*
+namespace HutongGames.PlayMaker.Actions
+{
+	//[CheckForComponent(typeof())]
+	[ActionCategory("CustomActions")]
+	[Tooltip("puppa")]
+	public class Puppa : FsmStateAction
+	{
+		[UIHint(UIHint.Variable)]
+		[Tooltip("")]
+		public FsmString test;
+		
+		
+		[HasFloatSlider(0,100)]
+		public FsmFloat teeest;
+		
+		//[RequiredField]
+		
+		public override void Reset()
+		{
+		}
+		
+		public override void OnEnter()
+		{
+			DoMyAction();
+			
+			//if(!everyFrame) Finish();
+			
+			//myComponent = (MyComponent)Owner;
+		}
+		
+		public override void OnUpdate()
+		{
+			DoMyAction();
+		}
+		
+		void DoMyAction()
+		{	
+		}		
+	}
+}*/

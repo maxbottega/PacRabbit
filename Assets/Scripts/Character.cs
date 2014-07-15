@@ -33,15 +33,20 @@ public class Character : MonoBehaviour
 		
 		mMoveController.Move(mRotation);
 		
-		Vector3 currentPos = /* TODO: mMoveController.Up */ (mMoveController.Rotation * Vector3.up);
-		
+		Vector3 currentPos = mMoveController.Rotation * Vector3.up;
 		Vector3 newPos = 
 			NavigationManager.instance.PointNavMeshEdgesCollision(
-				currentPos * Planet.GetRadius(), 0.75f, mCachedNearest, out mCachedNearest);
+				currentPos * Planet.GetRadius(), 1.0f, mCachedNearest, out mCachedNearest);
 
 		mMoveController.Move(newPos);
+		
 		//if( Vector3.Distance(currentPos, newPos)>0.01f )
 		//mMoveController.Move(Quaternion.FromToRotation(currentPos.normalized, newPos.normalized));
+		
+		//mMoveController.Move(Quaternion.AngleAxis(
+		//	Mathf.Acos (Vector3.Dot (currentPos.normalized, newPos.normalized)) * Mathf.Rad2Deg, 
+		//	Vector3.Cross (currentPos.normalized, newPos.normalized))
+		//);
 		
 		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
 	}	
