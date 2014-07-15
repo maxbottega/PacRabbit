@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 //[ExecuteInEditMode]
-[RequireComponent (typeof (SphericalMoveController))]
+[RequireComponent (typeof (SphereTransform))]
 public class Enemy : MonoBehaviour 
 {
 	// ------------ Public, editable in the GUI, serialized
@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
 	
 	// ------------ Public, non-serialized
 	[System.NonSerialized] public Transform 		Target 				= null;
-	[System.NonSerialized] SphericalMoveController	mMoveController 	= null;	
+	[System.NonSerialized] SphereTransform			mMoveController 	= null;	
 	[System.NonSerialized] Collidable				mCollidable 		= null;
 	//[System.NonSerialized] EnemyManager 			mEnemyManager 		= null;
 
@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
 		// Position the enemy on the planet surface
 		transform.position 	= transform.up * Planet.GetRadius();	
 		//mEnemyManager 	= FindObjectOfType(typeof(EnemyManager)) as EnemyManager;
-		mMoveController 	= GetComponent<SphericalMoveController>();
+		mMoveController 	= GetComponent<SphereTransform>();
 		mCollidable 		= GetComponent<Collidable> ();
 
 		if (mCollidable)

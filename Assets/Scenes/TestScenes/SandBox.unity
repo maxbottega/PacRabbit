@@ -13690,7 +13690,6 @@ GameObject:
   - 23: {fileID: 2011921439}
   - 114: {fileID: 2011921438}
   - 114: {fileID: 2011921443}
-  - 114: {fileID: 2011921444}
   - 114: {fileID: 2011921442}
   m_Layer: 0
   m_Name: Character
@@ -13761,7 +13760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10c6f7678c22410fbc137d4c9183805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pivot: {fileID: 593448277}
 --- !u!114 &2011921443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13781,17 +13779,6 @@ MonoBehaviour:
   Max: {x: 0, y: 0, z: 0}
   MinValue: 0
   MaxValue: 0
---- !u!114 &2011921444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2011921437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 491671f92996f4508ad530348864cea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2022432195
 GameObject:
   m_ObjectHideFlags: 0

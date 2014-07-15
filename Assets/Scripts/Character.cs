@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-[RequireComponent (typeof (SphericalMoveController))]
+[RequireComponent (typeof (SphereTransform))]
 public class Character : MonoBehaviour
 {	
 	// ------------ Public, editable in the GUI, serialized
@@ -22,12 +22,12 @@ public class Character : MonoBehaviour
 	[System.NonSerialized] public Vector3			mLightDirection = Vector3.right;
 	[System.NonSerialized] public Quaternion 		mRotation 		= Quaternion.identity;
 	//[System.NonSerialized] float					mFacingAngle 	= 0;
-	[System.NonSerialized] SphericalMoveController	mMoveController	= null;	
+	[System.NonSerialized] SphereTransform			mMoveController	= null;	
 	[System.NonSerialized] WayPoint					mCachedNearest = null;
 
 	void Start () 
 	{
-		mMoveController = GetComponent<SphericalMoveController>();
+		mMoveController = GetComponent<SphereTransform>();
 	}
 	
 	void Update()
