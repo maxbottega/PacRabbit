@@ -7,9 +7,12 @@ public class SphereTransform : MonoBehaviour
 	
 	public Quaternion Rotation;
 	public Vector3 Up;
-	public Vector3 Right;
-	public Vector3 Fwd;	
-
+	
+	void Update()
+	{
+		Up = Rotation * Vector3.up; // y-axis
+	}
+	
 	void Awake ()
 	{
 		Rotation = Pivot.transform.rotation;

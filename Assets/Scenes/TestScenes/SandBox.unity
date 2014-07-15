@@ -85,7 +85,7 @@ GameObject:
   - 114: {fileID: 6031657}
   m_Layer: 0
   m_Name: WP-index:40
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,7 +130,7 @@ GameObject:
   - 114: {fileID: 19453204}
   m_Layer: 0
   m_Name: WP-index:19
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,7 +175,7 @@ GameObject:
   - 114: {fileID: 23899720}
   m_Layer: 0
   m_Name: WP-index:5
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -220,7 +220,7 @@ GameObject:
   - 114: {fileID: 40288683}
   m_Layer: 0
   m_Name: WP-index:133
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,7 +264,7 @@ GameObject:
   - 114: {fileID: 41296708}
   m_Layer: 0
   m_Name: WP-index:54
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -308,7 +308,7 @@ GameObject:
   - 114: {fileID: 59075669}
   m_Layer: 0
   m_Name: WP-index:192
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -353,7 +353,7 @@ GameObject:
   - 114: {fileID: 69096903}
   m_Layer: 0
   m_Name: WP-index:98
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -398,7 +398,7 @@ GameObject:
   - 114: {fileID: 112611823}
   m_Layer: 0
   m_Name: WP-index:48
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -443,7 +443,7 @@ GameObject:
   - 114: {fileID: 112727400}
   m_Layer: 0
   m_Name: WP-index:121
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -488,7 +488,7 @@ GameObject:
   - 114: {fileID: 117777288}
   m_Layer: 0
   m_Name: WP-index:202
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -533,7 +533,7 @@ GameObject:
   - 114: {fileID: 119279588}
   m_Layer: 0
   m_Name: WP-index:178
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -578,7 +578,7 @@ GameObject:
   - 114: {fileID: 121736874}
   m_Layer: 0
   m_Name: WP-index:164
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -623,7 +623,7 @@ GameObject:
   - 114: {fileID: 129823012}
   m_Layer: 0
   m_Name: WP-index:232
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -668,7 +668,7 @@ GameObject:
   - 114: {fileID: 154971562}
   m_Layer: 0
   m_Name: WP-index:279
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1037,7 +1037,7 @@ GameObject:
   - 114: {fileID: 160102125}
   m_Layer: 0
   m_Name: WP-index:209
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1082,7 +1082,7 @@ GameObject:
   - 114: {fileID: 163417926}
   m_Layer: 0
   m_Name: WP-index:248
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1127,7 +1127,7 @@ GameObject:
   - 114: {fileID: 170510188}
   m_Layer: 0
   m_Name: WP-index:221
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1172,7 +1172,7 @@ GameObject:
   - 114: {fileID: 174671665}
   m_Layer: 0
   m_Name: WP-index:208
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1217,7 +1217,7 @@ GameObject:
   - 114: {fileID: 178276207}
   m_Layer: 0
   m_Name: WP-index:153
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1262,7 +1262,7 @@ GameObject:
   - 114: {fileID: 182444867}
   m_Layer: 0
   m_Name: WP-index:97
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1307,7 +1307,7 @@ GameObject:
   - 114: {fileID: 188954193}
   m_Layer: 0
   m_Name: WP-index:185
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1352,7 +1352,7 @@ GameObject:
   - 114: {fileID: 195102082}
   m_Layer: 0
   m_Name: WP-index:152
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1396,7 +1396,7 @@ GameObject:
   - 114: {fileID: 195742900}
   m_Layer: 0
   m_Name: WP-index:122
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1441,7 +1441,7 @@ GameObject:
   - 114: {fileID: 196748931}
   m_Layer: 0
   m_Name: WP-index:272
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1486,7 +1486,7 @@ GameObject:
   - 114: {fileID: 198693129}
   m_Layer: 0
   m_Name: WP-index:148
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1531,7 +1531,7 @@ GameObject:
   - 114: {fileID: 201227459}
   m_Layer: 0
   m_Name: WP-index:92
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1576,7 +1576,7 @@ GameObject:
   - 114: {fileID: 203581530}
   m_Layer: 0
   m_Name: WP-index:188
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1621,7 +1621,7 @@ GameObject:
   - 114: {fileID: 205137768}
   m_Layer: 0
   m_Name: WP-index:127
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1666,7 +1666,7 @@ GameObject:
   - 114: {fileID: 207909182}
   m_Layer: 0
   m_Name: WP-index:16
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1711,7 +1711,7 @@ GameObject:
   - 114: {fileID: 209559489}
   m_Layer: 0
   m_Name: WP-index:245
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1756,7 +1756,7 @@ GameObject:
   - 114: {fileID: 211680681}
   m_Layer: 0
   m_Name: WP-index:258
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1801,7 +1801,7 @@ GameObject:
   - 114: {fileID: 211968043}
   m_Layer: 0
   m_Name: WP-index:79
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1846,7 +1846,7 @@ GameObject:
   - 114: {fileID: 219253163}
   m_Layer: 0
   m_Name: WP-index:269
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1891,7 +1891,7 @@ GameObject:
   - 114: {fileID: 220176691}
   m_Layer: 0
   m_Name: WP-index:275
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1938,6 +1938,7 @@ GameObject:
   - 114: {fileID: 249330858}
   - 114: {fileID: 249330859}
   - 114: {fileID: 249330860}
+  - 114: {fileID: 249330861}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -2032,8 +2033,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EnemyPrefab: {fileID: 100000, guid: 0255a40c82aaf414b851ea0a10ad5a54, type: 2}
-  m_NumEnemies: 20
+  m_NumEnemies: 1
   m_Waves: []
+--- !u!114 &249330861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249330854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5a85f054a5843f6b1c5f55958bb622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &251271935
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,7 +2057,7 @@ GameObject:
   - 114: {fileID: 251271936}
   m_Layer: 0
   m_Name: WP-index:142
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2090,7 +2102,7 @@ GameObject:
   - 114: {fileID: 252167696}
   m_Layer: 0
   m_Name: WP-index:219
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2135,7 +2147,7 @@ GameObject:
   - 114: {fileID: 254176724}
   m_Layer: 0
   m_Name: WP-index:90
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2180,7 +2192,7 @@ GameObject:
   - 114: {fileID: 257386544}
   m_Layer: 0
   m_Name: WP-index:216
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2225,7 +2237,7 @@ GameObject:
   - 114: {fileID: 257587261}
   m_Layer: 0
   m_Name: WP-index:287
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2270,7 +2282,7 @@ GameObject:
   - 114: {fileID: 259556516}
   m_Layer: 0
   m_Name: WP-index:23
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2315,7 +2327,7 @@ GameObject:
   - 114: {fileID: 262181400}
   m_Layer: 0
   m_Name: WP-index:273
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2360,7 +2372,7 @@ GameObject:
   - 114: {fileID: 267136978}
   m_Layer: 0
   m_Name: WP-index:289
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2405,7 +2417,7 @@ GameObject:
   - 114: {fileID: 267248149}
   m_Layer: 0
   m_Name: WP-index:114
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2450,7 +2462,7 @@ GameObject:
   - 114: {fileID: 267892270}
   m_Layer: 0
   m_Name: WP-index:128
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2495,7 +2507,7 @@ GameObject:
   - 114: {fileID: 269261080}
   m_Layer: 0
   m_Name: WP-index:170
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2540,7 +2552,7 @@ GameObject:
   - 114: {fileID: 282791899}
   m_Layer: 0
   m_Name: WP-index:49
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2585,7 +2597,7 @@ GameObject:
   - 114: {fileID: 284547015}
   m_Layer: 0
   m_Name: WP-index:28
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2630,7 +2642,7 @@ GameObject:
   - 114: {fileID: 288843731}
   m_Layer: 0
   m_Name: WP-index:119
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2675,7 +2687,7 @@ GameObject:
   - 114: {fileID: 292044814}
   m_Layer: 0
   m_Name: WP-index:109
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2720,7 +2732,7 @@ GameObject:
   - 114: {fileID: 293898550}
   m_Layer: 0
   m_Name: WP-index:39
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2765,7 +2777,7 @@ GameObject:
   - 114: {fileID: 300460185}
   m_Layer: 0
   m_Name: WP-index:226
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2810,7 +2822,7 @@ GameObject:
   - 114: {fileID: 307105279}
   m_Layer: 0
   m_Name: WP-index:26
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2855,7 +2867,7 @@ GameObject:
   - 114: {fileID: 312135717}
   m_Layer: 0
   m_Name: WP-index:46
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2899,7 +2911,7 @@ GameObject:
   - 114: {fileID: 317280322}
   m_Layer: 0
   m_Name: WP-index:29
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2944,7 +2956,7 @@ GameObject:
   - 114: {fileID: 320031051}
   m_Layer: 0
   m_Name: WP-index:225
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2989,7 +3001,7 @@ GameObject:
   - 114: {fileID: 329940103}
   m_Layer: 0
   m_Name: WP-index:12
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3034,7 +3046,7 @@ GameObject:
   - 114: {fileID: 332484683}
   m_Layer: 0
   m_Name: WP-index:55
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3079,7 +3091,7 @@ GameObject:
   - 114: {fileID: 353797765}
   m_Layer: 0
   m_Name: WP-index:70
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3124,7 +3136,7 @@ GameObject:
   - 114: {fileID: 362614596}
   m_Layer: 0
   m_Name: WP-index:118
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3169,7 +3181,7 @@ GameObject:
   - 114: {fileID: 367907167}
   m_Layer: 0
   m_Name: WP-index:22
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3214,7 +3226,7 @@ GameObject:
   - 114: {fileID: 367907862}
   m_Layer: 0
   m_Name: WP-index:193
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3259,7 +3271,7 @@ GameObject:
   - 114: {fileID: 372852321}
   m_Layer: 0
   m_Name: WP-index:7
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3304,7 +3316,7 @@ GameObject:
   - 114: {fileID: 377380708}
   m_Layer: 0
   m_Name: WP-index:207
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3349,7 +3361,7 @@ GameObject:
   - 114: {fileID: 379906413}
   m_Layer: 0
   m_Name: WP-index:135
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3394,7 +3406,7 @@ GameObject:
   - 114: {fileID: 386170396}
   m_Layer: 0
   m_Name: WP-index:286
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3439,7 +3451,7 @@ GameObject:
   - 114: {fileID: 387552599}
   m_Layer: 0
   m_Name: WP-index:15
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3483,7 +3495,7 @@ GameObject:
   - 114: {fileID: 395339230}
   m_Layer: 0
   m_Name: WP-index:231
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3528,7 +3540,7 @@ GameObject:
   - 114: {fileID: 401532117}
   m_Layer: 0
   m_Name: WP-index:24
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3573,7 +3585,7 @@ GameObject:
   - 114: {fileID: 405341132}
   m_Layer: 0
   m_Name: WP-index:236
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3681,7 +3693,7 @@ GameObject:
   - 114: {fileID: 413811542}
   m_Layer: 0
   m_Name: WP-index:251
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3726,7 +3738,7 @@ GameObject:
   - 114: {fileID: 421147372}
   m_Layer: 0
   m_Name: WP-index:246
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3771,7 +3783,7 @@ GameObject:
   - 114: {fileID: 433832118}
   m_Layer: 0
   m_Name: WP-index:158
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3816,7 +3828,7 @@ GameObject:
   - 114: {fileID: 441875859}
   m_Layer: 0
   m_Name: WP-index:296
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3861,7 +3873,7 @@ GameObject:
   - 114: {fileID: 458674864}
   m_Layer: 0
   m_Name: WP-index:77
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3906,7 +3918,7 @@ GameObject:
   - 114: {fileID: 459051692}
   m_Layer: 0
   m_Name: WP-index:65
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3951,7 +3963,7 @@ GameObject:
   - 114: {fileID: 484760918}
   m_Layer: 0
   m_Name: WP-index:53
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3996,7 +4008,7 @@ GameObject:
   - 114: {fileID: 487026812}
   m_Layer: 0
   m_Name: WP-index:280
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4041,7 +4053,7 @@ GameObject:
   - 114: {fileID: 489753807}
   m_Layer: 0
   m_Name: WP-index:37
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4086,7 +4098,7 @@ GameObject:
   - 114: {fileID: 496141651}
   m_Layer: 0
   m_Name: WP-index:146
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4131,7 +4143,7 @@ GameObject:
   - 114: {fileID: 501010313}
   m_Layer: 0
   m_Name: WP-index:101
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4176,7 +4188,7 @@ GameObject:
   - 114: {fileID: 505766253}
   m_Layer: 0
   m_Name: WP-index:256
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4221,7 +4233,7 @@ GameObject:
   - 114: {fileID: 506601984}
   m_Layer: 0
   m_Name: WP-index:160
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4266,7 +4278,7 @@ GameObject:
   - 114: {fileID: 515064177}
   m_Layer: 0
   m_Name: WP-index:288
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4311,7 +4323,7 @@ GameObject:
   - 114: {fileID: 515655184}
   m_Layer: 0
   m_Name: WP-index:87
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4356,7 +4368,7 @@ GameObject:
   - 114: {fileID: 519845452}
   m_Layer: 0
   m_Name: WP-index:81
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4401,7 +4413,7 @@ GameObject:
   - 114: {fileID: 528536295}
   m_Layer: 0
   m_Name: WP-index:174
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4446,7 +4458,7 @@ GameObject:
   - 114: {fileID: 535969335}
   m_Layer: 0
   m_Name: WP-index:285
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4491,7 +4503,7 @@ GameObject:
   - 114: {fileID: 538586552}
   m_Layer: 0
   m_Name: WP-index:134
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4536,7 +4548,7 @@ GameObject:
   - 114: {fileID: 549908104}
   m_Layer: 0
   m_Name: WP-index:10
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4581,7 +4593,7 @@ GameObject:
   - 114: {fileID: 553054055}
   m_Layer: 0
   m_Name: WP-index:183
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4626,7 +4638,7 @@ GameObject:
   - 114: {fileID: 558580006}
   m_Layer: 0
   m_Name: WP-index:263
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4671,7 +4683,7 @@ GameObject:
   - 114: {fileID: 561847418}
   m_Layer: 0
   m_Name: WP-index:291
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4716,7 +4728,7 @@ GameObject:
   - 114: {fileID: 573527169}
   m_Layer: 0
   m_Name: WP-index:58
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4761,7 +4773,7 @@ GameObject:
   - 114: {fileID: 574851900}
   m_Layer: 0
   m_Name: WP-index:143
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4805,7 +4817,7 @@ GameObject:
   - 114: {fileID: 587488451}
   m_Layer: 0
   m_Name: WP-index:18
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4850,7 +4862,7 @@ GameObject:
   - 114: {fileID: 589048458}
   m_Layer: 0
   m_Name: WP-index:247
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4924,7 +4936,7 @@ GameObject:
   - 114: {fileID: 593956168}
   m_Layer: 0
   m_Name: WP-index:235
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5029,7 +5041,7 @@ GameObject:
   - 114: {fileID: 605996211}
   m_Layer: 0
   m_Name: WP-index:38
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5131,7 +5143,7 @@ GameObject:
   - 114: {fileID: 610384133}
   m_Layer: 0
   m_Name: WP-index:274
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5176,7 +5188,7 @@ GameObject:
   - 114: {fileID: 611199623}
   m_Layer: 0
   m_Name: WP-index:91
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5221,7 +5233,7 @@ GameObject:
   - 114: {fileID: 632979978}
   m_Layer: 0
   m_Name: WP-index:283
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5266,7 +5278,7 @@ GameObject:
   - 114: {fileID: 633004078}
   m_Layer: 0
   m_Name: WP-index:140
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5311,7 +5323,7 @@ GameObject:
   - 114: {fileID: 635144375}
   m_Layer: 0
   m_Name: WP-index:1
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5356,7 +5368,7 @@ GameObject:
   - 114: {fileID: 636175361}
   m_Layer: 0
   m_Name: WP-index:94
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5401,7 +5413,7 @@ GameObject:
   - 114: {fileID: 637481261}
   m_Layer: 0
   m_Name: WP-index:229
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5446,7 +5458,7 @@ GameObject:
   - 114: {fileID: 642705849}
   m_Layer: 0
   m_Name: WP-index:113
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5491,7 +5503,7 @@ GameObject:
   - 114: {fileID: 644381097}
   m_Layer: 0
   m_Name: WP-index:147
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5536,7 +5548,7 @@ GameObject:
   - 114: {fileID: 659736507}
   m_Layer: 0
   m_Name: WP-index:31
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5608,7 +5620,7 @@ GameObject:
   - 114: {fileID: 693518066}
   m_Layer: 0
   m_Name: WP-index:214
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5653,7 +5665,7 @@ GameObject:
   - 114: {fileID: 695329970}
   m_Layer: 0
   m_Name: WP-index:33
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5698,7 +5710,7 @@ GameObject:
   - 114: {fileID: 695764303}
   m_Layer: 0
   m_Name: WP-index:171
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5743,7 +5755,7 @@ GameObject:
   - 114: {fileID: 697889978}
   m_Layer: 0
   m_Name: WP-index:17
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5788,7 +5800,7 @@ GameObject:
   - 114: {fileID: 698435966}
   m_Layer: 0
   m_Name: WP-index:27
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5833,7 +5845,7 @@ GameObject:
   - 114: {fileID: 710671290}
   m_Layer: 0
   m_Name: WP-index:105
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5878,7 +5890,7 @@ GameObject:
   - 114: {fileID: 711017384}
   m_Layer: 0
   m_Name: WP-index:56
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5923,7 +5935,7 @@ GameObject:
   - 114: {fileID: 728248419}
   m_Layer: 0
   m_Name: WP-index:218
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5968,7 +5980,7 @@ GameObject:
   - 114: {fileID: 740301408}
   m_Layer: 0
   m_Name: WP-index:132
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6013,7 +6025,7 @@ GameObject:
   - 114: {fileID: 746724358}
   m_Layer: 0
   m_Name: WP-index:282
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6058,7 +6070,7 @@ GameObject:
   - 114: {fileID: 757375147}
   m_Layer: 0
   m_Name: WP-index:126
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6103,7 +6115,7 @@ GameObject:
   - 114: {fileID: 758066115}
   m_Layer: 0
   m_Name: WP-index:82
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6148,7 +6160,7 @@ GameObject:
   - 114: {fileID: 770003513}
   m_Layer: 0
   m_Name: WP-index:116
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6193,7 +6205,7 @@ GameObject:
   - 114: {fileID: 775733578}
   m_Layer: 0
   m_Name: WP-index:131
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6238,7 +6250,7 @@ GameObject:
   - 114: {fileID: 781521174}
   m_Layer: 0
   m_Name: WP-index:66
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6283,7 +6295,7 @@ GameObject:
   - 114: {fileID: 784872755}
   m_Layer: 0
   m_Name: WP-index:266
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6328,7 +6340,7 @@ GameObject:
   - 114: {fileID: 785453780}
   m_Layer: 0
   m_Name: WP-index:120
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6372,7 +6384,7 @@ GameObject:
   - 114: {fileID: 785489929}
   m_Layer: 0
   m_Name: WP-index:201
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6417,7 +6429,7 @@ GameObject:
   - 114: {fileID: 819381094}
   m_Layer: 0
   m_Name: WP-index:150
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6462,7 +6474,7 @@ GameObject:
   - 114: {fileID: 819429205}
   m_Layer: 0
   m_Name: WP-index:253
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6506,7 +6518,7 @@ GameObject:
   - 114: {fileID: 824806187}
   m_Layer: 0
   m_Name: WP-index:182
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6694,7 +6706,7 @@ GameObject:
   - 114: {fileID: 828230993}
   m_Layer: 0
   m_Name: WP-index:60
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6739,7 +6751,7 @@ GameObject:
   - 114: {fileID: 828585963}
   m_Layer: 0
   m_Name: WP-index:36
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6784,7 +6796,7 @@ GameObject:
   - 114: {fileID: 835322995}
   m_Layer: 0
   m_Name: WP-index:64
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6829,7 +6841,7 @@ GameObject:
   - 114: {fileID: 838524370}
   m_Layer: 0
   m_Name: WP-index:144
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6874,7 +6886,7 @@ GameObject:
   - 114: {fileID: 868412902}
   m_Layer: 0
   m_Name: WP-index:240
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6919,7 +6931,7 @@ GameObject:
   - 114: {fileID: 891035271}
   m_Layer: 0
   m_Name: WP-index:198
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7008,7 +7020,7 @@ GameObject:
   - 114: {fileID: 907272974}
   m_Layer: 0
   m_Name: WP-index:76
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7053,7 +7065,7 @@ GameObject:
   - 114: {fileID: 908712247}
   m_Layer: 0
   m_Name: WP-index:50
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7098,7 +7110,7 @@ GameObject:
   - 114: {fileID: 913195081}
   m_Layer: 0
   m_Name: WP-index:69
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7143,7 +7155,7 @@ GameObject:
   - 114: {fileID: 933125773}
   m_Layer: 0
   m_Name: WP-index:250
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7188,7 +7200,7 @@ GameObject:
   - 114: {fileID: 942312072}
   m_Layer: 0
   m_Name: WP-index:21
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7234,7 +7246,7 @@ GameObject:
   - 114: {fileID: 944948148}
   m_Layer: 0
   m_Name: WP-index:187
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7278,7 +7290,7 @@ GameObject:
   - 114: {fileID: 945281080}
   m_Layer: 0
   m_Name: WP-index:96
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7323,7 +7335,7 @@ GameObject:
   - 114: {fileID: 972944285}
   m_Layer: 0
   m_Name: WP-index:179
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7368,7 +7380,7 @@ GameObject:
   - 114: {fileID: 977936073}
   m_Layer: 0
   m_Name: WP-index:86
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7412,7 +7424,7 @@ GameObject:
   - 114: {fileID: 979160640}
   m_Layer: 0
   m_Name: WP-index:238
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7456,7 +7468,7 @@ GameObject:
   - 114: {fileID: 988637400}
   m_Layer: 0
   m_Name: WP-index:72
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7552,7 +7564,7 @@ GameObject:
   - 114: {fileID: 1005317731}
   m_Layer: 0
   m_Name: WP-index:125
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7597,7 +7609,7 @@ GameObject:
   - 114: {fileID: 1006288669}
   m_Layer: 0
   m_Name: WP-index:215
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7642,7 +7654,7 @@ GameObject:
   - 114: {fileID: 1010058028}
   m_Layer: 0
   m_Name: WP-index:290
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7687,7 +7699,7 @@ GameObject:
   - 114: {fileID: 1015361689}
   m_Layer: 0
   m_Name: WP-index:93
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7731,7 +7743,7 @@ GameObject:
   - 114: {fileID: 1015840401}
   m_Layer: 0
   m_Name: WP-index:252
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7776,7 +7788,7 @@ GameObject:
   - 114: {fileID: 1016442137}
   m_Layer: 0
   m_Name: WP-index:161
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7821,7 +7833,7 @@ GameObject:
   - 114: {fileID: 1028938921}
   m_Layer: 0
   m_Name: WP-index:293
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7866,7 +7878,7 @@ GameObject:
   - 114: {fileID: 1037182569}
   m_Layer: 0
   m_Name: WP-index:104
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7911,7 +7923,7 @@ GameObject:
   - 114: {fileID: 1039929713}
   m_Layer: 0
   m_Name: WP-index:100
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7956,7 +7968,7 @@ GameObject:
   - 114: {fileID: 1041381745}
   m_Layer: 0
   m_Name: WP-index:11
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8001,7 +8013,7 @@ GameObject:
   - 114: {fileID: 1041682710}
   m_Layer: 0
   m_Name: WP-index:270
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8046,7 +8058,7 @@ GameObject:
   - 114: {fileID: 1050711294}
   m_Layer: 0
   m_Name: WP-index:9
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8091,7 +8103,7 @@ GameObject:
   - 114: {fileID: 1053584274}
   m_Layer: 0
   m_Name: WP-index:83
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8136,7 +8148,7 @@ GameObject:
   - 114: {fileID: 1059888194}
   m_Layer: 0
   m_Name: WP-index:13
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8181,7 +8193,7 @@ GameObject:
   - 114: {fileID: 1082568441}
   m_Layer: 0
   m_Name: WP-index:124
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8226,7 +8238,7 @@ GameObject:
   - 114: {fileID: 1085233029}
   m_Layer: 0
   m_Name: WP-index:103
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8271,7 +8283,7 @@ GameObject:
   - 114: {fileID: 1096607138}
   m_Layer: 0
   m_Name: WP-index:20
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8315,7 +8327,7 @@ GameObject:
   - 114: {fileID: 1103136091}
   m_Layer: 0
   m_Name: WP-index:181
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8360,7 +8372,7 @@ GameObject:
   - 114: {fileID: 1103752733}
   m_Layer: 0
   m_Name: WP-index:4
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8405,7 +8417,7 @@ GameObject:
   - 114: {fileID: 1122026567}
   m_Layer: 0
   m_Name: WP-index:186
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8450,7 +8462,7 @@ GameObject:
   - 114: {fileID: 1132405430}
   m_Layer: 0
   m_Name: WP-index:262
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8495,7 +8507,7 @@ GameObject:
   - 114: {fileID: 1137238733}
   m_Layer: 0
   m_Name: WP-index:284
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8540,7 +8552,7 @@ GameObject:
   - 114: {fileID: 1138992174}
   m_Layer: 0
   m_Name: WP-index:136
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8585,7 +8597,7 @@ GameObject:
   - 114: {fileID: 1149398098}
   m_Layer: 0
   m_Name: WP-index:173
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8630,7 +8642,7 @@ GameObject:
   - 114: {fileID: 1149748830}
   m_Layer: 0
   m_Name: WP-index:154
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8675,7 +8687,7 @@ GameObject:
   - 114: {fileID: 1152708641}
   m_Layer: 0
   m_Name: WP-index:165
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8720,7 +8732,7 @@ GameObject:
   - 114: {fileID: 1158674317}
   m_Layer: 0
   m_Name: WP-index:261
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8765,7 +8777,7 @@ GameObject:
   - 114: {fileID: 1162589355}
   m_Layer: 0
   m_Name: WP-index:88
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8810,7 +8822,7 @@ GameObject:
   - 114: {fileID: 1171810937}
   m_Layer: 0
   m_Name: WP-index:234
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8855,7 +8867,7 @@ GameObject:
   - 114: {fileID: 1172070320}
   m_Layer: 0
   m_Name: WP-index:42
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8900,7 +8912,7 @@ GameObject:
   - 114: {fileID: 1211917000}
   m_Layer: 0
   m_Name: WP-index:115
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8945,7 +8957,7 @@ GameObject:
   - 114: {fileID: 1213012502}
   m_Layer: 0
   m_Name: WP-index:57
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8990,7 +9002,7 @@ GameObject:
   - 114: {fileID: 1234534747}
   m_Layer: 0
   m_Name: WP-index:62
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9035,7 +9047,7 @@ GameObject:
   - 114: {fileID: 1235868702}
   m_Layer: 0
   m_Name: WP-index:102
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9080,7 +9092,7 @@ GameObject:
   - 114: {fileID: 1250078682}
   m_Layer: 0
   m_Name: WP-index:0
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9125,7 +9137,7 @@ GameObject:
   - 114: {fileID: 1258712552}
   m_Layer: 0
   m_Name: WP-index:107
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9170,7 +9182,7 @@ GameObject:
   - 114: {fileID: 1262044657}
   m_Layer: 0
   m_Name: WP-index:220
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9214,7 +9226,7 @@ GameObject:
   - 114: {fileID: 1268297400}
   m_Layer: 0
   m_Name: WP-index:295
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9259,7 +9271,7 @@ GameObject:
   - 114: {fileID: 1271096520}
   m_Layer: 0
   m_Name: WP-index:213
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9303,7 +9315,7 @@ GameObject:
   - 114: {fileID: 1274120674}
   m_Layer: 0
   m_Name: WP-index:224
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9348,7 +9360,7 @@ GameObject:
   - 114: {fileID: 1283177725}
   m_Layer: 0
   m_Name: WP-index:230
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9393,7 +9405,7 @@ GameObject:
   - 114: {fileID: 1292693856}
   m_Layer: 0
   m_Name: WP-index:117
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9438,7 +9450,7 @@ GameObject:
   - 114: {fileID: 1297007731}
   m_Layer: 0
   m_Name: WP-index:217
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9483,7 +9495,7 @@ GameObject:
   - 114: {fileID: 1300555795}
   m_Layer: 0
   m_Name: WP-index:267
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9528,7 +9540,7 @@ GameObject:
   - 114: {fileID: 1302379407}
   m_Layer: 0
   m_Name: WP-index:41
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9573,7 +9585,7 @@ GameObject:
   - 114: {fileID: 1325383151}
   m_Layer: 0
   m_Name: WP-index:45
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9618,7 +9630,7 @@ GameObject:
   - 114: {fileID: 1336314760}
   m_Layer: 0
   m_Name: WP-index:89
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9663,7 +9675,7 @@ GameObject:
   - 114: {fileID: 1354465367}
   m_Layer: 0
   m_Name: WP-index:195
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9708,7 +9720,7 @@ GameObject:
   - 114: {fileID: 1359438541}
   m_Layer: 0
   m_Name: WP-index:108
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9753,7 +9765,7 @@ GameObject:
   - 114: {fileID: 1379009463}
   m_Layer: 0
   m_Name: WP-index:155
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9798,7 +9810,7 @@ GameObject:
   - 114: {fileID: 1381599294}
   m_Layer: 0
   m_Name: WP-index:137
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9843,7 +9855,7 @@ GameObject:
   - 114: {fileID: 1381898711}
   m_Layer: 0
   m_Name: WP-index:254
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9888,7 +9900,7 @@ GameObject:
   - 114: {fileID: 1390414515}
   m_Layer: 0
   m_Name: WP-index:51
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9991,7 +10003,7 @@ GameObject:
   - 114: {fileID: 1393104109}
   m_Layer: 0
   m_Name: WP-index:281
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10036,7 +10048,7 @@ GameObject:
   - 114: {fileID: 1400647650}
   m_Layer: 0
   m_Name: WP-index:32
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10081,7 +10093,7 @@ GameObject:
   - 114: {fileID: 1409918157}
   m_Layer: 0
   m_Name: WP-index:242
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10126,7 +10138,7 @@ GameObject:
   - 114: {fileID: 1415524063}
   m_Layer: 0
   m_Name: WP-index:200
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10171,7 +10183,7 @@ GameObject:
   - 114: {fileID: 1415526679}
   m_Layer: 0
   m_Name: WP-index:255
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10216,7 +10228,7 @@ GameObject:
   - 114: {fileID: 1416685242}
   m_Layer: 0
   m_Name: WP-index:141
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10261,7 +10273,7 @@ GameObject:
   - 114: {fileID: 1421636765}
   m_Layer: 0
   m_Name: WP-index:44
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10306,7 +10318,7 @@ GameObject:
   - 114: {fileID: 1424287126}
   m_Layer: 0
   m_Name: WP-index:2
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10351,7 +10363,7 @@ GameObject:
   - 114: {fileID: 1424315046}
   m_Layer: 0
   m_Name: WP-index:180
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10396,7 +10408,7 @@ GameObject:
   - 114: {fileID: 1425319349}
   m_Layer: 0
   m_Name: WP-index:151
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10441,7 +10453,7 @@ GameObject:
   - 114: {fileID: 1430763862}
   m_Layer: 0
   m_Name: WP-index:184
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10486,7 +10498,7 @@ GameObject:
   - 114: {fileID: 1446419017}
   m_Layer: 0
   m_Name: WP-index:30
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10530,7 +10542,7 @@ GameObject:
   - 114: {fileID: 1448126628}
   m_Layer: 0
   m_Name: WP-index:80
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10575,7 +10587,7 @@ GameObject:
   - 114: {fileID: 1449520072}
   m_Layer: 0
   m_Name: WP-index:189
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10620,7 +10632,7 @@ GameObject:
   - 114: {fileID: 1454661798}
   m_Layer: 0
   m_Name: WP-index:130
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10665,7 +10677,7 @@ GameObject:
   - 114: {fileID: 1462164348}
   m_Layer: 0
   m_Name: WP-index:278
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10710,7 +10722,7 @@ GameObject:
   - 114: {fileID: 1468070107}
   m_Layer: 0
   m_Name: WP-index:159
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10755,7 +10767,7 @@ GameObject:
   - 114: {fileID: 1471325399}
   m_Layer: 0
   m_Name: WP-index:292
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10800,7 +10812,7 @@ GameObject:
   - 114: {fileID: 1471888831}
   m_Layer: 0
   m_Name: WP-index:175
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10844,7 +10856,7 @@ GameObject:
   - 114: {fileID: 1477719482}
   m_Layer: 0
   m_Name: WP-index:241
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10889,7 +10901,7 @@ GameObject:
   - 114: {fileID: 1487164043}
   m_Layer: 0
   m_Name: WP-index:227
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10934,7 +10946,7 @@ GameObject:
   - 114: {fileID: 1492167847}
   m_Layer: 0
   m_Name: WP-index:206
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10979,7 +10991,7 @@ GameObject:
   - 114: {fileID: 1495259986}
   m_Layer: 0
   m_Name: WP-index:145
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11024,7 +11036,7 @@ GameObject:
   - 114: {fileID: 1500683134}
   m_Layer: 0
   m_Name: WP-index:106
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11069,7 +11081,7 @@ GameObject:
   - 114: {fileID: 1502789332}
   m_Layer: 0
   m_Name: WP-index:197
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11114,7 +11126,7 @@ GameObject:
   - 114: {fileID: 1504629491}
   m_Layer: 0
   m_Name: WP-index:233
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11159,7 +11171,7 @@ GameObject:
   - 114: {fileID: 1522485759}
   m_Layer: 0
   m_Name: WP-index:47
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11204,7 +11216,7 @@ GameObject:
   - 114: {fileID: 1528746145}
   m_Layer: 0
   m_Name: WP-index:259
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11249,7 +11261,7 @@ GameObject:
   - 114: {fileID: 1539103436}
   m_Layer: 0
   m_Name: WP-index:67
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11294,7 +11306,7 @@ GameObject:
   - 114: {fileID: 1572599972}
   m_Layer: 0
   m_Name: WP-index:204
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11339,7 +11351,7 @@ GameObject:
   - 114: {fileID: 1584260434}
   m_Layer: 0
   m_Name: WP-index:239
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11383,7 +11395,7 @@ GameObject:
   - 114: {fileID: 1590157945}
   m_Layer: 0
   m_Name: WP-index:99
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11427,7 +11439,7 @@ GameObject:
   - 114: {fileID: 1604283050}
   m_Layer: 0
   m_Name: WP-index:205
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11472,7 +11484,7 @@ GameObject:
   - 114: {fileID: 1605418721}
   m_Layer: 0
   m_Name: WP-index:191
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11517,7 +11529,7 @@ GameObject:
   - 114: {fileID: 1622022956}
   m_Layer: 0
   m_Name: WP-index:163
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11562,7 +11574,7 @@ GameObject:
   - 114: {fileID: 1626003856}
   m_Layer: 0
   m_Name: WP-index:71
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11607,7 +11619,7 @@ GameObject:
   - 114: {fileID: 1626122236}
   m_Layer: 0
   m_Name: WP-index:264
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11651,7 +11663,7 @@ GameObject:
   - 114: {fileID: 1632559520}
   m_Layer: 0
   m_Name: WP-index:265
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11696,7 +11708,7 @@ GameObject:
   - 114: {fileID: 1634727869}
   m_Layer: 0
   m_Name: WP-index:162
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11741,7 +11753,7 @@ GameObject:
   - 114: {fileID: 1643352679}
   m_Layer: 0
   m_Name: WP-index:203
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11786,7 +11798,7 @@ GameObject:
   - 114: {fileID: 1654355853}
   m_Layer: 0
   m_Name: WP-index:6
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11830,7 +11842,7 @@ GameObject:
   - 114: {fileID: 1668538400}
   m_Layer: 0
   m_Name: WP-index:68
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11875,7 +11887,7 @@ GameObject:
   - 114: {fileID: 1679800996}
   m_Layer: 0
   m_Name: WP-index:243
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11920,7 +11932,7 @@ GameObject:
   - 114: {fileID: 1697362720}
   m_Layer: 0
   m_Name: WP-index:212
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11965,7 +11977,7 @@ GameObject:
   - 114: {fileID: 1714252139}
   m_Layer: 0
   m_Name: WP-index:190
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12010,7 +12022,7 @@ GameObject:
   - 114: {fileID: 1726026516}
   m_Layer: 0
   m_Name: WP-index:43
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12055,7 +12067,7 @@ GameObject:
   - 114: {fileID: 1729374126}
   m_Layer: 0
   m_Name: WP-index:78
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12100,7 +12112,7 @@ GameObject:
   - 114: {fileID: 1731517354}
   m_Layer: 0
   m_Name: WP-index:95
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12145,7 +12157,7 @@ GameObject:
   - 114: {fileID: 1748604264}
   m_Layer: 0
   m_Name: WP-index:196
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12189,7 +12201,7 @@ GameObject:
   - 114: {fileID: 1749259423}
   m_Layer: 0
   m_Name: WP-index:63
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12234,7 +12246,7 @@ GameObject:
   - 114: {fileID: 1751070636}
   m_Layer: 0
   m_Name: WP-index:172
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12279,7 +12291,7 @@ GameObject:
   - 114: {fileID: 1754338497}
   m_Layer: 0
   m_Name: WP-index:35
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12324,7 +12336,7 @@ GameObject:
   - 114: {fileID: 1759614505}
   m_Layer: 0
   m_Name: WP-index:74
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12369,7 +12381,7 @@ GameObject:
   - 114: {fileID: 1760616913}
   m_Layer: 0
   m_Name: WP-index:167
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12414,7 +12426,7 @@ GameObject:
   - 114: {fileID: 1763151211}
   m_Layer: 0
   m_Name: WP-index:176
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12459,7 +12471,7 @@ GameObject:
   - 114: {fileID: 1769894582}
   m_Layer: 0
   m_Name: WP-index:294
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12564,7 +12576,7 @@ GameObject:
   - 114: {fileID: 1782060406}
   m_Layer: 0
   m_Name: WP-index:8
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12609,7 +12621,7 @@ GameObject:
   - 114: {fileID: 1793781982}
   m_Layer: 0
   m_Name: WP-index:84
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12654,7 +12666,7 @@ GameObject:
   - 114: {fileID: 1797366704}
   m_Layer: 0
   m_Name: WP-index:112
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12699,7 +12711,7 @@ GameObject:
   - 114: {fileID: 1804518198}
   m_Layer: 0
   m_Name: WP-index:211
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12744,7 +12756,7 @@ GameObject:
   - 114: {fileID: 1806987011}
   m_Layer: 0
   m_Name: WP-index:110
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12789,7 +12801,7 @@ GameObject:
   - 114: {fileID: 1807256253}
   m_Layer: 0
   m_Name: WP-index:157
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12834,7 +12846,7 @@ GameObject:
   - 114: {fileID: 1814586885}
   m_Layer: 0
   m_Name: WP-index:166
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12879,7 +12891,7 @@ GameObject:
   - 114: {fileID: 1826950902}
   m_Layer: 0
   m_Name: WP-index:123
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12924,7 +12936,7 @@ GameObject:
   - 114: {fileID: 1835801944}
   m_Layer: 0
   m_Name: WP-index:169
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12969,7 +12981,7 @@ GameObject:
   - 114: {fileID: 1870111175}
   m_Layer: 0
   m_Name: WP-index:14
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13014,7 +13026,7 @@ GameObject:
   - 114: {fileID: 1875909085}
   m_Layer: 0
   m_Name: WP-index:61
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13058,7 +13070,7 @@ GameObject:
   - 114: {fileID: 1887685358}
   m_Layer: 0
   m_Name: WP-index:210
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13103,7 +13115,7 @@ GameObject:
   - 114: {fileID: 1888241986}
   m_Layer: 0
   m_Name: WP-index:129
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13148,7 +13160,7 @@ GameObject:
   - 114: {fileID: 1894504205}
   m_Layer: 0
   m_Name: WP-index:59
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13193,7 +13205,7 @@ GameObject:
   - 114: {fileID: 1905795199}
   m_Layer: 0
   m_Name: WP-index:276
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13238,7 +13250,7 @@ GameObject:
   - 114: {fileID: 1907114082}
   m_Layer: 0
   m_Name: WP-index:73
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13283,7 +13295,7 @@ GameObject:
   - 114: {fileID: 1909196712}
   m_Layer: 0
   m_Name: WP-index:34
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13328,7 +13340,7 @@ GameObject:
   - 114: {fileID: 1922477762}
   m_Layer: 0
   m_Name: WP-index:52
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13373,7 +13385,7 @@ GameObject:
   - 114: {fileID: 1944496765}
   m_Layer: 0
   m_Name: WP-index:177
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13418,7 +13430,7 @@ GameObject:
   - 114: {fileID: 1965075942}
   m_Layer: 0
   m_Name: WP-index:168
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13463,7 +13475,7 @@ GameObject:
   - 114: {fileID: 1968678203}
   m_Layer: 0
   m_Name: WP-index:138
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13508,7 +13520,7 @@ GameObject:
   - 114: {fileID: 1970644788}
   m_Layer: 0
   m_Name: WP-index:277
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13553,7 +13565,7 @@ GameObject:
   - 114: {fileID: 1982726103}
   m_Layer: 0
   m_Name: WP-index:223
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13598,7 +13610,7 @@ GameObject:
   - 114: {fileID: 1988950511}
   m_Layer: 0
   m_Name: WP-index:139
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13643,7 +13655,7 @@ GameObject:
   - 114: {fileID: 1999807829}
   m_Layer: 0
   m_Name: WP-index:149
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13743,7 +13755,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2011921437}
-  m_LocalRotation: {x: -0, y: -.918124259, z: -0, w: .396292627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 11.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -13763,8 +13775,6 @@ MonoBehaviour:
   Pivot: {fileID: 593448277}
   Rotation: {x: 0, y: 0, z: 0, w: 1}
   Up: {x: 0, y: 0, z: 0}
-  Right: {x: 0, y: 0, z: 0}
-  Fwd: {x: 0, y: 0, z: 0}
 --- !u!114 &2011921443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13803,7 +13813,7 @@ GameObject:
   - 114: {fileID: 2022432196}
   m_Layer: 0
   m_Name: WP-index:268
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13848,7 +13858,7 @@ GameObject:
   - 114: {fileID: 2025619627}
   m_Layer: 0
   m_Name: WP-index:25
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13893,7 +13903,7 @@ GameObject:
   - 114: {fileID: 2027390055}
   m_Layer: 0
   m_Name: WP-index:3
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13938,7 +13948,7 @@ GameObject:
   - 114: {fileID: 2033433302}
   m_Layer: 0
   m_Name: WP-index:194
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13983,7 +13993,7 @@ GameObject:
   - 114: {fileID: 2033668162}
   m_Layer: 0
   m_Name: WP-index:222
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14028,7 +14038,7 @@ GameObject:
   - 114: {fileID: 2042493464}
   m_Layer: 0
   m_Name: WP-index:260
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14073,7 +14083,7 @@ GameObject:
   - 114: {fileID: 2049322410}
   m_Layer: 0
   m_Name: WP-index:85
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14118,7 +14128,7 @@ GameObject:
   - 114: {fileID: 2059975401}
   m_Layer: 0
   m_Name: WP-index:271
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14163,7 +14173,7 @@ GameObject:
   - 114: {fileID: 2078380381}
   m_Layer: 0
   m_Name: WP-index:237
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14208,7 +14218,7 @@ GameObject:
   - 114: {fileID: 2083666626}
   m_Layer: 0
   m_Name: WP-index:257
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14253,7 +14263,7 @@ GameObject:
   - 114: {fileID: 2092449193}
   m_Layer: 0
   m_Name: WP-index:228
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14298,7 +14308,7 @@ GameObject:
   - 114: {fileID: 2098286598}
   m_Layer: 0
   m_Name: WP-index:199
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14343,7 +14353,7 @@ GameObject:
   - 114: {fileID: 2108678441}
   m_Layer: 0
   m_Name: WP-index:75
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14388,7 +14398,7 @@ GameObject:
   - 114: {fileID: 2128462983}
   m_Layer: 0
   m_Name: WP-index:244
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14433,7 +14443,7 @@ GameObject:
   - 114: {fileID: 2131711773}
   m_Layer: 0
   m_Name: WP-index:156
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14478,7 +14488,7 @@ GameObject:
   - 114: {fileID: 2139756324}
   m_Layer: 0
   m_Name: WP-index:111
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14522,7 +14532,7 @@ GameObject:
   - 114: {fileID: 2140884029}
   m_Layer: 0
   m_Name: WP-index:249
-  m_TagString: Untagged
+  m_TagString: way_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

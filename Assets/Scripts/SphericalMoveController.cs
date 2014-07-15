@@ -41,6 +41,11 @@ public class SphericalMoveController : MonoBehaviour
 		
 		Move (xRot*yRot);
 	}
+	
+	public void Move (Vector3 targetPosition)
+	{
+		m_SphereTransform.Rotation = Quaternion.FromToRotation(Vector3.up, targetPosition.normalized);
+	}
 
 	public void Apply ()
 	{
@@ -59,6 +64,7 @@ public class SphericalMoveController : MonoBehaviour
 		get { return m_SphereTransform.Up; }
 	}
 	
+	/*	
 	public Vector3 Right
 	{
 		get { return m_SphereTransform.Right; }
@@ -67,7 +73,7 @@ public class SphericalMoveController : MonoBehaviour
 	public Vector3 Fwd
 	{
 		get { return m_SphereTransform.Fwd; }
-	}
+	}*/
 }
 
 

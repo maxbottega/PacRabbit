@@ -48,7 +48,7 @@ public class Collidable : MonoBehaviour
 
 		PlanetRadius 	= Planet.GetRadius();
 		Center 			= Up * PlanetRadius;
-		AngleRadius 			= 2*Mathf.Asin(Radius/(2*PlanetRadius))*Mathf.Rad2Deg; 
+		AngleRadius 	= 2*Mathf.Asin(Radius/(2*PlanetRadius))*Mathf.Rad2Deg; 
 
 		// These are used by the CollisionManager for SAP
 		SAPData.Min.x 	= Up.x * PlanetRadius - Radius;
@@ -59,13 +59,21 @@ public class Collidable : MonoBehaviour
 		SAPData.Max.y 	= Up.y * PlanetRadius + Radius;
 		SAPData.Max.z 	= Up.z * PlanetRadius + Radius;
 	}
+	
+	public Vector3 GetCurrentPosition()
+	{
+		return Rotation * Vector3.up * PlanetRadius; // y-axis
+	}
+
+	public void MoveFromPoint(Vector3 p)
+	{
+		Rotation = Quaternion.FromToRotation(Vector3.up, p);
+	}
 
 	void Update ()
 	{
 		if (!Static)
-		{
-			Up = Rotation * Vector3.up;
-			
+		{			
 			SAPData.Min.x = Up.x * PlanetRadius - Radius;
 			SAPData.Min.y = Up.y * PlanetRadius - Radius;
 			SAPData.Min.z = Up.z * PlanetRadius - Radius;
@@ -115,6 +123,7 @@ public class Collidable : MonoBehaviour
 		set { m_SphereTransform.Up = value; }
 	}
 	
+/*	
 	public Vector3 Right
 	{
 		get { return m_SphereTransform.Right; }
@@ -126,7 +135,7 @@ public class Collidable : MonoBehaviour
 		get { return m_SphereTransform.Fwd; }
 		set { m_SphereTransform.Fwd = value; }
 	}
-
+*/
 	// Debug
 #if UNITY_EDITOR 
 	void OnDrawGizmos() 

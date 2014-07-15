@@ -26,8 +26,8 @@ public class CollisionEdge
 // elements with an area, so the path can be refined to be to any point inside a cell
 public class WayPoint : MonoBehaviour, IPathNode<WayPoint> 
 {
-	//[SerializeField, HideInInspector]
 	public List<WayPoint> connections = new List<WayPoint>();
+	
 	public List<CollisionEdge> collisionEdges = new List<CollisionEdge>();
 
 	public Vector3 position
