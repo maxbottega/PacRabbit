@@ -42,8 +42,6 @@ public class EnemyWave : MonoBehaviour
 	public void Init()
 	{
 		m_EnemyManager = FindObjectOfType(typeof(EnemyManager)) as EnemyManager;
-
-		float totalMaxEnemies = m_MaxActiveMinions;
 	}
 	
 	public void StartWave()
@@ -115,7 +113,6 @@ public class EnemyWave : MonoBehaviour
 	public string GetEnemyTagToSpawn()
 	{
 		string enemyTag	= null;
-		float random = Random.value;
 		enemyTag = "minion";
 		return enemyTag;
 	}

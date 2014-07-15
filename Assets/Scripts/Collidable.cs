@@ -1,15 +1,6 @@
 using UnityEngine;
 using System.Collections;
 
-
-public class SAPData
-{
-	public Vector3 Min = Vector3.zero;
-	public Vector3 Max = Vector3.zero;
-	public float MinValue = 0.0f;
-	public float MaxValue = 0.0f;
-}
-
 [RequireComponent (typeof (SphereTransform))]
 public class Collidable : MonoBehaviour
 {
@@ -28,7 +19,11 @@ public class Collidable : MonoBehaviour
 	[System.NonSerialized]
 	public bool 				Active 		= true;
 
-	SAPData 					SAPData 			= new SAPData();
+	public Vector3 				Min = Vector3.zero;
+	public Vector3 				Max = Vector3.zero;
+	public float 				MinValue = 0.0f;
+	public float 				MaxValue = 0.0f;
+	
 	float 						PlanetRadius 		= 1;
 	CollisionManager 			mCollisionManager 	= null;	
 	
@@ -51,13 +46,13 @@ public class Collidable : MonoBehaviour
 		AngleRadius 	= 2*Mathf.Asin(Radius/(2*PlanetRadius))*Mathf.Rad2Deg; 
 
 		// These are used by the CollisionManager for SAP
-		SAPData.Min.x 	= Up.x * PlanetRadius - Radius;
-		SAPData.Min.y 	= Up.y * PlanetRadius - Radius;
-		SAPData.Min.z 	= Up.z * PlanetRadius - Radius;
+		Min.x 	= Up.x * PlanetRadius - Radius;
+		Min.y 	= Up.y * PlanetRadius - Radius;
+		Min.z 	= Up.z * PlanetRadius - Radius;
 		
-		SAPData.Max.x 	= Up.x * PlanetRadius + Radius;
-		SAPData.Max.y 	= Up.y * PlanetRadius + Radius;
-		SAPData.Max.z 	= Up.z * PlanetRadius + Radius;
+		Max.x 	= Up.x * PlanetRadius + Radius;
+		Max.y 	= Up.y * PlanetRadius + Radius;
+		Max.z 	= Up.z * PlanetRadius + Radius;
 	}
 	
 	public Vector3 GetCurrentPosition()
@@ -74,43 +69,19 @@ public class Collidable : MonoBehaviour
 	{
 		if (!Static)
 		{			
-			SAPData.Min.x = Up.x * PlanetRadius - Radius;
-			SAPData.Min.y = Up.y * PlanetRadius - Radius;
-			SAPData.Min.z = Up.z * PlanetRadius - Radius;
+			Min.x = Up.x * PlanetRadius - Radius;
+			Min.y = Up.y * PlanetRadius - Radius;
+			Min.z = Up.z * PlanetRadius - Radius;
 			
-			SAPData.Max.x = Up.x * PlanetRadius + Radius;
-			SAPData.Max.y = Up.y * PlanetRadius + Radius;
-			SAPData.Max.z = Up.z * PlanetRadius + Radius;
+			Max.x = Up.x * PlanetRadius + Radius;
+			Max.y = Up.y * PlanetRadius + Radius;
+			Max.z = Up.z * PlanetRadius + Radius;
 			
 			Center = Up * PlanetRadius;
 		}	
 	}
 
-	// Wrapper functions
-	public Vector3 Min
-	{
-		get { return SAPData.Min; }
-		set { SAPData.Min = value; }
-	}
-	
-	public Vector3 Max
-	{
-		get { return SAPData.Max; }
-		set { SAPData.Max = value; }
-	}
-	
-	public float MinValue
-	{
-		get { return SAPData.MinValue; }
-		set { SAPData.MinValue = value; }
-	}
-	
-	public float MaxValue
-	{
-		get { return SAPData.MaxValue; }
-		set { SAPData.MaxValue = value; }
-	}
-	
+	// Wrapper functions	
 	public Quaternion Rotation
 	{
 		get { return m_SphereTransform.Rotation; }

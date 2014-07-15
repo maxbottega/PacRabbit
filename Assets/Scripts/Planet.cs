@@ -10,8 +10,8 @@ public class Planet : MonoBehaviour
 	
 //	Character mPlayer = null;
 //	Zombie[] mEnemies = null;
-	Collidable[] mCollidables = null;
-	CollisionManager mCollisionManager = null;
+//	Collidable[] mCollidables = null;
+//	CollisionManager mCollisionManager = null;
 	
 	void Awake() 
 	{
@@ -25,7 +25,7 @@ public class Planet : MonoBehaviour
 //		mPlayer = FindObjectOfType(typeof(Character)) as Character;
 //		mEnemies = FindObjectsOfType(typeof(Zombie)) as Zombie[];
 //		mCollidables = FindObjectsOfType(typeof(Collidable)) as Collidable[];
-		mCollisionManager = FindObjectOfType(typeof(CollisionManager)) as CollisionManager;
+//		mCollisionManager = FindObjectOfType(typeof(CollisionManager)) as CollisionManager;
 	}
 	
 	void Update()

@@ -13790,6 +13790,10 @@ MonoBehaviour:
   Mass: 10
   Static: 0
   m_SphereTransform: {fileID: 2011921442}
+  Min: {x: 0, y: 0, z: 0}
+  Max: {x: 0, y: 0, z: 0}
+  MinValue: 0
+  MaxValue: 0
 --- !u!114 &2011921444
 MonoBehaviour:
   m_ObjectHideFlags: 0

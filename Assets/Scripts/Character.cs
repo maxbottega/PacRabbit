@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-//[ExecuteInEditMode]
+[RequireComponent (typeof (SphericalMoveController))]
 public class Character : MonoBehaviour
 {	
 	public float		m_WalkSpeed;
@@ -18,7 +18,7 @@ public class Character : MonoBehaviour
 	[System.NonSerialized]
 	public Quaternion 	mRotation 		= Quaternion.identity;
 	
-	float					mFacingAngle 	= 0;
+	//float					mFacingAngle 	= 0;
 	SphericalMoveController	mMoveController	= null;	
 	WayPoint				mCachedNearest = null;
 
@@ -43,7 +43,7 @@ public class Character : MonoBehaviour
 		//if( Vector3.Distance(currentPos, newPos)>0.01f )
 		//mMoveController.Move(Quaternion.FromToRotation(currentPos.normalized, newPos.normalized));
 		
-		transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
+		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
 	}	
 	
 	void UpdateInput()
@@ -56,7 +56,7 @@ public class Character : MonoBehaviour
 		mRotation = Quaternion.AngleAxis (speed, perpendicular);
 		
 		// TODO: facing from direction, not from mouse
-		// Facing 1 frame late...because of camera LateUpdate
+		/* Facing 1 frame late...because of camera LateUpdate
 		{
 			Vector3 planePoint = transform.up * Planet.GetRadius();
 			Plane charPlane = new Plane(transform.up, planePoint);
@@ -68,7 +68,7 @@ public class Character : MonoBehaviour
 			
 			mousePoint = Quaternion.Inverse(mMoveController.Rotation) * mousePoint;
 			mFacingAngle = Mathf.Atan2 (mousePoint.x, mousePoint.z) * Mathf.Rad2Deg;
-		}
+		}*/
 	}
 
 	// Debug
