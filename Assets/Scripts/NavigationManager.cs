@@ -112,52 +112,58 @@ Debug.DrawLine(w.transform.position, w.connections[0].transform.position, Color.
 	{
 
 	}
+	
+	public WayPoint SelectRandomWaypoint()
+	{
+		return waypointList[Random.Range(0, waypointList.Count-1)];
+	}
 
-//	public WayPoint FindClosestWaypoint(Vector3 position)
-//	{
-//		//float minAngle = 100000;
-//		float minDistance = 100000;
-//		WayPoint result = null;
-//		
-//		foreach (WayPoint obj in m_WaypointList)
-//		{			
-//			//float angle = Vector3.Angle(position, obj.transform.position);
-//			float distance = (position - obj.transform.position).sqrMagnitude;
-//			//if (angle<minAngle)
-//			if (distance<minDistance)
-//			{
-//				//minAngle = angle;	
-//				minDistance = distance;
-//				result = obj;
-//			}
-//		}
-//		
-//		return result;
-//	}
+	public WayPoint FindClosestWaypoint(Vector3 position)
+	{
+		//float minAngle = 100000;
+		float minDistance = 100000;
+		WayPoint result = null;
+		
+		foreach (WayPoint obj in waypointList)
+		{			
+			//float angle = Vector3.Angle(position, obj.transform.position);
+			float distance = (position - obj.transform.position).sqrMagnitude;
+			//if (angle<minAngle)
+			if (distance<minDistance)
+			{
+				//minAngle = angle;	
+				minDistance = distance;
+				result = obj;
+			}
+		}
+		
+		return result;
+	}
 
-//	public void CalculatePath(Vector3 position, GameObject currArea, ref List<WayPoint> path)
-//	{
-//		WayPoint start = FindClosestWaypoint(position);
-//		WayPoint end = FindClosestWaypoint(m_Player.m_Transform.position);
-//		
-//		Calculate(start, end, ref path);
-//
+	public void CalculatePath(Vector3 position, Vector3 targetPosition,  List<WayPoint> path)
+	{
+		WayPoint start = FindClosestWaypoint (position);
+		WayPoint end = FindClosestWaypoint (targetPosition);
+		
+		Calculate(start, end, ref path);
+
 //		path.RemoveAt(0);
 //		if (path.Count<3)
 //		{
 //			path.Clear();
 //		}
+
 //		WayPoint playerWp = m_Player.GetComponent<WayPoint>();
 //		path.Add(playerWp);
-//		
-//#if UNITY_EDITOR && FULL_DEBUG
-//		for(int i = 0; i < path.Count-1; ++i)
-//			Debug.DrawLine(path[i].transform.position, path[i+1].transform.position, Color.red);
-//#endif
-//		return;
-//	}
+		
+#if UNITY_EDITOR && FULL_DEBUG
+		for(int i = 0; i < path.Count-1; ++i)
+			Debug.DrawLine(path[i].transform.position, path[i+1].transform.position, Color.red);
+#endif
+		return;
+	}
 
-/*	
+
 	List<WayPoint> closedset = new List<WayPoint>(); 
 	List<WayPoint> openset = new List<WayPoint>();    
 	Dictionary<WayPoint, WayPoint> came_from = new Dictionary<WayPoint, WayPoint>();  
@@ -272,5 +278,5 @@ Debug.DrawLine(w.transform.position, w.connections[0].transform.position, Color.
         }
         result.Add(current_node);
     }
-*/
+
 }

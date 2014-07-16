@@ -51,7 +51,9 @@ public class SphereTransform : MonoBehaviour
 	
 	public void Move (Vector3 targetPosition)
 	{
-		Rotation = Quaternion.FromToRotation(Vector3.up, targetPosition.normalized);
+		Quaternion rotation = Quaternion.FromToRotation (Up, targetPosition.normalized);
+		Rotation = rotation * Rotation;
+		//Rotation = Quaternion.FromToRotation(Vector3.up, targetPosition.normalized);
 	}
 	
 	public void Apply ()

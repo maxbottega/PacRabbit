@@ -42,7 +42,7 @@ public class Character : MonoBehaviour
 		Vector3 newPos = 
 			NavigationManager.instance.PointNavMeshEdgesCollision(
 				currentPos, 0.75f, mCachedNearest, out mCachedNearest);
-
+				
 		mMoveController.Move(newPos);
 		
 		//if( Vector3.Distance(currentPos, newPos) > 0.000001f ) // TODO: use dot instead

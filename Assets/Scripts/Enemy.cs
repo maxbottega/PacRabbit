@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 //[ExecuteInEditMode]
 [RequireComponent (typeof (SphereTransform))]
@@ -14,6 +15,8 @@ public class Enemy : MonoBehaviour
 	[System.NonSerialized] public Transform 		Target 				= null;
 	[System.NonSerialized] SphereTransform			mMoveController 	= null;	
 	[System.NonSerialized] Collidable				mCollidable 		= null;
+	[System.NonSerialized] WayPoint					mCachedNearest 		= null;
+	
 	//[System.NonSerialized] EnemyManager 			mEnemyManager 		= null;
 
 	void Awake ()
@@ -43,8 +46,30 @@ public class Enemy : MonoBehaviour
 	{
 		float currentSpeed 	= speed * dt;
 		Vector3 chasePos 	= Target ? Target.position : transform.position;
-
+		
 		mMoveController.Move (chasePos, currentSpeed);
+		
+		Vector3 currentPos 	= mMoveController.Rotation * Vector3.up;
+		List<WayPoint> path = new List<WayPoint>();
+
+		NavigationManager.instance.CalculatePath(currentPos, chasePos, path);
+
+		Vector3 previosWPPosition = path[0].transform.position;
+		foreach (WayPoint wp in path) 
+		{
+			Debug.DrawLine (wp.transform.position, previosWPPosition, Color.cyan);
+			previosWPPosition = wp.transform.position;
+		}
+		
+		mMoveController.Move (path[path.Count > 2 ? 2 : 0].transform.position, currentSpeed);
+		
+		currentPos = mMoveController.Rotation * Vector3.up * Planet.GetRadius();
+		Vector3 newPos = 
+			NavigationManager.instance.PointNavMeshEdgesCollision(
+				currentPos, 0.75f, mCachedNearest, out mCachedNearest);
+				
+		mMoveController.Move(newPos);
+
 	}
 
 	public void OnCollision(Collidable other)

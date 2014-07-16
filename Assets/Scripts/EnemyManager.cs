@@ -46,7 +46,8 @@ public class EnemyManager : MonoBehaviour
 			instance.transform.parent = folder.transform;
 			//mEnemyMeshes.Add (meshFilter);
 			mEnemies.Add (instance.GetComponentInChildren<Enemy>());
-			mEnemies[mEnemies.Count-1].gameObject.SetActive(true);
+			mEnemies[mEnemies.Count-1].gameObject.SetActive(false);
+			SpawnEnemy();
 			
 			//m_AnimationSlot.Acquire(meshFilter);
 		}
@@ -88,8 +89,10 @@ public class EnemyManager : MonoBehaviour
 			if (!enemy.gameObject.activeInHierarchy)
 			{
 				enemy.gameObject.SetActive(true);
-				Collidable collidable = enemy.GetComponent<Collidable>();
-				collidable.Rotation = Random.rotation;
+				SphereTransform moveController = enemy.GetComponent<SphereTransform>();
+				WayPoint wp = NavigationManager.instance.SelectRandomWaypoint();
+				moveController.Rotation = Quaternion.FromToRotation(Vector3.up, wp.transform.position.normalized);
+				
 				break;
 			}
 		}
