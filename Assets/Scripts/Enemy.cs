@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 //[ExecuteInEditMode]
 [RequireComponent (typeof (SphereTransform))]
+[RequireComponent (typeof (Collidable))]
 public class Enemy : MonoBehaviour 
 {
 	// ------------ Public, editable in the GUI, serialized
@@ -15,9 +16,11 @@ public class Enemy : MonoBehaviour
 	[System.NonSerialized] public Transform 		Target 				= null;
 	[System.NonSerialized] SphereTransform			mMoveController 	= null;	
 	[System.NonSerialized] Collidable				mCollidable 		= null;
-	[System.NonSerialized] WayPoint					mCachedNearest 		= null;
-	
+	[System.NonSerialized] WayPoint					mCachedNearest 		= null;	
 	//[System.NonSerialized] EnemyManager 			mEnemyManager 		= null;
+	
+	// ------------ Private	
+	private bool 									hasPlaymaker 		= false;
 
 	void Awake ()
 	{
@@ -29,6 +32,9 @@ public class Enemy : MonoBehaviour
 
 		if (mCollidable)
 			mCollidable.OnCollision = new Collidable.CollisionCallback(OnCollision);
+			
+		if(GetComponent<PlayMakerFSM> () != null)
+			hasPlaymaker = true;
 	}
 
 	void Start () 
@@ -38,11 +44,14 @@ public class Enemy : MonoBehaviour
 
 	void Update () 
 	{
+		if (hasPlaymaker)
+			return;
+		
 		if (mMoveController)
-			UpdateLocomotion(Time.deltaTime, Speed);
+			FollowPlayerOnNavMesh(Time.deltaTime, Speed);
 	}
 	
-	virtual protected void UpdateLocomotion(float dt, float speed)
+	public void FollowPlayerOnNavMesh(float dt, float speed)
 	{
 		float currentSpeed 	= speed * dt;
 		Vector3 chasePos 	= Target ? Target.position : transform.position;
@@ -63,13 +72,13 @@ public class Enemy : MonoBehaviour
 		
 		mMoveController.Move (path[path.Count > 2 ? 2 : 0].transform.position, currentSpeed);
 		
+		// TODO: move all this in the collision manager, after resolving sphere collisions
 		currentPos = mMoveController.Rotation * Vector3.up * Planet.GetRadius();
 		Vector3 newPos = 
 			NavigationManager.instance.PointNavMeshEdgesCollision(
 				currentPos, 0.75f, mCachedNearest, out mCachedNearest);
 				
 		mMoveController.Move(newPos);
-
 	}
 
 	public void OnCollision(Collidable other)
@@ -78,44 +87,32 @@ public class Enemy : MonoBehaviour
 	}
 }
 
-/*
 namespace HutongGames.PlayMaker.Actions
 {
-	//[CheckForComponent(typeof())]
-	[ActionCategory("CustomActions")]
-	[Tooltip("puppa")]
+	[ActionCategory("PlanetGameplay")]
+	[Tooltip("Follows the character")]
 	public class Puppa : FsmStateAction
-	{
-		[UIHint(UIHint.Variable)]
-		[Tooltip("")]
-		public FsmString test;
+	{	
+		private Enemy enemy = null;
 		
-		
-		[HasFloatSlider(0,100)]
-		public FsmFloat teeest;
-		
-		//[RequiredField]
+		// TODO: add a bool option to follow not on the navmesh (flying)
+		// TODO: add a speed multiplier
 		
 		public override void Reset()
 		{
+			enemy = Owner.GetComponent<Enemy> ();
 		}
 		
 		public override void OnEnter()
 		{
-			DoMyAction();
-			
-			//if(!everyFrame) Finish();
-			
-			//myComponent = (MyComponent)Owner;
+			if(enemy == null)
+				enemy.FollowPlayerOnNavMesh(Time.deltaTime, enemy.Speed);
 		}
 		
 		public override void OnUpdate()
 		{
-			DoMyAction();
-		}
-		
-		void DoMyAction()
-		{	
-		}		
+			if(enemy == null)	
+				enemy.FollowPlayerOnNavMesh(Time.deltaTime, enemy.Speed);
+		}	
 	}
-}*/
+}

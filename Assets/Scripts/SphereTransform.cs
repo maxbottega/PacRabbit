@@ -53,7 +53,6 @@ public class SphereTransform : MonoBehaviour
 	{
 		Quaternion rotation = Quaternion.FromToRotation (Up, targetPosition.normalized);
 		Rotation = rotation * Rotation;
-		//Rotation = Quaternion.FromToRotation(Vector3.up, targetPosition.normalized);
 	}
 	
 	public void Apply ()

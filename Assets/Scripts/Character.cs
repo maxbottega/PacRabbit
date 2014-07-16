@@ -33,20 +33,18 @@ public class Character : MonoBehaviour
 	void Update()
 	{
 		UpdateInput();
-		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
-		
 		//mMoveController.Move(mRotation);
 		
+		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
+				
 		// TODO: move all this in the collision manager, after resolving sphere collisions
 		Vector3 currentPos = (mMoveController.Rotation * mRotation) * Vector3.up * Planet.GetRadius();
 		Vector3 newPos = 
 			NavigationManager.instance.PointNavMeshEdgesCollision(
 				currentPos, 0.75f, mCachedNearest, out mCachedNearest);
 				
-		mMoveController.Move(newPos);
-		
 		//if( Vector3.Distance(currentPos, newPos) > 0.000001f ) // TODO: use dot instead
-		//	mMoveController.Move(Quaternion.FromToRotation(mMoveController.Rotation * Vector3.up, newPos.normalized));
+		mMoveController.Move(newPos);
 	}	
 	
 	void UpdateInput()
