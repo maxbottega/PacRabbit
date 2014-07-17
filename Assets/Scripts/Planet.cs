@@ -13,7 +13,7 @@ public class Planet : MonoBehaviour
 	// ------------ Public, serialized
 	
 	// ------------ Public, non-serialized
-	[System.NonSerialized] static Planet mInstance = null;
+	[System.NonSerialized] static public Planet Instance = null;
 //	Character mPlayer = null;
 //	Zombie[] mEnemies = null;
 //	Collidable[] mCollidables = null;
@@ -21,7 +21,7 @@ public class Planet : MonoBehaviour
 	
 	void Awake() 
 	{
-		mInstance = this;
+		Instance = this;
 	}
 	
 	void Start()
@@ -50,7 +50,7 @@ public class Planet : MonoBehaviour
 //		
 //		mCollisionManager.DoUpdate();		
 	}
-	
+/*
 	public static float GetRadius()
 	{
 		if (mInstance == null)
@@ -58,4 +58,18 @@ public class Planet : MonoBehaviour
 			
 		return mInstance.Radius * mInstance.transform.lossyScale.x;	
 	}
+*/	
+
+#if UNITY_EDITOR 
+	void OnDrawGizmos() 
+	{
+		// This is where the planet thinks to be
+		Gizmos.color = Color.blue;
+		Gizmos.DrawSphere(Vector3.zero, Radius);
+		
+		// This is the reference axis, all objects are expressed as rotations of this
+		Gizmos.color = Color.blue;
+		Gizmos.DrawSphere(Vector3.up * Radius, 1.0f);
+	}
+#endif
 }

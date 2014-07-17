@@ -128,12 +128,14 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.Wander
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 437581ed
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 437581ed106590c3
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -146,18 +148,20 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 2000000073656775690001
+        byteData: 20000000736567756900010000803f00000080bf00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 070000001700000011000000
+        paramDataType: 0700000017000000110000000f0000000f000000
         paramName:
         - key
         - sendEvent
         - storeResult
-        paramDataPos: 000000000400000009000000
-        paramByteDataSize: 040000000500000002000000
+        - SpeedMultiplier
+        - DirectionChange
+        paramDataPos: 0000000004000000090000000b00000010000000
+        paramByteDataSize: 0400000005000000020000000500000005000000
     - name: State 2
       description: 
       colorIndex: 0
@@ -179,7 +183,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 4862a0df
+        actionHashCodes: 46c79d30
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -192,18 +196,17 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000100000000803f00
+        byteData: 00000000803f00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 11000000110000000f000000
+        paramDataType: 110000000f000000
         paramName:
-        - Flying
         - Dumb
         - SpeedMultiplier
-        paramDataPos: 000000000200000004000000
-        paramByteDataSize: 020000000200000005000000
+        paramDataPos: 0000000002000000
+        paramByteDataSize: 0200000005000000
     events:
     - name: segui
       isSystemEvent: 0

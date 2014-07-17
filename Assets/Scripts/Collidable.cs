@@ -41,7 +41,7 @@ public class Collidable : MonoBehaviour
 	{	
 		mCollisionManager.AddCollider(this);
 
-		PlanetRadius 	= Planet.GetRadius();
+		PlanetRadius 	= Planet.Instance.Radius;
 		Center 			= Up * PlanetRadius;
 		AngleRadius 	= 2*Mathf.Asin(Radius/(2*PlanetRadius))*Mathf.Rad2Deg; 
 

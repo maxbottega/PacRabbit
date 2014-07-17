@@ -5,7 +5,7 @@ using System.Collections.Generic;
 // We make the player be a waypoint as well, so we need an interface
 public interface IPathNode<T>
 {
-    Vector3 position { get; }
+    Vector3 Position { get; }
 }
 
 [System.Serializable]
@@ -26,11 +26,11 @@ public class CollisionEdge
 // elements with an area, so the path can be refined to be to any point inside a cell
 public class WayPoint : MonoBehaviour, IPathNode<WayPoint> 
 {
+	// ------------ Public, serialized
 	public List<WayPoint> connections = new List<WayPoint>();
-	
 	public List<CollisionEdge> collisionEdges = new List<CollisionEdge>();
 
-	public Vector3 position
+	public Vector3 Position // TODO: private copy of this as transform.position access is slow
 	{ 
 		get { return transform.position; }
 	}

@@ -15,6 +15,30 @@ public class NavigationManager : MonoBehaviour
 	[System.NonSerialized] public List<WayPoint> 			waypointList = new List<WayPoint>();
 	[System.NonSerialized] public static NavigationManager 	instance = null;
 	
+	// ------------ Private
+	private List<WayPoint> closedset = new List<WayPoint>(); 
+	private List<WayPoint> openset = new List<WayPoint>();    
+	private Dictionary<WayPoint, WayPoint> came_from = new Dictionary<WayPoint, WayPoint>();  
+	private Dictionary<WayPoint, float> g_score = new Dictionary<WayPoint, float>();
+	private Dictionary<WayPoint, float> h_score = new Dictionary<WayPoint, float>();
+	private Dictionary<WayPoint, float> f_score = new Dictionary<WayPoint, float>();
+	
+	void Awake()
+	{
+		if(instance == null)
+			instance = this;
+		else
+			Debug.LogError("There should be only one navigation manager!");
+		
+		foreach(GameObject wp in GameObject.FindGameObjectsWithTag("way_point"))
+		{
+			waypointList.Add(wp.GetComponent<WayPoint>());
+		}
+		
+		if(waypointList.Count == 0)
+			Debug.LogError("No waypoints!");
+	}
+	
 	static public Vector3 PointSegmentCollision(Vector3 point, CollisionEdge edge, float radius)
 	{
 Debug.DrawLine(edge.v0, edge.v1, Color.red, 1.0f);
@@ -48,33 +72,9 @@ Debug.DrawLine(point, closest, Color.grey, 0.25f);
 	// Note-TODO: assumes point is more or less on the plane of the navmesh!!!
 	public Vector3 PointNavMeshEdgesCollision(Vector3 point, float radius, WayPoint previousNearest, out WayPoint newNearest)
 	{
-		// find nearest waypoint
-		List<WayPoint> searchList;
-		float nearestdist2 = float.MaxValue;
+		newNearest = FindClosestWaypoint(point, previousNearest, waypointList);
 		
-		if (previousNearest == null)
-		{
-			searchList = waypointList;
-			newNearest = null;
-		}
-		else
-		{
-			searchList = previousNearest.connections;
-			newNearest = previousNearest;
-			nearestdist2 = Vector3.SqrMagnitude(newNearest.transform.position - point);
-		}
-		
-		foreach(WayPoint w in searchList)
-		{
-			float dist2 = Vector3.SqrMagnitude(w.transform.position - point);
-			if( dist2 < nearestdist2 )
-			{
-				newNearest = w;
-				nearestdist2 = dist2;
-			}
-		}
-		
-Debug.DrawLine(newNearest.transform.position, newNearest.connections[0].transform.position, Color.green, 1.0f);
+Debug.DrawLine(newNearest.Position, newNearest.connections[0].Position, Color.green, 1.0f);
 		
 		// resolve collisions (TODO: could do multiple iterations...)
 		// TODO: not the smartest way as we don't check in which side we are
@@ -85,91 +85,78 @@ Debug.DrawLine(newNearest.transform.position, newNearest.connections[0].transfor
 			
 		foreach(WayPoint w in newNearest.connections)
 		{
-Debug.DrawLine(w.transform.position, w.connections[0].transform.position, Color.yellow, 1.0f);
+Debug.DrawLine(w.Position, w.connections[0].Position, Color.yellow, 1.0f);
 			foreach(CollisionEdge e in w.collisionEdges)
 				point = PointSegmentCollision(point, e, radius);
 		}		
 		return point;
 	}
-
-	void Awake()
+	
+	static public WayPoint NavigatePath(List<WayPoint> path, Vector3 point, int pathIndex, out int newPathIndex)
 	{
-		if(instance == null)
-			instance = this;
-		else
-			Debug.LogError("There should be only one navigation manager!");
+		float distance = Vector3.Distance(path[pathIndex].Position, point);
 		
-		foreach(GameObject wp in GameObject.FindGameObjectsWithTag("way_point"))
+		if(pathIndex < path.Count - 1)
 		{
-			waypointList.Add(wp.GetComponent<WayPoint>());
+			float nextDistance = Vector3.Distance(path[pathIndex+1].Position, point);
+			if(distance >= nextDistance)
+				pathIndex++;
 		}
 		
-		if(waypointList.Count == 0)
-			Debug.LogError("No waypoints!");
+		newPathIndex = pathIndex;
+		
+		int targetIndex = Mathf.Min(pathIndex + 2, path.Count - 1); // the target waypoint is a bit "forward"
+			
+		if(newPathIndex != targetIndex)
+			return path[targetIndex];
+		else
+			return null; // we reached the end of the path
 	}
-	
-	void Start ()
-	{
 
-	}
-	
 	public WayPoint SelectRandomWaypoint()
 	{
 		return waypointList[Random.Range(0, waypointList.Count-1)];
 	}
 
-	public WayPoint FindClosestWaypoint(Vector3 position)
+	static public WayPoint FindClosestWaypoint(Vector3 point, WayPoint previousNearest, List<WayPoint> allWaypoints)
 	{
-		//float minAngle = 100000;
-		float minDistance = 100000;
-		WayPoint result = null;
+		// find nearest waypoint
+		List<WayPoint> searchList;
+		WayPoint newNearest;
+		float nearestdist2 = float.MaxValue;
 		
-		foreach (WayPoint obj in waypointList)
-		{			
-			//float angle = Vector3.Angle(position, obj.transform.position);
-			float distance = (position - obj.transform.position).sqrMagnitude;
-			//if (angle<minAngle)
-			if (distance<minDistance)
+		if (previousNearest == null)
+		{
+			searchList = allWaypoints;
+			newNearest = null;
+		}
+		else
+		{
+			searchList = previousNearest.connections;
+			newNearest = previousNearest;
+			nearestdist2 = Vector3.SqrMagnitude(newNearest.Position - point);
+		}
+		
+		foreach(WayPoint w in searchList)
+		{
+			float dist2 = Vector3.SqrMagnitude(w.Position - point);
+			if( dist2 < nearestdist2 )
 			{
-				//minAngle = angle;	
-				minDistance = distance;
-				result = obj;
+				newNearest = w;
+				nearestdist2 = dist2;
 			}
 		}
 		
-		return result;
+		return newNearest;
 	}
 
 	public void CalculatePath(Vector3 position, Vector3 targetPosition,  List<WayPoint> path)
 	{
-		WayPoint start = FindClosestWaypoint (position);
-		WayPoint end = FindClosestWaypoint (targetPosition);
+		WayPoint start = FindClosestWaypoint (position, null, waypointList);
+		WayPoint end = FindClosestWaypoint (targetPosition, null, waypointList);
 		
 		Calculate(start, end, ref path);
-
-//		path.RemoveAt(0);
-//		if (path.Count<3)
-//		{
-//			path.Clear();
-//		}
-
-//		WayPoint playerWp = m_Player.GetComponent<WayPoint>();
-//		path.Add(playerWp);
-		
-#if UNITY_EDITOR && FULL_DEBUG
-		for(int i = 0; i < path.Count-1; ++i)
-			Debug.DrawLine(path[i].transform.position, path[i+1].transform.position, Color.red);
-#endif
-		return;
 	}
-
-
-	List<WayPoint> closedset = new List<WayPoint>(); 
-	List<WayPoint> openset = new List<WayPoint>();    
-	Dictionary<WayPoint, WayPoint> came_from = new Dictionary<WayPoint, WayPoint>();  
-	Dictionary<WayPoint, float> g_score = new Dictionary<WayPoint, float>();
-	Dictionary<WayPoint, float> h_score = new Dictionary<WayPoint, float>();
-	Dictionary<WayPoint, float> f_score = new Dictionary<WayPoint, float>();
 		
 	void Calculate(WayPoint start, WayPoint goal, ref List<WayPoint> path) 
     {
@@ -244,7 +231,7 @@ Debug.DrawLine(w.transform.position, w.connections[0].transform.position, Color.
     {
         if(Invalid(start) || Invalid(goal))
             return float.MaxValue;
-		return Vector3.Distance(start.position, goal.position);
+		return Vector3.Distance(start.Position, goal.Position);
     }
    
     float HeuristicCostEstimate(WayPoint start, WayPoint goal)
