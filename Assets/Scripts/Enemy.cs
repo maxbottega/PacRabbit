@@ -222,6 +222,8 @@ namespace HutongGames.PlayMaker.Actions
 				currentPath = new List<WayPoint>();
 				
 				// TODO: we already know the waypoint closest to target (and the one closest to current position) but this will recompute it
+
+Debug.DrawLine(enemy.transform.position, target.Position, Color.yellow, 10.0f);
 				NavigationManager.instance.CalculatePath(enemy.transform.position, target.Position, currentPath);
 				
 				currentNearest = 0;

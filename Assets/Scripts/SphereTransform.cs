@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// To avoid setting transform.rotation every time we manipulate the position, we cache the rotation of an object on the sphere
+// in this class and update it only once in the LateUpdate(). All objects on the sphere are supposed to be parented with a null in zero
+// and aligned on the Y axis, the null rotates to move them...
 public class SphereTransform : MonoBehaviour
 {
 	// ------------ Public, editable in the GUI, serialized
@@ -16,10 +19,6 @@ public class SphereTransform : MonoBehaviour
 	{
 		Pivot = transform.parent;
 		Rotation = Pivot.transform.rotation;
-	}
-	
-	void Start()
-	{
 	}
 	
 	void Update()
