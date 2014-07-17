@@ -173,13 +173,13 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.Puppa
+        - HutongGames.PlayMaker.Actions.Follow
         customNames:
         - 
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 00000000
+        actionHashCodes: 4862a0df
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -192,15 +192,18 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 
+        byteData: 000100000000803f00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 
-        paramName: []
-        paramDataPos: 
-        paramByteDataSize: 
+        paramDataType: 11000000110000000f000000
+        paramName:
+        - Flying
+        - Dumb
+        - SpeedMultiplier
+        paramDataPos: 000000000200000004000000
+        paramByteDataSize: 020000000200000005000000
     events:
     - name: segui
       isSystemEvent: 0

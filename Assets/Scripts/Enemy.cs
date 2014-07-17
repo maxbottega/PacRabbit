@@ -13,14 +13,26 @@ public class Enemy : MonoBehaviour
 	// ------------ Public, serialized
 	
 	// ------------ Public, non-serialized
-	[System.NonSerialized] public Transform 		Target 				= null;
-	[System.NonSerialized] SphereTransform			mMoveController 	= null;	
-	[System.NonSerialized] Collidable				mCollidable 		= null;
-	[System.NonSerialized] WayPoint					mCachedNearest 		= null;	
-	//[System.NonSerialized] EnemyManager 			mEnemyManager 		= null;
+	[System.NonSerialized] public Transform 		Target				= null;
+	
 	
 	// ------------ Private	
 	private bool 									hasPlaymaker 		= false;
+	private SphereTransform							mMoveController 	= null;	
+	private Collidable								mCollidable 		= null;
+	private WayPoint								mCachedNearest 		= null;	
+	//private EnemyManager 							mEnemyManager 		= null;
+	
+	public float DistanceToTarget
+	{
+		get
+		{ 
+			if(Target!=null)
+				return Vector3.Distance(Target.position, transform.position);
+			else
+				return float.MaxValue;
+		}
+	}
 
 	void Awake ()
 	{
@@ -45,23 +57,29 @@ public class Enemy : MonoBehaviour
 	void Update () 
 	{
 		if (hasPlaymaker)
-			return;
+			return; // TODO: we really will always have playmaker attached, this is temporary
 		
 		if (mMoveController)
-			FollowPlayerOnNavMesh(Time.deltaTime, Speed);
+			FollowTargetOnNavMesh(Time.deltaTime, Speed);
 	}
 	
-	public void FollowPlayerOnNavMesh(float dt, float speed)
+	public void FollowTarget(float dt, float speed)
+	{
+		float currentSpeed 	= speed * dt;
+		Vector3 chasePos 	= Target ? Target.position : transform.position;
+
+		mMoveController.Move (chasePos, currentSpeed);
+	}
+	
+	public void FollowTargetOnNavMesh(float dt, float speed)
 	{
 		float currentSpeed 	= speed * dt;
 		Vector3 chasePos 	= Target ? Target.position : transform.position;
 		
-		mMoveController.Move (chasePos, currentSpeed);
-		
 		Vector3 currentPos 	= mMoveController.Rotation * Vector3.up;
 		List<WayPoint> path = new List<WayPoint>();
 
-		NavigationManager.instance.CalculatePath(currentPos, chasePos, path);
+		NavigationManager.instance.CalculatePath(currentPos, chasePos, path); // TODO: path caching, don't recompute every frame
 
 		Vector3 previosWPPosition = path[0].transform.position;
 		foreach (WayPoint wp in path) 
@@ -70,14 +88,18 @@ public class Enemy : MonoBehaviour
 			previosWPPosition = wp.transform.position;
 		}
 		
-		mMoveController.Move (path[path.Count > 2 ? 2 : 0].transform.position, currentSpeed);
+		mMoveController.Move (path[path.Count > 2 ? 2 : 0].transform.position, currentSpeed); // TODO: proper path navigation
+	}
+	
+	public void CollideWithNavMesh()
+	{
+		// TODO: move all this in the collision manager, after resolving sphere collisions - same also for the character!
 		
-		// TODO: move all this in the collision manager, after resolving sphere collisions
-		currentPos = mMoveController.Rotation * Vector3.up * Planet.GetRadius();
+		Vector3 currentPos = mMoveController.Rotation * Vector3.up * Planet.GetRadius();
 		Vector3 newPos = 
 			NavigationManager.instance.PointNavMeshEdgesCollision(
-				currentPos, 0.75f, mCachedNearest, out mCachedNearest);
-				
+				currentPos, 0.75f /* radius - TODO: configurable */, mCachedNearest, out mCachedNearest);
+		
 		mMoveController.Move(newPos);
 	}
 
@@ -89,14 +111,22 @@ public class Enemy : MonoBehaviour
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory("PlanetGameplay")]
+	[ActionCategory("_PlanetGameplay")]
 	[Tooltip("Follows the character")]
-	public class Puppa : FsmStateAction
-	{	
-		private Enemy enemy = null;
+	public class Follow : FsmStateAction
+	{			
+		[Tooltip("If not flying it will follow the navmesh")]
+		public FsmBool 			Flying 				= false; // TODO: add a flying height, transition between flying and not
 		
-		// TODO: add a bool option to follow not on the navmesh (flying)
-		// TODO: add a speed multiplier
+		[Tooltip("Dumb doesn't use pathfinding")]
+		public FsmBool 			Dumb 				= false; 
+		
+		[Tooltip("The base speed is in the enemy component")]
+		public FsmFloat 		SpeedMultiplier 	= 1.0f;
+		
+		// TODO: follow any point, not only the character
+		
+		private Enemy 			enemy 				= null;
 		
 		public override void Reset()
 		{
@@ -105,14 +135,23 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void OnEnter()
 		{
-			if(enemy == null)
-				enemy.FollowPlayerOnNavMesh(Time.deltaTime, enemy.Speed);
+			OnUpdate();
 		}
 		
-		public override void OnUpdate()
+		public override  void OnUpdate()
 		{
-			if(enemy == null)	
-				enemy.FollowPlayerOnNavMesh(Time.deltaTime, enemy.Speed);
-		}	
+			if(enemy != null)
+			{
+				if(Dumb.Value)
+					enemy.FollowTarget(Time.deltaTime, enemy.Speed * SpeedMultiplier.Value);
+				else
+					enemy.FollowTargetOnNavMesh(Time.deltaTime, enemy.Speed * SpeedMultiplier.Value);
+					
+				if(!Flying.Value)
+					enemy.CollideWithNavMesh();
+			}
+		}
 	}
+	
+	// TODO: Wander action
 }
