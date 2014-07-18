@@ -6,6 +6,11 @@ TagManager:
   - way_point
   - dynamic_collider
   - 
+  - spawn_area_trigger
+  - 
+  - coin
+  - powerup
+  - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
   Builtin Layer 2: Ignore Raycast
