@@ -5,9 +5,11 @@ using System.Collections;
 public class Collidable : MonoBehaviour
 {
 	// ------------ Public, editable in the GUI, serialized
-	public float 							Radius 	= 1;
-	public float 							Mass 	= 1;
+	public float 							Radius 	= 1.0f;
+	public float 							Mass 	= 1.0f;
+	public float							RadiusForNavMesh = 0.75f;
 	public bool 							Static 	= false;
+	public bool								SphereNavMeshCollision = true;
 
 	// ------------ Public, serialized
 	
@@ -22,9 +24,10 @@ public class Collidable : MonoBehaviour
 	[System.NonSerialized]public Vector3 	Max = Vector3.zero;
 	[System.NonSerialized]public float 		MinValue = 0.0f;
 	[System.NonSerialized]public float 		MaxValue = 0.0f;
+	[System.NonSerialized]public WayPoint	CachedNearest = null;
 
-	public delegate void 		CollisionCallback(Collidable other);
-	[System.NonSerialized] public CollisionCallback 	OnCollision;
+	public delegate void 					CollisionCallback(Collidable other);
+	[System.NonSerialized] public CollisionCallback OnCollision;
 	
 	// ------------ Private	
 	private float 							PlanetRadius 		= 1;

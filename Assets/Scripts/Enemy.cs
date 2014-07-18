@@ -18,8 +18,7 @@ public class Enemy : MonoBehaviour
 	// ------------ Private	
 	private bool 									hasPlaymaker 		= false;
 	private SphereTransform							mMoveController 	= null;	
-	private Collidable								mCollidable 		= null;
-	private WayPoint								mCachedNearest 		= null;
+	//private Collidable								mCollidable 		= null;
 	
 	public float DistanceToTarget
 	{
@@ -38,10 +37,9 @@ public class Enemy : MonoBehaviour
 		transform.position 	= transform.up * Planet.Instance.Radius;	
 		//mEnemyManager 	= FindObjectOfType(typeof(EnemyManager)) as EnemyManager;
 		mMoveController 	= GetComponent<SphereTransform>();
-		mCollidable 		= GetComponent<Collidable> ();
-
-		if (mCollidable)
-			mCollidable.OnCollision = new Collidable.CollisionCallback(OnCollision);
+		//mCollidable 		= GetComponent<Collidable> ();
+		//if (mCollidable)
+		//	mCollidable.OnCollision = new Collidable.CollisionCallback(OnCollision);
 			
 		if(GetComponent<PlayMakerFSM> () != null)
 			hasPlaymaker = true;
@@ -92,22 +90,10 @@ foreach (WayPoint wp in path)
 		mMoveController.Move (path[path.Count > 2 ? 2 : 0].Position, currentSpeed); // TODO: proper path navigation
 	}
 	
-	public void CollideWithNavMesh()
-	{
-		// TODO: move all this in the collision manager, after resolving sphere collisions - same also for the character!
-		
-		Vector3 currentPos = mMoveController.Rotation * Vector3.up * Planet.Instance.Radius;
-		Vector3 newPos = 
-			NavigationManager.instance.PointNavMeshEdgesCollision(
-				currentPos, 0.75f /* radius - TODO: configurable */, mCachedNearest, out mCachedNearest);
-		
-		mMoveController.Move(newPos);
-	}
-
-	public void OnCollision(Collidable other)
-	{
+	//public void OnCollision(Collidable other)
+	//{
 		// Collision reaction
-	}
+	//}
 }
 
 
@@ -117,10 +103,7 @@ namespace HutongGames.PlayMaker.Actions
 	[ActionCategory("_PlanetGameplay")]
 	[Tooltip("Follows the character")]
 	public class Follow : FsmStateAction
-	{			
-		[Tooltip("Dumb doesn't use pathfinding")]
-		public FsmBool 			Dumb 				= false; 
-		
+	{					
 		[Tooltip("The base speed is in the enemy component")]
 		public FsmFloat 		SpeedMultiplier 	= 1.0f;
 		
@@ -142,18 +125,13 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			if(enemy != null)
 			{
-				if(Dumb.Value)
-					enemy.FollowTarget(Time.deltaTime, enemy.Speed * SpeedMultiplier.Value);
-				else
-					enemy.FollowTargetOnNavMesh(Time.deltaTime, enemy.Speed * SpeedMultiplier.Value);
-					
-				enemy.CollideWithNavMesh();
+				enemy.FollowTargetOnNavMesh(Time.deltaTime, enemy.Speed * SpeedMultiplier.Value);
 			}
 		}
 	}
 	
 	[ActionCategory("_PlanetGameplay")]
-	[Tooltip("Follows the character, flying (no navmesh collision)")]
+	[Tooltip("Follows the character, flying (no pathfinding)")]
 	public class FollowFlying : FsmStateAction
 	{			
 		// TODO: add a flying height, transition between flying and not
@@ -246,6 +224,7 @@ for(int i=0;i<currentPath.Count-1;i++)
 			}
 		}
 	}
-	
+
+	// TODO: WanderFlying	
 	// TODO: Escape action (get away from the player)
 }

@@ -21,10 +21,10 @@ public class CollisionManager : MonoBehaviour
 	[System.NonSerialized] public bool    		m_LinearTest = true;
 	[System.NonSerialized] List<Collidable> 	mColliders = new List<Collidable>();
 
-	delegate void 		SweepFuncion();
-	SweepFuncion 		mSweepFunction;
-	
-	Quaternion _quaternionIdentity = Quaternion.identity;
+	// ------------ Private
+	private delegate void 						SweepFuncion();
+	private SweepFuncion 						mSweepFunction;
+	private Quaternion 							_quaternionIdentity = Quaternion.identity; // was this an optimization?
 	
 	void Start () 
 	{
@@ -50,11 +50,39 @@ public class CollisionManager : MonoBehaviour
 	
 	void Update () 
 	{
-		if (m_SAP==true) UpdateDynamicCollisionsSingleSAP();
-		else UpdateDynamicBrute();
+		if (m_SAP==true) 
+			UpdateDynamicCollisionsSingleSAP();
+		else 
+			UpdateDynamicBrute();
+			
+		ResolveNavMeshCollisions();
 	}
 	
-	public bool ResolveCoupleCollision(Collidable collider, Collidable other)
+	void ResolveNavMeshCollisions()
+	{
+		int startIndex = 0;
+		int endIndex = mColliders.Count;
+		float navmeshRadius = Planet.Instance.Radius;
+		
+		for (int colliderIndex = startIndex; colliderIndex<endIndex; ++colliderIndex)
+		{	
+			Collidable current = mColliders[colliderIndex];
+			
+			if(current.SphereNavMeshCollision == false)
+				continue;
+			
+			Vector3 currentPos = (current.SphereTransf.Rotation) * Vector3.up * navmeshRadius;
+			
+			Vector3 newPos = 
+				NavigationManager.instance.PointNavMeshEdgesCollision(
+					currentPos, current.RadiusForNavMesh, current.CachedNearest, out current.CachedNearest);
+			
+			//if( Vector3.Distance(currentPos, newPos) > 0.000001f ) // TODO: use dot instead
+			current.SphereTransf.Move(newPos);
+		}
+	}
+	
+	bool ResolveCoupleCollision(Collidable collider, Collidable other)
 	{
 		Quaternion colliderError = _quaternionIdentity;
 		Quaternion otherError = _quaternionIdentity;
@@ -109,7 +137,6 @@ public class CollisionManager : MonoBehaviour
 			}
 		}
 	}
-	
 
 	void UpdateDynamicCollisionsSingleSAP()
 	{	

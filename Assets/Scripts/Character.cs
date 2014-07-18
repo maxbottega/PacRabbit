@@ -23,7 +23,6 @@ public class Character : MonoBehaviour
 	[System.NonSerialized] public Quaternion 		mRotation 		= Quaternion.identity;
 	//[System.NonSerialized] float					mFacingAngle 	= 0;
 	[System.NonSerialized] SphereTransform			mMoveController	= null;	
-	[System.NonSerialized] WayPoint					mCachedNearest = null;
 
 	void Start () 
 	{
@@ -33,18 +32,9 @@ public class Character : MonoBehaviour
 	void Update()
 	{
 		UpdateInput();
-		//mMoveController.Move(mRotation);
+		mMoveController.Move(mRotation);
 		
 		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
-				
-		// TODO: move all this in the collision manager, after resolving sphere collisions
-		Vector3 currentPos = (mMoveController.Rotation * mRotation) * Vector3.up * Planet.Instance.Radius;
-		Vector3 newPos = 
-			NavigationManager.instance.PointNavMeshEdgesCollision(
-				currentPos, 0.75f /* TODO: radius - configuratble */, mCachedNearest, out mCachedNearest);
-				
-		//if( Vector3.Distance(currentPos, newPos) > 0.000001f ) // TODO: use dot instead
-		mMoveController.Move(newPos);
 	}	
 	
 	void UpdateInput()

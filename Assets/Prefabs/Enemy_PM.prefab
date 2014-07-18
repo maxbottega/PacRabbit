@@ -262,7 +262,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Radius: .600000024
   Mass: 1
+  RadiusForNavMesh: .75
   Static: 0
+  SphereNavMeshCollision: 1
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
