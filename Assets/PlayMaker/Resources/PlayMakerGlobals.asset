@@ -19,7 +19,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 152
+      value: 0
     - useVariable: 1
       name: powerups_I
       tooltip: 
@@ -47,3 +47,4 @@ MonoBehaviour:
   - PLAYER/transform
   - PLAYER/trans_back
   - GAME/over
+  - GAME/win
