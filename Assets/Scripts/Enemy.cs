@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour
 			return; // TODO: we really will always have playmaker attached, this is temporary
 		
 		if (mMoveController)
-			FollowTargetOnNavMesh(Time.deltaTime, Speed);
+			FollowPointOnNavMesh(Time.deltaTime, Speed, Target.position);
 	}
 	
 	public void FollowPoint(float dt, float speed, Vector3 chasePos)
@@ -65,15 +65,9 @@ public class Enemy : MonoBehaviour
 		mMoveController.Move (chasePos, currentSpeed);
 	}
 	
-	public void FollowTarget(float dt, float speed)
-	{
-		FollowPoint(dt, speed, Target.position);
-	}
-	
-	public void FollowTargetOnNavMesh(float dt, float speed)
+	public void FollowPointOnNavMesh(float dt, float speed, Vector3 chasePos)
 	{
 		float currentSpeed 	= speed * dt;
-		Vector3 chasePos 	= Target.position;
 		
 		Vector3 currentPos 	= mMoveController.Rotation * Vector3.up;
 		List<WayPoint> path = new List<WayPoint>();
@@ -106,6 +100,49 @@ namespace HutongGames.PlayMaker.Actions
 	{					
 		[Tooltip("The base speed is in the enemy component")]
 		public FsmFloat 		SpeedMultiplier 	= 1.0f;
+		[Tooltip("Tries to escape from the target instead of following")]
+		public FsmBool			Escape				= false;
+		[Tooltip("Optional Target, if not specified it will be the player")]
+		public FsmGameObject	Target				= null;
+		
+		private Enemy 			enemy 				= null;
+		
+		public override void Reset()
+		{
+			enemy = Owner.GetComponent<Enemy> ();
+		}
+		
+		public override void OnEnter()
+		{
+			OnUpdate();
+		}
+		
+		public override  void OnUpdate()
+		{
+			if(enemy != null)
+			{
+				Transform transf = Target.Value != null ? Target.Value.transform : enemy.Target;
+				
+				if(Escape.Value)
+					enemy.FollowPointOnNavMesh(Time.deltaTime, enemy.Speed * SpeedMultiplier.Value, -transf.position);
+				else
+					enemy.FollowPointOnNavMesh(Time.deltaTime, enemy.Speed * SpeedMultiplier.Value, transf.position);
+			}
+		}
+	}
+	
+	[ActionCategory("_PlanetGameplay")]
+	[Tooltip("Follows the character, flying (no pathfinding)")]
+	public class FollowFlying : FsmStateAction
+	{			
+		// TODO: add a flying height, transition between flying and not
+		
+		[Tooltip("The base speed is in the enemy component")]
+		public FsmFloat 		SpeedMultiplier 	= 1.0f;
+		[Tooltip("Tries to escape from the target instead of following")]
+		public FsmBool			Escape				= false;
+		[Tooltip("Optional Target, if not specified it will be the player")]
+		public FsmGameObject	Target				= null;
 		
 		// TODO: follow any point, not only the character
 		
@@ -125,38 +162,13 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			if(enemy != null)
 			{
-				enemy.FollowTargetOnNavMesh(Time.deltaTime, enemy.Speed * SpeedMultiplier.Value);
+				Transform transf = Target.Value != null ? Target.Value.transform : enemy.Target;
+				
+				if(Escape.Value)
+					enemy.FollowPoint(Time.deltaTime, enemy.Speed * SpeedMultiplier.Value, -transf.position);
+				else
+					enemy.FollowPoint(Time.deltaTime, enemy.Speed * SpeedMultiplier.Value, transf.position);
 			}
-		}
-	}
-	
-	[ActionCategory("_PlanetGameplay")]
-	[Tooltip("Follows the character, flying (no pathfinding)")]
-	public class FollowFlying : FsmStateAction
-	{			
-		// TODO: add a flying height, transition between flying and not
-		
-		[Tooltip("The base speed is in the enemy component")]
-		public FsmFloat 		SpeedMultiplier 	= 1.0f;
-		
-		// TODO: follow any point, not only the character
-		
-		private Enemy 			enemy 				= null;
-		
-		public override void Reset()
-		{
-			enemy = Owner.GetComponent<Enemy> ();
-		}
-		
-		public override void OnEnter()
-		{
-			OnUpdate();
-		}
-		
-		public override  void OnUpdate()
-		{
-			if(enemy != null)
-				enemy.FollowTarget(Time.deltaTime, enemy.Speed * SpeedMultiplier.Value);
 		}
 	}
 	
@@ -225,6 +237,5 @@ for(int i=0;i<currentPath.Count-1;i++)
 		}
 	}
 
-	// TODO: WanderFlying	
-	// TODO: Escape action (get away from the player)
+	// TODO: WanderFlying
 }
