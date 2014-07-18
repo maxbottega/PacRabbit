@@ -11,19 +11,36 @@ public class SphereTransform : MonoBehaviour
 	// ------------ Public, serialized
 	
 	// ------------ Public, non-serialized
-	[System.NonSerialized] public Quaternion 	Rotation;
-	[System.NonSerialized] public Vector3 		Up;
-	[System.NonSerialized] public Transform		Pivot = null;
+	
+	// ------------ Private
+	private Quaternion 		mRotation;
+	private Vector3 		mUp;
+	private Transform		mPivot = null;
+	
+	public Quaternion Rotation
+	{
+		get { return mRotation; }
+	}
+	
+	public Vector3 Up
+	{
+		get { return mUp; }
+	}
+	
+	public Transform Pivot
+	{
+		get { return mPivot; }
+	}
 	
 	void Awake()
 	{
-		Pivot = transform.parent;
-		Rotation = Pivot.transform.rotation;
+		mPivot = transform.parent;
+		mRotation = mPivot.transform.rotation;
 	}
 	
 	void Update()
 	{
-		Up = Rotation * Vector3.up; // y-axis
+		mUp = mRotation * Vector3.up; // y-axis
 	}
 		
 	void LateUpdate ()	
@@ -33,13 +50,13 @@ public class SphereTransform : MonoBehaviour
 	
 	public void Move (Quaternion deltaRotation)
 	{
-		Rotation *= deltaRotation;
+		mRotation *= deltaRotation;
 	}
 	
 	public void Move (Vector3 targetPosition, float speed)
 	{
-		Vector3 direction = targetPosition - Vector3.Dot (targetPosition, Up) * Up;
-		Vector3 localDirection = Quaternion.Inverse(Rotation) * direction;
+		Vector3 direction = targetPosition - Vector3.Dot (targetPosition, mUp) * mUp;
+		Vector3 localDirection = Quaternion.Inverse(mRotation) * direction;
 		float angle = Mathf.Atan2 (localDirection.x, localDirection.z) * Mathf.Rad2Deg;
 		
 		Quaternion yRot = Quaternion.AngleAxis (angle, Vector3.up);
@@ -50,12 +67,18 @@ public class SphereTransform : MonoBehaviour
 	
 	public void Move (Vector3 targetPosition)
 	{
-		Quaternion rotation = Quaternion.FromToRotation (Up, targetPosition.normalized);
-		Rotation = rotation * Rotation;
+		Quaternion rotation = Quaternion.FromToRotation (mUp, targetPosition.normalized);
+		mRotation = rotation * mRotation;
+	}
+	
+	public void ImmediateSet (Quaternion rotation)
+	{
+		mRotation = rotation;
+		mUp = mRotation * Vector3.up; 
 	}
 	
 	public void Apply ()
 	{
-		Pivot.rotation = Rotation;
+		mPivot.rotation = mRotation;
 	}
 }

@@ -4,37 +4,36 @@ using System.Collections;
 [RequireComponent (typeof (SphereTransform))]
 public class Collidable : MonoBehaviour
 {
-	public float 				Radius 	= 1;
-	public float 				Mass 	= 1;
-	public bool 				Static 	= false;
+	// ------------ Public, editable in the GUI, serialized
+	public float 							Radius 	= 1;
+	public float 							Mass 	= 1;
+	public bool 							Static 	= false;
 
-	public SphereTransform 		m_SphereTransform = null;
-
-	[System.NonSerialized]
-	public Vector3 				Center 		= Vector3.zero;
-	[System.NonSerialized]
-	public float 				AngleRadius = 1;
-	[System.NonSerialized]
-	public bool 				Colliding 	= false;
-	[System.NonSerialized]
-	public bool 				Active 		= true;
-
-	public Vector3 				Min = Vector3.zero;
-	public Vector3 				Max = Vector3.zero;
-	public float 				MinValue = 0.0f;
-	public float 				MaxValue = 0.0f;
+	// ------------ Public, serialized
 	
-	float 						PlanetRadius 		= 1;
-	CollisionManager 			mCollisionManager 	= null;	
-	
+	// ------------ Public, non-serialized
+	[System.NonSerialized] public SphereTransform SphereTransf = null;
+	[System.NonSerialized] public Vector3 	Center 		= Vector3.zero;
+	[System.NonSerialized] public float 	AngleRadius = 1;
+	[System.NonSerialized] public bool 		Colliding 	= false;
+	[System.NonSerialized] public bool 		Active 		= true;
+
+	[System.NonSerialized]public Vector3 	Min = Vector3.zero;
+	[System.NonSerialized]public Vector3 	Max = Vector3.zero;
+	[System.NonSerialized]public float 		MinValue = 0.0f;
+	[System.NonSerialized]public float 		MaxValue = 0.0f;
+
 	public delegate void 		CollisionCallback(Collidable other);
-	public CollisionCallback 	OnCollision;
-
+	[System.NonSerialized] public CollisionCallback 	OnCollision;
+	
+	// ------------ Private	
+	private float 							PlanetRadius 		= 1;
+	private CollisionManager 				mCollisionManager 	= null;	
+	
 	void Awake()
 	{
-		m_SphereTransform = GetComponent<SphereTransform> ();
-		m_SphereTransform.Pivot = transform.parent;
-		mCollisionManager 		= FindObjectOfType(typeof(CollisionManager)) as CollisionManager;
+		SphereTransf = GetComponent<SphereTransform> ();
+		mCollisionManager = FindObjectOfType(typeof(CollisionManager)) as CollisionManager;
 	}
 	
 	void Start ()
@@ -55,16 +54,6 @@ public class Collidable : MonoBehaviour
 		Max.z 	= Up.z * PlanetRadius + Radius;
 	}
 	
-	public Vector3 GetCurrentPosition()
-	{
-		return Rotation * Vector3.up * PlanetRadius; // y-axis
-	}
-
-	public void MoveFromPoint(Vector3 p)
-	{
-		Rotation = Quaternion.FromToRotation(Vector3.up, p);
-	}
-
 	void Update ()
 	{
 		if (!Static)
@@ -84,14 +73,14 @@ public class Collidable : MonoBehaviour
 	// Wrapper functions	
 	public Quaternion Rotation
 	{
-		get { return m_SphereTransform.Rotation; }
-		set { m_SphereTransform.Rotation = value; }
+		get { return SphereTransf.Rotation; }
+		//set { m_SphereTransform.Rotation = value; }
 	}
 	
 	public Vector3 Up
 	{
-		get { return m_SphereTransform.Up; }
-		set { m_SphereTransform.Up = value; }
+		get { return SphereTransf.Up; }
+		//set { m_SphereTransform.Up = value; }
 	}
 	
 /*	

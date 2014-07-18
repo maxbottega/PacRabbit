@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 // We make the player be a waypoint as well, so we need an interface
-public interface IPathNode<T>
+public interface IPathNode
 {
     Vector3 Position { get; }
 }
@@ -24,15 +24,22 @@ public class CollisionEdge
 // TODO: Now it's quite a bad idea... even more as we access transform.position which is not fast
 // Waypoints are just points with connections, we could be smarter (one day) and make them be
 // elements with an area, so the path can be refined to be to any point inside a cell
-public class WayPoint : MonoBehaviour, IPathNode<WayPoint> 
+public class WayPoint : MonoBehaviour, IPathNode
 {
 	// ------------ Public, serialized
 	public List<WayPoint> connections = new List<WayPoint>();
 	public List<CollisionEdge> collisionEdges = new List<CollisionEdge>();
 
-	public Vector3 Position // TODO: private copy of this as transform.position access is slow
-	{ 
-		get { return transform.position; }
+	public Vector3 mPosition; // private copy as transform.position access is slow
+	
+	public Vector3 Position
+	{
+		get { return mPosition; }
+	}
+	
+	void Awake()
+	{
+		mPosition = transform.position;
 	}
 	
 	void OnDrawGizmosSelected()

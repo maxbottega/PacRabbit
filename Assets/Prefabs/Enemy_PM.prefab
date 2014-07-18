@@ -263,11 +263,6 @@ MonoBehaviour:
   Radius: .600000024
   Mass: 1
   Static: 0
-  m_SphereTransform: {fileID: 11400002}
-  Min: {x: 0, y: 0, z: 0}
-  Max: {x: 0, y: 0, z: 0}
-  MinValue: 0
-  MaxValue: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1

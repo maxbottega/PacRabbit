@@ -91,7 +91,8 @@ public class EnemyManager : MonoBehaviour
 				enemy.gameObject.SetActive(true);
 				SphereTransform moveController = enemy.GetComponent<SphereTransform>();
 				WayPoint wp = NavigationManager.instance.SelectRandomWaypoint();
-				moveController.Rotation = Quaternion.FromToRotation(Vector3.up, wp.transform.position.normalized);
+				moveController.ImmediateSet( Quaternion.FromToRotation(Vector3.up, wp.transform.position.normalized) );
+				moveController.Apply ();
 				
 				break;
 			}
