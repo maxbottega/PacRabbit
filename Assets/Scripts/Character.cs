@@ -21,12 +21,18 @@ public class Character : MonoBehaviour
 	
 	[System.NonSerialized] public Vector3			mLightDirection = Vector3.right;
 	[System.NonSerialized] public Quaternion 		mRotation 		= Quaternion.identity;
+
+	private Collidable								mCollidable 	= null;
 	//[System.NonSerialized] float					mFacingAngle 	= 0;
 	[System.NonSerialized] SphereTransform			mMoveController	= null;	
 
 	void Start () 
 	{
 		mMoveController = GetComponent<SphereTransform>();
+		mCollidable 	= GetComponent<Collidable> ();
+		
+		if (mCollidable)
+			mCollidable.OnCollision = new Collidable.CollisionCallback(OnCollision);
 	}
 	
 	void Update()
@@ -36,6 +42,15 @@ public class Character : MonoBehaviour
 		
 		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
 	}	
+	
+	public void OnCollision(Collidable other)
+	{
+		// Collision reaction
+		Enemy enemy = other.GetComponent<Enemy> ();
+		
+		if (enemy != null)
+			enemy.gameObject.SetActive (false);
+	}
 	
 	void UpdateInput()
 	{

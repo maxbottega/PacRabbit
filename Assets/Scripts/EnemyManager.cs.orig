@@ -37,4 +37,25 @@ public class EnemyManager : MonoBehaviour
 	void Update () 
 	{
 	}
+	
+	
+<<<<<<< Updated upstream
+	public void SpawnEnemy()
+	{
+		foreach (Enemy enemy in mEnemies)
+		{
+			if (!enemy.gameObject.activeInHierarchy)
+			{
+				enemy.gameObject.SetActive(true);
+				SphereTransform moveController = enemy.GetComponent<SphereTransform>();
+				WayPoint wp = NavigationManager.instance.SelectRandomWaypoint();
+				moveController.ImmediateSet( Quaternion.FromToRotation(Vector3.up, wp.transform.position.normalized) );
+				moveController.Apply ();
+				
+				break;
+			}
+		}
+	}
+=======
+>>>>>>> Stashed changes
 }

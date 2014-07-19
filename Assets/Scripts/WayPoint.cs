@@ -20,6 +20,7 @@ public class CollisionEdge
 	}
 }
 
+[ExecuteInEditMode]
 // Waypoints are entities so we can select/move them in the scene... 
 // TODO: Now it's quite a bad idea... even more as we access transform.position which is not fast
 // Waypoints are just points with connections, we could be smarter (one day) and make them be
@@ -29,9 +30,10 @@ public class WayPoint : MonoBehaviour, IPathNode
 	// ------------ Public, serialized
 	public List<WayPoint> connections = new List<WayPoint>();
 	public List<CollisionEdge> collisionEdges = new List<CollisionEdge>();
+	
+	public bool DrawGizmo = false;
 
 	public Vector3 mPosition; // private copy as transform.position access is slow
-	
 	public Vector3 Position
 	{
 		get { return mPosition; }
@@ -42,15 +44,18 @@ public class WayPoint : MonoBehaviour, IPathNode
 		mPosition = transform.position;
 	}
 	
-	void OnDrawGizmosSelected()
+#if UNITY_EDITOR 
+	void OnDrawGizmos()
 	{
+		if (!DrawGizmo) return;
+		
 		Gizmos.color = Color.green;
 
 		Gizmos.DrawSphere(transform.position, 0.5f);
 		
-		foreach (WayPoint neighboor in connections)
+		foreach (WayPoint neighbor in connections)
 		{
-			Gizmos.DrawLine(transform.position, neighboor.transform.position);
+			Gizmos.DrawLine(transform.position, neighbor.transform.position);
 		}
 
 		Gizmos.color = Color.red;
@@ -60,4 +65,5 @@ public class WayPoint : MonoBehaviour, IPathNode
 			Gizmos.DrawLine(edge.v0, edge.v1);
 		}
 	}
+#endif
 }

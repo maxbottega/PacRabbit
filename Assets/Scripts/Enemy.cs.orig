@@ -18,7 +18,12 @@ public class Enemy : MonoBehaviour
 	// ------------ Private	
 	private bool 									hasPlaymaker 		= false;
 	private SphereTransform							mMoveController 	= null;	
+<<<<<<< Updated upstream
+	//private Collidable								mCollidable 		= null;
+=======
 	private Collidable								mCollidable 		= null;
+	private WayPoint								mCachedNearest 		= null;	
+>>>>>>> Stashed changes
 	
 	public float DistanceToTarget
 	{
@@ -39,20 +44,19 @@ public class Enemy : MonoBehaviour
 	void Awake ()
 	{
 		// Position the enemy on the planet surface
+<<<<<<< Updated upstream
 		transform.position 	= transform.up * Planet.Instance.Radius;	
+		//mEnemyManager 	= FindObjectOfType(typeof(EnemyManager)) as EnemyManager;
+=======
+		transform.position 	= transform.up * Planet.GetRadius();	
+>>>>>>> Stashed changes
 		mMoveController 	= GetComponent<SphereTransform>();
-		mCollidable 		= GetComponent<Collidable> ();
-
-		if (mCollidable)
-			mCollidable.OnCollision = new Collidable.CollisionCallback(OnCollision);
+		//mCollidable 		= GetComponent<Collidable> ();
+		//if (mCollidable)
+		//	mCollidable.OnCollision = new Collidable.CollisionCallback(OnCollision);
 			
 		if(GetComponent<PlayMakerFSM> () != null)
 			hasPlaymaker = true;
-	}
-	
-	public void OnCollision(Collidable other)
-	{
-		// Collision reaction
 	}
 
 	void Start () 
@@ -84,16 +88,23 @@ public class Enemy : MonoBehaviour
 
 		NavigationManager.instance.CalculatePath(currentPos, chasePos, path); // TODO: path caching, don't recompute every frame
 
-		Vector3 previousWPPosition = path[0].Position;
-		foreach (WayPoint wp in path) 
-		{
-			Debug.DrawLine (wp.Position, previousWPPosition, Color.green);
-			previousWPPosition = wp.Position;
-		}
+Vector3 previosWPPosition = path[0].Position;
+foreach (WayPoint wp in path) 
+{
+	Debug.DrawLine (wp.Position, previosWPPosition, Color.green);
+	previosWPPosition = wp.Position;
+}
 		
 		mMoveController.Move (path[path.Count > 2 ? 2 : 0].Position, currentSpeed); // TODO: proper path navigation
 	}
+	
+	//public void OnCollision(Collidable other)
+	//{
+		// Collision reaction
+	//}
 }
+
+
 
 namespace HutongGames.PlayMaker.Actions
 {
@@ -120,7 +131,7 @@ namespace HutongGames.PlayMaker.Actions
 			OnUpdate();
 		}
 		
-		public override void OnUpdate()
+		public override  void OnUpdate()
 		{
 			if(enemy != null)
 			{

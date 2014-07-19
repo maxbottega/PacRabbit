@@ -107,7 +107,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.63328981, y: -8.13745022, z: 4.89944983}
     v1: {x: -6.35703993, y: -6.82726002, z: 5.91042995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.27760792, y: -7.58637428, z: 5.84099579}
 --- !u!4 &6031658
 Transform:
   m_ObjectHideFlags: 0
@@ -153,7 +154,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.34633017, y: 4.22284985, z: 9.23219967}
     v1: {x: -2.70030999, y: 3.98797989, z: 9.93785}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.66001177, y: 3.16266131, z: 9.79787922}
 --- !u!4 &19453205
 Transform:
   m_ObjectHideFlags: 0
@@ -199,7 +201,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: 9.82336998, z: 5.04558992}
     v1: {x: -1.67761004, y: 10.1459999, z: 4.02491999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -1.30300713, y: 9.54071522, z: 5.14969683}
 --- !u!4 &23899721
 Transform:
   m_ObjectHideFlags: 0
@@ -244,7 +247,8 @@ MonoBehaviour:
   - {fileID: 538586552}
   - {fileID: 1988950511}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .920730174, y: -4.59912968, z: -9.86719227}
 --- !u!4 &40288684
 Transform:
   m_ObjectHideFlags: 0
@@ -289,7 +293,8 @@ MonoBehaviour:
   - {fileID: 332484683}
   - {fileID: 1213012502}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -8.03704071, y: -7.38369131, z: -.409605086}
 --- !u!4 &41296709
 Transform:
   m_ObjectHideFlags: 0
@@ -335,7 +340,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.61701965, y: 6.82725, z: 1.04507005}
     v1: {x: 9.48608971, y: 5.64322996, z: -.353145987}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 8.69283485, y: 6.60742283, z: -.169653356}
 --- !u!4 &59075670
 Transform:
   m_ObjectHideFlags: 0
@@ -381,7 +387,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.03316998, y: 2.6454401, z: -10.6719999}
     v1: {x: 1.03315997, y: 2.6454401, z: -10.6719999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .00595711032, y: 3.55940461, z: -10.3160763}
 --- !u!4 &69096904
 Transform:
   m_ObjectHideFlags: 0
@@ -427,7 +434,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.34633017, y: -10.1459999, z: .351731986}
     v1: {x: -2.70030999, y: -10.6722002, z: .87738502}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.64125872, y: -10.1805105, z: 1.55679142}
 --- !u!4 &112611824
 Transform:
   m_ObjectHideFlags: 0
@@ -473,7 +481,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.65427005, y: -5.3578701, z: -9.51383972}
     v1: {x: 3.26722002, y: -5.64322996, z: -8.91267967}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.59143925, y: -4.61657619, z: -9.56178284}
 --- !u!4 &112727401
 Transform:
   m_ObjectHideFlags: 0
@@ -519,7 +528,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.02591991, y: 3.98797989, z: -6.45269012}
     v1: {x: 6.93042994, y: 3.61846995, z: -7.79951}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 7.59314537, y: 3.05356097, z: -7.24176407}
 --- !u!4 &117777289
 Transform:
   m_ObjectHideFlags: 0
@@ -565,7 +575,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.70030999, y: 10.6722002, z: -.877384007}
     v1: {x: 4.34633017, y: 10.1459999, z: -.351731002}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.38461637, y: 10.3925705, z: .202268615}
 --- !u!4 &119279589
 Transform:
   m_ObjectHideFlags: 0
@@ -611,7 +622,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.02591991, y: 3.98797989, z: -6.45269012}
     v1: {x: -7.88197994, y: 5.64322996, z: -5.29008007}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -7.35141277, y: 5.03641701, z: -6.31932974}
 --- !u!4 &121736875
 Transform:
   m_ObjectHideFlags: 0
@@ -657,7 +669,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.88197994, y: -2.20785999, z: 7.41324997}
     v1: {x: 8.94281006, y: -2.50695992, z: 5.97477007}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 8.16971111, y: -3.16295624, z: 6.53438711}
 --- !u!4 &129823013
 Transform:
   m_ObjectHideFlags: 0
@@ -703,7 +716,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.03315997, y: -2.6454401, z: 10.6719999}
     v1: {x: 2.91886997, y: -2.50695992, z: 10.3514004}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.89178896, y: -3.47483492, z: 10.178359}
 --- !u!4 &154971563
 Transform:
   m_ObjectHideFlags: 0
@@ -724,6 +738,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 159322676}
+  - 114: {fileID: 159322677}
   m_Layer: 0
   m_Name: WAYPOINTS
   m_TagString: Untagged
@@ -1039,7 +1054,18 @@ Transform:
   - {fileID: 1268297401}
   - {fileID: 441875860}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
+--- !u!114 &159322677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159322675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda41a5240b704da0b8b42dba5dce7be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &160102124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,7 +1099,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 11.0088997, y: .742121994, z: .45865801}
     v1: {x: 10.9138002, y: -.886771977, z: 1.43482995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 10.9109955, y: -.423061073, z: .232537985}
 --- !u!4 &160102126
 Transform:
   m_ObjectHideFlags: 0
@@ -1119,7 +1146,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.83814001, y: -8.90606022, z: 5.28275013}
     v1: {x: 2.96571994, y: -9.82336998, z: 4.08197021}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.48987508, y: -9.30393219, z: 5.17060852}
 --- !u!4 &163417927
 Transform:
   m_ObjectHideFlags: 0
@@ -1165,7 +1193,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.97813988, y: -9.28384972, z: -.168871999}
     v1: {x: 7.43725014, y: -8.13745022, z: -.652567983}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.39218569, y: -8.76510143, z: -1.3036468}
 --- !u!4 &170510189
 Transform:
   m_ObjectHideFlags: 0
@@ -1211,7 +1240,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.93042994, y: 3.61846995, z: -7.79951}
     v1: {x: 5.27615976, y: 3.61846995, z: -9.00140953}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.18589878, y: 2.84066939, z: -8.53916931}
 --- !u!4 &174671666
 Transform:
   m_ObjectHideFlags: 0
@@ -1257,7 +1287,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.93042994, y: 5.3578701, z: -6.72451019}
     v1: {x: -6.35703993, y: 6.82725, z: -5.91042995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -7.25901222, y: 5.79602242, z: -5.75131798}
 --- !u!4 &178276208
 Transform:
   m_ObjectHideFlags: 0
@@ -1331,7 +1362,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: 4.30290985, z: -10.1705999}
     v1: {x: -1.91029, y: 4.22284985, z: -10.0236998}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -.966072679, y: 3.44057727, z: -10.3157673}
 --- !u!4 &182444868
 Transform:
   m_ObjectHideFlags: 0
@@ -1377,7 +1409,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.83814001, y: 8.90604973, z: -5.28275013}
     v1: {x: 2.96571994, y: 9.82336998, z: -4.08197021}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.02040005, y: 9.2799263, z: -4.14717484}
 --- !u!4 &188954194
 Transform:
   m_ObjectHideFlags: 0
@@ -1422,7 +1455,8 @@ MonoBehaviour:
   - {fileID: 178276207}
   - {fileID: 1149748830}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -7.1852684, y: 6.49724245, z: -5.05266333}
 --- !u!4 &195102083
 Transform:
   m_ObjectHideFlags: 0
@@ -1468,7 +1502,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.34633017, y: -4.22284985, z: -9.23219967}
     v1: {x: 2.70030999, y: -3.98797989, z: -9.93785}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.38461637, y: -4.82860661, z: -9.20492935}
 --- !u!4 &195742901
 Transform:
   m_ObjectHideFlags: 0
@@ -1514,7 +1549,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.97813988, y: 4.30290985, z: 8.22821045}
     v1: {x: 5.43697023, y: 2.6454401, z: 9.24108028}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.33642054, y: 3.03568888, z: 8.34749985}
 --- !u!4 &196748932
 Transform:
   m_ObjectHideFlags: 0
@@ -1560,7 +1596,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.43697023, y: 9.44855022, z: -1.76657999}
     v1: {x: -6.47013998, y: 8.36221981, z: -3.18861008}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.31888485, y: 9.03505135, z: -3.03777289}
 --- !u!4 &198693130
 Transform:
   m_ObjectHideFlags: 0
@@ -1606,7 +1643,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.83814001, y: .742121994, z: -10.3283005}
     v1: {x: -4.61475992, y: 2.20785999, z: -9.78703022}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.45222735, y: 2.02031231, z: -10.1699839}
 --- !u!4 &201227460
 Transform:
   m_ObjectHideFlags: 0
@@ -1652,7 +1690,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.73716021, y: 9.28384972, z: -3.65048003}
     v1: {x: 5.63328981, y: 8.13743973, z: -4.89944983}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.29825115, y: 8.83577538, z: -4.79775143}
 --- !u!4 &203581531
 Transform:
   m_ObjectHideFlags: 0
@@ -1698,7 +1737,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.43725014, y: -4.22284985, z: -6.9865098}
     v1: {x: 7.46682978, y: -5.64322996, z: -5.86148024}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.68740654, y: -5.49117947, z: -6.68210316}
 --- !u!4 &205137769
 Transform:
   m_ObjectHideFlags: 0
@@ -1744,7 +1784,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.43697023, y: 2.6454401, z: 9.24108028}
     v1: {x: -7.10867023, y: 2.6454401, z: 8.02651978}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.0541234, y: 3.56018424, z: 8.35442066}
 --- !u!4 &207909183
 Transform:
   m_ObjectHideFlags: 0
@@ -1790,7 +1831,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.91886997, y: -8.13745022, z: 6.87159014}
     v1: {x: 1.91029, y: -7.0769701, z: 8.25977993}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.7410109, y: -7.92797232, z: 7.30002022}
 --- !u!4 &209559490
 Transform:
   m_ObjectHideFlags: 0
@@ -1836,7 +1878,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.36022997, y: 8.36221981, z: 6.38268995}
     v1: {x: 1.68674004, y: 9.28384972, z: 5.73774004}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.08998489, y: 8.41682434, z: 6.62891436}
 --- !u!4 &211680682
 Transform:
   m_ObjectHideFlags: 0
@@ -1882,7 +1925,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.43725014, y: -4.22284985, z: -6.9865098}
     v1: {x: -5.97813988, y: -4.30290985, z: -8.22819996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.84811783, y: -3.42381001, z: -7.7829237}
 --- !u!4 &211968044
 Transform:
   m_ObjectHideFlags: 0
@@ -1928,7 +1972,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.46682978, y: 7.76639986, z: 2.42612004}
     v1: {x: 7.58558989, y: 6.82725, z: 4.21948004}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.94567013, y: 7.63793039, z: 3.55843425}
 --- !u!4 &219253164
 Transform:
   m_ObjectHideFlags: 0
@@ -1974,7 +2019,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.63328981, y: -.743022025, z: 9.46945}
     v1: {x: 6.47013998, y: .887715995, z: 8.90538025}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 5.35475016, y: .50522387, z: 9.49990845}
 --- !u!4 &220176692
 Transform:
   m_ObjectHideFlags: 0
@@ -1998,9 +2044,7 @@ GameObject:
   - 33: {fileID: 249330856}
   - 23: {fileID: 249330855}
   - 114: {fileID: 249330858}
-  - 114: {fileID: 249330859}
   - 114: {fileID: 249330860}
-  - 114: {fileID: 249330861}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -2049,7 +2093,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 795097410}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!114 &249330858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2062,17 +2106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 11
---- !u!114 &249330859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 249330854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99125b06607d14026a6235614ec2a92a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &249330860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2086,18 +2119,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 100002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
   NumEnemies: 5
-  Waves: []
---- !u!114 &249330861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 249330854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f5a85f054a5843f6b1c5f55958bb622, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &251271935
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,7 +2152,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.02239001, y: 10.9055996, z: -1.40719998}
     v1: {x: -2.70030999, y: 10.6722002, z: -.877384007}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -1.70826697, y: 10.7954006, z: -.179270744}
 --- !u!4 &251271937
 Transform:
   m_ObjectHideFlags: 0
@@ -2177,7 +2199,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.46682978, y: -7.76639986, z: -2.42612004}
     v1: {x: 8.61701965, y: -6.82726002, z: -1.04507005}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 7.65765619, y: -7.70186424, z: -1.12170434}
 --- !u!4 &252167697
 Transform:
   m_ObjectHideFlags: 0
@@ -2223,7 +2246,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.96571994, y: -.742123008, z: -10.6118002}
     v1: {x: -3.83814001, y: .742121994, z: -10.3283005}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.68674374, y: .442187071, z: -10.5842476}
 --- !u!4 &254176725
 Transform:
   m_ObjectHideFlags: 0
@@ -2269,7 +2293,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.17595959, y: -5.78771019, z: 2.06414008}
     v1: {x: 8.44583035, y: -7.0769701, z: .735614002}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 9.09788322, y: -5.99067783, z: .807044506}
 --- !u!4 &257386545
 Transform:
   m_ObjectHideFlags: 0
@@ -2315,7 +2340,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.46682978, y: -7.76639986, z: -2.42612004}
     v1: {x: -6.4004302, y: -8.13745022, z: -3.84356999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.55532694, y: -8.35146523, z: -2.57284546}
 --- !u!4 &257587262
 Transform:
   m_ObjectHideFlags: 0
@@ -2361,7 +2387,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.72300005, y: 2.50695992, z: 10.0901003}
     v1: {x: -4.73716021, y: .886771023, z: 9.93626976}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.59557724, y: 1.22226763, z: 10.24755}
 --- !u!4 &259556517
 Transform:
   m_ObjectHideFlags: 0
@@ -2407,7 +2434,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.47013998, y: .887715995, z: 8.90538025}
     v1: {x: 7.10867023, y: 2.6454401, z: 8.02651978}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.07217979, y: 2.19119143, z: 8.79408264}
 --- !u!4 &262181401
 Transform:
   m_ObjectHideFlags: 0
@@ -2453,7 +2481,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.4004302, y: -8.13745022, z: -3.84356999}
     v1: {x: -5.03192997, y: -8.36221981, z: -5.16812992}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.26549196, y: -8.72292709, z: -3.91945457}
 --- !u!4 &267136979
 Transform:
   m_ObjectHideFlags: 0
@@ -2499,7 +2528,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.63328981, y: .743021011, z: -9.46945}
     v1: {x: 4.73716021, y: -.886771977, z: -9.93626976}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.48813391, y: .327879608, z: -9.96007442}
 --- !u!4 &267248150
 Transform:
   m_ObjectHideFlags: 0
@@ -2545,7 +2575,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.21023989, y: -5.78771019, z: -7.06341982}
     v1: {x: 6.4004302, y: -7.0769701, z: -5.55946016}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.86755133, y: -6.01519442, z: -6.00124121}
 --- !u!4 &267892271
 Transform:
   m_ObjectHideFlags: 0
@@ -2591,7 +2622,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.88197994, y: 2.20785999, z: -7.41324997}
     v1: {x: -6.35703993, y: 2.23321009, z: -8.74971008}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.82089996, y: 3.13231373, z: -7.945117}
 --- !u!4 &269261081
 Transform:
   m_ObjectHideFlags: 0
@@ -2637,7 +2669,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.72300005, y: -10.1459999, z: 2.27014995}
     v1: {x: -5.43697023, y: -9.44855022, z: 1.76657999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.4607172, y: -9.89611626, z: 1.20149183}
 --- !u!4 &282791900
 Transform:
   m_ObjectHideFlags: 0
@@ -2683,7 +2716,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.61701965, y: 3.98797989, z: 5.63911009}
     v1: {x: -7.43725014, y: 4.22284985, z: 6.9865098}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -8.20410347, y: 3.17565727, z: 6.47123051}
 --- !u!4 &284547016
 Transform:
   m_ObjectHideFlags: 0
@@ -2729,7 +2763,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.02239001, y: -3.61846995, z: -10.3835001}
     v1: {x: 2.01924992, y: -2.20785999, z: -10.6303997}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.18290448, y: -3.49197674, z: -10.1240797}
 --- !u!4 &288843732
 Transform:
   m_ObjectHideFlags: 0
@@ -2775,7 +2810,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.91886997, y: 2.50695992, z: -10.3514004}
     v1: {x: 4.61475992, y: 2.20785999, z: -9.78703022}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.69190025, y: 3.14747643, z: -9.79263878}
 --- !u!4 &292044815
 Transform:
   m_ObjectHideFlags: 0
@@ -2821,7 +2857,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.27615976, y: -6.43287992, z: 7.2620101}
     v1: {x: -4.61475992, y: -7.76639986, z: 6.35166979}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.61956787, y: -6.92836714, z: 6.32175064}
 --- !u!4 &293898551
 Transform:
   m_ObjectHideFlags: 0
@@ -2867,7 +2904,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.26722002, y: -10.4954996, z: -1.06157994}
     v1: {x: 1.65427005, y: -10.9055996, z: -.537503004}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.57007623, y: -10.6273289, z: .0381640457}
 --- !u!4 &300460186
 Transform:
   m_ObjectHideFlags: 0
@@ -2913,7 +2951,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.61475992, y: -2.20785999, z: 9.78703022}
     v1: {x: -3.83814001, y: -.742123008, z: 10.3283005}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.88521481, y: -1.09701109, z: 9.71648979}
 --- !u!4 &307105280
 Transform:
   m_ObjectHideFlags: 0
@@ -2958,7 +2997,8 @@ MonoBehaviour:
   - {fileID: 1522485759}
   - {fileID: 112611823}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.87054253, y: -10.3393202, z: 2.05673981}
 --- !u!4 &312135718
 Transform:
   m_ObjectHideFlags: 0
@@ -3004,7 +3044,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.63328981, y: -.743022025, z: 9.46945}
     v1: {x: -6.35703993, y: -2.23321009, z: 8.74971008}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.17663908, y: -1.8860997, z: 9.44067955}
 --- !u!4 &317280323
 Transform:
   m_ObjectHideFlags: 0
@@ -3050,7 +3091,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.70030999, y: -10.6722002, z: .87738502}
     v1: {x: 4.34633017, y: -10.1459999, z: .351731986}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.38255835, y: -10.3939285, z: -.219591349}
 --- !u!4 &320031052
 Transform:
   m_ObjectHideFlags: 0
@@ -3096,7 +3138,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.21023989, y: 5.78771019, z: 7.06341982}
     v1: {x: -4.93567991, y: 7.17256021, z: 6.79337978}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.1333952, y: 6.09370995, z: 7.46978521}
 --- !u!4 &329940104
 Transform:
   m_ObjectHideFlags: 0
@@ -3142,7 +3185,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.46682978, y: -7.76639986, z: -2.42612004}
     v1: {x: -8.61701965, y: -6.82726002, z: -1.04507005}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -7.65029383, y: -7.7105298, z: -1.13580465}
 --- !u!4 &332484684
 Transform:
   m_ObjectHideFlags: 0
@@ -3188,7 +3232,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.4688997, y: -.887717009, z: 3.40155005}
     v1: {x: -10.4688997, y: -2.6454401, z: 2.31522012}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -10.093853, y: -2.16547203, z: 3.53256536}
 --- !u!4 &353797766
 Transform:
   m_ObjectHideFlags: 0
@@ -3234,7 +3279,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.72300005, y: -2.50695992, z: -10.0901003}
     v1: {x: 2.70030999, y: -3.98797989, z: -9.93785}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.61932182, y: -2.7219305, z: -10.2582626}
 --- !u!4 &362614597
 Transform:
   m_ObjectHideFlags: 0
@@ -3280,7 +3326,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.96571994, y: .742121994, z: 10.6118002}
     v1: {x: -2.01925993, y: 2.20785999, z: 10.6303997}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.20362234, y: 2.02254605, z: 10.252799}
 --- !u!4 &367907168
 Transform:
   m_ObjectHideFlags: 0
@@ -3326,7 +3373,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.17595959, y: 5.78771019, z: -2.06414008}
     v1: {x: 8.44583035, y: 7.0769701, z: -.735612988}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 9.09788322, y: 5.9906764, z: -.807043672}
 --- !u!4 &367907863
 Transform:
   m_ObjectHideFlags: 0
@@ -3372,7 +3420,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: 8.90604973, z: 6.52982998}
     v1: {x: -1.67761004, y: 8.13743973, z: 7.27489996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -1.32878542, y: 8.86557579, z: 6.23328114}
 --- !u!4 &372852322
 Transform:
   m_ObjectHideFlags: 0
@@ -3418,7 +3467,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.35703993, y: 2.23321009, z: -8.74971008}
     v1: {x: 7.88197994, y: 2.20785999, z: -7.41324997}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.93143654, y: 2.96141529, z: -7.9073081}
 --- !u!4 &377380709
 Transform:
   m_ObjectHideFlags: 0
@@ -3464,7 +3514,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.66887999, y: -6.82726002, z: -8.51821041}
     v1: {x: 1.65427005, y: -5.3578701, z: -9.51383972}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .818541348, y: -6.22172689, z: -8.95261383}
 --- !u!4 &379906414
 Transform:
   m_ObjectHideFlags: 0
@@ -3684,7 +3735,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.65672994, y: -3.98797989, z: 9.62709045}
     v1: {x: -5.27615976, y: -3.61846995, z: 9.00140953}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.53413534, y: -2.95869708, z: 9.49297523}
 --- !u!4 &386170397
 Transform:
   m_ObjectHideFlags: 0
@@ -3729,7 +3781,8 @@ MonoBehaviour:
   - {fileID: 207909182}
   - {fileID: 698435966}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.70948029, y: 3.81181812, z: 7.71922207}
 --- !u!4 &387552600
 Transform:
   m_ObjectHideFlags: 0
@@ -3775,7 +3828,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.94281006, y: -4.22284985, z: 4.91429996}
     v1: {x: 8.02591991, y: -3.98797989, z: 6.45269012}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 8.67489052, y: -3.2765255, z: 5.77972698}
 --- !u!4 &395339231
 Transform:
   m_ObjectHideFlags: 0
@@ -3821,7 +3875,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.83814001, y: -.742123008, z: 10.3283005}
     v1: {x: -2.96571994, y: .742121994, z: 10.6118002}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.04765701, y: .442187071, z: 10.1420689}
 --- !u!4 &401532118
 Transform:
   m_ObjectHideFlags: 0
@@ -3867,7 +3922,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.61475992, y: -2.20785999, z: 9.78703022}
     v1: {x: 6.35703993, y: -2.23321009, z: 8.74971008}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 5.37681198, y: -2.96019673, z: 9.03713417}
 --- !u!4 &405341133
 Transform:
   m_ObjectHideFlags: 0
@@ -3880,6 +3936,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159322676}
   m_RootOrder: 236
+--- !u!1 &413277602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 413277603}
+  - 33: {fileID: 413277606}
+  - 23: {fileID: 413277605}
+  - 111: {fileID: 413277604}
+  m_Layer: 0
+  m_Name: Mesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &413277603
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 413277602}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2025222057}
+  m_RootOrder: 0
+--- !u!111 &413277604
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11100000, guid: 8d768b3f71d72854db9831184916542a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 413277602}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 65a6f71c85012bb4298346eeef53550b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 8b6df7605864f2e40ab1d185eef9a4a8, type: 2}
+  - {fileID: 7400000, guid: 433c974154d4bb8458effe6a0a26d979, type: 2}
+  - {fileID: 7400000, guid: 339fc291d09e8bc4bb0e424a19b0295c, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!23 &413277605
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 8d768b3f71d72854db9831184916542a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 413277602}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: b1dc06a08ad26344d9b46e9d9c8141b7, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &413277606
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 8d768b3f71d72854db9831184916542a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 413277602}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &413811541
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,7 +4046,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -10.6722002, z: 2.83927989}
     v1: {x: 1.00856996, y: -10.1459999, z: 4.24230003}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.23826945, y: -10.3925705, z: 3.156461}
 --- !u!4 &413811543
 Transform:
   m_ObjectHideFlags: 0
@@ -3926,6 +4060,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159322676}
   m_RootOrder: 251
+--- !u!1 &416286968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 416286970}
+  - 114: {fileID: 416286969}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &416286969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 416286968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85b6b525687c40a5a437603c792c4b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemiesList:
+  - EnemyPrefab: {fileID: 1143925913}
+    Count: 1
+--- !u!4 &416286970
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 416286968}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.35552502, y: 2.61346388, z: -9.15627575}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1281996732}
+  m_RootOrder: 0
 --- !u!1 &421147371
 GameObject:
   m_ObjectHideFlags: 0
@@ -3959,7 +4135,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.03315997, y: -8.36221981, z: 7.13880014}
     v1: {x: 2.00796008, y: -9.28384972, z: 5.63336992}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.17659235, y: -8.42328644, z: 6.59627676}
 --- !u!4 &421147373
 Transform:
   m_ObjectHideFlags: 0
@@ -4005,7 +4182,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.17595959, y: 5.78771019, z: -2.06414008}
     v1: {x: -9.48608971, y: 5.64322996, z: -.353145987}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -8.84634209, y: 6.34590054, z: -.998684585}
 --- !u!4 &433832119
 Transform:
   m_ObjectHideFlags: 0
@@ -4051,7 +4229,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.83036995, y: -2.6454401, z: 4.28041983}
     v1: {x: 10.4688997, y: -2.6454401, z: 2.31522012}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 9.81638527, y: -3.54315948, z: 3.19249654}
 --- !u!4 &441875860
 Transform:
   m_ObjectHideFlags: 0
@@ -4097,7 +4276,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.61701965, y: -3.98797989, z: -5.63911009}
     v1: {x: -7.43725014, y: -4.22284985, z: -6.9865098}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -8.17753601, y: -3.2765255, z: -6.46427488}
 --- !u!4 &458674865
 Transform:
   m_ObjectHideFlags: 0
@@ -4143,7 +4323,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.7341003, y: -2.20785999, z: -1.36452997}
     v1: {x: -10.7468004, y: -2.50695992, z: .422758013}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -10.4156151, y: -3.27543545, z: -.472967625}
 --- !u!4 &459051693
 Transform:
   m_ObjectHideFlags: 0
@@ -4189,7 +4370,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.10867023, y: -8.36221981, z: 1.22341001}
     v1: {x: -8.44583035, y: -7.0769701, z: .735614002}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -7.51080608, y: -7.92785931, z: .0664960146}
 --- !u!4 &484760919
 Transform:
   m_ObjectHideFlags: 0
@@ -4235,7 +4417,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.91029, y: -4.22284985, z: 10.0236998}
     v1: {x: -4.76836988e-07, y: -4.30290985, z: 10.1705999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .964289725, y: -3.44052887, z: 10.3161049}
 --- !u!4 &487026813
 Transform:
   m_ObjectHideFlags: 0
@@ -4281,7 +4464,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.80586004, y: -4.9387598, z: 7.99107981}
     v1: {x: -5.27615976, y: -6.43287992, z: 7.2620101}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.11685085, y: -5.4895916, z: 7.21011257}
 --- !u!4 &489753808
 Transform:
   m_ObjectHideFlags: 0
@@ -4327,7 +4511,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.34633017, y: 10.1459999, z: -.351731002}
     v1: {x: -5.43697023, y: 9.44855022, z: -1.76657999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.30384731, y: 9.89977455, z: -1.66261649}
 --- !u!4 &496141652
 Transform:
   m_ObjectHideFlags: 0
@@ -4373,7 +4558,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.59549999, y: 5.64322996, z: -9.13092995}
     v1: {x: 1.91029, y: 4.22284985, z: -10.0236998}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.60458398, y: 5.31054688, z: -9.4100914}
 --- !u!4 &501010314
 Transform:
   m_ObjectHideFlags: 0
@@ -4419,7 +4605,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.68674004, y: 9.28384972, z: 5.73774004}
     v1: {x: -4.76836988e-07, y: 9.82336998, z: 5.04558992}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .350093246, y: 9.10215282, z: 6.01935816}
 --- !u!4 &505766254
 Transform:
   m_ObjectHideFlags: 0
@@ -4465,7 +4652,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.5593996, y: 5.3578701, z: 1.36663997}
     v1: {x: -8.61701965, y: 6.82725, z: 1.04507005}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.32886124, y: 5.69427013, z: .352536976}
 --- !u!4 &506601985
 Transform:
   m_ObjectHideFlags: 0
@@ -4511,7 +4699,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.93567991, y: -9.28384972, z: -3.37723994}
     v1: {x: -6.21023989, y: -8.90606022, z: -2.0178299}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.93508625, y: -8.57176971, z: -3.25427294}
 --- !u!4 &515064178
 Transform:
   m_ObjectHideFlags: 0
@@ -4557,7 +4746,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.00856996, y: -.743022025, z: -10.9721003}
     v1: {x: -4.76836988e-07, y: -2.23321009, z: -10.8151999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -1.36110759, y: -1.8860997, z: -10.6804199}
 --- !u!4 &515655185
 Transform:
   m_ObjectHideFlags: 0
@@ -4603,7 +4793,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.97813988, y: -4.30290985, z: -8.22819996}
     v1: {x: -4.34633017, y: -4.22284985, z: -9.23219967}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.28581524, y: -3.42381001, z: -8.91799927}
 --- !u!4 &519845453
 Transform:
   m_ObjectHideFlags: 0
@@ -4649,7 +4840,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.65427005, y: 10.9055996, z: .537504017}
     v1: {x: -4.76836988e-07, y: 11.0433998, z: 4.76836988e-07}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .902899861, y: 10.8773451, z: -.580912948}
 --- !u!4 &528536296
 Transform:
   m_ObjectHideFlags: 0
@@ -4695,7 +4887,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.61475992, y: -2.20785999, z: 9.78703022}
     v1: {x: -2.91886997, y: -2.50695992, z: 10.3514004}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.69190311, y: -3.14747643, z: 9.79263878}
 --- !u!4 &535969336
 Transform:
   m_ObjectHideFlags: 0
@@ -4741,7 +4934,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -4.9387598, z: -9.87751007}
     v1: {x: -4.76836988e-07, y: -6.43287992, z: -8.97634029}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .827492356, y: -5.45113087, z: -9.43646812}
 --- !u!4 &538586553
 Transform:
   m_ObjectHideFlags: 0
@@ -4787,7 +4981,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.93567991, y: 7.17256021, z: 6.79337978}
     v1: {x: -3.36022997, y: 8.36221981, z: 6.38268995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.69449377, y: 7.37415457, z: 7.15025043}
 --- !u!4 &549908105
 Transform:
   m_ObjectHideFlags: 0
@@ -4833,7 +5028,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.21023989, y: 8.90604973, z: 2.0178299}
     v1: {x: 4.79863977, y: 9.82336998, z: 1.55917001}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 5.70296001, y: 9.27007389, z: .987003863}
 --- !u!4 &553054056
 Transform:
   m_ObjectHideFlags: 0
@@ -4879,7 +5075,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.79863977, y: 5.78771019, z: 8.08901024}
     v1: {x: 5.97813988, y: 4.30290985, z: 8.22821045}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 5.81333542, y: 5.43933344, z: 7.47881556}
 --- !u!4 &558580007
 Transform:
   m_ObjectHideFlags: 0
@@ -4925,7 +5122,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.03192997, y: -8.36221981, z: -5.16812992}
     v1: {x: -3.36022997, y: -8.36221981, z: -6.38268995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.75281143, y: -8.84560108, z: -5.16530418}
 --- !u!4 &561847419
 Transform:
   m_ObjectHideFlags: 0
@@ -4971,7 +5169,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.5593996, y: -5.3578701, z: -1.36663997}
     v1: {x: -8.61701965, y: -6.82726002, z: -1.04507005}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.22940445, y: -5.82719612, z: -.519082844}
 --- !u!4 &573527170
 Transform:
   m_ObjectHideFlags: 0
@@ -5016,7 +5215,8 @@ MonoBehaviour:
   - {fileID: 251271936}
   - {fileID: 838524370}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.47633982, y: 10.6410046, z: .223284036}
 --- !u!4 &574851901
 Transform:
   m_ObjectHideFlags: 0
@@ -5062,7 +5262,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.72300005, y: 2.50695992, z: 10.0901003}
     v1: {x: -5.43697023, y: 2.6454401, z: 9.24108028}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.4607172, y: 3.35103536, z: 9.38868618}
 --- !u!4 &587488452
 Transform:
   m_ObjectHideFlags: 0
@@ -5108,7 +5309,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.83814001, y: -8.90606022, z: 5.28275013}
     v1: {x: 2.91886997, y: -8.13745022, z: 6.87159014}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.48375511, y: -8.87268257, z: 5.87316704}
 --- !u!4 &589048459
 Transform:
   m_ObjectHideFlags: 0
@@ -5149,7 +5351,7 @@ Transform:
   - {fileID: 2011921441}
   - {fileID: 1781737405}
   m_Father: {fileID: 795097410}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!1 &593956167
 GameObject:
   m_ObjectHideFlags: 0
@@ -5183,7 +5385,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.93042994, y: -3.61846995, z: 7.79951}
     v1: {x: 5.27615976, y: -3.61846995, z: 9.00140953}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.18172169, y: -2.94982576, z: 8.50840759}
 --- !u!4 &593956169
 Transform:
   m_ObjectHideFlags: 0
@@ -5289,7 +5492,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.35703993, y: -6.82726002, z: 5.91042995}
     v1: {x: -6.93042994, y: -5.3578701, z: 6.72451019}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.91098022, y: -6.22689438, z: 6.77005386}
 --- !u!4 &605996212
 Transform:
   m_ObjectHideFlags: 0
@@ -5404,7 +5608,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.43697023, y: 2.6454401, z: 9.24108028}
     v1: {x: 4.73716021, y: .886771023, z: 9.93626976}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 5.73820543, y: 1.34375072, z: 9.18292141}
 --- !u!4 &610384134
 Transform:
   m_ObjectHideFlags: 0
@@ -5450,7 +5655,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.91886997, y: 2.50695992, z: -10.3514004}
     v1: {x: -2.00796008, y: .886771023, z: -10.823}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.11448383, y: 1.22226763, z: -10.4038544}
 --- !u!4 &611199624
 Transform:
   m_ObjectHideFlags: 0
@@ -5473,7 +5679,7 @@ GameObject:
   - 4: {fileID: 619716004}
   - 95: {fileID: 619716005}
   m_Layer: 0
-  m_Name: A2_Pianeta
+  m_Name: Pianeta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5491,8 +5697,8 @@ Transform:
   m_Children:
   - {fileID: 1873643299}
   - {fileID: 384366373}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 795097410}
+  m_RootOrder: 3
 --- !u!95 &619716005
 Animator:
   serializedVersion: 3
@@ -5541,7 +5747,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.91886997, y: -2.50695992, z: 10.3514004}
     v1: {x: -1.03316998, y: -2.6454401, z: 10.6719999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -1.90850663, y: -3.36773348, z: 10.2131872}
 --- !u!4 &632979979
 Transform:
   m_ObjectHideFlags: 0
@@ -5587,7 +5794,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -2.23321009, z: -10.8151999}
     v1: {x: 1.02239001, y: -3.61846995, z: -10.3835001}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -.362398744, y: -3.31988621, z: -10.4062405}
 --- !u!4 &633004079
 Transform:
   m_ObjectHideFlags: 0
@@ -5633,7 +5841,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.26722002, y: 10.4954996, z: 1.06158996}
     v1: {x: -3.30952001, y: 10.1459999, z: 2.83927011}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.47089291, y: 10.4345741, z: 2.10882926}
 --- !u!4 &635144376
 Transform:
   m_ObjectHideFlags: 0
@@ -5679,7 +5888,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.65672994, y: 3.98797989, z: -9.62709045}
     v1: {x: -5.27615976, y: 3.61846995, z: -9.00140953}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.54036379, y: 2.93746328, z: -9.49321365}
 --- !u!4 &636175362
 Transform:
   m_ObjectHideFlags: 0
@@ -5725,7 +5935,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.67284012, y: -4.30290985, z: 3.14289999}
     v1: {x: 8.94281006, y: -4.22284985, z: 4.91429996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 9.5123415, y: -3.44057727, z: 4.10653687}
 --- !u!4 &637481262
 Transform:
   m_ObjectHideFlags: 0
@@ -5771,7 +5982,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.83814001, y: .742121994, z: -10.3283005}
     v1: {x: 4.61475992, y: 2.20785999, z: -9.78703022}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.88521481, y: 1.09701049, z: -9.71648979}
 --- !u!4 &642705850
 Transform:
   m_ObjectHideFlags: 0
@@ -5817,7 +6029,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.73716021, y: 9.28384972, z: -3.65048003}
     v1: {x: -3.72300005, y: 10.1459999, z: -2.27014995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.8205471, y: 9.50766754, z: -2.35785317}
 --- !u!4 &644381098
 Transform:
   m_ObjectHideFlags: 0
@@ -5862,7 +6075,8 @@ MonoBehaviour:
   - {fileID: 1400647650}
   - {fileID: 695329970}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -8.86010361, y: 2.77404904, z: 5.75779629}
 --- !u!4 &659736508
 Transform:
   m_ObjectHideFlags: 0
@@ -5884,7 +6098,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 661207464}
   m_Layer: 0
-  m_Name: _Managers
+  m_Name: MANAGERS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5905,6 +6119,8 @@ Transform:
   - {fileID: 1247131789}
   - {fileID: 1058953693}
   - {fileID: 1854237714}
+  - {fileID: 1635130667}
+  - {fileID: 1593677220}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1 &668048251
@@ -5935,6 +6151,7 @@ Transform:
   - {fileID: 771318975}
   - {fileID: 901655240}
   - {fileID: 178993659}
+  - {fileID: 1143925914}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1 &688372440
@@ -5997,7 +6214,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.67284012, y: -4.30290985, z: 3.14289999}
     v1: {x: 9.17595959, y: -5.78771019, z: 2.06414008}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 9.75254154, y: -4.54554176, z: 1.85987329}
 --- !u!4 &693518067
 Transform:
   m_ObjectHideFlags: 0
@@ -6043,7 +6261,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.17595959, y: .742121994, z: 6.09980011}
     v1: {x: -8.44583035, y: 2.50695992, z: 6.65881014}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.14579964, y: 1.97521544, z: 5.64015293}
 --- !u!4 &695329971
 Transform:
   m_ObjectHideFlags: 0
@@ -6089,7 +6308,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.27615976, y: 3.61846995, z: -9.00140953}
     v1: {x: -6.93042994, y: 3.61846995, z: -7.79951}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.16628504, y: 2.9720211, z: -8.51432228}
 --- !u!4 &695764304
 Transform:
   m_ObjectHideFlags: 0
@@ -6135,7 +6355,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.97813988, y: 4.30290985, z: 8.22821045}
     v1: {x: -4.34633017, y: 4.22284985, z: 9.23219967}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.28188419, y: 3.44057727, z: 8.91346741}
 --- !u!4 &697889979
 Transform:
   m_ObjectHideFlags: 0
@@ -6181,7 +6402,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.10867023, y: 2.6454401, z: 8.02651978}
     v1: {x: -8.44583035, y: 2.50695992, z: 6.65881014}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -7.51623821, y: 3.46877003, z: 7.11780548}
 --- !u!4 &698435967
 Transform:
   m_ObjectHideFlags: 0
@@ -6227,7 +6449,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.61475992, y: 7.76639986, z: -6.35166979}
     v1: {x: 3.65671992, y: 6.82725, z: -7.87233019}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.51432681, y: 7.6477828, z: -6.9579525}
 --- !u!4 &710671291
 Transform:
   m_ObjectHideFlags: 0
@@ -6273,7 +6496,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.43725014, y: -8.13745022, z: -.652567983}
     v1: {x: -6.21023989, y: -8.90606022, z: -2.0178299}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -7.13593102, y: -8.05460262, z: -1.87196755}
 --- !u!4 &711017385
 Transform:
   m_ObjectHideFlags: 0
@@ -6319,7 +6543,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.44583035, y: -7.0769701, z: .735614002}
     v1: {x: 7.43725014, y: -8.13745022, z: -.652567983}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 8.21770668, y: -7.1723299, z: -.49191916}
 --- !u!4 &728248420
 Transform:
   m_ObjectHideFlags: 0
@@ -6365,7 +6590,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.4004302, y: -8.13745022, z: -3.84356999}
     v1: {x: 6.21023989, y: -8.90606022, z: -2.0178299}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.96233368, y: -7.98707342, z: -2.64495039}
 --- !u!4 &740301409
 Transform:
   m_ObjectHideFlags: 0
@@ -6411,7 +6637,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -4.30290985, z: 10.1705999}
     v1: {x: -1.91029, y: -4.22284985, z: 10.0236998}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -.965557218, y: -3.42381001, z: 10.3217449}
 --- !u!4 &746724359
 Transform:
   m_ObjectHideFlags: 0
@@ -6457,7 +6684,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.43725014, y: -4.22284985, z: -6.9865098}
     v1: {x: 5.97813988, y: -4.30290985, z: -8.22819996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.29740286, y: -5.16344166, z: -7.2969799}
 --- !u!4 &757375148
 Transform:
   m_ObjectHideFlags: 0
@@ -6503,7 +6731,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.72300005, y: -2.50695992, z: -10.0901003}
     v1: {x: -5.43697023, y: -2.6454401, z: -9.24108028}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.45914745, y: -3.36773348, z: -9.38442612}
 --- !u!4 &758066116
 Transform:
   m_ObjectHideFlags: 0
@@ -6549,7 +6778,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.73716021, y: -.886771977, z: -9.93626976}
     v1: {x: 3.72300005, y: -2.50695992, z: -10.0901003}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.58326817, y: -1.21156621, z: -10.2540846}
 --- !u!4 &770003514
 Transform:
   m_ObjectHideFlags: 0
@@ -6642,7 +6872,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.46682978, y: -7.76639986, z: -2.42612004}
     v1: {x: 7.58558989, y: -6.82726002, z: -4.21948004}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.94567013, y: -7.63793659, z: -3.55843425}
 --- !u!4 &775733579
 Transform:
   m_ObjectHideFlags: 0
@@ -6688,7 +6919,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.1233997, y: -4.22284985, z: 1.28069997}
     v1: {x: -10.2859001, y: -3.98797989, z: -.502816021}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -10.4103346, y: -3.29243922, z: .423381388}
 --- !u!4 &781521175
 Transform:
   m_ObjectHideFlags: 0
@@ -6734,7 +6966,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.21023989, y: 5.78771019, z: 7.06341982}
     v1: {x: 6.4004302, y: 7.0769701, z: 5.55946016}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.87266731, y: 5.99923849, z: 6.00678062}
 --- !u!4 &784872756
 Transform:
   m_ObjectHideFlags: 0
@@ -6779,7 +7012,8 @@ MonoBehaviour:
   - {fileID: 112727400}
   - {fileID: 40288683}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.84368122, y: -4.27295399, z: -9.88541222}
 --- !u!4 &785453781
 Transform:
   m_ObjectHideFlags: 0
@@ -6825,7 +7059,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.88197994, y: 2.20785999, z: -7.41324997}
     v1: {x: 8.94281006, y: 2.50695992, z: -5.97477007}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 8.16971111, y: 3.16295624, z: -6.53438663}
 --- !u!4 &785489930
 Transform:
   m_ObjectHideFlags: 0
@@ -6838,6 +7073,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159322676}
   m_RootOrder: 201
+--- !u!1 &792164224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 792164226}
+  - 114: {fileID: 792164225}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &792164225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 792164224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85b6b525687c40a5a437603c792c4b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemiesList:
+  - EnemyPrefab: {fileID: 1143925913}
+    Count: 1
+--- !u!4 &792164226
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 792164224}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.55532694, y: -8.35146523, z: -2.57284546}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1281996732}
+  m_RootOrder: 1
 --- !u!1 &795097409
 GameObject:
   m_ObjectHideFlags: 0
@@ -6865,10 +7142,11 @@ Transform:
   m_Children:
   - {fileID: 1767037910}
   - {fileID: 688372441}
-  - {fileID: 593448277}
   - {fileID: 249330857}
+  - {fileID: 619716004}
+  - {fileID: 593448277}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1 &819381093
 GameObject:
   m_ObjectHideFlags: 0
@@ -6902,7 +7180,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.47013998, y: 8.36221981, z: -3.18861008}
     v1: {x: -7.26520014, y: 7.0769701, z: -4.36920977}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.22475433, y: 7.88811398, z: -4.2784462}
 --- !u!4 &819381095
 Transform:
   m_ObjectHideFlags: 0
@@ -6947,7 +7226,8 @@ MonoBehaviour:
   - {fileID: 1381898711}
   - {fileID: 1415526679}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .00938495528, y: -10.7681656, z: 1.86160684}
 --- !u!4 &819429206
 Transform:
   m_ObjectHideFlags: 0
@@ -6993,7 +7273,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.34633017, y: 10.1459999, z: -.351731002}
     v1: {x: 5.97813988, y: 9.28384972, z: .168872997}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.95741367, y: 9.71336365, z: .727075338}
 --- !u!4 &824806188
 Transform:
   m_ObjectHideFlags: 0
@@ -7182,7 +7463,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.1913004, y: -3.61846995, z: -2.23634005}
     v1: {x: -9.5593996, y: -5.3578701, z: -1.36663997}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -10.0221539, y: -4.20540571, z: -1.08990932}
 --- !u!4 &828230994
 Transform:
   m_ObjectHideFlags: 0
@@ -7228,7 +7510,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.93042994, y: -3.61846995, z: 7.79951}
     v1: {x: -6.93042994, y: -5.3578701, z: 6.72451019}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.19253826, y: -4.73695421, z: 7.66455078}
 --- !u!4 &828585964
 Transform:
   m_ObjectHideFlags: 0
@@ -7274,7 +7557,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.48608971, y: -2.20785999, z: -5.20538998}
     v1: {x: -10.2859001, y: -2.23321009, z: -3.34208989}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.65826702, y: -2.97689486, z: -4.14797497}
 --- !u!4 &835322996
 Transform:
   m_ObjectHideFlags: 0
@@ -7320,7 +7604,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.26722002, y: 10.4954996, z: 1.06158996}
     v1: {x: -4.34633017, y: 10.1459999, z: -.351731002}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.1667552, y: 10.4542446, z: -.340531588}
 --- !u!4 &838524371
 Transform:
   m_ObjectHideFlags: 0
@@ -7366,7 +7651,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.59549999, y: -5.64322996, z: 9.13092995}
     v1: {x: 3.65671992, y: -3.98797989, z: 9.62709045}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.43493867, y: -4.4530139, z: 9.6680851}
 --- !u!4 &868412903
 Transform:
   m_ObjectHideFlags: 0
@@ -7412,7 +7698,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.67284012, y: 4.30290985, z: -3.14288998}
     v1: {x: 8.94281006, y: 4.22284985, z: -4.91428995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 9.5123415, y: 3.44057727, z: -4.10653305}
 --- !u!4 &891035272
 Transform:
   m_ObjectHideFlags: 0
@@ -7502,7 +7789,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.44583035, y: -2.50695992, z: -6.65881014}
     v1: {x: -9.48608971, y: -2.20785999, z: -5.20538998}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -8.73915386, y: -3.16295624, z: -5.75061798}
 --- !u!4 &907272975
 Transform:
   m_ObjectHideFlags: 0
@@ -7548,7 +7836,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.97813988, y: -9.28384972, z: -.168871999}
     v1: {x: -4.34633017, y: -10.1459999, z: .351731986}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.28581524, y: -9.50766754, z: .925901949}
 --- !u!4 &908712248
 Transform:
   m_ObjectHideFlags: 0
@@ -7594,7 +7883,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.67284012, y: -4.30290985, z: 3.14289999}
     v1: {x: -9.83036995, y: -2.6454401, z: 4.28041983}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -10.1261997, y: -2.8470993, z: 2.92576075}
 --- !u!4 &913195082
 Transform:
   m_ObjectHideFlags: 0
@@ -7640,7 +7930,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.96571994, y: -9.82336998, z: 4.08197021}
     v1: {x: 2.01924992, y: -10.4954996, z: 2.77926993}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.74431014, y: -10.0892258, z: 3.82777357}
 --- !u!4 &933125774
 Transform:
   m_ObjectHideFlags: 0
@@ -7687,7 +7978,8 @@ MonoBehaviour:
     v1: {x: -1.02239001, y: 3.61846995, z: 10.3835001}
   - v0: {x: -2.01925993, y: 2.20785999, z: 10.6303997}
     v1: {x: -1.02239001, y: 3.61846995, z: 10.3835001}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.75304127, y: 2.91522789, z: 10.1990337}
 --- !u!4 &942312073
 Transform:
   m_ObjectHideFlags: 0
@@ -7732,7 +8024,8 @@ MonoBehaviour:
   - {fileID: 1714252139}
   - {fileID: 1041682710}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 7.01906729, y: 8.1940279, z: 1.6937201}
 --- !u!4 &944948149
 Transform:
   m_ObjectHideFlags: 0
@@ -7778,7 +8071,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.91886997, y: 2.50695992, z: -10.3514004}
     v1: {x: -1.03316998, y: 2.6454401, z: -10.6719999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -1.90973926, y: 3.35103536, z: -10.2175541}
 --- !u!4 &945281081
 Transform:
   m_ObjectHideFlags: 0
@@ -7824,7 +8118,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.79863977, y: 9.82336998, z: 1.55917001}
     v1: {x: 3.26722002, y: 10.4954996, z: 1.06158996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.17944717, y: 10.0892258, z: .476094097}
 --- !u!4 &972944286
 Transform:
   m_ObjectHideFlags: 0
@@ -7869,7 +8164,8 @@ MonoBehaviour:
   - {fileID: 515655184}
   - {fileID: 633004078}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -1.1232233, y: -2.71345425, z: -10.5267105}
 --- !u!4 &977936074
 Transform:
   m_ObjectHideFlags: 0
@@ -7914,7 +8210,8 @@ MonoBehaviour:
   - {fileID: 1584260434}
   - {fileID: 1462164348}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.77166152, y: -2.85658216, z: 9.83985329}
 --- !u!4 &979160641
 Transform:
   m_ObjectHideFlags: 0
@@ -7960,7 +8257,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.1233997, y: .743021011, z: 4.34978008}
     v1: {x: -10.4688997, y: -.887717009, z: 3.40155005}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.91598511, y: -.505224705, z: 4.53814745}
 --- !u!4 &988637401
 Transform:
   m_ObjectHideFlags: 0
@@ -7973,56 +8271,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159322676}
   m_RootOrder: 72
---- !u!1 &997320473
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 997320475}
-  - 114: {fileID: 997320474}
-  m_Layer: 0
-  m_Name: Wave0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &997320474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 997320473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b0b770fa6cc45fe95e8a126df5d273, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Round: 0
-  Wave: 0
-  Phase: 0
-  StartDelay: 0
-  StartTime: 0
-  SpawnCircleRadius: 0
-  SpawnTime: 0
-  SpawnTimeVariance: 0
-  NumMinions: 0
-  MaxActiveMinions: 0
-  SpeedVariance: 0
---- !u!4 &997320475
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 997320473}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.3350077, y: 1.94102931, z: -1.1920929e-07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
 --- !u!1 &1005317730
 GameObject:
   m_ObjectHideFlags: 0
@@ -8056,7 +8304,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.79863977, y: -5.78771019, z: -8.08901024}
     v1: {x: 6.21023989, y: -5.78771019, z: -7.06341982}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 5.69021797, y: -5.03738594, z: -7.85658646}
 --- !u!4 &1005317732
 Transform:
   m_ObjectHideFlags: 0
@@ -8102,7 +8351,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.48608971, y: -5.64322996, z: .353147}
     v1: {x: 10.1233997, y: -4.22284985, z: 1.28069997}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 9.44537163, y: -5.31054688, z: 1.38182962}
 --- !u!4 &1006288670
 Transform:
   m_ObjectHideFlags: 0
@@ -8148,7 +8398,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.36022997, y: -9.44855022, z: -4.62496996}
     v1: {x: -4.93567991, y: -9.28384972, z: -3.37723994}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.53586769, y: -8.81440353, z: -4.55971241}
 --- !u!4 &1010058029
 Transform:
   m_ObjectHideFlags: 0
@@ -8193,7 +8444,8 @@ MonoBehaviour:
   - {fileID: 636175361}
   - {fileID: 1731517354}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.6540308, y: 2.78427649, z: -9.91298676}
 --- !u!4 &1015361690
 Transform:
   m_ObjectHideFlags: 0
@@ -8239,7 +8491,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.01924992, y: -10.4954996, z: 2.77926993}
     v1: {x: 1.02239001, y: -10.9055996, z: 1.40719998}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .660889924, y: -10.6191521, z: 2.49890447}
 --- !u!4 &1015840402
 Transform:
   m_ObjectHideFlags: 0
@@ -8285,7 +8538,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.48608971, y: 5.64322996, z: -.353145987}
     v1: {x: -10.2859001, y: 3.98797989, z: .502816975}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.6718502, y: 5.02296734, z: .786154926}
 --- !u!4 &1016442138
 Transform:
   m_ObjectHideFlags: 0
@@ -8331,7 +8585,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.36022997, y: -8.36221981, z: -6.38268995}
     v1: {x: -1.67761004, y: -8.13745022, z: -7.27489996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.10049534, y: -8.72292709, z: -6.2189579}
 --- !u!4 &1028938922
 Transform:
   m_ObjectHideFlags: 0
@@ -8377,7 +8632,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.91029, y: 7.0769701, z: -8.25977039}
     v1: {x: 2.91886997, y: 8.13743973, z: -6.87159014}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.02070189, y: 7.16344643, z: -7.66705608}
 --- !u!4 &1037182570
 Transform:
   m_ObjectHideFlags: 0
@@ -8423,7 +8679,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: 4.30290985, z: -10.1705999}
     v1: {x: .872416973, y: 5.78771019, z: -9.36470985}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.25362897, y: 4.56178713, z: -9.84354973}
 --- !u!4 &1039929714
 Transform:
   m_ObjectHideFlags: 0
@@ -8469,7 +8726,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.30952001, y: 7.0769701, z: 7.80514002}
     v1: {x: -4.79863977, y: 5.78771019, z: 8.08901024}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.44001627, y: 6.76024723, z: 7.33536243}
 --- !u!4 &1041381746
 Transform:
   m_ObjectHideFlags: 0
@@ -8515,7 +8773,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.4004302, y: 8.13743973, z: 3.84356999}
     v1: {x: 6.21023989, y: 8.90604973, z: 2.0178299}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.96233368, y: 7.98706627, z: 2.64495063}
 --- !u!4 &1041682711
 Transform:
   m_ObjectHideFlags: 0
@@ -8561,7 +8820,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.67761004, y: 8.13743973, z: 7.27489996}
     v1: {x: -3.30952001, y: 7.0769701, z: 7.80514002}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.90613437, y: 7.9292202, z: 6.91427994}
 --- !u!4 &1050711295
 Transform:
   m_ObjectHideFlags: 0
@@ -8607,7 +8867,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.34633017, y: -4.22284985, z: -9.23219967}
     v1: {x: -2.70030999, y: -3.98797989, z: -9.93785}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.62089396, y: -3.2765255, z: -9.77486038}
 --- !u!4 &1053584275
 Transform:
   m_ObjectHideFlags: 0
@@ -8630,7 +8891,7 @@ GameObject:
   - 4: {fileID: 1058953693}
   - 114: {fileID: 1058953694}
   m_Layer: 0
-  m_Name: Transformation_manager
+  m_Name: TransformationManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9174,7 +9435,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.97813988, y: 4.30290985, z: 8.22821045}
     v1: {x: -4.79863977, y: 5.78771019, z: 8.08901024}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.76792288, y: 5.37096691, z: 7.56012964}
 --- !u!4 &1059888195
 Transform:
   m_ObjectHideFlags: 0
@@ -9264,7 +9526,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.97813988, y: -4.30290985, z: -8.22819996}
     v1: {x: 4.34633017, y: -4.22284985, z: -9.23219967}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.95741367, y: -4.99426699, z: -8.36274529}
 --- !u!4 &1082568442
 Transform:
   m_ObjectHideFlags: 0
@@ -9310,7 +9573,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.65671992, y: 6.82725, z: -7.87233019}
     v1: {x: 2.59549999, y: 5.64322996, z: -9.13092995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.52488184, y: 6.60742283, z: -8.31980038}
 --- !u!4 &1085233030
 Transform:
   m_ObjectHideFlags: 0
@@ -9355,7 +9619,8 @@ MonoBehaviour:
   - {fileID: 942312072}
   - {fileID: 367907167}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.02150297, y: 2.79087782, z: 10.1379452}
 --- !u!4 &1096607139
 Transform:
   m_ObjectHideFlags: 0
@@ -9401,7 +9666,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.96571994, y: 9.82336998, z: -4.08197021}
     v1: {x: 2.01924992, y: 10.4954996, z: -2.77926993}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.101403, y: 10.0892258, z: -2.84178615}
 --- !u!4 &1103136092
 Transform:
   m_ObjectHideFlags: 0
@@ -9447,7 +9713,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.36022997, y: 9.44855022, z: 4.62496996}
     v1: {x: -1.68674004, y: 9.28384972, z: 5.73774004}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -1.91909552, y: 9.76108837, z: 4.51506376}
 --- !u!4 &1103752734
 Transform:
   m_ObjectHideFlags: 0
@@ -9493,7 +9760,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.97813988, y: 9.28384972, z: .168872997}
     v1: {x: 7.43725014, y: 8.13743973, z: .652568996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.39218569, y: 8.76509476, z: 1.3036474}
 --- !u!4 &1122026568
 Transform:
   m_ObjectHideFlags: 0
@@ -9539,7 +9807,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.21023989, y: 5.78771019, z: 7.06341982}
     v1: {x: 4.93567991, y: 7.17256021, z: 6.79337978}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 5.14158344, y: 6.10110283, z: 7.45798111}
 --- !u!4 &1132405431
 Transform:
   m_ObjectHideFlags: 0
@@ -9585,7 +9854,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.91029, y: -4.22284985, z: 10.0236998}
     v1: {x: -3.65672994, y: -3.98797989, z: 9.62709045}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.8161602, y: -3.2765255, z: 10.0363369}
 --- !u!4 &1137238734
 Transform:
   m_ObjectHideFlags: 0
@@ -9631,7 +9901,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -6.43287992, z: -8.97634029}
     v1: {x: -4.76836988e-07, y: -7.76639986, z: -7.85108995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .804231703, y: -6.92046356, z: -8.42850685}
 --- !u!4 &1138992175
 Transform:
   m_ObjectHideFlags: 0
@@ -9644,6 +9915,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159322676}
   m_RootOrder: 136
+--- !u!1 &1143925913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1143925914}
+  m_Layer: 10
+  m_Name: Enemy_PM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1143925914
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 1143925913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2025222057}
+  m_Father: {fileID: 668048252}
+  m_RootOrder: 3
 --- !u!1 &1149398097
 GameObject:
   m_ObjectHideFlags: 0
@@ -9677,7 +9976,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.02239001, y: 10.9055996, z: -1.40719998}
     v1: {x: -1.02239001, y: 10.9055996, z: -1.40719998}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .00205792743, y: 10.9188385, z: -.548057079}
 --- !u!4 &1149398099
 Transform:
   m_ObjectHideFlags: 0
@@ -9723,7 +10023,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.88197994, y: 5.64322996, z: -5.29008007}
     v1: {x: -8.63677979, y: 5.78771019, z: -3.72357011}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -7.6628747, y: 6.44765282, z: -4.37454033}
 --- !u!4 &1149748831
 Transform:
   m_ObjectHideFlags: 0
@@ -9769,7 +10070,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.93042994, y: 5.3578701, z: -6.72451019}
     v1: {x: -6.93042994, y: 3.61846995, z: -7.79951}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -7.38013935, y: 4.24834538, z: -6.84359598}
 --- !u!4 &1152708642
 Transform:
   m_ObjectHideFlags: 0
@@ -9815,7 +10117,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.30950999, y: 7.0769701, z: 7.80514002}
     v1: {x: 4.79863977, y: 5.78771019, z: 8.08901024}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.44001389, y: 6.76024723, z: 7.33536243}
 --- !u!4 &1158674318
 Transform:
   m_ObjectHideFlags: 0
@@ -9861,7 +10164,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.01925993, y: -2.20785999, z: -10.6303997}
     v1: {x: -2.96571994, y: -.742123008, z: -10.6118002}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -1.75899315, y: -1.09701109, z: -10.7322626}
 --- !u!4 &1162589356
 Transform:
   m_ObjectHideFlags: 0
@@ -9907,7 +10211,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.35703993, y: -2.23321009, z: 8.74971008}
     v1: {x: 7.88197994, y: -2.20785999, z: 7.41324997}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.92952871, y: -2.97689486, z: 7.90375566}
 --- !u!4 &1171810938
 Transform:
   m_ObjectHideFlags: 0
@@ -9953,7 +10258,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.73716021, y: -9.28384972, z: 3.65048003}
     v1: {x: -5.63328981, y: -8.13745022, z: 4.89944983}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.48813391, y: -8.76194, z: 4.74755192}
 --- !u!4 &1172070321
 Transform:
   m_ObjectHideFlags: 0
@@ -10055,7 +10361,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.96571994, y: -.742123008, z: -10.6118002}
     v1: {x: 3.83814001, y: .742121994, z: -10.3283005}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.04765654, y: -.442187816, z: -10.1420689}
 --- !u!4 &1211917001
 Transform:
   m_ObjectHideFlags: 0
@@ -10101,7 +10408,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.44583035, y: -7.0769701, z: .735614002}
     v1: {x: -9.48608971, y: -5.64322996, z: .353147}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -8.70278358, y: -6.59281731, z: -.37207675}
 --- !u!4 &1213012503
 Transform:
   m_ObjectHideFlags: 0
@@ -10147,7 +10455,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.2859001, y: -2.23321009, z: -3.34208989}
     v1: {x: -10.7341003, y: -2.20785999, z: -1.36452997}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -10.2171831, y: -3.08937407, z: -2.30977154}
 --- !u!4 &1234534748
 Transform:
   m_ObjectHideFlags: 0
@@ -10193,7 +10502,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: .872416973, y: 5.78771019, z: -9.36470985}
     v1: {x: 1.91029, y: 7.0769701, z: -8.25977039}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.04385543, y: 5.9906764, z: -8.90198898}
 --- !u!4 &1235868703
 Transform:
   m_ObjectHideFlags: 0
@@ -10216,7 +10526,7 @@ GameObject:
   - 4: {fileID: 1247131789}
   - 114: {fileID: 1247131788}
   m_Layer: 0
-  m_Name: GUI_manager
+  m_Name: GUIManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10737,7 +11047,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.66887999, y: 10.6722002, z: 2.29701996}
     v1: {x: -1.65427005, y: 10.9055996, z: .537504017}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.4682312, y: 10.5778465, z: 1.18616295}
 --- !u!4 &1250078683
 Transform:
   m_ObjectHideFlags: 0
@@ -10783,7 +11094,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.03315997, y: 2.6454401, z: -10.6719999}
     v1: {x: 2.91886997, y: 2.50695992, z: -10.3514004}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.91446221, y: 3.48468852, z: -10.1706657}
 --- !u!4 &1258712553
 Transform:
   m_ObjectHideFlags: 0
@@ -10828,7 +11140,8 @@ MonoBehaviour:
   - {fileID: 252167696}
   - {fileID: 170510188}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 7.01906729, y: -8.19403458, z: -1.69371974}
 --- !u!4 &1262044658
 Transform:
   m_ObjectHideFlags: 0
@@ -10874,7 +11187,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.67761004, y: -8.13745022, z: -7.27489996}
     v1: {x: -4.76836988e-07, y: -7.76639986, z: -7.85108995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -.447188586, y: -8.34617805, z: -7.03863907}
 --- !u!4 &1268297401
 Transform:
   m_ObjectHideFlags: 0
@@ -10919,7 +11233,8 @@ MonoBehaviour:
   - {fileID: 693518066}
   - {fileID: 441875859}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 10.0203629, y: -3.69297791, z: 2.24587059}
 --- !u!4 &1271096521
 Transform:
   m_ObjectHideFlags: 0
@@ -10965,7 +11280,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.79863977, y: -9.82336998, z: -1.55917001}
     v1: {x: 3.26722002, y: -10.4954996, z: -1.06157994}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.17944717, y: -10.0892258, z: -.476091444}
 --- !u!4 &1274120675
 Transform:
   m_ObjectHideFlags: 0
@@ -10978,6 +11294,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159322676}
   m_RootOrder: 224
+--- !u!1 &1281996731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1281996732}
+  m_Layer: 0
+  m_Name: SPAWNPOINTS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1281996732
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1281996731}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.7220459e-06, y: -2.14576721e-06, z: -2.86102295e-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 416286970}
+  - {fileID: 792164226}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!1 &1283177724
 GameObject:
   m_ObjectHideFlags: 0
@@ -11011,7 +11356,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.94281006, y: -2.50695992, z: 5.97477007}
     v1: {x: 9.83036995, y: -2.6454401, z: 4.28041983}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 9.12355995, y: -3.36773348, z: 4.97114754}
 --- !u!4 &1283177726
 Transform:
   m_ObjectHideFlags: 0
@@ -11057,7 +11403,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.01924992, y: -2.20785999, z: -10.6303997}
     v1: {x: 2.96571994, y: -.742123008, z: -10.6118002}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.101403, y: -1.97026634, z: -10.2949562}
 --- !u!4 &1292693857
 Transform:
   m_ObjectHideFlags: 0
@@ -11103,7 +11450,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.61701965, y: -6.82726002, z: -1.04507005}
     v1: {x: 9.48608971, y: -5.64322996, z: .353147}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 8.69283485, y: -6.60742617, z: .169654012}
 --- !u!4 &1297007732
 Transform:
   m_ObjectHideFlags: 0
@@ -11149,7 +11497,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.58558989, y: 6.82725, z: 4.21948004}
     v1: {x: 7.46682978, y: 5.64322996, z: 5.86148024}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.93292904, y: 6.60742283, z: 5.2467742}
 --- !u!4 &1300555796
 Transform:
   m_ObjectHideFlags: 0
@@ -11195,7 +11544,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.61475992, y: -7.76639986, z: 6.35166979}
     v1: {x: -3.83814001, y: -8.90606022, z: 5.28275013}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.89923096, y: -8.1988821, z: 5.31628227}
 --- !u!4 &1302379408
 Transform:
   m_ObjectHideFlags: 0
@@ -11221,7 +11571,7 @@ GameObject:
   - 114: {fileID: 1317281765}
   - 114: {fileID: 1317281766}
   m_Layer: 0
-  m_Name: Items_Manager
+  m_Name: ItemsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13153,7 +13503,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.96571994, y: -9.82336998, z: 4.08197021}
     v1: {x: -2.01925993, y: -10.4954996, z: 2.77926993}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.18486905, y: -10.0775356, z: 2.77998829}
 --- !u!4 &1325383152
 Transform:
   m_ObjectHideFlags: 0
@@ -13199,7 +13550,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.00796008, y: .886771023, z: -10.823}
     v1: {x: -1.00856996, y: -.743022025, z: -10.9721003}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.22341537, y: -.327880412, z: -10.6959229}
 --- !u!4 &1336314761
 Transform:
   m_ObjectHideFlags: 0
@@ -13322,7 +13674,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.67284012, y: 4.30290985, z: -3.14288998}
     v1: {x: 9.17595959, y: 5.78771019, z: -2.06414008}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 9.75254154, y: 4.54554176, z: -1.85987127}
 --- !u!4 &1354465368
 Transform:
   m_ObjectHideFlags: 0
@@ -13368,7 +13721,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.65671992, y: 3.98797989, z: -9.62709045}
     v1: {x: 1.91029, y: 4.22284985, z: -10.0236998}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.8156414, y: 3.29329276, z: -10.0303593}
 --- !u!4 &1359438542
 Transform:
   m_ObjectHideFlags: 0
@@ -13414,7 +13768,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.9861002, y: 7.17256021, z: -2.59484005}
     v1: {x: -7.26520014, y: 7.0769701, z: -4.36920977}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -8.07451153, y: 6.4375515, z: -3.57698345}
 --- !u!4 &1379009464
 Transform:
   m_ObjectHideFlags: 0
@@ -13460,7 +13815,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.67761004, y: -8.13745022, z: -7.27489996}
     v1: {x: 1.66887999, y: -6.82726002, z: -8.51821041}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .652553439, y: -7.5301733, z: -7.90521431}
 --- !u!4 &1381599295
 Transform:
   m_ObjectHideFlags: 0
@@ -13506,7 +13862,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.02239001, y: -10.9055996, z: 1.40719998}
     v1: {x: -4.76836988e-07, y: -11.0433998, z: 4.76836988e-07}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .402769864, y: -10.8662472, z: 1.16737795}
 --- !u!4 &1381898712
 Transform:
   m_ObjectHideFlags: 0
@@ -13552,7 +13909,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.43697023, y: -9.44855022, z: 1.76657999}
     v1: {x: -7.10867023, y: -8.36221981, z: 1.22341001}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.08862543, y: -9.03505325, z: .668751359}
 --- !u!4 &1390414516
 Transform:
   m_ObjectHideFlags: 0
@@ -13656,7 +14014,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.03316998, y: -2.6454401, z: 10.6719999}
     v1: {x: 1.03315997, y: -2.6454401, z: 10.6719999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.28111958e-06, y: -3.44244957, z: 10.3585968}
 --- !u!4 &1393104110
 Transform:
   m_ObjectHideFlags: 0
@@ -13702,7 +14061,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.5593996, y: 3.61846995, z: 4.18103981}
     v1: {x: -8.61701965, y: 3.98797989, z: 5.63911009}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.26423836, y: 2.93592548, z: 4.99516869}
 --- !u!4 &1400647651
 Transform:
   m_ObjectHideFlags: 0
@@ -13748,7 +14108,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.59549999, y: -5.64322996, z: 9.13092995}
     v1: {x: 1.91029, y: -7.0769701, z: 8.25977993}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.61959267, y: -6.0344429, z: 8.96332645}
 --- !u!4 &1409918158
 Transform:
   m_ObjectHideFlags: 0
@@ -13794,7 +14155,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.94281006, y: 4.22284985, z: -4.91428995}
     v1: {x: 8.02591991, y: 3.98797989, z: -6.45269012}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 8.67489052, y: 3.2765255, z: -5.77972507}
 --- !u!4 &1415524064
 Transform:
   m_ObjectHideFlags: 0
@@ -13840,7 +14202,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -10.6722002, z: 2.83927989}
     v1: {x: -2.01925993, y: -10.4954996, z: 2.77926993}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -.962094307, y: -10.7063179, z: 1.94971967}
 --- !u!4 &1415526680
 Transform:
   m_ObjectHideFlags: 0
@@ -13886,7 +14249,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.65427005, y: 10.9055996, z: .537504017}
     v1: {x: -4.76836988e-07, y: 11.0433998, z: 4.76836988e-07}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -.874785423, y: 10.8887663, z: -.444703162}
 --- !u!4 &1416685243
 Transform:
   m_ObjectHideFlags: 0
@@ -13932,7 +14296,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.72300005, y: -10.1459999, z: 2.27014995}
     v1: {x: -4.73716021, y: -9.28384972, z: 3.65048003}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.59557724, y: -9.71230698, z: 3.48961782}
 --- !u!4 &1421636766
 Transform:
   m_ObjectHideFlags: 0
@@ -13978,7 +14343,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.67761004, y: 10.1459999, z: 4.02491999}
     v1: {x: -1.66887999, y: 10.6722002, z: 2.29701996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.46297288, y: 10.21945, z: 2.98834515}
 --- !u!4 &1424287127
 Transform:
   m_ObjectHideFlags: 0
@@ -14024,7 +14390,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.70030999, y: 10.6722002, z: -.877384007}
     v1: {x: 3.72300005, y: 10.1459999, z: -2.27014995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.61932182, y: 10.3925705, z: -2.15306616}
 --- !u!4 &1424315047
 Transform:
   m_ObjectHideFlags: 0
@@ -14070,7 +14437,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.35703993, y: 6.82725, z: -5.91042995}
     v1: {x: -5.63328981, y: 8.13743973, z: -4.89944983}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.67650223, y: 7.22001982, z: -4.7561512}
 --- !u!4 &1425319350
 Transform:
   m_ObjectHideFlags: 0
@@ -14116,7 +14484,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.72300005, y: 10.1459999, z: -2.27014995}
     v1: {x: 4.73716021, y: 9.28384972, z: -3.65048003}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.58326817, y: 9.71336365, z: -3.50211191}
 --- !u!4 &1430763863
 Transform:
   m_ObjectHideFlags: 0
@@ -14161,7 +14530,8 @@ MonoBehaviour:
   - {fileID: 1909196712}
   - {fileID: 386170396}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.27874851, y: -2.71345425, z: 9.17650986}
 --- !u!4 &1446419018
 Transform:
   m_ObjectHideFlags: 0
@@ -14207,7 +14577,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.43697023, y: -2.6454401, z: -9.24108028}
     v1: {x: -7.10867023, y: -2.6454401, z: -8.02651978}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.08862543, y: -3.44244957, z: -8.38027382}
 --- !u!4 &1448126629
 Transform:
   m_ObjectHideFlags: 0
@@ -14253,7 +14624,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.63328981, y: 8.13743973, z: -4.89944983}
     v1: {x: 4.61475992, y: 7.76639986, z: -6.35166979}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.27983952, y: 8.43238163, z: -5.48660851}
 --- !u!4 &1449520073
 Transform:
   m_ObjectHideFlags: 0
@@ -14299,7 +14671,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.4004302, y: -7.0769701, z: -5.55946016}
     v1: {x: 6.4004302, y: -8.13745022, z: -3.84356999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.95038033, y: -7.16345215, z: -4.42725658}
 --- !u!4 &1454661799
 Transform:
   m_ObjectHideFlags: 0
@@ -14345,7 +14718,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.83814001, y: -.742123008, z: 10.3283005}
     v1: {x: 2.91886997, y: -2.50695992, z: 10.3514004}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.08306885, y: -1.98636174, z: 9.93497467}
 --- !u!4 &1462164349
 Transform:
   m_ObjectHideFlags: 0
@@ -14391,7 +14765,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.61701965, y: 6.82725, z: 1.04507005}
     v1: {x: -8.44583035, y: 7.0769701, z: -.735612988}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.05211449, y: 6.13470364, z: -.233516946}
 --- !u!4 &1468070108
 Transform:
   m_ObjectHideFlags: 0
@@ -14437,7 +14812,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.68674004, y: -9.28384972, z: -5.73773003}
     v1: {x: -3.36022997, y: -9.44855022, z: -4.62496996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.93488216, y: -8.81440353, z: -5.72289562}
 --- !u!4 &1471325400
 Transform:
   m_ObjectHideFlags: 0
@@ -14482,7 +14858,8 @@ MonoBehaviour:
   - {fileID: 1763151211}
   - {fileID: 1944496765}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.85033786, y: 10.7506809, z: -.665883422}
 --- !u!4 &1471888832
 Transform:
   m_ObjectHideFlags: 0
@@ -14528,7 +14905,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.91029, y: -4.22284985, z: 10.0236998}
     v1: {x: .872416973, y: -5.78771019, z: 9.36470985}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.03061175, y: -5.27646542, z: 9.34546852}
 --- !u!4 &1477719483
 Transform:
   m_ObjectHideFlags: 0
@@ -14602,7 +14980,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.02239001, y: -10.9055996, z: 1.40719998}
     v1: {x: 2.70030999, y: -10.6722002, z: .87738502}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.75162315, y: -10.7892942, z: .304364175}
 --- !u!4 &1487164044
 Transform:
   m_ObjectHideFlags: 0
@@ -14648,7 +15027,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 11.0088997, y: -.742123008, z: -.458656996}
     v1: {x: 10.9138002, y: .886771023, z: -1.43482995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 10.9109955, y: .423060268, z: -.232537389}
 --- !u!4 &1492167848
 Transform:
   m_ObjectHideFlags: 0
@@ -14694,7 +15074,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.72300005, y: 10.1459999, z: -2.27014995}
     v1: {x: -2.70030999, y: 10.6722002, z: -.877384007}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -3.76559019, y: 10.2109509, z: -.975183487}
 --- !u!4 &1495259987
 Transform:
   m_ObjectHideFlags: 0
@@ -14740,7 +15121,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.91886997, y: 8.13743973, z: -6.87159014}
     v1: {x: 3.83814001, y: 8.90604973, z: -5.28275013}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.97111368, y: 8.05774498, z: -6.21801329}
 --- !u!4 &1500683135
 Transform:
   m_ObjectHideFlags: 0
@@ -14786,7 +15168,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.83036995, y: 2.6454401, z: -4.28041983}
     v1: {x: 10.4688997, y: 2.6454401, z: -2.31522012}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 9.81638527, y: 3.54315948, z: -3.19249296}
 --- !u!4 &1502789333
 Transform:
   m_ObjectHideFlags: 0
@@ -14832,7 +15215,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.02591991, y: -3.98797989, z: 6.45269012}
     v1: {x: 6.93042994, y: -3.61846995, z: 7.79951}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 7.59314537, y: -3.05356097, z: 7.24176407}
 --- !u!4 &1504629492
 Transform:
   m_ObjectHideFlags: 0
@@ -14878,7 +15262,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.70030999, y: -10.6722002, z: .87738502}
     v1: {x: -1.02239001, y: -10.9055996, z: 1.40719998}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -1.90674472, y: -10.5727777, z: 1.98621202}
 --- !u!4 &1522485760
 Transform:
   m_ObjectHideFlags: 0
@@ -14924,7 +15309,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.67761004, y: 8.13743973, z: 7.27489996}
     v1: {x: 3.30950999, y: 7.0769701, z: 7.80514002}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.90613222, y: 7.9292202, z: 6.91427994}
 --- !u!4 &1528746146
 Transform:
   m_ObjectHideFlags: 0
@@ -14970,7 +15356,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.7468004, y: -2.50695992, z: .422758013}
     v1: {x: -10.4688997, y: -2.6454401, z: 2.31522012}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -10.3151741, y: -3.34173059, z: 1.32876408}
 --- !u!4 &1539103437
 Transform:
   m_ObjectHideFlags: 0
@@ -15016,7 +15403,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 10.9138002, y: .886771023, z: -1.43482995}
     v1: {x: 10.4688997, y: 2.6454401, z: -2.31522012}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 10.6441717, y: 2.12356281, z: -1.15523541}
 --- !u!4 &1572599973
 Transform:
   m_ObjectHideFlags: 0
@@ -15061,7 +15449,8 @@ MonoBehaviour:
   - {fileID: 868412902}
   - {fileID: 154971562}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.74016523, y: -3.58630681, z: 9.93813705}
 --- !u!4 &1584260435
 Transform:
   m_ObjectHideFlags: 0
@@ -15106,7 +15495,8 @@ MonoBehaviour:
   - {fileID: 1039929713}
   - {fileID: 1258712552}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.02155805, y: 3.80630636, z: -10.1794949}
 --- !u!4 &1590157946
 Transform:
   m_ObjectHideFlags: 0
@@ -15119,6 +15509,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159322676}
   m_RootOrder: 99
+--- !u!1 &1593677219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1593677220}
+  - 114: {fileID: 1593677221}
+  m_Layer: 0
+  m_Name: CollisionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1593677220
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1593677219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 661207464}
+  m_RootOrder: 6
+--- !u!114 &1593677221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1593677219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99125b06607d14026a6235614ec2a92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1604283049
 GameObject:
   m_ObjectHideFlags: 0
@@ -15152,7 +15581,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 10.7468004, y: 2.50695992, z: -.422757}
     v1: {x: 11.0088997, y: .742121994, z: .45865801}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 10.822216, y: 1.27381444, z: -.692375422}
 --- !u!4 &1604283051
 Transform:
   m_ObjectHideFlags: 0
@@ -15198,7 +15628,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.44583035, y: 7.0769701, z: -.735612988}
     v1: {x: 7.43725014, y: 8.13743973, z: .652568996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 8.21770668, y: 7.17232513, z: .491919756}
 --- !u!4 &1605418722
 Transform:
   m_ObjectHideFlags: 0
@@ -15244,7 +15675,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.2859001, y: 3.98797989, z: .502816975}
     v1: {x: -10.7341003, y: 2.20785999, z: 1.36453998}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -10.188262, y: 3.56399679, z: 1.72003758}
 --- !u!4 &1622022957
 Transform:
   m_ObjectHideFlags: 0
@@ -15290,7 +15722,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.83036995, y: -2.6454401, z: 4.28041983}
     v1: {x: -9.67284012, y: -.886771977, z: 5.25417995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -10.0398865, y: -1.34375143, z: 4.05630779}
 --- !u!4 &1626003857
 Transform:
   m_ObjectHideFlags: 0
@@ -15335,7 +15768,8 @@ MonoBehaviour:
   - {fileID: 1632559520}
   - {fileID: 2059975401}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.4199214, y: 4.85005331, z: 7.38333464}
 --- !u!4 &1626122237
 Transform:
   m_ObjectHideFlags: 0
@@ -15381,7 +15815,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.43725014, y: 4.22284985, z: 6.9865098}
     v1: {x: 7.46682978, y: 5.64322996, z: 5.86148024}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.72416115, y: 5.38718033, z: 6.71490479}
 --- !u!4 &1632559521
 Transform:
   m_ObjectHideFlags: 0
@@ -15427,7 +15862,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.1913004, y: 3.61846995, z: 2.23634005}
     v1: {x: -9.5593996, y: 5.3578701, z: 1.36663997}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.99323273, y: 4.24834538, z: 1.19865131}
 --- !u!4 &1634727870
 Transform:
   m_ObjectHideFlags: 0
@@ -15440,6 +15876,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159322676}
   m_RootOrder: 162
+--- !u!1 &1635130666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1635130667}
+  - 114: {fileID: 1635130668}
+  m_Layer: 0
+  m_Name: NavigationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1635130667
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635130666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.31835938, y: 7.27638817, z: -2.94255781}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 661207464}
+  m_RootOrder: 5
+--- !u!114 &1635130668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635130666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5a85f054a5843f6b1c5f55958bb622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1643352678
 GameObject:
   m_ObjectHideFlags: 0
@@ -15473,7 +15948,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 10.1233997, y: 4.22284985, z: -1.28069997}
     v1: {x: 10.7468004, y: 2.50695992, z: -.422757}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 10.376009, y: 2.93807936, z: -1.66689253}
 --- !u!4 &1643352680
 Transform:
   m_ObjectHideFlags: 0
@@ -15518,7 +15994,8 @@ MonoBehaviour:
   - {fileID: 372852321}
   - {fileID: 505766253}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -.683023095, y: 9.23382568, z: 5.78698921}
 --- !u!4 &1654355854
 Transform:
   m_ObjectHideFlags: 0
@@ -15564,7 +16041,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.67284012, y: -4.30290985, z: 3.14289999}
     v1: {x: -10.1233997, y: -4.22284985, z: 1.28069997}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -10.1992474, y: -3.24198246, z: 2.18652725}
 --- !u!4 &1668538401
 Transform:
   m_ObjectHideFlags: 0
@@ -15610,7 +16088,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -7.17256021, z: 8.39708042}
     v1: {x: .872416973, y: -5.78771019, z: 9.36470985}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.36481571, y: -6.73208332, z: 8.49927139}
 --- !u!4 &1679800997
 Transform:
   m_ObjectHideFlags: 0
@@ -15656,7 +16135,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 10.1233997, y: -4.22284985, z: 1.28069997}
     v1: {x: 10.7468004, y: -2.50695992, z: .422758013}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 10.376009, y: -2.93807983, z: 1.66689396}
 --- !u!4 &1697362721
 Transform:
   m_ObjectHideFlags: 0
@@ -15702,7 +16182,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.46682978, y: 7.76639986, z: 2.42612004}
     v1: {x: 8.61701965, y: 6.82725, z: 1.04507005}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 7.65765619, y: 7.70185804, z: 1.12170482}
 --- !u!4 &1714252140
 Transform:
   m_ObjectHideFlags: 0
@@ -15748,7 +16229,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.83814001, y: -8.90606022, z: 5.28275013}
     v1: {x: -2.96571994, y: -9.82336998, z: 4.08197021}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.04765701, y: -9.26910305, z: 4.14017248}
 --- !u!4 &1726026517
 Transform:
   m_ObjectHideFlags: 0
@@ -15794,7 +16276,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.10867023, y: -2.6454401, z: -8.02651978}
     v1: {x: -8.44583035, y: -2.50695992, z: -6.65881014}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -7.54717541, y: -3.36773348, z: -7.14085102}
 --- !u!4 &1729374127
 Transform:
   m_ObjectHideFlags: 0
@@ -15840,7 +16323,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.91029, y: 4.22284985, z: -10.0236998}
     v1: {x: -3.65672994, y: 3.98797989, z: -9.62709045}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.81560397, y: 3.16042781, z: -10.0702171}
 --- !u!4 &1731517355
 Transform:
   m_ObjectHideFlags: 0
@@ -15885,7 +16369,8 @@ MonoBehaviour:
   - {fileID: 1502789332}
   - {fileID: 1643352679}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 10.0203629, y: 3.69297791, z: -2.24586821}
 --- !u!4 &1748604265
 Transform:
   m_ObjectHideFlags: 0
@@ -15931,7 +16416,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.1913004, y: -3.61846995, z: -2.23634005}
     v1: {x: -9.5593996, y: -3.61846995, z: -4.18103981}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.99720097, y: -2.96573925, z: -3.24961543}
 --- !u!4 &1749259424
 Transform:
   m_ObjectHideFlags: 0
@@ -15977,7 +16463,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.35703993, y: 2.23321009, z: -8.74971008}
     v1: {x: -4.61475992, y: 2.20785999, z: -9.78703022}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.37681293, y: 2.96019673, z: -9.03713226}
 --- !u!4 &1751070637
 Transform:
   m_ObjectHideFlags: 0
@@ -16023,7 +16510,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.80586004, y: -4.9387598, z: 7.99107981}
     v1: {x: -5.27615976, y: -3.61846995, z: 9.00140953}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.1028347, y: -4.00253773, z: 8.1401825}
 --- !u!4 &1754338498
 Transform:
   m_ObjectHideFlags: 0
@@ -16069,7 +16557,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.48608971, y: 2.20785999, z: 5.20538998}
     v1: {x: -10.1233997, y: .743021011, z: 4.34978008}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.44534302, y: 1.13628602, z: 5.36974049}
 --- !u!4 &1759614506
 Transform:
   m_ObjectHideFlags: 0
@@ -16115,7 +16604,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.2859001, y: 2.23321009, z: 3.34208989}
     v1: {x: -10.7341003, y: 2.20785999, z: 1.36453998}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -10.188262, y: 3.13231373, z: 2.41851377}
 --- !u!4 &1760616914
 Transform:
   m_ObjectHideFlags: 0
@@ -16161,7 +16651,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.26722002, y: 10.4954996, z: 1.06158996}
     v1: {x: 1.65427005, y: 10.9055996, z: .537504017}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.59383321, y: 10.6165142, z: -.157518938}
 --- !u!4 &1763151212
 Transform:
   m_ObjectHideFlags: 0
@@ -16234,7 +16725,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -8.90606022, z: -6.52982998}
     v1: {x: -1.68674004, y: -9.28384972, z: -5.73773003}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -1.26095486, y: -8.57176971, z: -6.65022659}
 --- !u!4 &1769894583
 Transform:
   m_ObjectHideFlags: 0
@@ -16340,7 +16832,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.36022997, y: 8.36221981, z: 6.38268995}
     v1: {x: -1.68674004, y: 9.28384972, z: 5.73774004}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.0987556, y: 8.42405701, z: 6.61634636}
 --- !u!4 &1782060407
 Transform:
   m_ObjectHideFlags: 0
@@ -16386,7 +16879,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.01925993, y: -2.20785999, z: -10.6303997}
     v1: {x: -3.72300005, y: -2.50695992, z: -10.0901003}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.76916194, y: -3.14747643, z: -10.092453}
 --- !u!4 &1793781983
 Transform:
   m_ObjectHideFlags: 0
@@ -16432,7 +16926,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.35703993, y: 2.23321009, z: -8.74971008}
     v1: {x: 5.63328981, y: .743021011, z: -9.46945}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 5.18760061, y: 1.8718071, z: -9.43779945}
 --- !u!4 &1797366705
 Transform:
   m_ObjectHideFlags: 0
@@ -16478,7 +16973,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 10.9138002, y: -.886771977, z: 1.43482995}
     v1: {x: 10.4688997, y: -2.6454401, z: 2.31522012}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 10.6441717, y: -2.12356329, z: 1.15523612}
 --- !u!4 &1804518199
 Transform:
   m_ObjectHideFlags: 0
@@ -16524,7 +17020,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.27615976, y: 3.61846995, z: -9.00140953}
     v1: {x: 3.65671992, y: 3.98797989, z: -9.62709045}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.54509544, y: 2.94440484, z: -9.49009609}
 --- !u!4 &1806987012
 Transform:
   m_ObjectHideFlags: 0
@@ -16570,7 +17067,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.44583035, y: 7.0769701, z: -.735612988}
     v1: {x: -7.9861002, y: 7.17256021, z: -2.59484005}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -8.6449337, y: 6.42410183, z: -1.8574779}
 --- !u!4 &1807256254
 Transform:
   m_ObjectHideFlags: 0
@@ -16616,7 +17114,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.88197994, y: 2.20785999, z: -7.41324997}
     v1: {x: -8.02591991, y: 3.98797989, z: -6.45269012}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -7.2314539, y: 3.56399679, z: -7.38003826}
 --- !u!4 &1814586886
 Transform:
   m_ObjectHideFlags: 0
@@ -16662,7 +17161,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.26722002, y: -5.64322996, z: -8.91267967}
     v1: {x: 4.79863977, y: -5.78771019, z: -8.08901024}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.17944717, y: -4.93787003, z: -8.81116295}
 --- !u!4 &1826950903
 Transform:
   m_ObjectHideFlags: 0
@@ -16708,7 +17208,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.48608971, y: 2.20785999, z: 5.20538998}
     v1: {x: -10.2859001, y: 2.23321009, z: 3.34208989}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.6618309, y: 2.96019673, z: 4.15078497}
 --- !u!4 &1835801945
 Transform:
   m_ObjectHideFlags: 0
@@ -16731,7 +17232,7 @@ GameObject:
   - 4: {fileID: 1854237714}
   - 114: {fileID: 1854237715}
   m_Layer: 0
-  m_Name: Victory_manager
+  m_Name: VictoryManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17101,7 +17602,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.21023989, y: 5.78771019, z: 7.06341982}
     v1: {x: -7.43725014, y: 4.22284985, z: 6.9865098}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.31187248, y: 4.5889926, z: 7.63662195}
 --- !u!4 &1870111176
 Transform:
   m_ObjectHideFlags: 0
@@ -17205,7 +17707,8 @@ MonoBehaviour:
   - {fileID: 1234534747}
   - {fileID: 459051692}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -10.2883234, y: -3.42588377, z: -1.32545137}
 --- !u!4 &1875909086
 Transform:
   m_ObjectHideFlags: 0
@@ -17251,7 +17754,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 10.7468004, y: -2.50695992, z: .422758013}
     v1: {x: 11.0088997, y: -.742123008, z: -.458656996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 10.822216, y: -1.27381504, z: .692376018}
 --- !u!4 &1887685359
 Transform:
   m_ObjectHideFlags: 0
@@ -17297,7 +17801,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.58558989, y: -6.82726002, z: -4.21948004}
     v1: {x: 7.46682978, y: -5.64322996, z: -5.86148024}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.93292904, y: -6.60742617, z: -5.2467742}
 --- !u!4 &1888241987
 Transform:
   m_ObjectHideFlags: 0
@@ -17343,7 +17848,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.48608971, y: -5.64322996, z: .353147}
     v1: {x: -10.2859001, y: -3.98797989, z: -.502816021}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.66223526, y: -5.03509188, z: -.793420196}
 --- !u!4 &1894504206
 Transform:
   m_ObjectHideFlags: 0
@@ -17389,7 +17895,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.73716021, y: .886771023, z: 9.93626976}
     v1: {x: 3.83814001, y: -.742123008, z: 10.3283005}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.92904091, y: -.315817118, z: 9.74142647}
 --- !u!4 &1905795200
 Transform:
   m_ObjectHideFlags: 0
@@ -17435,7 +17942,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.67284012, y: -.886771977, z: 5.25417995}
     v1: {x: -9.17595959, y: .742121994, z: 6.09980011}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.71354103, y: .315816313, z: 4.98376942}
 --- !u!4 &1907114083
 Transform:
   m_ObjectHideFlags: 0
@@ -17481,7 +17989,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.35703993, y: -2.23321009, z: 8.74971008}
     v1: {x: -6.93042994, y: -3.61846995, z: 7.79951}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.81001091, y: -3.32505369, z: 8.64021683}
 --- !u!4 &1909196713
 Transform:
   m_ObjectHideFlags: 0
@@ -17527,7 +18036,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.43725014, y: -8.13745022, z: -.652567983}
     v1: {x: -5.97813988, y: -9.28384972, z: -.168871999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -6.84378052, y: -8.4964962, z: .401616871}
 --- !u!4 &1922477763
 Transform:
   m_ObjectHideFlags: 0
@@ -17550,7 +18060,7 @@ GameObject:
   - 4: {fileID: 1940327558}
   - 114: {fileID: 1940327559}
   m_Layer: 0
-  m_Name: Game_Manager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17907,7 +18417,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.01924992, y: 10.4954996, z: -2.77926993}
     v1: {x: 1.02239001, y: 10.9055996, z: -1.40719998}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.18529844, y: 10.6165142, z: -1.41485858}
 --- !u!4 &1944496766
 Transform:
   m_ObjectHideFlags: 0
@@ -17953,7 +18464,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.1913004, y: 3.61846995, z: 2.23634005}
     v1: {x: -9.5593996, y: 3.61846995, z: 4.18103981}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.99323273, y: 2.9720211, z: 3.2637825}
 --- !u!4 &1965075943
 Transform:
   m_ObjectHideFlags: 0
@@ -17999,7 +18511,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.67761004, y: -8.13745022, z: -7.27489996}
     v1: {x: -4.76836988e-07, y: -8.90606022, z: -6.52982998}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .234432802, y: -8.00957489, z: -7.4393177}
 --- !u!4 &1968678204
 Transform:
   m_ObjectHideFlags: 0
@@ -18045,7 +18558,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.61475992, y: -2.20785999, z: 9.78703022}
     v1: {x: 5.63328981, y: -.743022025, z: 9.46945}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.48519516, y: -1.13628674, z: 9.89603615}
 --- !u!4 &1970644789
 Transform:
   m_ObjectHideFlags: 0
@@ -18091,7 +18605,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.34633017, y: -10.1459999, z: .351731986}
     v1: {x: 5.97813988, y: -9.28384972, z: -.168871999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.95741367, y: -9.71336555, z: -.727073789}
 --- !u!4 &1982726104
 Transform:
   m_ObjectHideFlags: 0
@@ -18137,7 +18652,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -4.9387598, z: -9.87751007}
     v1: {x: -1.02239001, y: -3.61846995, z: -10.3835001}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .269471198, y: -3.96407771, z: -10.1806574}
 --- !u!4 &1988950512
 Transform:
   m_ObjectHideFlags: 0
@@ -19602,7 +20118,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.63328981, y: 8.13743973, z: -4.89944983}
     v1: {x: -4.73716021, y: 9.28384972, z: -3.65048003}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -5.78610229, y: 8.49243355, z: -3.68682766}
 --- !u!4 &1999807830
 Transform:
   m_ObjectHideFlags: 0
@@ -20428,7 +20945,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.4004302, y: 7.0769701, z: 5.55946016}
     v1: {x: 6.4004302, y: 8.13743973, z: 3.84356999}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.95038033, y: 7.16344643, z: 4.42725658}
 --- !u!4 &2022432197
 Transform:
   m_ObjectHideFlags: 0
@@ -20441,6 +20959,1425 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159322676}
   m_RootOrder: 268
+--- !u!1 &2025222056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2025222057}
+  - 114: {fileID: 2025222065}
+  - 114: {fileID: 2025222064}
+  - 114: {fileID: 2025222063}
+  - 114: {fileID: 2025222062}
+  - 114: {fileID: 2025222061}
+  - 114: {fileID: 2025222060}
+  - 135: {fileID: 2025222059}
+  - 54: {fileID: 2025222058}
+  m_Layer: 10
+  m_Name: Enemy
+  m_TagString: dynamic_collider
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2025222057
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 2025222056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 11.5, z: 0}
+  m_LocalScale: {x: 1.79999995, y: 1.79999995, z: 1.79999995}
+  m_Children:
+  - {fileID: 413277603}
+  m_Father: {fileID: 1143925914}
+  m_RootOrder: 0
+--- !u!54 &2025222058
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 8d768b3f71d72854db9831184916542a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 2025222056}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &2025222059
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 8d768b3f71d72854db9831184916542a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 2025222056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2025222060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: 8d768b3f71d72854db9831184916542a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 2025222056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: KILL_TRIGGER
+    startState: waiting
+    states:
+    - name: waiting
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 176
+        y: 112
+        width: 124
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: triggeredPlayer
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: check enemy BEHAVIOUR state
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.TriggerEvent
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: e0558823
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Player
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 00000000747269676765726564506c61796572
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 07000000120000001700000013000000
+        paramName:
+        - trigger
+        - collideTag
+        - sendEvent
+        - storeCollider
+        paramDataPos: 00000000000000000400000000000000
+        paramByteDataSize: 04000000000000000f00000000000000
+    - name: check enemy BEHAVIOUR state
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 200
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: die
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: destroy self
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: kill
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: game over
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetFsmState
+        - HutongGames.PlayMaker.Actions.StringCompare
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: 5be7d1ab3ba14957
+        unityObjectParams:
+        - {fileID: 0}
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: BEHAVIOUR
+        - useVariable: 1
+          name: behaviourState
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: behaviourState
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: hunt
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 006b696c6c646965000100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0500000014000000120000001200000001000000120000001200000017000000170000001100000001000000
+        paramName:
+        - fsmComponent
+        - gameObject
+        - fsmName
+        - storeResult
+        - everyFrame
+        - stringVariable
+        - compareTo
+        - equalEvent
+        - notEqualEvent
+        - storeResult
+        - everyFrame
+        paramDataPos: 000000000000000000000000010000000000000002000000030000000100000005000000080000000a000000
+        paramByteDataSize: 0000000000000000000000000000000001000000000000000000000004000000030000000200000001000000
+    - name: destroy self
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: b4797e4a
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000001000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000011000000110000000100000001000000
+        paramName:
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        paramDataPos: 0000000000000000020000000400000005000000
+        paramByteDataSize: 0000000002000000020000000100000001000000
+    - name: game over
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SendEvent
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: eec9d968
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 47414d452f6f766572000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1f000000170000000f00000001000000
+        paramName:
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        paramDataPos: 0000000000000000090000000e000000
+        paramByteDataSize: 00000000090000000500000001000000
+    events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: GAME/over
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: die
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: kill
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: triggeredPlayer
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: behaviourState
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!114 &2025222061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: 8d768b3f71d72854db9831184916542a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 2025222056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: HUNT_TRIGGER
+    startState: check distance
+    states:
+    - name: check distance
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 200
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: PlayerEnteredDangerDistance
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: send "Enemy/Hunt" event
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetProperty
+        - HutongGames.PlayMaker.Actions.FloatCompare
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000002000000
+        actionHashCodes: d23668dc53489ed1
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams:
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 2025222065}
+          TargetTypeName: Enemy
+          PropertyName: DistanceToTarget
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 1
+            name: distanceToTarget
+            tooltip: 
+            showInInspector: 1
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Single
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          setProperty: 0
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 01000000000164697374616e6365546f546172676574000000000164616e67657244697374616e63650000000000506c61796572456e746572656444616e67657244697374616e6365506c61796572456e746572656444616e67657244697374616e636501
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 24000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramName:
+        - targetProperty
+        - everyFrame
+        - float1
+        - float2
+        - tolerance
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 00000000000000000100000016000000290000002e000000490000006400000064000000
+        paramByteDataSize: 00000000010000001500000013000000050000001b0000001b0000000000000001000000
+    - name: send "Enemy/Hunt" event
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 193
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: startCoolDownTimer
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SendEvent
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: eec9d968
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 2
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: BEHAVIOUR
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 454e454d592f68756e74000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1f000000170000000f00000001000000
+        paramName:
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        paramDataPos: 00000000000000000a0000000f000000
+        paramByteDataSize: 000000000a0000000500000001000000
+    - name: startCoolDownTimer
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 80
+        y: 272
+        width: 156
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: CoolDownOver
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: send "Enemy/Wander" event
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.FloatAdd
+        - HutongGames.PlayMaker.Actions.FloatCompare
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000007000000
+        actionHashCodes: 79fc1ded22e8952253489ed1
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000154696d6572000000000000000000000154696d65720000803f000101000000000154696d65720000c04001456e656d79436f6f6c446f776e54696d65cdcccc3d00436f6f6c446f776e4f766572436f6f6c446f776e4f76657201
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000000f000000010000000f0000000f00000001000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramName:
+        - floatVariable
+        - floatValue
+        - everyFrame
+        - floatVariable
+        - add
+        - everyFrame
+        - perSecond
+        - float1
+        - float2
+        - tolerance
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000a0000000f000000100000001a0000001f00000020000000210000002b000000410000004600000052000000520000005e000000
+        paramByteDataSize: 0a00000005000000010000000a0000000500000001000000010000000a00000016000000050000000c000000000000000c00000001000000
+    - name: send "Enemy/Wander" event
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 200
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: wait
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SendEvent
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: eec9d968
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 2
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: BEHAVIOUR
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 454e454d592f77616e646572000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1f000000170000000f00000001000000
+        paramName:
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        paramDataPos: 00000000000000000c00000011000000
+        paramByteDataSize: 000000000c0000000500000001000000
+    - name: wait
+      description: allows player to get away from danger distance without triggering
+        it again right away.
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 432
+        width: 200
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: check distance
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 3708ec1a
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000040400046494e495348454400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000001700000001000000
+        paramName:
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 00000000050000000d000000
+        paramByteDataSize: 050000000800000001000000
+    events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: CoolDownOver
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: PlayerEnteredDangerDistance
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: EnemyCoolDownTime
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 10
+      - useVariable: 1
+        name: Timer
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: dangerDistance
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 9
+      - useVariable: 1
+        name: distanceToTarget
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!114 &2025222062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8d768b3f71d72854db9831184916542a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 2025222056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: BEHAVIOUR
+    startState: wander
+    states:
+    - name: wander
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 125
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetMaterial
+        - HutongGames.PlayMaker.Actions.Wander
+        - HutongGames.PlayMaker.Actions.PlayAnimation
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000005000000
+        actionHashCodes: 9eeb8e98106590c36e06efc0
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 413277602}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 413277602}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Enemy_wander
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: 
+          value: {fileID: 2100000, guid: 91955c7c5a70bcf45bca75e27802ee50, type: 2}
+        fsmVarParams: []
+        byteData: 00000000000000803f00000080bf00040000009a99993e0000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000010000000200000000f0000000f0000001400000012000000070000000f000000170000001700000001000000
+        paramName:
+        - gameObject
+        - materialIndex
+        - material
+        - SpeedMultiplier
+        - DirectionChange
+        - gameObject
+        - animName
+        - playMode
+        - blendTime
+        - finishEvent
+        - loopEvent
+        - stopOnExit
+        paramDataPos: 000000000000000000000000050000000a00000001000000000000000f00000013000000180000001800000018000000
+        paramByteDataSize: 000000000500000000000000050000000500000000000000000000000400000005000000000000000000000001000000
+    - name: hunt
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 288
+        y: 112
+        width: 104
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Follow
+        - HutongGames.PlayMaker.Actions.SetMaterial
+        - HutongGames.PlayMaker.Actions.PlayAnimation
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000006000000
+        actionHashCodes: af1cdf649eeb8e986e06efc0
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 413277602}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 413277602}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Enemy_hunt
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: 
+          value: {fileID: 2100000, guid: b1dc06a08ad26344d9b46e9d9c8141b7, type: 2}
+        fsmVarParams: []
+        byteData: 000000400000000000000000040000009a99993e0000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f00000011000000130000001400000010000000200000001400000012000000070000000f000000170000001700000001000000
+        paramName:
+        - SpeedMultiplier
+        - Escape
+        - Target
+        - gameObject
+        - materialIndex
+        - material
+        - gameObject
+        - animName
+        - playMode
+        - blendTime
+        - finishEvent
+        - loopEvent
+        - stopOnExit
+        paramDataPos: 00000000050000000000000000000000070000000000000001000000000000000c00000010000000150000001500000015000000
+        paramByteDataSize: 05000000020000000000000000000000050000000000000000000000000000000400000005000000000000000000000001000000
+    - name: escape
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 512
+        y: 112
+        width: 121
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Follow
+        - HutongGames.PlayMaker.Actions.SetMaterial
+        - HutongGames.PlayMaker.Actions.PlayAnimation
+        - HutongGames.PlayMaker.Actions.EnableFSM
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000003000000060000000d000000
+        actionHashCodes: af1cdf649eeb8e986e06efc0c3addc63
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 413277602}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 413277602}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Enemy_escape
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: HUNT_TRIGGER
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: 
+          value: {fileID: 2100000, guid: c6cb8a089aa1dd148bca30dd7dad828c, type: 2}
+        fsmVarParams: []
+        byteData: 0000c03f0001000000000000040000009a99993e000000000100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f00000011000000130000001400000010000000200000001400000012000000070000000f00000017000000170000000100000014000000120000001100000011000000
+        paramName:
+        - SpeedMultiplier
+        - Escape
+        - Target
+        - gameObject
+        - materialIndex
+        - material
+        - gameObject
+        - animName
+        - playMode
+        - blendTime
+        - finishEvent
+        - loopEvent
+        - stopOnExit
+        - gameObject
+        - fsmName
+        - enable
+        - resetOnExit
+        paramDataPos: 00000000050000000000000000000000070000000000000001000000000000000c0000001000000015000000150000001500000002000000010000001600000018000000
+        paramByteDataSize: 0500000002000000000000000000000005000000000000000000000000000000040000000500000000000000000000000100000000000000000000000200000002000000
+    events:
+    - name: ENEMY/escape
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: ENEMY/hunt
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: ENEMY/wander
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: escape
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: hunt
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: wander
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions:
+    - fsmEvent:
+        name: ENEMY/hunt
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: hunt
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: ENEMY/escape
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: escape
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: ENEMY/wander
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: wander
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: yScale
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!114 &2025222063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 8d768b3f71d72854db9831184916542a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 2025222056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10c6f7678c22410fbc137d4c9183805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2025222064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 8d768b3f71d72854db9831184916542a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 2025222056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e487de8d7134c14b6bd35d97e381bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Radius: .600000024
+  Mass: 1
+  RadiusForNavMesh: .75
+  Static: 0
+  SphereNavMeshCollision: 1
+--- !u!114 &2025222065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 8d768b3f71d72854db9831184916542a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2028306712}
+  m_GameObject: {fileID: 2025222056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d865886826741c58f5768dd113a554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 5
 --- !u!1 &2025619626
 GameObject:
   m_ObjectHideFlags: 0
@@ -20474,7 +22411,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.73716021, y: .886771023, z: 9.93626976}
     v1: {x: -5.63328981, y: -.743022025, z: 9.46945}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -4.48813391, y: -.327880412, z: 9.96007442}
 --- !u!4 &2025619628
 Transform:
   m_ObjectHideFlags: 0
@@ -20520,7 +22458,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.30952001, y: 10.1459999, z: 2.83927011}
     v1: {x: -3.36022997, y: 9.44855022, z: 4.62496996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -2.32079697, y: 9.97884369, z: 3.80344725}
 --- !u!4 &2027390056
 Transform:
   m_ObjectHideFlags: 0
@@ -20533,6 +22472,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159322676}
   m_RootOrder: 3
+--- !u!1001 &2028306712
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 668048252}
+    m_Modifications:
+    - target: {fileID: 400002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+      propertyPath: m_RootMapOrder
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8d768b3f71d72854db9831184916542a, type: 2}
+  m_RootGameObject: {fileID: 1143925913}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &2033433301
 GameObject:
   m_ObjectHideFlags: 0
@@ -20566,7 +22557,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.48608971, y: 5.64322996, z: -.353145987}
     v1: {x: 10.1233997, y: 4.22284985, z: -1.28069997}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 9.44537163, y: 5.31054688, z: -1.38182831}
 --- !u!4 &2033433303
 Transform:
   m_ObjectHideFlags: 0
@@ -20612,7 +22604,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.21023989, y: -8.90606022, z: -2.0178299}
     v1: {x: 4.79863977, y: -9.82336998, z: -1.55917001}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 5.70296001, y: -9.27007771, z: -.987002969}
 --- !u!4 &2033668163
 Transform:
   m_ObjectHideFlags: 0
@@ -20658,7 +22651,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.93567991, y: 7.17256021, z: 6.79337978}
     v1: {x: 3.36022997, y: 8.36221981, z: 6.38268995}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 3.69449091, y: 7.37415457, z: 7.15025043}
 --- !u!4 &2042493465
 Transform:
   m_ObjectHideFlags: 0
@@ -20704,7 +22698,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.70030999, y: -3.98797989, z: -9.93785}
     v1: {x: -1.02239001, y: -3.61846995, z: -10.3835001}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -1.91164351, y: -2.95869708, z: -10.3450699}
 --- !u!4 &2049322411
 Transform:
   m_ObjectHideFlags: 0
@@ -20750,7 +22745,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.10867023, y: 2.6454401, z: 8.02651978}
     v1: {x: 7.43725014, y: 4.22284985, z: 6.9865098}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 6.47218037, y: 3.90078044, z: 7.87341213}
 --- !u!4 &2059975402
 Transform:
   m_ObjectHideFlags: 0
@@ -20796,7 +22792,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.27615976, y: -3.61846995, z: 9.00140953}
     v1: {x: 3.65671992, y: -3.98797989, z: 9.62709045}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 4.55799627, y: -2.94707155, z: 9.48279381}
 --- !u!4 &2078380382
 Transform:
   m_ObjectHideFlags: 0
@@ -20842,7 +22839,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: 8.90604973, z: 6.52982998}
     v1: {x: 1.67761004, y: 8.13743973, z: 7.27489996}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.24988437, y: 8.8196125, z: 6.31376457}
 --- !u!4 &2083666627
 Transform:
   m_ObjectHideFlags: 0
@@ -20888,7 +22886,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.65427005, y: -10.9055996, z: -.537503004}
     v1: {x: -4.76836988e-07, y: -11.0433998, z: 4.76836988e-07}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: .990793705, y: -10.8730659, z: .645860136}
 --- !u!4 &2092449194
 Transform:
   m_ObjectHideFlags: 0
@@ -20934,7 +22933,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.94281006, y: 2.50695992, z: -5.97477007}
     v1: {x: 9.83036995, y: 2.6454401, z: -4.28041983}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 9.12355995, y: 3.36773348, z: -4.97114372}
 --- !u!4 &2098286599
 Transform:
   m_ObjectHideFlags: 0
@@ -20980,7 +22980,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.5593996, y: -3.61846995, z: -4.18103981}
     v1: {x: -8.61701965, y: -3.98797989, z: -5.63911009}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -9.23374176, y: -3.05356097, z: -4.98367929}
 --- !u!4 &2108678442
 Transform:
   m_ObjectHideFlags: 0
@@ -21026,7 +23027,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -7.17256021, z: 8.39708042}
     v1: {x: 1.03315997, y: -8.36221981, z: 7.13880014}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 1.40998304, y: -7.36548424, z: 7.94266367}
 --- !u!4 &2128462984
 Transform:
   m_ObjectHideFlags: 0
@@ -21072,7 +23074,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.63677979, y: 5.78771019, z: -3.72357011}
     v1: {x: -9.17595959, y: 5.78771019, z: -2.06414008}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: -8.39489937, y: 6.44409752, z: -2.72766757}
 --- !u!4 &2131711774
 Transform:
   m_ObjectHideFlags: 0
@@ -21117,7 +23120,8 @@ MonoBehaviour:
   - {fileID: 1797366704}
   - {fileID: 174671665}
   collisionEdges: []
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 5.35553074, y: 2.61346173, z: -9.15627861}
 --- !u!4 &2139756325
 Transform:
   m_ObjectHideFlags: 0
@@ -21163,7 +23167,8 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.00856996, y: -10.1459999, z: 4.24230003}
     v1: {x: 2.00796008, y: -9.28384972, z: 5.63336992}
-  mPosition: {x: 0, y: 0, z: 0}
+  DrawGizmo: 1
+  mPosition: {x: 2.1952281, y: -9.71843719, z: 4.49603176}
 --- !u!4 &2140884030
 Transform:
   m_ObjectHideFlags: 0
