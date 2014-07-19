@@ -2044,7 +2044,6 @@ GameObject:
   - 33: {fileID: 249330856}
   - 23: {fileID: 249330855}
   - 114: {fileID: 249330858}
-  - 114: {fileID: 249330860}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -2106,19 +2105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 11
---- !u!114 &249330860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 249330854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d438884e2dc3749af926a036f27db936, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 100002, guid: 8d768b3f71d72854db9831184916542a, type: 2}
-  NumEnemies: 5
 --- !u!1 &251271935
 GameObject:
   m_ObjectHideFlags: 0
