@@ -908,6 +908,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 569989268}
   m_RootOrder: 228
+--- !u!1 &74481037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 74481038}
+  - 20: {fileID: 74481042}
+  - 124: {fileID: 74481041}
+  - 92: {fileID: 74481040}
+  - 81: {fileID: 74481039}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &74481038
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74481037}
+  m_LocalRotation: {x: .528094172, y: -.343216181, z: .141174331, w: .763799071}
+  m_LocalPosition: {x: 9.02672958, y: 34.1099281, z: -4.74063683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 593448277}
+  m_RootOrder: 2
+--- !u!81 &74481039
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74481037}
+  m_Enabled: 1
+--- !u!92 &74481040
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74481037}
+  m_Enabled: 1
+--- !u!124 &74481041
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74481037}
+  m_Enabled: 1
+--- !u!20 &74481042
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74481037}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 32
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!1 &76450443
 GameObject:
   m_ObjectHideFlags: 0
@@ -6923,6 +7007,7 @@ Transform:
   m_Children:
   - {fileID: 2011921441}
   - {fileID: 1781737405}
+  - {fileID: 74481038}
   m_Father: {fileID: 795097410}
   m_RootOrder: 3
 --- !u!1001 &595166769
@@ -14621,7 +14706,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.32262938e-08, y: 0, z: 1.09501241e-09}
   m_LocalScale: {x: 1.51654327, y: 1.51654196, z: 1.51654196}
-  m_Children: []
+  m_Children:
+  - {fileID: 1606146791}
   m_Father: {fileID: 2011921441}
   m_RootOrder: 0
 --- !u!23 &1176345560
@@ -22223,6 +22309,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 569989268}
   m_RootOrder: 369
+--- !u!1 &1606146790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1606146791}
+  - 33: {fileID: 1606146794}
+  - 135: {fileID: 1606146793}
+  - 23: {fileID: 1606146792}
+  m_Layer: 0
+  m_Name: Naso
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1606146791
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606146790}
+  m_LocalRotation: {x: -.0710424259, y: -.355489522, z: -.107989475, w: .925698936}
+  m_LocalPosition: {x: -.294128537, y: .218295306, z: .358515441}
+  m_LocalScale: {x: .329759866, y: .329760045, z: .329759896}
+  m_Children: []
+  m_Father: {fileID: 1176345559}
+  m_RootOrder: 0
+--- !u!23 &1606146792
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606146790}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!135 &1606146793
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606146790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1606146794
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606146790}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1614182012
 GameObject:
   m_ObjectHideFlags: 0
@@ -24311,7 +24466,7 @@ GameObject:
   - 4: {fileID: 1781737405}
   - 20: {fileID: 1781737404}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Main Camera_old
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24355,8 +24510,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781737400}
-  m_LocalRotation: {x: .707106888, y: -9.4156988e-08, z: 9.41569667e-08, w: .707106769}
-  m_LocalPosition: {x: 0, y: 26.5, z: 0}
+  m_LocalRotation: {x: .669945717, y: .226214021, z: .226214275, w: .669945598}
+  m_LocalPosition: {x: -9.08236504, y: 23.6408558, z: -.543851376}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 593448277}
@@ -28364,15 +28519,23 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetProperty
         - HutongGames.PlayMaker.Actions.GetMaterial
+        - HutongGames.PlayMaker.Actions.GetAxisVector
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000002000000
-        actionHashCodes: d23668dc87f2eede
+        - 
+        actionEnabled: 000101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000200000006000000
+        actionHashCodes: d23668dc87f2eede04a95048
         unityObjectParams: []
-        fsmGameObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 74481037}
         fsmOwnerDefaultParams:
         - ownerOption: 1
           gameObject:
@@ -28394,9 +28557,9 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 2011921438}
-          TargetTypeName: Character
-          PropertyName: WalkSpeed
+            value: {fileID: 0}
+          TargetTypeName: 
+          PropertyName: 
           BoolParameter:
             useVariable: 0
             name: 
@@ -28405,8 +28568,8 @@ MonoBehaviour:
             networkSync: 0
             value: 0
           FloatParameter:
-            useVariable: 1
-            name: initSpeed
+            useVariable: 0
+            name: 
             tooltip: 
             showInInspector: 0
             networkSync: 0
@@ -28471,7 +28634,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            typeName: System.Single
+            typeName: 
             value: {fileID: 0}
           MaterialParameter:
             useVariable: 0
@@ -28498,7 +28661,19 @@ MonoBehaviour:
             value: {r: 0, g: 0, b: 0, a: 1}
           setProperty: 0
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Horizontal
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Vertical
         fsmObjectParams:
         - useVariable: 1
           name: initMaterial
@@ -28508,12 +28683,12 @@ MonoBehaviour:
           typeName: UnityEngine.Object
           value: {fileID: 0}
         fsmVarParams: []
-        byteData: 00000000000000
+        byteData: 000000000000000000803f0000000000000000000000000000000000014d6f76656d656e740000000001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 240000000100000014000000100000002000000001000000
+        paramDataType: 24000000010000001400000010000000200000000100000012000000120000000f00000007000000130000001c0000000f000000
         paramName:
         - targetProperty
         - everyFrame
@@ -28521,8 +28696,15 @@ MonoBehaviour:
         - materialIndex
         - material
         - getSharedMaterial
-        paramDataPos: 000000000000000000000000010000000000000006000000
-        paramByteDataSize: 000000000100000000000000050000000000000001000000
+        - horizontalAxis
+        - verticalAxis
+        - multiplier
+        - mapToPlane
+        - relativeTo
+        - storeVector
+        - storeMagnitude
+        paramDataPos: 0000000000000000000000000100000000000000060000000000000001000000070000000c000000000000001000000025000000
+        paramByteDataSize: 00000000010000000000000005000000000000000100000000000000000000000500000004000000000000001500000005000000
     - name: set tranformed speed
       description: 
       colorIndex: 0
@@ -28976,7 +29158,13 @@ MonoBehaviour:
       boolVariables: []
       stringVariables: []
       vector2Variables: []
-      vector3Variables: []
+      vector3Variables:
+      - useVariable: 1
+        name: Movement
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
