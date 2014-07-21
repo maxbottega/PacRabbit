@@ -28459,6 +28459,7 @@ GameObject:
   - 54: {fileID: 2011921445}
   - 135: {fileID: 2011921444}
   - 114: {fileID: 2011921439}
+  - 143: {fileID: 2011921440}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -28472,7 +28473,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2011921437}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9fe2e4483d6224af896dece607848c49, type: 3}
   m_Name: 
@@ -28517,17 +28518,19 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.GetProperty
         - HutongGames.PlayMaker.Actions.GetMaterial
         - HutongGames.PlayMaker.Actions.GetAxisVector
+        - HutongGames.PlayMaker.Actions.ControllerSimpleMove
+        - HutongGames.PlayMaker.Actions.SmoothLookAtDirection
         customNames:
         - 
         - 
         - 
-        actionEnabled: 000101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000200000006000000
-        actionHashCodes: d23668dc87f2eede04a95048
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000040000000b0000000f000000
+        actionHashCodes: 87f2eede04a95048097bde4d0d93fb1a
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -28545,121 +28548,27 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 1176345558}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 2011921437}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
-        fsmPropertyParams:
-        - TargetObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: UnityEngine.Object
-            value: {fileID: 0}
-          TargetTypeName: 
-          PropertyName: 
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          setProperty: 0
+        fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
         - useVariable: 0
@@ -28683,15 +28592,13 @@ MonoBehaviour:
           typeName: UnityEngine.Object
           value: {fileID: 0}
         fsmVarParams: []
-        byteData: 000000000000000000803f0000000000000000000000000000000000014d6f76656d656e740000000001
+        byteData: 0000000000000000803f0001000000000000000000000000000000014d6f76656d656e740000000001000000000000000000000000014d6f76656d656e740000803f0000000000000000000000000000000000014d6f76656d656e74cdcccc3d000000000000000000000000000101000000a0400001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 24000000010000001400000010000000200000000100000012000000120000000f00000007000000130000001c0000000f000000
+        paramDataType: 1400000010000000200000000100000012000000120000000f00000007000000130000001c0000000f000000140000001c0000000f00000007000000140000001c0000000f0000001c000000110000000f00000001000000
         paramName:
-        - targetProperty
-        - everyFrame
         - gameObject
         - materialIndex
         - material
@@ -28703,8 +28610,19 @@ MonoBehaviour:
         - relativeTo
         - storeVector
         - storeMagnitude
-        paramDataPos: 0000000000000000000000000100000000000000060000000000000001000000070000000c000000000000001000000025000000
-        paramByteDataSize: 00000000010000000000000005000000000000000100000000000000000000000500000004000000000000001500000005000000
+        - gameObject
+        - moveVector
+        - speed
+        - space
+        - gameObject
+        - targetDirection
+        - minMagnitude
+        - upVector
+        - keepVertical
+        - speed
+        - lateUpdate
+        paramDataPos: 000000000000000000000000050000000000000001000000060000000b000000000000000f0000002400000001000000290000003e0000004300000002000000470000005c000000610000006e0000007000000075000000
+        paramByteDataSize: 0000000005000000000000000100000000000000000000000500000004000000000000001500000005000000000000001500000005000000040000000000000015000000050000000d000000020000000500000001000000
     - name: set tranformed speed
       description: 
       colorIndex: 0
@@ -29191,6 +29109,20 @@ MonoBehaviour:
     StepFrame: 0
     activeStateName: 
   fsmTemplate: {fileID: 0}
+--- !u!143 &2011921440
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2011921437}
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: .5
+  m_SlopeLimit: 45
+  m_StepOffset: .300000012
+  m_SkinWidth: .0799999982
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2011921441
 Transform:
   m_ObjectHideFlags: 0
