@@ -11,12 +11,17 @@ public class SpawnPoint : MonoBehaviour
 		public int 			Count = 1;
 	}
 	
+	// ------------ Public, editable in the GUI, serialized
 	public EnemyData[] EnemiesList = null;
-	List<Enemy> mEnemies = new List<Enemy>();
+	
+	// ------------ Public, serialized
+	
+	// ------------ Public, non-serialized	
+	[System.NonSerialized] List<Enemy> mEnemyComponents = new List<Enemy>();
 
 	public void SpawnEnemy ()
 	{
-		foreach (Enemy enemy in mEnemies)
+		foreach (Enemy enemy in mEnemyComponents)
 		{
 			if (!enemy.gameObject.activeInHierarchy)
 			{
@@ -47,7 +52,7 @@ public class SpawnPoint : MonoBehaviour
 				Enemy enemyComponent = instance.GetComponentInChildren<Enemy> ();
 				enemyComponent.gameObject.SetActive (false);
 				
-				mEnemies.Add (enemyComponent);
+				mEnemyComponents.Add (enemyComponent);
 			}		
 		}
 	}

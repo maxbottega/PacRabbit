@@ -738,7 +738,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 159322676}
-  - 114: {fileID: 159322677}
   m_Layer: 0
   m_Name: WAYPOINTS
   m_TagString: Untagged
@@ -1055,17 +1054,6 @@ Transform:
   - {fileID: 441875860}
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &159322677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 159322675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fda41a5240b704da0b8b42dba5dce7be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &160102124
 GameObject:
   m_ObjectHideFlags: 0

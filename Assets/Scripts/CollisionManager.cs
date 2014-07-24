@@ -48,6 +48,7 @@ public class CollisionManager : MonoBehaviour
 		mColliders.Remove (collider);
 	}
 	
+	// NOTE: Due to ExecutionOrderManager we know this Update is after SphereTransform Update which is after all other components Updates
 	void Update () 
 	{
 		if (m_SAP==true) 
@@ -71,7 +72,7 @@ public class CollisionManager : MonoBehaviour
 			if(current.SphereNavMeshCollision == false)
 				continue;
 			
-			Vector3 currentPos = (current.SphereTransf.Rotation) * Vector3.up * navmeshRadius;
+			Vector3 currentPos = current.SphereTransf.Up * navmeshRadius;
 			
 			Vector3 newPos = 
 				NavigationManager.instance.PointNavMeshEdgesCollision(

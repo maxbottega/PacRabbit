@@ -15,13 +15,19 @@ public class SphereTransform : MonoBehaviour
 	// ------------ Private
 	private Quaternion 		mRotation;
 	private Vector3 		mUp;
+	private Vector3			mUpPrevious;
 	private Transform		mPivot = null;
 	
 	public Quaternion Rotation
 	{
 		get { return mRotation; }
 	}
-	
+
+	public Vector3 UpPreviousUpdate
+	{
+		get { return mUpPrevious; }
+	}
+			
 	public Vector3 Up
 	{
 		get { return mUp; }
@@ -40,12 +46,18 @@ public class SphereTransform : MonoBehaviour
 	
 	void Update()
 	{
+		mUpPrevious = mUp;
 		mUp = mRotation * Vector3.up; // y-axis
 	}
 		
 	void LateUpdate ()	
 	{
 		Apply ();
+	}
+	
+	public void Apply ()
+	{
+		mPivot.rotation = mRotation;
 	}
 	
 	public void Move (Quaternion deltaRotation)
@@ -75,10 +87,5 @@ public class SphereTransform : MonoBehaviour
 	{
 		mRotation = rotation;
 		mUp = mRotation * Vector3.up; 
-	}
-	
-	public void Apply ()
-	{
-		mPivot.rotation = mRotation;
 	}
 }

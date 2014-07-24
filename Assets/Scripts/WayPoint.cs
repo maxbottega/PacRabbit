@@ -33,7 +33,8 @@ public class WayPoint : MonoBehaviour, IPathNode
 	
 	public bool DrawGizmo = false;
 
-	public Vector3 mPosition; // private copy as transform.position access is slow
+	[SerializeField] private Vector3 mPosition; // private copy as transform.position access is slow
+
 	public Vector3 Position
 	{
 		get { return mPosition; }
@@ -51,7 +52,7 @@ public class WayPoint : MonoBehaviour, IPathNode
 		
 		Gizmos.color = Color.green;
 
-		Gizmos.DrawSphere(transform.position, 0.5f);
+		Gizmos.DrawSphere(transform.position, 0.25f);
 		
 		foreach (WayPoint neighbor in connections)
 		{

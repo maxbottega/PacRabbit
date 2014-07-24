@@ -27,7 +27,7 @@ public class Planet : MonoBehaviour
 	}
 
 #if UNITY_EDITOR 
-	void OnDrawGizmos() 
+	void OnDrawGizmosSelected() 
 	{
 		// This is where the planet thinks to be
 		Gizmos.color = Color.blue;
