@@ -67,19 +67,28 @@ public class CollisionManager : MonoBehaviour
 		
 		for (int colliderIndex = startIndex; colliderIndex<endIndex; ++colliderIndex)
 		{	
-			Collidable current = mColliders[colliderIndex];
+			Collidable coll = mColliders[colliderIndex];
 			
-			if(current.SphereNavMeshCollision == false)
+			if(coll.SphereNavMeshCollision == false)
 				continue;
 			
-			Vector3 currentPos = current.SphereTransf.Up * navmeshRadius;
+			Vector3 currentPos = coll.SphereTransf.Up * navmeshRadius;
 			
+			// TODO: as we have prevPos we can do continous collision detection instead, which would also
+			// solve issues with the navmesh collision currently not being "oriented"
+#if true
 			Vector3 newPos = 
 				NavigationManager.instance.PointNavMeshEdgesCollision(
-					currentPos, current.RadiusForNavMesh, current.CachedNearest, out current.CachedNearest);
+					currentPos, coll.RadiusForNavMesh, coll.CachedNearest, out coll.CachedNearest);
+#else		
+			Vector3 prevPos = coll.SphereTransf.UpPreviousUpdate * navmeshRadius;
 			
+			Vector3 newPos = 
+				NavigationManager.instance.SegmentNavMeshEdgesCollision(
+					prevPos, currentPos, coll.RadiusForNavMesh, coll.CachedNearest, out coll.CachedNearest);			
+#endif		
 			//if( Vector3.Distance(currentPos, newPos) > 0.000001f ) // TODO: use dot instead
-			current.SphereTransf.Move(newPos);
+			coll.SphereTransf.Move(newPos);
 		}
 	}
 	

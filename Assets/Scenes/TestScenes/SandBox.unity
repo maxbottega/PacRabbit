@@ -20781,7 +20781,7 @@ MonoBehaviour:
   Mass: 5
   RadiusForNavMesh: .75
   Static: 0
-  SphereNavMeshCollision: 1
+  SphereNavMeshCollision: 0
 --- !u!135 &2011921444
 SphereCollider:
   m_ObjectHideFlags: 0

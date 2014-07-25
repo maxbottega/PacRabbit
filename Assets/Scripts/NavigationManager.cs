@@ -1,6 +1,3 @@
-
-//#define FULL_DEBUG
-
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -38,10 +35,10 @@ public class NavigationManager : MonoBehaviour
 		if(waypointList.Count == 0)
 			Debug.LogError("No waypoints!");
 	}
-	
-	static public Vector3 PointSegmentCollision(Vector3 point, CollisionEdge edge, float radius)
+
+	static public Vector3 PointSegmentCollision(Vector3 point, CollisionEdge edge, float radius, out Vector3 displacementNormal)
 	{
-Debug.DrawLine(edge.v0, edge.v1, Color.red, 1.0f);
+//Debug.DrawLine(edge.v0, edge.v1, Color.red, 1.0f);
 	
 		Vector3 v0p = point - edge.v0;
 		Vector3 v0v1 = edge.v1 - edge.v0;
@@ -57,6 +54,8 @@ Debug.DrawLine(edge.v0, edge.v1, Color.red, 1.0f);
 		if(toClosest.sqrMagnitude < radius * radius)
 		{
 			toClosest.Normalize();
+			displacementNormal = toClosest;
+			
 			toClosest *= radius;
 			
 Debug.DrawLine(point, closest, Color.magenta, 1.0f);
@@ -65,33 +64,116 @@ Debug.DrawLine(point, closest, Color.magenta, 1.0f);
 		else
 		{			
 Debug.DrawLine(point, closest, Color.grey, 0.25f);
+			displacementNormal = Vector3.zero;
 			return point;
 		}
 	}
-
-	// Note-TODO: assumes point is more or less on the plane of the navmesh!!!
+	
+	// Note-TODO: assumes point is more or less on the plane of the navmesh!
 	public Vector3 PointNavMeshEdgesCollision(Vector3 point, float radius, WayPoint previousNearest, out WayPoint newNearest)
 	{
+		Vector3 unused;
 		newNearest = FindClosestWaypoint(point, previousNearest, waypointList);
 		
-Debug.DrawLine(newNearest.Position, newNearest.connections[0].Position, Color.green, 1.0f);
+//Debug.DrawLine(newNearest.Position, newNearest.connections[0].Position, Color.green, 1.0f);
 		
 		// resolve collisions (TODO: could do multiple iterations...)
 		// TODO: not the smartest way as we don't check in which side we are
 		// -- A smart and easy way is to force point-in-triangle
 		// taking the result that have the least movement among the triangles we check
 		foreach(CollisionEdge e in newNearest.collisionEdges)
-			point = PointSegmentCollision(point, e, radius);
+			point = PointSegmentCollision(point, e, radius, out unused);
 			
 		foreach(WayPoint w in newNearest.connections)
 		{
-Debug.DrawLine(w.Position, w.connections[0].Position, Color.yellow, 1.0f);
+//Debug.DrawLine(w.Position, w.connections[0].Position, Color.yellow, 1.0f);
+
 			foreach(CollisionEdge e in w.collisionEdges)
-				point = PointSegmentCollision(point, e, radius);
+				point = PointSegmentCollision(point, e, radius, out unused);
 		}		
 		return point;
 	}
 	
+/*
+	// Note-TODO: assumes segment is more or less on the plane of the navmesh!
+	// TODO: continous collision
+	// TODO...
+	public Vector3 SegmentNavMeshEdgesCollision(Vector3 prevPoint, Vector3 point, float radius, WayPoint previousNearest, out WayPoint newNearest)
+	{
+		Vector3 displacementNormal;
+		newNearest = FindClosestWaypoint(point, previousNearest, waypointList);
+		
+		Vector3 deltaPoint = point - prevPoint;
+		float deltaLength = deltaPoint.magnitude;
+			
+Debug.DrawLine(point, prevPoint, Color.green);
+	
+		bool keepResolving = true;
+		
+		//while(keepResolving)
+		{
+			keepResolving = false;
+					
+			foreach(CollisionEdge e in newNearest.collisionEdges)
+			{
+				Vector3 newPoint = PointSegmentCollision(point, e, radius, out displacementNormal);
+Debug.DrawLine(point, newPoint, Color.magenta);
+Debug.DrawLine(prevPoint, newPoint, Color.yellow);
+				
+				if( newPoint != point )
+				{
+					float len = (newPoint - prevPoint).magnitude;
+					float lenDiff = Mathf.Max ( 0.0f, deltaLength - len );
+					
+					Vector3 displacementTangent = (e.v0 - e.v1).normalized;
+					
+					if(Vector3.Dot(displacementTangent, deltaPoint) < 0.0f)
+						lenDiff = -lenDiff;
+					
+					point = newPoint + displacementTangent * lenDiff;
+					
+Debug.Log("move len:"+deltaLength.ToString()+" clamped len:"+len.ToString()+" diff:"+lenDiff.ToString()+" new len:"+(point-prevPoint).magnitude.ToString());
+Debug.DrawLine(point, newPoint, Color.blue);					
+					keepResolving = true;		
+				}
+				else
+					point = newPoint;
+			}
+			
+			foreach(WayPoint w in newNearest.connections)
+			{
+				foreach(CollisionEdge e in w.collisionEdges)
+				{
+					Vector3 newPoint = PointSegmentCollision(point, e, radius, out displacementNormal);
+Debug.DrawLine(point, newPoint, Color.magenta);
+Debug.DrawLine(prevPoint, newPoint, Color.yellow);
+					
+					if( newPoint != point )
+					{
+						float len = (newPoint - prevPoint).magnitude;
+						float lenDiff = Mathf.Max ( 0.0f, deltaLength - len );
+						
+						Vector3 displacementTangent = (e.v0 - e.v1).normalized;
+						
+						if(Vector3.Dot(displacementTangent, deltaPoint) < 0.0f)
+							lenDiff = -lenDiff;
+						
+						point = newPoint + displacementTangent * lenDiff;
+						
+Debug.Log("move len:"+deltaLength.ToString()+" clamped len:"+len.ToString()+" diff:"+lenDiff.ToString()+" new len:"+(point-prevPoint).magnitude.ToString());
+Debug.DrawLine(point, newPoint, Color.blue);					
+						keepResolving = true;		
+					}
+					else
+						point = newPoint;
+				}
+			}		
+				
+		}
+		return point;
+	}
+*/
+			
 	static public WayPoint NavigatePath(List<WayPoint> path, Vector3 point, int pathIndex, out int newPathIndex)
 	{
 		float distance = Vector3.Distance(path[pathIndex].Position, point);

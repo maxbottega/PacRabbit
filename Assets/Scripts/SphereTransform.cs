@@ -47,15 +47,15 @@ public class SphereTransform : MonoBehaviour
 	void Update()
 	{
 		mUpPrevious = mUp;
-		mUp = mRotation * Vector3.up; // y-axis
+		mUp = mRotation * Vector3.up;
 	}
 		
 	void LateUpdate ()	
 	{
-		Apply ();
+		ApplyCachedTransform ();
 	}
 	
-	public void Apply ()
+	public void ApplyCachedTransform ()
 	{
 		mPivot.rotation = mRotation;
 	}
@@ -63,6 +63,11 @@ public class SphereTransform : MonoBehaviour
 	public void Move (Quaternion deltaRotation)
 	{
 		mRotation *= deltaRotation;
+	}
+	
+	public Vector3 MovedUp(Quaternion deltaRotation)
+	{
+		return (mRotation * deltaRotation) * Vector3.up;
 	}
 	
 	public void Move (Vector3 targetPosition, float speed)

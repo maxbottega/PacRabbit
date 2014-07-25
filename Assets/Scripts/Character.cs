@@ -37,8 +37,41 @@ public class Character : MonoBehaviour
 	
 	void Update()
 	{
-		UpdateInput();
-		mMoveController.Move(mRotation);
+		UpdateInput();	
+		
+		if(mCollidable.SphereNavMeshCollision == false) // On-rails move -- TODO: project on the navmesh path!
+		{
+			Vector3 prevPos = mMoveController.Up * Planet.Instance.Radius;		
+			Vector3 newPos = mMoveController.MovedUp(mRotation) * Planet.Instance.Radius;
+			
+			mCollidable.CachedNearest = NavigationManager.FindClosestWaypoint(prevPos, mCollidable.CachedNearest, NavigationManager.instance.waypointList);
+			
+			Vector3 movementDirection = (newPos - prevPos);
+			float movementLength = movementDirection.magnitude;
+			
+			Vector3 chosenDirection = Vector3.zero;
+			float chosenDirectionDot = -1.0f;
+			
+			foreach(WayPoint w in mCollidable.CachedNearest.connections)
+			{
+				Vector3 candidateDirection = (w.Position - mCollidable.CachedNearest.Position).normalized;			
+				float cosAngleTimesLenght = Vector3.Dot (candidateDirection, movementDirection);
+				
+				if(cosAngleTimesLenght > chosenDirectionDot)
+				{
+					chosenDirection = candidateDirection;
+					chosenDirectionDot = cosAngleTimesLenght;
+				}
+			}
+			
+			newPos = prevPos + chosenDirection * movementLength;
+			mMoveController.Move (newPos);
+		}
+		else
+		{
+			mMoveController.Move(mRotation);
+		}
+		
 		
 		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
 	}	
