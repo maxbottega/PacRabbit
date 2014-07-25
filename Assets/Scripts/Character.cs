@@ -39,7 +39,7 @@ public class Character : MonoBehaviour
 	{
 		UpdateInput();	
 		
-		if(mCollidable.SphereNavMeshCollision == false) // On-rails move -- TODO: project on the navmesh path!
+		if(mCollidable.SphereNavMeshCollision == false) // On-rails move
 		{
 			Vector3 prevPos = mMoveController.Up * Planet.Instance.Radius;		
 			Vector3 newPos = mMoveController.MovedUp(mRotation) * Planet.Instance.Radius;
@@ -47,31 +47,32 @@ public class Character : MonoBehaviour
 			mCollidable.CachedNearest = NavigationManager.FindClosestWaypoint(prevPos, mCollidable.CachedNearest, NavigationManager.instance.waypointList);
 			
 			Vector3 movementDirection = (newPos - prevPos);
-			float movementLength = movementDirection.magnitude;
+			float movementLength = movementDirection.magnitude; // TODO: this is constant for a given WalkSpeed
 			
-			Vector3 chosenDirection = Vector3.zero;
+			Vector3 currentWaypointPos = mCollidable.CachedNearest.Position;
+			Vector3 chosenPos = Vector3.zero;
 			float chosenDirectionDot = -1.0f;
 			
 			foreach(WayPoint w in mCollidable.CachedNearest.connections)
 			{
-				Vector3 candidateDirection = (w.Position - mCollidable.CachedNearest.Position).normalized;			
+				Vector3 candidateDirection = (w.Position - currentWaypointPos).normalized;			
 				float cosAngleTimesLenght = Vector3.Dot (candidateDirection, movementDirection);
 				
 				if(cosAngleTimesLenght > chosenDirectionDot)
 				{
-					chosenDirection = candidateDirection;
+					chosenPos = prevPos + candidateDirection * movementLength;
+					chosenPos = NavigationManager.PointNearestSegment(chosenPos, w.Position, currentWaypointPos);
+					
 					chosenDirectionDot = cosAngleTimesLenght;
 				}
 			}
-			
-			newPos = prevPos + chosenDirection * movementLength;
-			mMoveController.Move (newPos);
+
+			mMoveController.Move (chosenPos);
 		}
 		else
 		{
 			mMoveController.Move(mRotation);
 		}
-		
 		
 		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
 	}	

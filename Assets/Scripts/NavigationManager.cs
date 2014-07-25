@@ -35,20 +35,28 @@ public class NavigationManager : MonoBehaviour
 		if(waypointList.Count == 0)
 			Debug.LogError("No waypoints!");
 	}
-
-	static public Vector3 PointSegmentCollision(Vector3 point, CollisionEdge edge, float radius, out Vector3 displacementNormal)
-	{
-//Debug.DrawLine(edge.v0, edge.v1, Color.red, 1.0f);
 	
-		Vector3 v0p = point - edge.v0;
-		Vector3 v0v1 = edge.v1 - edge.v0;
+	static public Vector3 PointNearestSegment(Vector3 point, Vector3 edgeA, Vector3 edgeB)
+	{
+		//Debug.DrawLine(edge.v0, edge.v1, Color.red, 1.0f);
+		
+		Vector3 v0p = point - edgeA;
+		Vector3 v0v1 = edgeB - edgeA;
 		float len2 = v0v1.sqrMagnitude;
 		float dot = Vector3.Dot(v0p, v0v1);
 		float t = dot / len2;
 		
 		t = Mathf.Clamp01(t);
 		
-		Vector3 closest = edge.v0 + v0v1 * t;
+		Vector3 closest = edgeA + v0v1 * t;
+
+		return closest;
+	}
+
+	static public Vector3 PointSegmentCollision(Vector3 point, CollisionEdge edge, float radius, out Vector3 displacementNormal)
+	{
+//Debug.DrawLine(edge.v0, edge.v1, Color.red, 1.0f);
+		Vector3 closest = PointNearestSegment(point, edge.v0, edge.v1);
 		Vector3 toClosest = point - closest;
 		
 		if(toClosest.sqrMagnitude < radius * radius)
