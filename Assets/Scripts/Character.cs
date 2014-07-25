@@ -39,7 +39,7 @@ public class Character : MonoBehaviour
 	{
 		UpdateInput();	
 		
-		if(mCollidable.SphereNavMeshCollision == false) // On-rails move
+		if(mCollidable.SphereNavMeshCollision == false) // On-rails move... TODO: could auto-detect corridors easily (add info in the waypoints)
 		{
 			Vector3 prevPos = mMoveController.Up * Planet.Instance.Radius;		
 			Vector3 newPos = mMoveController.MovedUp(mRotation) * Planet.Instance.Radius;
@@ -61,7 +61,9 @@ public class Character : MonoBehaviour
 				if(cosAngleTimesLenght > chosenDirectionDot)
 				{
 					chosenPos = prevPos + candidateDirection * movementLength;
-					chosenPos = NavigationManager.PointNearestSegment(chosenPos, w.Position, currentWaypointPos);
+					
+					// smootly converge to the path
+					chosenPos = Vector3.Lerp(chosenPos, NavigationManager.PointNearestSegment(chosenPos, w.Position, currentWaypointPos), 0.1f);
 					
 					chosenDirectionDot = cosAngleTimesLenght;
 				}
