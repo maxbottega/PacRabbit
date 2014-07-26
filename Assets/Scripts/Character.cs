@@ -23,15 +23,17 @@ public class Character : MonoBehaviour
 	[System.NonSerialized] public Quaternion 		mRotation 		= Quaternion.identity;
 
 	private Collidable								mCollidable 	= null;
-	//[System.NonSerialized] float					mFacingAngle 	= 0;
-	[System.NonSerialized] SphereTransform			mMoveController	= null;	
+	private float									mFacingAngle 	= 0;
+	private SphereTransform							mMoveController	= null;	
+	private PlayMakerFSM							mPlaymaker			= null;
 
 	void Start () 
 	{
 		mMoveController = GetComponent<SphereTransform>();
 		mCollidable 	= GetComponent<Collidable> ();
+		mPlaymaker 		= GetComponent<PlayMakerFSM> ();
 		
-		if (mCollidable)
+		if (mCollidable && mPlaymaker)
 			mCollidable.OnCollision = new Collidable.CollisionCallback(OnCollision);
 	}
 	
@@ -81,11 +83,31 @@ public class Character : MonoBehaviour
 	
 	public void OnCollision(Collidable other)
 	{
-		// Collision reaction
+/*
 		Enemy enemy = other.GetComponent<Enemy> ();
 		
 		if (enemy != null)
 			enemy.gameObject.SetActive (false);
+*/		
+			
+		Enemy enemy = other.GetComponent<Enemy> ();
+		
+		if(mPlaymaker.Fsm.EventTarget != null)
+		{
+			Debug.LogError ("EventTarget set in Enemy FSM - this might cause issues so we reset it");
+			// EventTarget might redirect SendEvent to another target, we check here to be safe as it seems
+			// to be a possible cause of nasty bugs, but I haven't verified this directly yet, just reading
+			// about in on some forums...
+			mPlaymaker.Fsm.EventTarget = null;
+		}
+		
+		if(enemy!=null)
+		{
+			mPlaymaker.SendEvent("EnemyCollision");
+			return;
+		}
+		
+		mPlaymaker.SendEvent("OtherCollision");
 	}
 	
 	void UpdateInput()

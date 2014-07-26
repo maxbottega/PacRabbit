@@ -16,9 +16,9 @@ public class Enemy : MonoBehaviour
 	[System.NonSerialized] public Transform 		Target				= null;
 	
 	// ------------ Private	
-	private bool 									hasPlaymaker 		= false;
 	private SphereTransform							mMoveController 	= null;	
 	private Collidable								mCollidable 		= null;
+	private PlayMakerFSM							mPlaymaker			= null;
 	
 	public float DistanceToTarget
 	{
@@ -30,11 +30,6 @@ public class Enemy : MonoBehaviour
 				return float.MaxValue;
 		}
 	}
-	
-	public void OnHit()
-	{
-		gameObject.SetActive(false);
-	}
 
 	void Awake ()
 	{
@@ -43,16 +38,41 @@ public class Enemy : MonoBehaviour
 		mMoveController 	= GetComponent<SphereTransform>();
 		mCollidable 		= GetComponent<Collidable> ();
 
-		if (mCollidable)
+		mPlaymaker = GetComponent<PlayMakerFSM> ();
+
+		if (mCollidable && mPlaymaker) // register callback that sends events to playmaker
 			mCollidable.OnCollision = new Collidable.CollisionCallback(OnCollision);
 			
-		if(GetComponent<PlayMakerFSM> () != null)
-			hasPlaymaker = true;
 	}
 	
 	public void OnCollision(Collidable other)
 	{
-		// Collision reaction
+		Enemy enemy = other.GetComponent<Enemy> ();
+		
+		if(mPlaymaker.Fsm.EventTarget != null)
+		{
+			Debug.LogError ("EventTarget set in Enemy FSM - this might cause issues so we reset it");
+			// EventTarget might redirect SendEvent to another target, we check here to be safe as it seems
+			// to be a possible cause of nasty bugs, but I haven't verified this directly yet, just reading
+			// about in on some forums...
+			mPlaymaker.Fsm.EventTarget = null;
+		}
+		
+		if(enemy!=null)
+		{
+			mPlaymaker.SendEvent("EnemyCollision");
+			return;
+		}
+		
+		Character character = other.GetComponent<Character> ();
+		
+		if(character!=null)
+		{
+			mPlaymaker.SendEvent("CharacterCollision");
+			return;	
+		}
+		
+		mPlaymaker.SendEvent("OtherCollision");
 	}
 
 	void Start () 
@@ -62,7 +82,7 @@ public class Enemy : MonoBehaviour
 
 	void Update () 
 	{
-		if (hasPlaymaker)
+		if (mPlaymaker != null)
 			return; // TODO: we really will always have playmaker attached, this is temporary
 		
 		if (mMoveController)
