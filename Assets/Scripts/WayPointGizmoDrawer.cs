@@ -2,22 +2,23 @@
 using System.Collections;
 
 [ExecuteInEditMode]
-public class GizmoDrawer : MonoBehaviour 
+public class WayPointGizmoDrawer : MonoBehaviour 
 {
 	public bool DrawGizmos = false;
+	private bool mDrawGizmos = false;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
 	// Update is called once per frame
 	void Update () 
 	{
+		if(DrawGizmos == mDrawGizmos)
+			return;
+	
 		foreach (Transform child in transform)
 		{
 			WayPoint wp = child.GetComponent<WayPoint> ();
-			wp.DrawGizmo = DrawGizmos;
+			wp.mDrawGizmo = DrawGizmos;
 		}
+		
+		mDrawGizmos = DrawGizmos;
 	}
 }

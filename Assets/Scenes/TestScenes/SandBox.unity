@@ -107,7 +107,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.63328981, y: -8.13745022, z: 4.89944983}
     v1: {x: -6.35703993, y: -6.82726002, z: 5.91042995}
-  DrawGizmo: 1
   mPosition: {x: -5.27760792, y: -7.58637428, z: 5.84099579}
 --- !u!4 &6031658
 Transform:
@@ -154,7 +153,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.34633017, y: 4.22284985, z: 9.23219967}
     v1: {x: -2.70030999, y: 3.98797989, z: 9.93785}
-  DrawGizmo: 1
   mPosition: {x: -3.66001177, y: 3.16266131, z: 9.79787922}
 --- !u!4 &19453205
 Transform:
@@ -201,7 +199,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: 9.82336998, z: 5.04558992}
     v1: {x: -1.67761004, y: 10.1459999, z: 4.02491999}
-  DrawGizmo: 1
   mPosition: {x: -1.30300713, y: 9.54071522, z: 5.14969683}
 --- !u!4 &23899721
 Transform:
@@ -247,7 +244,6 @@ MonoBehaviour:
   - {fileID: 538586552}
   - {fileID: 1988950511}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: .920730174, y: -4.59912968, z: -9.86719227}
 --- !u!4 &40288684
 Transform:
@@ -293,7 +289,6 @@ MonoBehaviour:
   - {fileID: 332484683}
   - {fileID: 1213012502}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: -8.03704071, y: -7.38369131, z: -.409605086}
 --- !u!4 &41296709
 Transform:
@@ -340,7 +335,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.61701965, y: 6.82725, z: 1.04507005}
     v1: {x: 9.48608971, y: 5.64322996, z: -.353145987}
-  DrawGizmo: 1
   mPosition: {x: 8.69283485, y: 6.60742283, z: -.169653356}
 --- !u!4 &59075670
 Transform:
@@ -387,7 +381,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.03316998, y: 2.6454401, z: -10.6719999}
     v1: {x: 1.03315997, y: 2.6454401, z: -10.6719999}
-  DrawGizmo: 1
   mPosition: {x: .00595711032, y: 3.55940461, z: -10.3160763}
 --- !u!4 &69096904
 Transform:
@@ -434,7 +427,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.34633017, y: -10.1459999, z: .351731986}
     v1: {x: -2.70030999, y: -10.6722002, z: .87738502}
-  DrawGizmo: 1
   mPosition: {x: -3.64125872, y: -10.1805105, z: 1.55679142}
 --- !u!4 &112611824
 Transform:
@@ -481,7 +473,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.65427005, y: -5.3578701, z: -9.51383972}
     v1: {x: 3.26722002, y: -5.64322996, z: -8.91267967}
-  DrawGizmo: 1
   mPosition: {x: 2.59143925, y: -4.61657619, z: -9.56178284}
 --- !u!4 &112727401
 Transform:
@@ -528,7 +519,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.02591991, y: 3.98797989, z: -6.45269012}
     v1: {x: 6.93042994, y: 3.61846995, z: -7.79951}
-  DrawGizmo: 1
   mPosition: {x: 7.59314537, y: 3.05356097, z: -7.24176407}
 --- !u!4 &117777289
 Transform:
@@ -575,7 +565,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.70030999, y: 10.6722002, z: -.877384007}
     v1: {x: 4.34633017, y: 10.1459999, z: -.351731002}
-  DrawGizmo: 1
   mPosition: {x: 3.38461637, y: 10.3925705, z: .202268615}
 --- !u!4 &119279589
 Transform:
@@ -622,7 +611,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.02591991, y: 3.98797989, z: -6.45269012}
     v1: {x: -7.88197994, y: 5.64322996, z: -5.29008007}
-  DrawGizmo: 1
   mPosition: {x: -7.35141277, y: 5.03641701, z: -6.31932974}
 --- !u!4 &121736875
 Transform:
@@ -669,7 +657,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.88197994, y: -2.20785999, z: 7.41324997}
     v1: {x: 8.94281006, y: -2.50695992, z: 5.97477007}
-  DrawGizmo: 1
   mPosition: {x: 8.16971111, y: -3.16295624, z: 6.53438711}
 --- !u!4 &129823013
 Transform:
@@ -716,7 +703,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.03315997, y: -2.6454401, z: 10.6719999}
     v1: {x: 2.91886997, y: -2.50695992, z: 10.3514004}
-  DrawGizmo: 1
   mPosition: {x: 1.89178896, y: -3.47483492, z: 10.178359}
 --- !u!4 &154971563
 Transform:
@@ -738,6 +724,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 159322676}
+  - 114: {fileID: 159322677}
   m_Layer: 0
   m_Name: WAYPOINTS
   m_TagString: Untagged
@@ -1054,6 +1041,18 @@ Transform:
   - {fileID: 441875860}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &159322677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159322675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272181bf14f5148e9a402dd0bf97f2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DrawGizmos: 1
 --- !u!1 &160102124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,7 +1086,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 11.0088997, y: .742121994, z: .45865801}
     v1: {x: 10.9138002, y: -.886771977, z: 1.43482995}
-  DrawGizmo: 1
   mPosition: {x: 10.9109955, y: -.423061073, z: .232537985}
 --- !u!4 &160102126
 Transform:
@@ -1134,7 +1132,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.83814001, y: -8.90606022, z: 5.28275013}
     v1: {x: 2.96571994, y: -9.82336998, z: 4.08197021}
-  DrawGizmo: 1
   mPosition: {x: 2.48987508, y: -9.30393219, z: 5.17060852}
 --- !u!4 &163417927
 Transform:
@@ -1181,7 +1178,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.97813988, y: -9.28384972, z: -.168871999}
     v1: {x: 7.43725014, y: -8.13745022, z: -.652567983}
-  DrawGizmo: 1
   mPosition: {x: 6.39218569, y: -8.76510143, z: -1.3036468}
 --- !u!4 &170510189
 Transform:
@@ -1228,7 +1224,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.93042994, y: 3.61846995, z: -7.79951}
     v1: {x: 5.27615976, y: 3.61846995, z: -9.00140953}
-  DrawGizmo: 1
   mPosition: {x: 6.18589878, y: 2.84066939, z: -8.53916931}
 --- !u!4 &174671666
 Transform:
@@ -1275,7 +1270,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.93042994, y: 5.3578701, z: -6.72451019}
     v1: {x: -6.35703993, y: 6.82725, z: -5.91042995}
-  DrawGizmo: 1
   mPosition: {x: -7.25901222, y: 5.79602242, z: -5.75131798}
 --- !u!4 &178276208
 Transform:
@@ -1350,7 +1344,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: 4.30290985, z: -10.1705999}
     v1: {x: -1.91029, y: 4.22284985, z: -10.0236998}
-  DrawGizmo: 1
   mPosition: {x: -.966072679, y: 3.44057727, z: -10.3157673}
 --- !u!4 &182444868
 Transform:
@@ -1397,7 +1390,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.83814001, y: 8.90604973, z: -5.28275013}
     v1: {x: 2.96571994, y: 9.82336998, z: -4.08197021}
-  DrawGizmo: 1
   mPosition: {x: 4.02040005, y: 9.2799263, z: -4.14717484}
 --- !u!4 &188954194
 Transform:
@@ -1443,7 +1435,6 @@ MonoBehaviour:
   - {fileID: 178276207}
   - {fileID: 1149748830}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: -7.1852684, y: 6.49724245, z: -5.05266333}
 --- !u!4 &195102083
 Transform:
@@ -1490,7 +1481,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.34633017, y: -4.22284985, z: -9.23219967}
     v1: {x: 2.70030999, y: -3.98797989, z: -9.93785}
-  DrawGizmo: 1
   mPosition: {x: 3.38461637, y: -4.82860661, z: -9.20492935}
 --- !u!4 &195742901
 Transform:
@@ -1537,7 +1527,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.97813988, y: 4.30290985, z: 8.22821045}
     v1: {x: 5.43697023, y: 2.6454401, z: 9.24108028}
-  DrawGizmo: 1
   mPosition: {x: 6.33642054, y: 3.03568888, z: 8.34749985}
 --- !u!4 &196748932
 Transform:
@@ -1584,7 +1573,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.43697023, y: 9.44855022, z: -1.76657999}
     v1: {x: -6.47013998, y: 8.36221981, z: -3.18861008}
-  DrawGizmo: 1
   mPosition: {x: -5.31888485, y: 9.03505135, z: -3.03777289}
 --- !u!4 &198693130
 Transform:
@@ -1631,7 +1619,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.83814001, y: .742121994, z: -10.3283005}
     v1: {x: -4.61475992, y: 2.20785999, z: -9.78703022}
-  DrawGizmo: 1
   mPosition: {x: -3.45222735, y: 2.02031231, z: -10.1699839}
 --- !u!4 &201227460
 Transform:
@@ -1678,7 +1665,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.73716021, y: 9.28384972, z: -3.65048003}
     v1: {x: 5.63328981, y: 8.13743973, z: -4.89944983}
-  DrawGizmo: 1
   mPosition: {x: 4.29825115, y: 8.83577538, z: -4.79775143}
 --- !u!4 &203581531
 Transform:
@@ -1725,7 +1711,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.43725014, y: -4.22284985, z: -6.9865098}
     v1: {x: 7.46682978, y: -5.64322996, z: -5.86148024}
-  DrawGizmo: 1
   mPosition: {x: 6.68740654, y: -5.49117947, z: -6.68210316}
 --- !u!4 &205137769
 Transform:
@@ -1772,7 +1757,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.43697023, y: 2.6454401, z: 9.24108028}
     v1: {x: -7.10867023, y: 2.6454401, z: 8.02651978}
-  DrawGizmo: 1
   mPosition: {x: -6.0541234, y: 3.56018424, z: 8.35442066}
 --- !u!4 &207909183
 Transform:
@@ -1819,7 +1803,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.91886997, y: -8.13745022, z: 6.87159014}
     v1: {x: 1.91029, y: -7.0769701, z: 8.25977993}
-  DrawGizmo: 1
   mPosition: {x: 1.7410109, y: -7.92797232, z: 7.30002022}
 --- !u!4 &209559490
 Transform:
@@ -1866,7 +1849,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.36022997, y: 8.36221981, z: 6.38268995}
     v1: {x: 1.68674004, y: 9.28384972, z: 5.73774004}
-  DrawGizmo: 1
   mPosition: {x: 2.08998489, y: 8.41682434, z: 6.62891436}
 --- !u!4 &211680682
 Transform:
@@ -1913,7 +1895,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.43725014, y: -4.22284985, z: -6.9865098}
     v1: {x: -5.97813988, y: -4.30290985, z: -8.22819996}
-  DrawGizmo: 1
   mPosition: {x: -6.84811783, y: -3.42381001, z: -7.7829237}
 --- !u!4 &211968044
 Transform:
@@ -1960,7 +1941,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.46682978, y: 7.76639986, z: 2.42612004}
     v1: {x: 7.58558989, y: 6.82725, z: 4.21948004}
-  DrawGizmo: 1
   mPosition: {x: 6.94567013, y: 7.63793039, z: 3.55843425}
 --- !u!4 &219253164
 Transform:
@@ -2007,7 +1987,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.63328981, y: -.743022025, z: 9.46945}
     v1: {x: 6.47013998, y: .887715995, z: 8.90538025}
-  DrawGizmo: 1
   mPosition: {x: 5.35475016, y: .50522387, z: 9.49990845}
 --- !u!4 &220176692
 Transform:
@@ -2054,7 +2033,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.02239001, y: 10.9055996, z: -1.40719998}
     v1: {x: -2.70030999, y: 10.6722002, z: -.877384007}
-  DrawGizmo: 1
   mPosition: {x: -1.70826697, y: 10.7954006, z: -.179270744}
 --- !u!4 &251271937
 Transform:
@@ -2101,7 +2079,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.46682978, y: -7.76639986, z: -2.42612004}
     v1: {x: 8.61701965, y: -6.82726002, z: -1.04507005}
-  DrawGizmo: 1
   mPosition: {x: 7.65765619, y: -7.70186424, z: -1.12170434}
 --- !u!4 &252167697
 Transform:
@@ -2148,7 +2125,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.96571994, y: -.742123008, z: -10.6118002}
     v1: {x: -3.83814001, y: .742121994, z: -10.3283005}
-  DrawGizmo: 1
   mPosition: {x: -2.68674374, y: .442187071, z: -10.5842476}
 --- !u!4 &254176725
 Transform:
@@ -2195,7 +2171,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.17595959, y: -5.78771019, z: 2.06414008}
     v1: {x: 8.44583035, y: -7.0769701, z: .735614002}
-  DrawGizmo: 1
   mPosition: {x: 9.09788322, y: -5.99067783, z: .807044506}
 --- !u!4 &257386545
 Transform:
@@ -2242,7 +2217,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.46682978, y: -7.76639986, z: -2.42612004}
     v1: {x: -6.4004302, y: -8.13745022, z: -3.84356999}
-  DrawGizmo: 1
   mPosition: {x: -6.55532694, y: -8.35146523, z: -2.57284546}
 --- !u!4 &257587262
 Transform:
@@ -2289,7 +2263,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.72300005, y: 2.50695992, z: 10.0901003}
     v1: {x: -4.73716021, y: .886771023, z: 9.93626976}
-  DrawGizmo: 1
   mPosition: {x: -3.59557724, y: 1.22226763, z: 10.24755}
 --- !u!4 &259556517
 Transform:
@@ -2336,7 +2309,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.47013998, y: .887715995, z: 8.90538025}
     v1: {x: 7.10867023, y: 2.6454401, z: 8.02651978}
-  DrawGizmo: 1
   mPosition: {x: 6.07217979, y: 2.19119143, z: 8.79408264}
 --- !u!4 &262181401
 Transform:
@@ -2383,7 +2355,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.4004302, y: -8.13745022, z: -3.84356999}
     v1: {x: -5.03192997, y: -8.36221981, z: -5.16812992}
-  DrawGizmo: 1
   mPosition: {x: -5.26549196, y: -8.72292709, z: -3.91945457}
 --- !u!4 &267136979
 Transform:
@@ -2430,7 +2401,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.63328981, y: .743021011, z: -9.46945}
     v1: {x: 4.73716021, y: -.886771977, z: -9.93626976}
-  DrawGizmo: 1
   mPosition: {x: 4.48813391, y: .327879608, z: -9.96007442}
 --- !u!4 &267248150
 Transform:
@@ -2477,7 +2447,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.21023989, y: -5.78771019, z: -7.06341982}
     v1: {x: 6.4004302, y: -7.0769701, z: -5.55946016}
-  DrawGizmo: 1
   mPosition: {x: 6.86755133, y: -6.01519442, z: -6.00124121}
 --- !u!4 &267892271
 Transform:
@@ -2524,7 +2493,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.88197994, y: 2.20785999, z: -7.41324997}
     v1: {x: -6.35703993, y: 2.23321009, z: -8.74971008}
-  DrawGizmo: 1
   mPosition: {x: -6.82089996, y: 3.13231373, z: -7.945117}
 --- !u!4 &269261081
 Transform:
@@ -2571,7 +2539,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.72300005, y: -10.1459999, z: 2.27014995}
     v1: {x: -5.43697023, y: -9.44855022, z: 1.76657999}
-  DrawGizmo: 1
   mPosition: {x: -4.4607172, y: -9.89611626, z: 1.20149183}
 --- !u!4 &282791900
 Transform:
@@ -2618,7 +2585,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.61701965, y: 3.98797989, z: 5.63911009}
     v1: {x: -7.43725014, y: 4.22284985, z: 6.9865098}
-  DrawGizmo: 1
   mPosition: {x: -8.20410347, y: 3.17565727, z: 6.47123051}
 --- !u!4 &284547016
 Transform:
@@ -2665,7 +2631,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.02239001, y: -3.61846995, z: -10.3835001}
     v1: {x: 2.01924992, y: -2.20785999, z: -10.6303997}
-  DrawGizmo: 1
   mPosition: {x: 2.18290448, y: -3.49197674, z: -10.1240797}
 --- !u!4 &288843732
 Transform:
@@ -2712,7 +2677,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.91886997, y: 2.50695992, z: -10.3514004}
     v1: {x: 4.61475992, y: 2.20785999, z: -9.78703022}
-  DrawGizmo: 1
   mPosition: {x: 3.69190025, y: 3.14747643, z: -9.79263878}
 --- !u!4 &292044815
 Transform:
@@ -2759,7 +2723,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.27615976, y: -6.43287992, z: 7.2620101}
     v1: {x: -4.61475992, y: -7.76639986, z: 6.35166979}
-  DrawGizmo: 1
   mPosition: {x: -5.61956787, y: -6.92836714, z: 6.32175064}
 --- !u!4 &293898551
 Transform:
@@ -2806,7 +2769,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.26722002, y: -10.4954996, z: -1.06157994}
     v1: {x: 1.65427005, y: -10.9055996, z: -.537503004}
-  DrawGizmo: 1
   mPosition: {x: 2.57007623, y: -10.6273289, z: .0381640457}
 --- !u!4 &300460186
 Transform:
@@ -2853,7 +2815,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.61475992, y: -2.20785999, z: 9.78703022}
     v1: {x: -3.83814001, y: -.742123008, z: 10.3283005}
-  DrawGizmo: 1
   mPosition: {x: -4.88521481, y: -1.09701109, z: 9.71648979}
 --- !u!4 &307105280
 Transform:
@@ -2899,7 +2860,6 @@ MonoBehaviour:
   - {fileID: 1522485759}
   - {fileID: 112611823}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: -2.87054253, y: -10.3393202, z: 2.05673981}
 --- !u!4 &312135718
 Transform:
@@ -2946,7 +2906,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.63328981, y: -.743022025, z: 9.46945}
     v1: {x: -6.35703993, y: -2.23321009, z: 8.74971008}
-  DrawGizmo: 1
   mPosition: {x: -5.17663908, y: -1.8860997, z: 9.44067955}
 --- !u!4 &317280323
 Transform:
@@ -2993,7 +2952,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.70030999, y: -10.6722002, z: .87738502}
     v1: {x: 4.34633017, y: -10.1459999, z: .351731986}
-  DrawGizmo: 1
   mPosition: {x: 3.38255835, y: -10.3939285, z: -.219591349}
 --- !u!4 &320031052
 Transform:
@@ -3040,7 +2998,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.21023989, y: 5.78771019, z: 7.06341982}
     v1: {x: -4.93567991, y: 7.17256021, z: 6.79337978}
-  DrawGizmo: 1
   mPosition: {x: -5.1333952, y: 6.09370995, z: 7.46978521}
 --- !u!4 &329940104
 Transform:
@@ -3087,7 +3044,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.46682978, y: -7.76639986, z: -2.42612004}
     v1: {x: -8.61701965, y: -6.82726002, z: -1.04507005}
-  DrawGizmo: 1
   mPosition: {x: -7.65029383, y: -7.7105298, z: -1.13580465}
 --- !u!4 &332484684
 Transform:
@@ -3134,7 +3090,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.4688997, y: -.887717009, z: 3.40155005}
     v1: {x: -10.4688997, y: -2.6454401, z: 2.31522012}
-  DrawGizmo: 1
   mPosition: {x: -10.093853, y: -2.16547203, z: 3.53256536}
 --- !u!4 &353797766
 Transform:
@@ -3181,7 +3136,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.72300005, y: -2.50695992, z: -10.0901003}
     v1: {x: 2.70030999, y: -3.98797989, z: -9.93785}
-  DrawGizmo: 1
   mPosition: {x: 2.61932182, y: -2.7219305, z: -10.2582626}
 --- !u!4 &362614597
 Transform:
@@ -3228,7 +3182,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.96571994, y: .742121994, z: 10.6118002}
     v1: {x: -2.01925993, y: 2.20785999, z: 10.6303997}
-  DrawGizmo: 1
   mPosition: {x: -3.20362234, y: 2.02254605, z: 10.252799}
 --- !u!4 &367907168
 Transform:
@@ -3275,7 +3228,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.17595959, y: 5.78771019, z: -2.06414008}
     v1: {x: 8.44583035, y: 7.0769701, z: -.735612988}
-  DrawGizmo: 1
   mPosition: {x: 9.09788322, y: 5.9906764, z: -.807043672}
 --- !u!4 &367907863
 Transform:
@@ -3322,7 +3274,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: 8.90604973, z: 6.52982998}
     v1: {x: -1.67761004, y: 8.13743973, z: 7.27489996}
-  DrawGizmo: 1
   mPosition: {x: -1.32878542, y: 8.86557579, z: 6.23328114}
 --- !u!4 &372852322
 Transform:
@@ -3369,7 +3320,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.35703993, y: 2.23321009, z: -8.74971008}
     v1: {x: 7.88197994, y: 2.20785999, z: -7.41324997}
-  DrawGizmo: 1
   mPosition: {x: 6.93143654, y: 2.96141529, z: -7.9073081}
 --- !u!4 &377380709
 Transform:
@@ -3416,7 +3366,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.66887999, y: -6.82726002, z: -8.51821041}
     v1: {x: 1.65427005, y: -5.3578701, z: -9.51383972}
-  DrawGizmo: 1
   mPosition: {x: .818541348, y: -6.22172689, z: -8.95261383}
 --- !u!4 &379906414
 Transform:
@@ -3637,7 +3586,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.65672994, y: -3.98797989, z: 9.62709045}
     v1: {x: -5.27615976, y: -3.61846995, z: 9.00140953}
-  DrawGizmo: 1
   mPosition: {x: -4.53413534, y: -2.95869708, z: 9.49297523}
 --- !u!4 &386170397
 Transform:
@@ -3683,7 +3631,6 @@ MonoBehaviour:
   - {fileID: 207909182}
   - {fileID: 698435966}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: -6.70948029, y: 3.81181812, z: 7.71922207}
 --- !u!4 &387552600
 Transform:
@@ -3730,7 +3677,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.94281006, y: -4.22284985, z: 4.91429996}
     v1: {x: 8.02591991, y: -3.98797989, z: 6.45269012}
-  DrawGizmo: 1
   mPosition: {x: 8.67489052, y: -3.2765255, z: 5.77972698}
 --- !u!4 &395339231
 Transform:
@@ -3777,7 +3723,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.83814001, y: -.742123008, z: 10.3283005}
     v1: {x: -2.96571994, y: .742121994, z: 10.6118002}
-  DrawGizmo: 1
   mPosition: {x: -4.04765701, y: .442187071, z: 10.1420689}
 --- !u!4 &401532118
 Transform:
@@ -3824,7 +3769,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.61475992, y: -2.20785999, z: 9.78703022}
     v1: {x: 6.35703993, y: -2.23321009, z: 8.74971008}
-  DrawGizmo: 1
   mPosition: {x: 5.37681198, y: -2.96019673, z: 9.03713417}
 --- !u!4 &405341133
 Transform:
@@ -3948,7 +3892,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -10.6722002, z: 2.83927989}
     v1: {x: 1.00856996, y: -10.1459999, z: 4.24230003}
-  DrawGizmo: 1
   mPosition: {x: 1.23826945, y: -10.3925705, z: 3.156461}
 --- !u!4 &413811543
 Transform:
@@ -4037,7 +3980,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.03315997, y: -8.36221981, z: 7.13880014}
     v1: {x: 2.00796008, y: -9.28384972, z: 5.63336992}
-  DrawGizmo: 1
   mPosition: {x: 2.17659235, y: -8.42328644, z: 6.59627676}
 --- !u!4 &421147373
 Transform:
@@ -4084,7 +4026,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.17595959, y: 5.78771019, z: -2.06414008}
     v1: {x: -9.48608971, y: 5.64322996, z: -.353145987}
-  DrawGizmo: 1
   mPosition: {x: -8.84634209, y: 6.34590054, z: -.998684585}
 --- !u!4 &433832119
 Transform:
@@ -4131,7 +4072,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.83036995, y: -2.6454401, z: 4.28041983}
     v1: {x: 10.4688997, y: -2.6454401, z: 2.31522012}
-  DrawGizmo: 1
   mPosition: {x: 9.81638527, y: -3.54315948, z: 3.19249654}
 --- !u!4 &441875860
 Transform:
@@ -4178,7 +4118,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.61701965, y: -3.98797989, z: -5.63911009}
     v1: {x: -7.43725014, y: -4.22284985, z: -6.9865098}
-  DrawGizmo: 1
   mPosition: {x: -8.17753601, y: -3.2765255, z: -6.46427488}
 --- !u!4 &458674865
 Transform:
@@ -4225,7 +4164,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.7341003, y: -2.20785999, z: -1.36452997}
     v1: {x: -10.7468004, y: -2.50695992, z: .422758013}
-  DrawGizmo: 1
   mPosition: {x: -10.4156151, y: -3.27543545, z: -.472967625}
 --- !u!4 &459051693
 Transform:
@@ -4272,7 +4210,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.10867023, y: -8.36221981, z: 1.22341001}
     v1: {x: -8.44583035, y: -7.0769701, z: .735614002}
-  DrawGizmo: 1
   mPosition: {x: -7.51080608, y: -7.92785931, z: .0664960146}
 --- !u!4 &484760919
 Transform:
@@ -4319,7 +4256,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.91029, y: -4.22284985, z: 10.0236998}
     v1: {x: -4.76836988e-07, y: -4.30290985, z: 10.1705999}
-  DrawGizmo: 1
   mPosition: {x: .964289725, y: -3.44052887, z: 10.3161049}
 --- !u!4 &487026813
 Transform:
@@ -4366,7 +4302,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.80586004, y: -4.9387598, z: 7.99107981}
     v1: {x: -5.27615976, y: -6.43287992, z: 7.2620101}
-  DrawGizmo: 1
   mPosition: {x: -6.11685085, y: -5.4895916, z: 7.21011257}
 --- !u!4 &489753808
 Transform:
@@ -4413,7 +4348,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.34633017, y: 10.1459999, z: -.351731002}
     v1: {x: -5.43697023, y: 9.44855022, z: -1.76657999}
-  DrawGizmo: 1
   mPosition: {x: -4.30384731, y: 9.89977455, z: -1.66261649}
 --- !u!4 &496141652
 Transform:
@@ -4460,7 +4394,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.59549999, y: 5.64322996, z: -9.13092995}
     v1: {x: 1.91029, y: 4.22284985, z: -10.0236998}
-  DrawGizmo: 1
   mPosition: {x: 1.60458398, y: 5.31054688, z: -9.4100914}
 --- !u!4 &501010314
 Transform:
@@ -4507,7 +4440,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.68674004, y: 9.28384972, z: 5.73774004}
     v1: {x: -4.76836988e-07, y: 9.82336998, z: 5.04558992}
-  DrawGizmo: 1
   mPosition: {x: .350093246, y: 9.10215282, z: 6.01935816}
 --- !u!4 &505766254
 Transform:
@@ -4554,7 +4486,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.5593996, y: 5.3578701, z: 1.36663997}
     v1: {x: -8.61701965, y: 6.82725, z: 1.04507005}
-  DrawGizmo: 1
   mPosition: {x: -9.32886124, y: 5.69427013, z: .352536976}
 --- !u!4 &506601985
 Transform:
@@ -4601,7 +4532,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.93567991, y: -9.28384972, z: -3.37723994}
     v1: {x: -6.21023989, y: -8.90606022, z: -2.0178299}
-  DrawGizmo: 1
   mPosition: {x: -5.93508625, y: -8.57176971, z: -3.25427294}
 --- !u!4 &515064178
 Transform:
@@ -4648,7 +4578,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.00856996, y: -.743022025, z: -10.9721003}
     v1: {x: -4.76836988e-07, y: -2.23321009, z: -10.8151999}
-  DrawGizmo: 1
   mPosition: {x: -1.36110759, y: -1.8860997, z: -10.6804199}
 --- !u!4 &515655185
 Transform:
@@ -4695,7 +4624,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.97813988, y: -4.30290985, z: -8.22819996}
     v1: {x: -4.34633017, y: -4.22284985, z: -9.23219967}
-  DrawGizmo: 1
   mPosition: {x: -5.28581524, y: -3.42381001, z: -8.91799927}
 --- !u!4 &519845453
 Transform:
@@ -4742,7 +4670,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.65427005, y: 10.9055996, z: .537504017}
     v1: {x: -4.76836988e-07, y: 11.0433998, z: 4.76836988e-07}
-  DrawGizmo: 1
   mPosition: {x: .902899861, y: 10.8773451, z: -.580912948}
 --- !u!4 &528536296
 Transform:
@@ -4789,7 +4716,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.61475992, y: -2.20785999, z: 9.78703022}
     v1: {x: -2.91886997, y: -2.50695992, z: 10.3514004}
-  DrawGizmo: 1
   mPosition: {x: -3.69190311, y: -3.14747643, z: 9.79263878}
 --- !u!4 &535969336
 Transform:
@@ -4836,7 +4762,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -4.9387598, z: -9.87751007}
     v1: {x: -4.76836988e-07, y: -6.43287992, z: -8.97634029}
-  DrawGizmo: 1
   mPosition: {x: .827492356, y: -5.45113087, z: -9.43646812}
 --- !u!4 &538586553
 Transform:
@@ -4883,7 +4808,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.93567991, y: 7.17256021, z: 6.79337978}
     v1: {x: -3.36022997, y: 8.36221981, z: 6.38268995}
-  DrawGizmo: 1
   mPosition: {x: -3.69449377, y: 7.37415457, z: 7.15025043}
 --- !u!4 &549908105
 Transform:
@@ -4930,7 +4854,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.21023989, y: 8.90604973, z: 2.0178299}
     v1: {x: 4.79863977, y: 9.82336998, z: 1.55917001}
-  DrawGizmo: 1
   mPosition: {x: 5.70296001, y: 9.27007389, z: .987003863}
 --- !u!4 &553054056
 Transform:
@@ -4977,7 +4900,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.79863977, y: 5.78771019, z: 8.08901024}
     v1: {x: 5.97813988, y: 4.30290985, z: 8.22821045}
-  DrawGizmo: 1
   mPosition: {x: 5.81333542, y: 5.43933344, z: 7.47881556}
 --- !u!4 &558580007
 Transform:
@@ -5024,7 +4946,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.03192997, y: -8.36221981, z: -5.16812992}
     v1: {x: -3.36022997, y: -8.36221981, z: -6.38268995}
-  DrawGizmo: 1
   mPosition: {x: -3.75281143, y: -8.84560108, z: -5.16530418}
 --- !u!4 &561847419
 Transform:
@@ -5071,7 +4992,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.5593996, y: -5.3578701, z: -1.36663997}
     v1: {x: -8.61701965, y: -6.82726002, z: -1.04507005}
-  DrawGizmo: 1
   mPosition: {x: -9.22940445, y: -5.82719612, z: -.519082844}
 --- !u!4 &573527170
 Transform:
@@ -5117,7 +5037,6 @@ MonoBehaviour:
   - {fileID: 251271936}
   - {fileID: 838524370}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: -2.47633982, y: 10.6410046, z: .223284036}
 --- !u!4 &574851901
 Transform:
@@ -5164,7 +5083,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.72300005, y: 2.50695992, z: 10.0901003}
     v1: {x: -5.43697023, y: 2.6454401, z: 9.24108028}
-  DrawGizmo: 1
   mPosition: {x: -4.4607172, y: 3.35103536, z: 9.38868618}
 --- !u!4 &587488452
 Transform:
@@ -5211,7 +5129,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.83814001, y: -8.90606022, z: 5.28275013}
     v1: {x: 2.91886997, y: -8.13745022, z: 6.87159014}
-  DrawGizmo: 1
   mPosition: {x: 2.48375511, y: -8.87268257, z: 5.87316704}
 --- !u!4 &589048459
 Transform:
@@ -5287,7 +5204,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.93042994, y: -3.61846995, z: 7.79951}
     v1: {x: 5.27615976, y: -3.61846995, z: 9.00140953}
-  DrawGizmo: 1
   mPosition: {x: 6.18172169, y: -2.94982576, z: 8.50840759}
 --- !u!4 &593956169
 Transform:
@@ -5394,7 +5310,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.35703993, y: -6.82726002, z: 5.91042995}
     v1: {x: -6.93042994, y: -5.3578701, z: 6.72451019}
-  DrawGizmo: 1
   mPosition: {x: -5.91098022, y: -6.22689438, z: 6.77005386}
 --- !u!4 &605996212
 Transform:
@@ -5441,7 +5356,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.43697023, y: 2.6454401, z: 9.24108028}
     v1: {x: 4.73716021, y: .886771023, z: 9.93626976}
-  DrawGizmo: 1
   mPosition: {x: 5.73820543, y: 1.34375072, z: 9.18292141}
 --- !u!4 &610384134
 Transform:
@@ -5488,7 +5402,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.91886997, y: 2.50695992, z: -10.3514004}
     v1: {x: -2.00796008, y: .886771023, z: -10.823}
-  DrawGizmo: 1
   mPosition: {x: -3.11448383, y: 1.22226763, z: -10.4038544}
 --- !u!4 &611199624
 Transform:
@@ -5593,7 +5506,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.91886997, y: -2.50695992, z: 10.3514004}
     v1: {x: -1.03316998, y: -2.6454401, z: 10.6719999}
-  DrawGizmo: 1
   mPosition: {x: -1.90850663, y: -3.36773348, z: 10.2131872}
 --- !u!4 &632979979
 Transform:
@@ -5640,7 +5552,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -2.23321009, z: -10.8151999}
     v1: {x: 1.02239001, y: -3.61846995, z: -10.3835001}
-  DrawGizmo: 1
   mPosition: {x: -.362398744, y: -3.31988621, z: -10.4062405}
 --- !u!4 &633004079
 Transform:
@@ -5687,7 +5598,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.26722002, y: 10.4954996, z: 1.06158996}
     v1: {x: -3.30952001, y: 10.1459999, z: 2.83927011}
-  DrawGizmo: 1
   mPosition: {x: -2.47089291, y: 10.4345741, z: 2.10882926}
 --- !u!4 &635144376
 Transform:
@@ -5734,7 +5644,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.65672994, y: 3.98797989, z: -9.62709045}
     v1: {x: -5.27615976, y: 3.61846995, z: -9.00140953}
-  DrawGizmo: 1
   mPosition: {x: -4.54036379, y: 2.93746328, z: -9.49321365}
 --- !u!4 &636175362
 Transform:
@@ -5781,7 +5690,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.67284012, y: -4.30290985, z: 3.14289999}
     v1: {x: 8.94281006, y: -4.22284985, z: 4.91429996}
-  DrawGizmo: 1
   mPosition: {x: 9.5123415, y: -3.44057727, z: 4.10653687}
 --- !u!4 &637481262
 Transform:
@@ -5828,7 +5736,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.83814001, y: .742121994, z: -10.3283005}
     v1: {x: 4.61475992, y: 2.20785999, z: -9.78703022}
-  DrawGizmo: 1
   mPosition: {x: 4.88521481, y: 1.09701049, z: -9.71648979}
 --- !u!4 &642705850
 Transform:
@@ -5875,7 +5782,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.73716021, y: 9.28384972, z: -3.65048003}
     v1: {x: -3.72300005, y: 10.1459999, z: -2.27014995}
-  DrawGizmo: 1
   mPosition: {x: -4.8205471, y: 9.50766754, z: -2.35785317}
 --- !u!4 &644381098
 Transform:
@@ -5921,7 +5827,6 @@ MonoBehaviour:
   - {fileID: 1400647650}
   - {fileID: 695329970}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: -8.86010361, y: 2.77404904, z: 5.75779629}
 --- !u!4 &659736508
 Transform:
@@ -6060,7 +5965,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.67284012, y: -4.30290985, z: 3.14289999}
     v1: {x: 9.17595959, y: -5.78771019, z: 2.06414008}
-  DrawGizmo: 1
   mPosition: {x: 9.75254154, y: -4.54554176, z: 1.85987329}
 --- !u!4 &693518067
 Transform:
@@ -6107,7 +6011,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.17595959, y: .742121994, z: 6.09980011}
     v1: {x: -8.44583035, y: 2.50695992, z: 6.65881014}
-  DrawGizmo: 1
   mPosition: {x: -9.14579964, y: 1.97521544, z: 5.64015293}
 --- !u!4 &695329971
 Transform:
@@ -6154,7 +6057,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.27615976, y: 3.61846995, z: -9.00140953}
     v1: {x: -6.93042994, y: 3.61846995, z: -7.79951}
-  DrawGizmo: 1
   mPosition: {x: -6.16628504, y: 2.9720211, z: -8.51432228}
 --- !u!4 &695764304
 Transform:
@@ -6201,7 +6103,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.97813988, y: 4.30290985, z: 8.22821045}
     v1: {x: -4.34633017, y: 4.22284985, z: 9.23219967}
-  DrawGizmo: 1
   mPosition: {x: -5.28188419, y: 3.44057727, z: 8.91346741}
 --- !u!4 &697889979
 Transform:
@@ -6248,7 +6149,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.10867023, y: 2.6454401, z: 8.02651978}
     v1: {x: -8.44583035, y: 2.50695992, z: 6.65881014}
-  DrawGizmo: 1
   mPosition: {x: -7.51623821, y: 3.46877003, z: 7.11780548}
 --- !u!4 &698435967
 Transform:
@@ -6295,7 +6195,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.61475992, y: 7.76639986, z: -6.35166979}
     v1: {x: 3.65671992, y: 6.82725, z: -7.87233019}
-  DrawGizmo: 1
   mPosition: {x: 3.51432681, y: 7.6477828, z: -6.9579525}
 --- !u!4 &710671291
 Transform:
@@ -6342,7 +6241,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.43725014, y: -8.13745022, z: -.652567983}
     v1: {x: -6.21023989, y: -8.90606022, z: -2.0178299}
-  DrawGizmo: 1
   mPosition: {x: -7.13593102, y: -8.05460262, z: -1.87196755}
 --- !u!4 &711017385
 Transform:
@@ -6389,7 +6287,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.44583035, y: -7.0769701, z: .735614002}
     v1: {x: 7.43725014, y: -8.13745022, z: -.652567983}
-  DrawGizmo: 1
   mPosition: {x: 8.21770668, y: -7.1723299, z: -.49191916}
 --- !u!4 &728248420
 Transform:
@@ -6436,7 +6333,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.4004302, y: -8.13745022, z: -3.84356999}
     v1: {x: 6.21023989, y: -8.90606022, z: -2.0178299}
-  DrawGizmo: 1
   mPosition: {x: 6.96233368, y: -7.98707342, z: -2.64495039}
 --- !u!4 &740301409
 Transform:
@@ -6483,7 +6379,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -4.30290985, z: 10.1705999}
     v1: {x: -1.91029, y: -4.22284985, z: 10.0236998}
-  DrawGizmo: 1
   mPosition: {x: -.965557218, y: -3.42381001, z: 10.3217449}
 --- !u!4 &746724359
 Transform:
@@ -6582,7 +6477,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.43725014, y: -4.22284985, z: -6.9865098}
     v1: {x: 5.97813988, y: -4.30290985, z: -8.22819996}
-  DrawGizmo: 1
   mPosition: {x: 6.29740286, y: -5.16344166, z: -7.2969799}
 --- !u!4 &757375148
 Transform:
@@ -6629,7 +6523,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.72300005, y: -2.50695992, z: -10.0901003}
     v1: {x: -5.43697023, y: -2.6454401, z: -9.24108028}
-  DrawGizmo: 1
   mPosition: {x: -4.45914745, y: -3.36773348, z: -9.38442612}
 --- !u!4 &758066116
 Transform:
@@ -6676,7 +6569,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.73716021, y: -.886771977, z: -9.93626976}
     v1: {x: 3.72300005, y: -2.50695992, z: -10.0901003}
-  DrawGizmo: 1
   mPosition: {x: 3.58326817, y: -1.21156621, z: -10.2540846}
 --- !u!4 &770003514
 Transform:
@@ -6770,7 +6662,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.46682978, y: -7.76639986, z: -2.42612004}
     v1: {x: 7.58558989, y: -6.82726002, z: -4.21948004}
-  DrawGizmo: 1
   mPosition: {x: 6.94567013, y: -7.63793659, z: -3.55843425}
 --- !u!4 &775733579
 Transform:
@@ -6817,7 +6708,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.1233997, y: -4.22284985, z: 1.28069997}
     v1: {x: -10.2859001, y: -3.98797989, z: -.502816021}
-  DrawGizmo: 1
   mPosition: {x: -10.4103346, y: -3.29243922, z: .423381388}
 --- !u!4 &781521175
 Transform:
@@ -6864,7 +6754,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.21023989, y: 5.78771019, z: 7.06341982}
     v1: {x: 6.4004302, y: 7.0769701, z: 5.55946016}
-  DrawGizmo: 1
   mPosition: {x: 6.87266731, y: 5.99923849, z: 6.00678062}
 --- !u!4 &784872756
 Transform:
@@ -6910,7 +6799,6 @@ MonoBehaviour:
   - {fileID: 112727400}
   - {fileID: 40288683}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: 1.84368122, y: -4.27295399, z: -9.88541222}
 --- !u!4 &785453781
 Transform:
@@ -6957,7 +6845,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.88197994, y: 2.20785999, z: -7.41324997}
     v1: {x: 8.94281006, y: 2.50695992, z: -5.97477007}
-  DrawGizmo: 1
   mPosition: {x: 8.16971111, y: 3.16295624, z: -6.53438663}
 --- !u!4 &785489930
 Transform:
@@ -7077,7 +6964,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.47013998, y: 8.36221981, z: -3.18861008}
     v1: {x: -7.26520014, y: 7.0769701, z: -4.36920977}
-  DrawGizmo: 1
   mPosition: {x: -6.22475433, y: 7.88811398, z: -4.2784462}
 --- !u!4 &819381095
 Transform:
@@ -7123,7 +7009,6 @@ MonoBehaviour:
   - {fileID: 1381898711}
   - {fileID: 1415526679}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: .00938495528, y: -10.7681656, z: 1.86160684}
 --- !u!4 &819429206
 Transform:
@@ -7170,7 +7055,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.34633017, y: 10.1459999, z: -.351731002}
     v1: {x: 5.97813988, y: 9.28384972, z: .168872997}
-  DrawGizmo: 1
   mPosition: {x: 4.95741367, y: 9.71336365, z: .727075338}
 --- !u!4 &824806188
 Transform:
@@ -7360,7 +7244,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.1913004, y: -3.61846995, z: -2.23634005}
     v1: {x: -9.5593996, y: -5.3578701, z: -1.36663997}
-  DrawGizmo: 1
   mPosition: {x: -10.0221539, y: -4.20540571, z: -1.08990932}
 --- !u!4 &828230994
 Transform:
@@ -7407,7 +7290,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.93042994, y: -3.61846995, z: 7.79951}
     v1: {x: -6.93042994, y: -5.3578701, z: 6.72451019}
-  DrawGizmo: 1
   mPosition: {x: -6.19253826, y: -4.73695421, z: 7.66455078}
 --- !u!4 &828585964
 Transform:
@@ -7454,7 +7336,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.48608971, y: -2.20785999, z: -5.20538998}
     v1: {x: -10.2859001, y: -2.23321009, z: -3.34208989}
-  DrawGizmo: 1
   mPosition: {x: -9.65826702, y: -2.97689486, z: -4.14797497}
 --- !u!4 &835322996
 Transform:
@@ -7501,7 +7382,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.26722002, y: 10.4954996, z: 1.06158996}
     v1: {x: -4.34633017, y: 10.1459999, z: -.351731002}
-  DrawGizmo: 1
   mPosition: {x: -3.1667552, y: 10.4542446, z: -.340531588}
 --- !u!4 &838524371
 Transform:
@@ -7548,7 +7428,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.59549999, y: -5.64322996, z: 9.13092995}
     v1: {x: 3.65671992, y: -3.98797989, z: 9.62709045}
-  DrawGizmo: 1
   mPosition: {x: 2.43493867, y: -4.4530139, z: 9.6680851}
 --- !u!4 &868412903
 Transform:
@@ -7595,7 +7474,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.67284012, y: 4.30290985, z: -3.14288998}
     v1: {x: 8.94281006, y: 4.22284985, z: -4.91428995}
-  DrawGizmo: 1
   mPosition: {x: 9.5123415, y: 3.44057727, z: -4.10653305}
 --- !u!4 &891035272
 Transform:
@@ -7686,7 +7564,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.44583035, y: -2.50695992, z: -6.65881014}
     v1: {x: -9.48608971, y: -2.20785999, z: -5.20538998}
-  DrawGizmo: 1
   mPosition: {x: -8.73915386, y: -3.16295624, z: -5.75061798}
 --- !u!4 &907272975
 Transform:
@@ -7733,7 +7610,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.97813988, y: -9.28384972, z: -.168871999}
     v1: {x: -4.34633017, y: -10.1459999, z: .351731986}
-  DrawGizmo: 1
   mPosition: {x: -5.28581524, y: -9.50766754, z: .925901949}
 --- !u!4 &908712248
 Transform:
@@ -7780,7 +7656,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.67284012, y: -4.30290985, z: 3.14289999}
     v1: {x: -9.83036995, y: -2.6454401, z: 4.28041983}
-  DrawGizmo: 1
   mPosition: {x: -10.1261997, y: -2.8470993, z: 2.92576075}
 --- !u!4 &913195082
 Transform:
@@ -7827,7 +7702,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.96571994, y: -9.82336998, z: 4.08197021}
     v1: {x: 2.01924992, y: -10.4954996, z: 2.77926993}
-  DrawGizmo: 1
   mPosition: {x: 1.74431014, y: -10.0892258, z: 3.82777357}
 --- !u!4 &933125774
 Transform:
@@ -7875,7 +7749,6 @@ MonoBehaviour:
     v1: {x: -1.02239001, y: 3.61846995, z: 10.3835001}
   - v0: {x: -2.01925993, y: 2.20785999, z: 10.6303997}
     v1: {x: -1.02239001, y: 3.61846995, z: 10.3835001}
-  DrawGizmo: 1
   mPosition: {x: -2.75304127, y: 2.91522789, z: 10.1990337}
 --- !u!4 &942312073
 Transform:
@@ -7921,7 +7794,6 @@ MonoBehaviour:
   - {fileID: 1714252139}
   - {fileID: 1041682710}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: 7.01906729, y: 8.1940279, z: 1.6937201}
 --- !u!4 &944948149
 Transform:
@@ -7968,7 +7840,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.91886997, y: 2.50695992, z: -10.3514004}
     v1: {x: -1.03316998, y: 2.6454401, z: -10.6719999}
-  DrawGizmo: 1
   mPosition: {x: -1.90973926, y: 3.35103536, z: -10.2175541}
 --- !u!4 &945281081
 Transform:
@@ -8015,7 +7886,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.79863977, y: 9.82336998, z: 1.55917001}
     v1: {x: 3.26722002, y: 10.4954996, z: 1.06158996}
-  DrawGizmo: 1
   mPosition: {x: 4.17944717, y: 10.0892258, z: .476094097}
 --- !u!4 &972944286
 Transform:
@@ -8061,7 +7931,6 @@ MonoBehaviour:
   - {fileID: 515655184}
   - {fileID: 633004078}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: -1.1232233, y: -2.71345425, z: -10.5267105}
 --- !u!4 &977936074
 Transform:
@@ -8107,7 +7976,6 @@ MonoBehaviour:
   - {fileID: 1584260434}
   - {fileID: 1462164348}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: 3.77166152, y: -2.85658216, z: 9.83985329}
 --- !u!4 &979160641
 Transform:
@@ -8154,7 +8022,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.1233997, y: .743021011, z: 4.34978008}
     v1: {x: -10.4688997, y: -.887717009, z: 3.40155005}
-  DrawGizmo: 1
   mPosition: {x: -9.91598511, y: -.505224705, z: 4.53814745}
 --- !u!4 &988637401
 Transform:
@@ -8201,7 +8068,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.79863977, y: -5.78771019, z: -8.08901024}
     v1: {x: 6.21023989, y: -5.78771019, z: -7.06341982}
-  DrawGizmo: 1
   mPosition: {x: 5.69021797, y: -5.03738594, z: -7.85658646}
 --- !u!4 &1005317732
 Transform:
@@ -8248,7 +8114,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.48608971, y: -5.64322996, z: .353147}
     v1: {x: 10.1233997, y: -4.22284985, z: 1.28069997}
-  DrawGizmo: 1
   mPosition: {x: 9.44537163, y: -5.31054688, z: 1.38182962}
 --- !u!4 &1006288670
 Transform:
@@ -8295,7 +8160,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.36022997, y: -9.44855022, z: -4.62496996}
     v1: {x: -4.93567991, y: -9.28384972, z: -3.37723994}
-  DrawGizmo: 1
   mPosition: {x: -4.53586769, y: -8.81440353, z: -4.55971241}
 --- !u!4 &1010058029
 Transform:
@@ -8341,7 +8205,6 @@ MonoBehaviour:
   - {fileID: 636175361}
   - {fileID: 1731517354}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: -3.6540308, y: 2.78427649, z: -9.91298676}
 --- !u!4 &1015361690
 Transform:
@@ -8388,7 +8251,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.01924992, y: -10.4954996, z: 2.77926993}
     v1: {x: 1.02239001, y: -10.9055996, z: 1.40719998}
-  DrawGizmo: 1
   mPosition: {x: .660889924, y: -10.6191521, z: 2.49890447}
 --- !u!4 &1015840402
 Transform:
@@ -8435,7 +8297,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.48608971, y: 5.64322996, z: -.353145987}
     v1: {x: -10.2859001, y: 3.98797989, z: .502816975}
-  DrawGizmo: 1
   mPosition: {x: -9.6718502, y: 5.02296734, z: .786154926}
 --- !u!4 &1016442138
 Transform:
@@ -8482,7 +8343,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.36022997, y: -8.36221981, z: -6.38268995}
     v1: {x: -1.67761004, y: -8.13745022, z: -7.27489996}
-  DrawGizmo: 1
   mPosition: {x: -2.10049534, y: -8.72292709, z: -6.2189579}
 --- !u!4 &1028938922
 Transform:
@@ -8529,7 +8389,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.91029, y: 7.0769701, z: -8.25977039}
     v1: {x: 2.91886997, y: 8.13743973, z: -6.87159014}
-  DrawGizmo: 1
   mPosition: {x: 3.02070189, y: 7.16344643, z: -7.66705608}
 --- !u!4 &1037182570
 Transform:
@@ -8576,7 +8435,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: 4.30290985, z: -10.1705999}
     v1: {x: .872416973, y: 5.78771019, z: -9.36470985}
-  DrawGizmo: 1
   mPosition: {x: 1.25362897, y: 4.56178713, z: -9.84354973}
 --- !u!4 &1039929714
 Transform:
@@ -8623,7 +8481,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.30952001, y: 7.0769701, z: 7.80514002}
     v1: {x: -4.79863977, y: 5.78771019, z: 8.08901024}
-  DrawGizmo: 1
   mPosition: {x: -4.44001627, y: 6.76024723, z: 7.33536243}
 --- !u!4 &1041381746
 Transform:
@@ -8670,7 +8527,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.4004302, y: 8.13743973, z: 3.84356999}
     v1: {x: 6.21023989, y: 8.90604973, z: 2.0178299}
-  DrawGizmo: 1
   mPosition: {x: 6.96233368, y: 7.98706627, z: 2.64495063}
 --- !u!4 &1041682711
 Transform:
@@ -8717,7 +8573,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.67761004, y: 8.13743973, z: 7.27489996}
     v1: {x: -3.30952001, y: 7.0769701, z: 7.80514002}
-  DrawGizmo: 1
   mPosition: {x: -2.90613437, y: 7.9292202, z: 6.91427994}
 --- !u!4 &1050711295
 Transform:
@@ -8764,7 +8619,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.34633017, y: -4.22284985, z: -9.23219967}
     v1: {x: -2.70030999, y: -3.98797989, z: -9.93785}
-  DrawGizmo: 1
   mPosition: {x: -3.62089396, y: -3.2765255, z: -9.77486038}
 --- !u!4 &1053584275
 Transform:
@@ -9332,7 +9186,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.97813988, y: 4.30290985, z: 8.22821045}
     v1: {x: -4.79863977, y: 5.78771019, z: 8.08901024}
-  DrawGizmo: 1
   mPosition: {x: -5.76792288, y: 5.37096691, z: 7.56012964}
 --- !u!4 &1059888195
 Transform:
@@ -9423,7 +9276,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.97813988, y: -4.30290985, z: -8.22819996}
     v1: {x: 4.34633017, y: -4.22284985, z: -9.23219967}
-  DrawGizmo: 1
   mPosition: {x: 4.95741367, y: -4.99426699, z: -8.36274529}
 --- !u!4 &1082568442
 Transform:
@@ -9470,7 +9322,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.65671992, y: 6.82725, z: -7.87233019}
     v1: {x: 2.59549999, y: 5.64322996, z: -9.13092995}
-  DrawGizmo: 1
   mPosition: {x: 2.52488184, y: 6.60742283, z: -8.31980038}
 --- !u!4 &1085233030
 Transform:
@@ -9516,7 +9367,6 @@ MonoBehaviour:
   - {fileID: 942312072}
   - {fileID: 367907167}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: -3.02150297, y: 2.79087782, z: 10.1379452}
 --- !u!4 &1096607139
 Transform:
@@ -9563,7 +9413,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.96571994, y: 9.82336998, z: -4.08197021}
     v1: {x: 2.01924992, y: 10.4954996, z: -2.77926993}
-  DrawGizmo: 1
   mPosition: {x: 3.101403, y: 10.0892258, z: -2.84178615}
 --- !u!4 &1103136092
 Transform:
@@ -9610,7 +9459,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.36022997, y: 9.44855022, z: 4.62496996}
     v1: {x: -1.68674004, y: 9.28384972, z: 5.73774004}
-  DrawGizmo: 1
   mPosition: {x: -1.91909552, y: 9.76108837, z: 4.51506376}
 --- !u!4 &1103752734
 Transform:
@@ -9657,7 +9505,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.97813988, y: 9.28384972, z: .168872997}
     v1: {x: 7.43725014, y: 8.13743973, z: .652568996}
-  DrawGizmo: 1
   mPosition: {x: 6.39218569, y: 8.76509476, z: 1.3036474}
 --- !u!4 &1122026568
 Transform:
@@ -9704,7 +9551,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.21023989, y: 5.78771019, z: 7.06341982}
     v1: {x: 4.93567991, y: 7.17256021, z: 6.79337978}
-  DrawGizmo: 1
   mPosition: {x: 5.14158344, y: 6.10110283, z: 7.45798111}
 --- !u!4 &1132405431
 Transform:
@@ -9751,7 +9597,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.91029, y: -4.22284985, z: 10.0236998}
     v1: {x: -3.65672994, y: -3.98797989, z: 9.62709045}
-  DrawGizmo: 1
   mPosition: {x: -2.8161602, y: -3.2765255, z: 10.0363369}
 --- !u!4 &1137238734
 Transform:
@@ -9798,7 +9643,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -6.43287992, z: -8.97634029}
     v1: {x: -4.76836988e-07, y: -7.76639986, z: -7.85108995}
-  DrawGizmo: 1
   mPosition: {x: .804231703, y: -6.92046356, z: -8.42850685}
 --- !u!4 &1138992175
 Transform:
@@ -9873,7 +9717,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.02239001, y: 10.9055996, z: -1.40719998}
     v1: {x: -1.02239001, y: 10.9055996, z: -1.40719998}
-  DrawGizmo: 1
   mPosition: {x: .00205792743, y: 10.9188385, z: -.548057079}
 --- !u!4 &1149398099
 Transform:
@@ -9920,7 +9763,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.88197994, y: 5.64322996, z: -5.29008007}
     v1: {x: -8.63677979, y: 5.78771019, z: -3.72357011}
-  DrawGizmo: 1
   mPosition: {x: -7.6628747, y: 6.44765282, z: -4.37454033}
 --- !u!4 &1149748831
 Transform:
@@ -9967,7 +9809,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.93042994, y: 5.3578701, z: -6.72451019}
     v1: {x: -6.93042994, y: 3.61846995, z: -7.79951}
-  DrawGizmo: 1
   mPosition: {x: -7.38013935, y: 4.24834538, z: -6.84359598}
 --- !u!4 &1152708642
 Transform:
@@ -10014,7 +9855,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.30950999, y: 7.0769701, z: 7.80514002}
     v1: {x: 4.79863977, y: 5.78771019, z: 8.08901024}
-  DrawGizmo: 1
   mPosition: {x: 4.44001389, y: 6.76024723, z: 7.33536243}
 --- !u!4 &1158674318
 Transform:
@@ -10061,7 +9901,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.01925993, y: -2.20785999, z: -10.6303997}
     v1: {x: -2.96571994, y: -.742123008, z: -10.6118002}
-  DrawGizmo: 1
   mPosition: {x: -1.75899315, y: -1.09701109, z: -10.7322626}
 --- !u!4 &1162589356
 Transform:
@@ -10108,7 +9947,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.35703993, y: -2.23321009, z: 8.74971008}
     v1: {x: 7.88197994, y: -2.20785999, z: 7.41324997}
-  DrawGizmo: 1
   mPosition: {x: 6.92952871, y: -2.97689486, z: 7.90375566}
 --- !u!4 &1171810938
 Transform:
@@ -10155,7 +9993,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.73716021, y: -9.28384972, z: 3.65048003}
     v1: {x: -5.63328981, y: -8.13745022, z: 4.89944983}
-  DrawGizmo: 1
   mPosition: {x: -4.48813391, y: -8.76194, z: 4.74755192}
 --- !u!4 &1172070321
 Transform:
@@ -10258,7 +10095,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.96571994, y: -.742123008, z: -10.6118002}
     v1: {x: 3.83814001, y: .742121994, z: -10.3283005}
-  DrawGizmo: 1
   mPosition: {x: 4.04765654, y: -.442187816, z: -10.1420689}
 --- !u!4 &1211917001
 Transform:
@@ -10305,7 +10141,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.44583035, y: -7.0769701, z: .735614002}
     v1: {x: -9.48608971, y: -5.64322996, z: .353147}
-  DrawGizmo: 1
   mPosition: {x: -8.70278358, y: -6.59281731, z: -.37207675}
 --- !u!4 &1213012503
 Transform:
@@ -10352,7 +10187,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.2859001, y: -2.23321009, z: -3.34208989}
     v1: {x: -10.7341003, y: -2.20785999, z: -1.36452997}
-  DrawGizmo: 1
   mPosition: {x: -10.2171831, y: -3.08937407, z: -2.30977154}
 --- !u!4 &1234534748
 Transform:
@@ -10399,7 +10233,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: .872416973, y: 5.78771019, z: -9.36470985}
     v1: {x: 1.91029, y: 7.0769701, z: -8.25977039}
-  DrawGizmo: 1
   mPosition: {x: 2.04385543, y: 5.9906764, z: -8.90198898}
 --- !u!4 &1235868703
 Transform:
@@ -10944,7 +10777,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.66887999, y: 10.6722002, z: 2.29701996}
     v1: {x: -1.65427005, y: 10.9055996, z: .537504017}
-  DrawGizmo: 1
   mPosition: {x: -2.4682312, y: 10.5778465, z: 1.18616295}
 --- !u!4 &1250078683
 Transform:
@@ -10991,7 +10823,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.03315997, y: 2.6454401, z: -10.6719999}
     v1: {x: 2.91886997, y: 2.50695992, z: -10.3514004}
-  DrawGizmo: 1
   mPosition: {x: 1.91446221, y: 3.48468852, z: -10.1706657}
 --- !u!4 &1258712553
 Transform:
@@ -11037,7 +10868,6 @@ MonoBehaviour:
   - {fileID: 252167696}
   - {fileID: 170510188}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: 7.01906729, y: -8.19403458, z: -1.69371974}
 --- !u!4 &1262044658
 Transform:
@@ -11084,7 +10914,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.67761004, y: -8.13745022, z: -7.27489996}
     v1: {x: -4.76836988e-07, y: -7.76639986, z: -7.85108995}
-  DrawGizmo: 1
   mPosition: {x: -.447188586, y: -8.34617805, z: -7.03863907}
 --- !u!4 &1268297401
 Transform:
@@ -11130,7 +10959,6 @@ MonoBehaviour:
   - {fileID: 693518066}
   - {fileID: 441875859}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: 10.0203629, y: -3.69297791, z: 2.24587059}
 --- !u!4 &1271096521
 Transform:
@@ -11177,7 +11005,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.79863977, y: -9.82336998, z: -1.55917001}
     v1: {x: 3.26722002, y: -10.4954996, z: -1.06157994}
-  DrawGizmo: 1
   mPosition: {x: 4.17944717, y: -10.0892258, z: -.476091444}
 --- !u!4 &1274120675
 Transform:
@@ -11253,7 +11080,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.94281006, y: -2.50695992, z: 5.97477007}
     v1: {x: 9.83036995, y: -2.6454401, z: 4.28041983}
-  DrawGizmo: 1
   mPosition: {x: 9.12355995, y: -3.36773348, z: 4.97114754}
 --- !u!4 &1283177726
 Transform:
@@ -11300,7 +11126,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.01924992, y: -2.20785999, z: -10.6303997}
     v1: {x: 2.96571994, y: -.742123008, z: -10.6118002}
-  DrawGizmo: 1
   mPosition: {x: 3.101403, y: -1.97026634, z: -10.2949562}
 --- !u!4 &1292693857
 Transform:
@@ -11347,7 +11172,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.61701965, y: -6.82726002, z: -1.04507005}
     v1: {x: 9.48608971, y: -5.64322996, z: .353147}
-  DrawGizmo: 1
   mPosition: {x: 8.69283485, y: -6.60742617, z: .169654012}
 --- !u!4 &1297007732
 Transform:
@@ -11394,7 +11218,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.58558989, y: 6.82725, z: 4.21948004}
     v1: {x: 7.46682978, y: 5.64322996, z: 5.86148024}
-  DrawGizmo: 1
   mPosition: {x: 6.93292904, y: 6.60742283, z: 5.2467742}
 --- !u!4 &1300555796
 Transform:
@@ -11441,7 +11264,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.61475992, y: -7.76639986, z: 6.35166979}
     v1: {x: -3.83814001, y: -8.90606022, z: 5.28275013}
-  DrawGizmo: 1
   mPosition: {x: -4.89923096, y: -8.1988821, z: 5.31628227}
 --- !u!4 &1302379408
 Transform:
@@ -13400,7 +13222,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.96571994, y: -9.82336998, z: 4.08197021}
     v1: {x: -2.01925993, y: -10.4954996, z: 2.77926993}
-  DrawGizmo: 1
   mPosition: {x: -3.18486905, y: -10.0775356, z: 2.77998829}
 --- !u!4 &1325383152
 Transform:
@@ -13447,7 +13268,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.00796008, y: .886771023, z: -10.823}
     v1: {x: -1.00856996, y: -.743022025, z: -10.9721003}
-  DrawGizmo: 1
   mPosition: {x: -2.22341537, y: -.327880412, z: -10.6959229}
 --- !u!4 &1336314761
 Transform:
@@ -13571,7 +13391,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.67284012, y: 4.30290985, z: -3.14288998}
     v1: {x: 9.17595959, y: 5.78771019, z: -2.06414008}
-  DrawGizmo: 1
   mPosition: {x: 9.75254154, y: 4.54554176, z: -1.85987127}
 --- !u!4 &1354465368
 Transform:
@@ -13618,7 +13437,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.65671992, y: 3.98797989, z: -9.62709045}
     v1: {x: 1.91029, y: 4.22284985, z: -10.0236998}
-  DrawGizmo: 1
   mPosition: {x: 2.8156414, y: 3.29329276, z: -10.0303593}
 --- !u!4 &1359438542
 Transform:
@@ -13665,7 +13483,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.9861002, y: 7.17256021, z: -2.59484005}
     v1: {x: -7.26520014, y: 7.0769701, z: -4.36920977}
-  DrawGizmo: 1
   mPosition: {x: -8.07451153, y: 6.4375515, z: -3.57698345}
 --- !u!4 &1379009464
 Transform:
@@ -13712,7 +13529,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.67761004, y: -8.13745022, z: -7.27489996}
     v1: {x: 1.66887999, y: -6.82726002, z: -8.51821041}
-  DrawGizmo: 1
   mPosition: {x: .652553439, y: -7.5301733, z: -7.90521431}
 --- !u!4 &1381599295
 Transform:
@@ -13759,7 +13575,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.02239001, y: -10.9055996, z: 1.40719998}
     v1: {x: -4.76836988e-07, y: -11.0433998, z: 4.76836988e-07}
-  DrawGizmo: 1
   mPosition: {x: .402769864, y: -10.8662472, z: 1.16737795}
 --- !u!4 &1381898712
 Transform:
@@ -13806,7 +13621,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.43697023, y: -9.44855022, z: 1.76657999}
     v1: {x: -7.10867023, y: -8.36221981, z: 1.22341001}
-  DrawGizmo: 1
   mPosition: {x: -6.08862543, y: -9.03505325, z: .668751359}
 --- !u!4 &1390414516
 Transform:
@@ -13911,7 +13725,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.03316998, y: -2.6454401, z: 10.6719999}
     v1: {x: 1.03315997, y: -2.6454401, z: 10.6719999}
-  DrawGizmo: 1
   mPosition: {x: -2.28111958e-06, y: -3.44244957, z: 10.3585968}
 --- !u!4 &1393104110
 Transform:
@@ -13958,7 +13771,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.5593996, y: 3.61846995, z: 4.18103981}
     v1: {x: -8.61701965, y: 3.98797989, z: 5.63911009}
-  DrawGizmo: 1
   mPosition: {x: -9.26423836, y: 2.93592548, z: 4.99516869}
 --- !u!4 &1400647651
 Transform:
@@ -14005,7 +13817,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.59549999, y: -5.64322996, z: 9.13092995}
     v1: {x: 1.91029, y: -7.0769701, z: 8.25977993}
-  DrawGizmo: 1
   mPosition: {x: 1.61959267, y: -6.0344429, z: 8.96332645}
 --- !u!4 &1409918158
 Transform:
@@ -14052,7 +13863,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.94281006, y: 4.22284985, z: -4.91428995}
     v1: {x: 8.02591991, y: 3.98797989, z: -6.45269012}
-  DrawGizmo: 1
   mPosition: {x: 8.67489052, y: 3.2765255, z: -5.77972507}
 --- !u!4 &1415524064
 Transform:
@@ -14099,7 +13909,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -10.6722002, z: 2.83927989}
     v1: {x: -2.01925993, y: -10.4954996, z: 2.77926993}
-  DrawGizmo: 1
   mPosition: {x: -.962094307, y: -10.7063179, z: 1.94971967}
 --- !u!4 &1415526680
 Transform:
@@ -14146,7 +13955,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.65427005, y: 10.9055996, z: .537504017}
     v1: {x: -4.76836988e-07, y: 11.0433998, z: 4.76836988e-07}
-  DrawGizmo: 1
   mPosition: {x: -.874785423, y: 10.8887663, z: -.444703162}
 --- !u!4 &1416685243
 Transform:
@@ -14193,7 +14001,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.72300005, y: -10.1459999, z: 2.27014995}
     v1: {x: -4.73716021, y: -9.28384972, z: 3.65048003}
-  DrawGizmo: 1
   mPosition: {x: -3.59557724, y: -9.71230698, z: 3.48961782}
 --- !u!4 &1421636766
 Transform:
@@ -14240,7 +14047,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.67761004, y: 10.1459999, z: 4.02491999}
     v1: {x: -1.66887999, y: 10.6722002, z: 2.29701996}
-  DrawGizmo: 1
   mPosition: {x: -2.46297288, y: 10.21945, z: 2.98834515}
 --- !u!4 &1424287127
 Transform:
@@ -14287,7 +14093,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.70030999, y: 10.6722002, z: -.877384007}
     v1: {x: 3.72300005, y: 10.1459999, z: -2.27014995}
-  DrawGizmo: 1
   mPosition: {x: 2.61932182, y: 10.3925705, z: -2.15306616}
 --- !u!4 &1424315047
 Transform:
@@ -14334,7 +14139,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.35703993, y: 6.82725, z: -5.91042995}
     v1: {x: -5.63328981, y: 8.13743973, z: -4.89944983}
-  DrawGizmo: 1
   mPosition: {x: -6.67650223, y: 7.22001982, z: -4.7561512}
 --- !u!4 &1425319350
 Transform:
@@ -14381,7 +14185,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.72300005, y: 10.1459999, z: -2.27014995}
     v1: {x: 4.73716021, y: 9.28384972, z: -3.65048003}
-  DrawGizmo: 1
   mPosition: {x: 3.58326817, y: 9.71336365, z: -3.50211191}
 --- !u!4 &1430763863
 Transform:
@@ -14427,7 +14230,6 @@ MonoBehaviour:
   - {fileID: 1909196712}
   - {fileID: 386170396}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: -5.27874851, y: -2.71345425, z: 9.17650986}
 --- !u!4 &1446419018
 Transform:
@@ -14474,7 +14276,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.43697023, y: -2.6454401, z: -9.24108028}
     v1: {x: -7.10867023, y: -2.6454401, z: -8.02651978}
-  DrawGizmo: 1
   mPosition: {x: -6.08862543, y: -3.44244957, z: -8.38027382}
 --- !u!4 &1448126629
 Transform:
@@ -14521,7 +14322,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.63328981, y: 8.13743973, z: -4.89944983}
     v1: {x: 4.61475992, y: 7.76639986, z: -6.35166979}
-  DrawGizmo: 1
   mPosition: {x: 4.27983952, y: 8.43238163, z: -5.48660851}
 --- !u!4 &1449520073
 Transform:
@@ -14568,7 +14368,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.4004302, y: -7.0769701, z: -5.55946016}
     v1: {x: 6.4004302, y: -8.13745022, z: -3.84356999}
-  DrawGizmo: 1
   mPosition: {x: 6.95038033, y: -7.16345215, z: -4.42725658}
 --- !u!4 &1454661799
 Transform:
@@ -14615,7 +14414,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.83814001, y: -.742123008, z: 10.3283005}
     v1: {x: 2.91886997, y: -2.50695992, z: 10.3514004}
-  DrawGizmo: 1
   mPosition: {x: 4.08306885, y: -1.98636174, z: 9.93497467}
 --- !u!4 &1462164349
 Transform:
@@ -14662,7 +14460,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.61701965, y: 6.82725, z: 1.04507005}
     v1: {x: -8.44583035, y: 7.0769701, z: -.735612988}
-  DrawGizmo: 1
   mPosition: {x: -9.05211449, y: 6.13470364, z: -.233516946}
 --- !u!4 &1468070108
 Transform:
@@ -14709,7 +14506,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.68674004, y: -9.28384972, z: -5.73773003}
     v1: {x: -3.36022997, y: -9.44855022, z: -4.62496996}
-  DrawGizmo: 1
   mPosition: {x: -2.93488216, y: -8.81440353, z: -5.72289562}
 --- !u!4 &1471325400
 Transform:
@@ -14755,7 +14551,6 @@ MonoBehaviour:
   - {fileID: 1763151211}
   - {fileID: 1944496765}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: 1.85033786, y: 10.7506809, z: -.665883422}
 --- !u!4 &1471888832
 Transform:
@@ -14802,7 +14597,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.91029, y: -4.22284985, z: 10.0236998}
     v1: {x: .872416973, y: -5.78771019, z: 9.36470985}
-  DrawGizmo: 1
   mPosition: {x: 2.03061175, y: -5.27646542, z: 9.34546852}
 --- !u!4 &1477719483
 Transform:
@@ -14877,7 +14671,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.02239001, y: -10.9055996, z: 1.40719998}
     v1: {x: 2.70030999, y: -10.6722002, z: .87738502}
-  DrawGizmo: 1
   mPosition: {x: 1.75162315, y: -10.7892942, z: .304364175}
 --- !u!4 &1487164044
 Transform:
@@ -14924,7 +14717,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 11.0088997, y: -.742123008, z: -.458656996}
     v1: {x: 10.9138002, y: .886771023, z: -1.43482995}
-  DrawGizmo: 1
   mPosition: {x: 10.9109955, y: .423060268, z: -.232537389}
 --- !u!4 &1492167848
 Transform:
@@ -14971,7 +14763,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.72300005, y: 10.1459999, z: -2.27014995}
     v1: {x: -2.70030999, y: 10.6722002, z: -.877384007}
-  DrawGizmo: 1
   mPosition: {x: -3.76559019, y: 10.2109509, z: -.975183487}
 --- !u!4 &1495259987
 Transform:
@@ -15018,7 +14809,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.91886997, y: 8.13743973, z: -6.87159014}
     v1: {x: 3.83814001, y: 8.90604973, z: -5.28275013}
-  DrawGizmo: 1
   mPosition: {x: 3.97111368, y: 8.05774498, z: -6.21801329}
 --- !u!4 &1500683135
 Transform:
@@ -15065,7 +14855,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.83036995, y: 2.6454401, z: -4.28041983}
     v1: {x: 10.4688997, y: 2.6454401, z: -2.31522012}
-  DrawGizmo: 1
   mPosition: {x: 9.81638527, y: 3.54315948, z: -3.19249296}
 --- !u!4 &1502789333
 Transform:
@@ -15112,7 +14901,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.02591991, y: -3.98797989, z: 6.45269012}
     v1: {x: 6.93042994, y: -3.61846995, z: 7.79951}
-  DrawGizmo: 1
   mPosition: {x: 7.59314537, y: -3.05356097, z: 7.24176407}
 --- !u!4 &1504629492
 Transform:
@@ -15159,7 +14947,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.70030999, y: -10.6722002, z: .87738502}
     v1: {x: -1.02239001, y: -10.9055996, z: 1.40719998}
-  DrawGizmo: 1
   mPosition: {x: -1.90674472, y: -10.5727777, z: 1.98621202}
 --- !u!4 &1522485760
 Transform:
@@ -15206,7 +14993,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.67761004, y: 8.13743973, z: 7.27489996}
     v1: {x: 3.30950999, y: 7.0769701, z: 7.80514002}
-  DrawGizmo: 1
   mPosition: {x: 2.90613222, y: 7.9292202, z: 6.91427994}
 --- !u!4 &1528746146
 Transform:
@@ -15253,7 +15039,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.7468004, y: -2.50695992, z: .422758013}
     v1: {x: -10.4688997, y: -2.6454401, z: 2.31522012}
-  DrawGizmo: 1
   mPosition: {x: -10.3151741, y: -3.34173059, z: 1.32876408}
 --- !u!4 &1539103437
 Transform:
@@ -15300,7 +15085,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 10.9138002, y: .886771023, z: -1.43482995}
     v1: {x: 10.4688997, y: 2.6454401, z: -2.31522012}
-  DrawGizmo: 1
   mPosition: {x: 10.6441717, y: 2.12356281, z: -1.15523541}
 --- !u!4 &1572599973
 Transform:
@@ -15346,7 +15130,6 @@ MonoBehaviour:
   - {fileID: 868412902}
   - {fileID: 154971562}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: 2.74016523, y: -3.58630681, z: 9.93813705}
 --- !u!4 &1584260435
 Transform:
@@ -15392,7 +15175,6 @@ MonoBehaviour:
   - {fileID: 1039929713}
   - {fileID: 1258712552}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: 1.02155805, y: 3.80630636, z: -10.1794949}
 --- !u!4 &1590157946
 Transform:
@@ -15478,7 +15260,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 10.7468004, y: 2.50695992, z: -.422757}
     v1: {x: 11.0088997, y: .742121994, z: .45865801}
-  DrawGizmo: 1
   mPosition: {x: 10.822216, y: 1.27381444, z: -.692375422}
 --- !u!4 &1604283051
 Transform:
@@ -15525,7 +15306,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.44583035, y: 7.0769701, z: -.735612988}
     v1: {x: 7.43725014, y: 8.13743973, z: .652568996}
-  DrawGizmo: 1
   mPosition: {x: 8.21770668, y: 7.17232513, z: .491919756}
 --- !u!4 &1605418722
 Transform:
@@ -15572,7 +15352,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.2859001, y: 3.98797989, z: .502816975}
     v1: {x: -10.7341003, y: 2.20785999, z: 1.36453998}
-  DrawGizmo: 1
   mPosition: {x: -10.188262, y: 3.56399679, z: 1.72003758}
 --- !u!4 &1622022957
 Transform:
@@ -15619,7 +15398,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.83036995, y: -2.6454401, z: 4.28041983}
     v1: {x: -9.67284012, y: -.886771977, z: 5.25417995}
-  DrawGizmo: 1
   mPosition: {x: -10.0398865, y: -1.34375143, z: 4.05630779}
 --- !u!4 &1626003857
 Transform:
@@ -15665,7 +15443,6 @@ MonoBehaviour:
   - {fileID: 1632559520}
   - {fileID: 2059975401}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: 6.4199214, y: 4.85005331, z: 7.38333464}
 --- !u!4 &1626122237
 Transform:
@@ -15712,7 +15489,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.43725014, y: 4.22284985, z: 6.9865098}
     v1: {x: 7.46682978, y: 5.64322996, z: 5.86148024}
-  DrawGizmo: 1
   mPosition: {x: 6.72416115, y: 5.38718033, z: 6.71490479}
 --- !u!4 &1632559521
 Transform:
@@ -15759,7 +15535,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.1913004, y: 3.61846995, z: 2.23634005}
     v1: {x: -9.5593996, y: 5.3578701, z: 1.36663997}
-  DrawGizmo: 1
   mPosition: {x: -9.99323273, y: 4.24834538, z: 1.19865131}
 --- !u!4 &1634727870
 Transform:
@@ -15845,7 +15620,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 10.1233997, y: 4.22284985, z: -1.28069997}
     v1: {x: 10.7468004, y: 2.50695992, z: -.422757}
-  DrawGizmo: 1
   mPosition: {x: 10.376009, y: 2.93807936, z: -1.66689253}
 --- !u!4 &1643352680
 Transform:
@@ -15891,7 +15665,6 @@ MonoBehaviour:
   - {fileID: 372852321}
   - {fileID: 505766253}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: -.683023095, y: 9.23382568, z: 5.78698921}
 --- !u!4 &1654355854
 Transform:
@@ -15938,7 +15711,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.67284012, y: -4.30290985, z: 3.14289999}
     v1: {x: -10.1233997, y: -4.22284985, z: 1.28069997}
-  DrawGizmo: 1
   mPosition: {x: -10.1992474, y: -3.24198246, z: 2.18652725}
 --- !u!4 &1668538401
 Transform:
@@ -15985,7 +15757,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -7.17256021, z: 8.39708042}
     v1: {x: .872416973, y: -5.78771019, z: 9.36470985}
-  DrawGizmo: 1
   mPosition: {x: 1.36481571, y: -6.73208332, z: 8.49927139}
 --- !u!4 &1679800997
 Transform:
@@ -16032,7 +15803,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 10.1233997, y: -4.22284985, z: 1.28069997}
     v1: {x: 10.7468004, y: -2.50695992, z: .422758013}
-  DrawGizmo: 1
   mPosition: {x: 10.376009, y: -2.93807983, z: 1.66689396}
 --- !u!4 &1697362721
 Transform:
@@ -16079,7 +15849,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.46682978, y: 7.76639986, z: 2.42612004}
     v1: {x: 8.61701965, y: 6.82725, z: 1.04507005}
-  DrawGizmo: 1
   mPosition: {x: 7.65765619, y: 7.70185804, z: 1.12170482}
 --- !u!4 &1714252140
 Transform:
@@ -16126,7 +15895,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.83814001, y: -8.90606022, z: 5.28275013}
     v1: {x: -2.96571994, y: -9.82336998, z: 4.08197021}
-  DrawGizmo: 1
   mPosition: {x: -4.04765701, y: -9.26910305, z: 4.14017248}
 --- !u!4 &1726026517
 Transform:
@@ -16173,7 +15941,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.10867023, y: -2.6454401, z: -8.02651978}
     v1: {x: -8.44583035, y: -2.50695992, z: -6.65881014}
-  DrawGizmo: 1
   mPosition: {x: -7.54717541, y: -3.36773348, z: -7.14085102}
 --- !u!4 &1729374127
 Transform:
@@ -16220,7 +15987,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -1.91029, y: 4.22284985, z: -10.0236998}
     v1: {x: -3.65672994, y: 3.98797989, z: -9.62709045}
-  DrawGizmo: 1
   mPosition: {x: -2.81560397, y: 3.16042781, z: -10.0702171}
 --- !u!4 &1731517355
 Transform:
@@ -16266,7 +16032,6 @@ MonoBehaviour:
   - {fileID: 1502789332}
   - {fileID: 1643352679}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: 10.0203629, y: 3.69297791, z: -2.24586821}
 --- !u!4 &1748604265
 Transform:
@@ -16313,7 +16078,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.1913004, y: -3.61846995, z: -2.23634005}
     v1: {x: -9.5593996, y: -3.61846995, z: -4.18103981}
-  DrawGizmo: 1
   mPosition: {x: -9.99720097, y: -2.96573925, z: -3.24961543}
 --- !u!4 &1749259424
 Transform:
@@ -16360,7 +16124,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.35703993, y: 2.23321009, z: -8.74971008}
     v1: {x: -4.61475992, y: 2.20785999, z: -9.78703022}
-  DrawGizmo: 1
   mPosition: {x: -5.37681293, y: 2.96019673, z: -9.03713226}
 --- !u!4 &1751070637
 Transform:
@@ -16407,7 +16170,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.80586004, y: -4.9387598, z: 7.99107981}
     v1: {x: -5.27615976, y: -3.61846995, z: 9.00140953}
-  DrawGizmo: 1
   mPosition: {x: -6.1028347, y: -4.00253773, z: 8.1401825}
 --- !u!4 &1754338498
 Transform:
@@ -16454,7 +16216,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.48608971, y: 2.20785999, z: 5.20538998}
     v1: {x: -10.1233997, y: .743021011, z: 4.34978008}
-  DrawGizmo: 1
   mPosition: {x: -9.44534302, y: 1.13628602, z: 5.36974049}
 --- !u!4 &1759614506
 Transform:
@@ -16501,7 +16262,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.2859001, y: 2.23321009, z: 3.34208989}
     v1: {x: -10.7341003, y: 2.20785999, z: 1.36453998}
-  DrawGizmo: 1
   mPosition: {x: -10.188262, y: 3.13231373, z: 2.41851377}
 --- !u!4 &1760616914
 Transform:
@@ -16548,7 +16308,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.26722002, y: 10.4954996, z: 1.06158996}
     v1: {x: 1.65427005, y: 10.9055996, z: .537504017}
-  DrawGizmo: 1
   mPosition: {x: 2.59383321, y: 10.6165142, z: -.157518938}
 --- !u!4 &1763151212
 Transform:
@@ -16622,7 +16381,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -8.90606022, z: -6.52982998}
     v1: {x: -1.68674004, y: -9.28384972, z: -5.73773003}
-  DrawGizmo: 1
   mPosition: {x: -1.26095486, y: -8.57176971, z: -6.65022659}
 --- !u!4 &1769894583
 Transform:
@@ -16729,7 +16487,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.36022997, y: 8.36221981, z: 6.38268995}
     v1: {x: -1.68674004, y: 9.28384972, z: 5.73774004}
-  DrawGizmo: 1
   mPosition: {x: -2.0987556, y: 8.42405701, z: 6.61634636}
 --- !u!4 &1782060407
 Transform:
@@ -16776,7 +16533,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.01925993, y: -2.20785999, z: -10.6303997}
     v1: {x: -3.72300005, y: -2.50695992, z: -10.0901003}
-  DrawGizmo: 1
   mPosition: {x: -2.76916194, y: -3.14747643, z: -10.092453}
 --- !u!4 &1793781983
 Transform:
@@ -16823,7 +16579,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.35703993, y: 2.23321009, z: -8.74971008}
     v1: {x: 5.63328981, y: .743021011, z: -9.46945}
-  DrawGizmo: 1
   mPosition: {x: 5.18760061, y: 1.8718071, z: -9.43779945}
 --- !u!4 &1797366705
 Transform:
@@ -16870,7 +16625,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 10.9138002, y: -.886771977, z: 1.43482995}
     v1: {x: 10.4688997, y: -2.6454401, z: 2.31522012}
-  DrawGizmo: 1
   mPosition: {x: 10.6441717, y: -2.12356329, z: 1.15523612}
 --- !u!4 &1804518199
 Transform:
@@ -16917,7 +16671,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.27615976, y: 3.61846995, z: -9.00140953}
     v1: {x: 3.65671992, y: 3.98797989, z: -9.62709045}
-  DrawGizmo: 1
   mPosition: {x: 4.54509544, y: 2.94440484, z: -9.49009609}
 --- !u!4 &1806987012
 Transform:
@@ -16964,7 +16717,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.44583035, y: 7.0769701, z: -.735612988}
     v1: {x: -7.9861002, y: 7.17256021, z: -2.59484005}
-  DrawGizmo: 1
   mPosition: {x: -8.6449337, y: 6.42410183, z: -1.8574779}
 --- !u!4 &1807256254
 Transform:
@@ -17011,7 +16763,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.88197994, y: 2.20785999, z: -7.41324997}
     v1: {x: -8.02591991, y: 3.98797989, z: -6.45269012}
-  DrawGizmo: 1
   mPosition: {x: -7.2314539, y: 3.56399679, z: -7.38003826}
 --- !u!4 &1814586886
 Transform:
@@ -17058,7 +16809,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 3.26722002, y: -5.64322996, z: -8.91267967}
     v1: {x: 4.79863977, y: -5.78771019, z: -8.08901024}
-  DrawGizmo: 1
   mPosition: {x: 4.17944717, y: -4.93787003, z: -8.81116295}
 --- !u!4 &1826950903
 Transform:
@@ -17105,7 +16855,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.48608971, y: 2.20785999, z: 5.20538998}
     v1: {x: -10.2859001, y: 2.23321009, z: 3.34208989}
-  DrawGizmo: 1
   mPosition: {x: -9.6618309, y: 2.96019673, z: 4.15078497}
 --- !u!4 &1835801945
 Transform:
@@ -17499,7 +17248,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.21023989, y: 5.78771019, z: 7.06341982}
     v1: {x: -7.43725014, y: 4.22284985, z: 6.9865098}
-  DrawGizmo: 1
   mPosition: {x: -6.31187248, y: 4.5889926, z: 7.63662195}
 --- !u!4 &1870111176
 Transform:
@@ -17604,7 +17352,6 @@ MonoBehaviour:
   - {fileID: 1234534747}
   - {fileID: 459051692}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: -10.2883234, y: -3.42588377, z: -1.32545137}
 --- !u!4 &1875909086
 Transform:
@@ -17651,7 +17398,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 10.7468004, y: -2.50695992, z: .422758013}
     v1: {x: 11.0088997, y: -.742123008, z: -.458656996}
-  DrawGizmo: 1
   mPosition: {x: 10.822216, y: -1.27381504, z: .692376018}
 --- !u!4 &1887685359
 Transform:
@@ -17698,7 +17444,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.58558989, y: -6.82726002, z: -4.21948004}
     v1: {x: 7.46682978, y: -5.64322996, z: -5.86148024}
-  DrawGizmo: 1
   mPosition: {x: 6.93292904, y: -6.60742617, z: -5.2467742}
 --- !u!4 &1888241987
 Transform:
@@ -17745,7 +17490,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.48608971, y: -5.64322996, z: .353147}
     v1: {x: -10.2859001, y: -3.98797989, z: -.502816021}
-  DrawGizmo: 1
   mPosition: {x: -9.66223526, y: -5.03509188, z: -.793420196}
 --- !u!4 &1894504206
 Transform:
@@ -17792,7 +17536,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.73716021, y: .886771023, z: 9.93626976}
     v1: {x: 3.83814001, y: -.742123008, z: 10.3283005}
-  DrawGizmo: 1
   mPosition: {x: 4.92904091, y: -.315817118, z: 9.74142647}
 --- !u!4 &1905795200
 Transform:
@@ -17839,7 +17582,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.67284012, y: -.886771977, z: 5.25417995}
     v1: {x: -9.17595959, y: .742121994, z: 6.09980011}
-  DrawGizmo: 1
   mPosition: {x: -9.71354103, y: .315816313, z: 4.98376942}
 --- !u!4 &1907114083
 Transform:
@@ -17886,7 +17628,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -6.35703993, y: -2.23321009, z: 8.74971008}
     v1: {x: -6.93042994, y: -3.61846995, z: 7.79951}
-  DrawGizmo: 1
   mPosition: {x: -5.81001091, y: -3.32505369, z: 8.64021683}
 --- !u!4 &1909196713
 Transform:
@@ -17933,7 +17674,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -7.43725014, y: -8.13745022, z: -.652567983}
     v1: {x: -5.97813988, y: -9.28384972, z: -.168871999}
-  DrawGizmo: 1
   mPosition: {x: -6.84378052, y: -8.4964962, z: .401616871}
 --- !u!4 &1922477763
 Transform:
@@ -18314,7 +18054,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 2.01924992, y: 10.4954996, z: -2.77926993}
     v1: {x: 1.02239001, y: 10.9055996, z: -1.40719998}
-  DrawGizmo: 1
   mPosition: {x: 2.18529844, y: 10.6165142, z: -1.41485858}
 --- !u!4 &1944496766
 Transform:
@@ -18361,7 +18100,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -10.1913004, y: 3.61846995, z: 2.23634005}
     v1: {x: -9.5593996, y: 3.61846995, z: 4.18103981}
-  DrawGizmo: 1
   mPosition: {x: -9.99323273, y: 2.9720211, z: 3.2637825}
 --- !u!4 &1965075943
 Transform:
@@ -18408,7 +18146,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.67761004, y: -8.13745022, z: -7.27489996}
     v1: {x: -4.76836988e-07, y: -8.90606022, z: -6.52982998}
-  DrawGizmo: 1
   mPosition: {x: .234432802, y: -8.00957489, z: -7.4393177}
 --- !u!4 &1968678204
 Transform:
@@ -18455,7 +18192,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.61475992, y: -2.20785999, z: 9.78703022}
     v1: {x: 5.63328981, y: -.743022025, z: 9.46945}
-  DrawGizmo: 1
   mPosition: {x: 4.48519516, y: -1.13628674, z: 9.89603615}
 --- !u!4 &1970644789
 Transform:
@@ -18502,7 +18238,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.34633017, y: -10.1459999, z: .351731986}
     v1: {x: 5.97813988, y: -9.28384972, z: -.168871999}
-  DrawGizmo: 1
   mPosition: {x: 4.95741367, y: -9.71336555, z: -.727073789}
 --- !u!4 &1982726104
 Transform:
@@ -18549,7 +18284,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -4.9387598, z: -9.87751007}
     v1: {x: -1.02239001, y: -3.61846995, z: -10.3835001}
-  DrawGizmo: 1
   mPosition: {x: .269471198, y: -3.96407771, z: -10.1806574}
 --- !u!4 &1988950512
 Transform:
@@ -20015,7 +19749,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -5.63328981, y: 8.13743973, z: -4.89944983}
     v1: {x: -4.73716021, y: 9.28384972, z: -3.65048003}
-  DrawGizmo: 1
   mPosition: {x: -5.78610229, y: 8.49243355, z: -3.68682766}
 --- !u!4 &1999807830
 Transform:
@@ -20781,7 +20514,7 @@ MonoBehaviour:
   Mass: 5
   RadiusForNavMesh: .75
   Static: 0
-  SphereNavMeshCollision: 0
+  SphereNavMeshCollision: 1
 --- !u!135 &2011921444
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20842,7 +20575,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.4004302, y: 7.0769701, z: 5.55946016}
     v1: {x: 6.4004302, y: 8.13743973, z: 3.84356999}
-  DrawGizmo: 1
   mPosition: {x: 6.95038033, y: 7.16344643, z: 4.42725658}
 --- !u!4 &2022432197
 Transform:
@@ -22308,7 +22040,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.73716021, y: .886771023, z: 9.93626976}
     v1: {x: -5.63328981, y: -.743022025, z: 9.46945}
-  DrawGizmo: 1
   mPosition: {x: -4.48813391, y: -.327880412, z: 9.96007442}
 --- !u!4 &2025619628
 Transform:
@@ -22355,7 +22086,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -3.30952001, y: 10.1459999, z: 2.83927011}
     v1: {x: -3.36022997, y: 9.44855022, z: 4.62496996}
-  DrawGizmo: 1
   mPosition: {x: -2.32079697, y: 9.97884369, z: 3.80344725}
 --- !u!4 &2027390056
 Transform:
@@ -22402,7 +22132,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 9.48608971, y: 5.64322996, z: -.353145987}
     v1: {x: 10.1233997, y: 4.22284985, z: -1.28069997}
-  DrawGizmo: 1
   mPosition: {x: 9.44537163, y: 5.31054688, z: -1.38182831}
 --- !u!4 &2033433303
 Transform:
@@ -22449,7 +22178,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 6.21023989, y: -8.90606022, z: -2.0178299}
     v1: {x: 4.79863977, y: -9.82336998, z: -1.55917001}
-  DrawGizmo: 1
   mPosition: {x: 5.70296001, y: -9.27007771, z: -.987002969}
 --- !u!4 &2033668163
 Transform:
@@ -22496,7 +22224,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 4.93567991, y: 7.17256021, z: 6.79337978}
     v1: {x: 3.36022997, y: 8.36221981, z: 6.38268995}
-  DrawGizmo: 1
   mPosition: {x: 3.69449091, y: 7.37415457, z: 7.15025043}
 --- !u!4 &2042493465
 Transform:
@@ -22543,7 +22270,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -2.70030999, y: -3.98797989, z: -9.93785}
     v1: {x: -1.02239001, y: -3.61846995, z: -10.3835001}
-  DrawGizmo: 1
   mPosition: {x: -1.91164351, y: -2.95869708, z: -10.3450699}
 --- !u!4 &2049322411
 Transform:
@@ -22590,7 +22316,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 7.10867023, y: 2.6454401, z: 8.02651978}
     v1: {x: 7.43725014, y: 4.22284985, z: 6.9865098}
-  DrawGizmo: 1
   mPosition: {x: 6.47218037, y: 3.90078044, z: 7.87341213}
 --- !u!4 &2059975402
 Transform:
@@ -22637,7 +22362,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 5.27615976, y: -3.61846995, z: 9.00140953}
     v1: {x: 3.65671992, y: -3.98797989, z: 9.62709045}
-  DrawGizmo: 1
   mPosition: {x: 4.55799627, y: -2.94707155, z: 9.48279381}
 --- !u!4 &2078380382
 Transform:
@@ -22684,7 +22408,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: 8.90604973, z: 6.52982998}
     v1: {x: 1.67761004, y: 8.13743973, z: 7.27489996}
-  DrawGizmo: 1
   mPosition: {x: 1.24988437, y: 8.8196125, z: 6.31376457}
 --- !u!4 &2083666627
 Transform:
@@ -22731,7 +22454,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.65427005, y: -10.9055996, z: -.537503004}
     v1: {x: -4.76836988e-07, y: -11.0433998, z: 4.76836988e-07}
-  DrawGizmo: 1
   mPosition: {x: .990793705, y: -10.8730659, z: .645860136}
 --- !u!4 &2092449194
 Transform:
@@ -22778,7 +22500,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 8.94281006, y: 2.50695992, z: -5.97477007}
     v1: {x: 9.83036995, y: 2.6454401, z: -4.28041983}
-  DrawGizmo: 1
   mPosition: {x: 9.12355995, y: 3.36773348, z: -4.97114372}
 --- !u!4 &2098286599
 Transform:
@@ -22825,7 +22546,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -9.5593996, y: -3.61846995, z: -4.18103981}
     v1: {x: -8.61701965, y: -3.98797989, z: -5.63911009}
-  DrawGizmo: 1
   mPosition: {x: -9.23374176, y: -3.05356097, z: -4.98367929}
 --- !u!4 &2108678442
 Transform:
@@ -22872,7 +22592,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -4.76836988e-07, y: -7.17256021, z: 8.39708042}
     v1: {x: 1.03315997, y: -8.36221981, z: 7.13880014}
-  DrawGizmo: 1
   mPosition: {x: 1.40998304, y: -7.36548424, z: 7.94266367}
 --- !u!4 &2128462984
 Transform:
@@ -22919,7 +22638,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: -8.63677979, y: 5.78771019, z: -3.72357011}
     v1: {x: -9.17595959, y: 5.78771019, z: -2.06414008}
-  DrawGizmo: 1
   mPosition: {x: -8.39489937, y: 6.44409752, z: -2.72766757}
 --- !u!4 &2131711774
 Transform:
@@ -22965,7 +22683,6 @@ MonoBehaviour:
   - {fileID: 1797366704}
   - {fileID: 174671665}
   collisionEdges: []
-  DrawGizmo: 1
   mPosition: {x: 5.35553074, y: 2.61346173, z: -9.15627861}
 --- !u!4 &2139756325
 Transform:
@@ -23012,7 +22729,6 @@ MonoBehaviour:
   collisionEdges:
   - v0: {x: 1.00856996, y: -10.1459999, z: 4.24230003}
     v1: {x: 2.00796008, y: -9.28384972, z: 5.63336992}
-  DrawGizmo: 1
   mPosition: {x: 2.1952281, y: -9.71843719, z: 4.49603176}
 --- !u!4 &2140884030
 Transform:

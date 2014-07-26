@@ -31,8 +31,13 @@ public class WayPoint : MonoBehaviour, IPathNode
 	public List<WayPoint> connections = new List<WayPoint>();
 	public List<CollisionEdge> collisionEdges = new List<CollisionEdge>();
 	
-	public bool DrawGizmo = false;
-
+	// ------------ Public, serialized
+	
+	// ------------ Public, non-serialized
+	[System.NonSerialized] public bool mDrawGizmo = false; // use WayPointGizmoDrawer script - TODO: we can just disable the specific gizmo draw via the dropdown menu...	
+	[System.NonSerialized] public bool mIsCorridor = false; // this could be serialized but I didn't want to change the levels re-generating waypoints
+	
+	// ------------ Private
 	[SerializeField] private Vector3 mPosition; // private copy as transform.position access is slow
 
 	public Vector3 Position
@@ -43,15 +48,43 @@ public class WayPoint : MonoBehaviour, IPathNode
 	void Awake()
 	{
 		mPosition = transform.position;
+		
+		// This is a heuristic...
+		mIsCorridor = collisionEdges.Count != 0;
+		foreach (WayPoint neighbor in connections)
+			if(neighbor.collisionEdges.Count == 0)
+			{
+				mIsCorridor = false;
+				break;
+			}
+			
+		// ...if we still think it's an open-space then do a more refined test
+		if(!mIsCorridor)
+		{
+			mIsCorridor = true;
+			
+			foreach (WayPoint neighbor in connections)
+			{
+				foreach(WayPoint neighbor2 in neighbor.connections)
+					if(connections.Contains(neighbor2))
+					{
+						mIsCorridor = false;
+						break;
+					}
+			}
+		}
 	}
 	
 #if UNITY_EDITOR 
 	void OnDrawGizmos()
 	{
-		if (!DrawGizmo) return;
+		if (!mDrawGizmo) return;
 		
-		Gizmos.color = Color.green;
-
+		if (mIsCorridor)
+			Gizmos.color = Color.yellow;
+		else	
+			Gizmos.color = Color.green;
+		
 		Gizmos.DrawSphere(transform.position, 0.25f);
 		
 		foreach (WayPoint neighbor in connections)

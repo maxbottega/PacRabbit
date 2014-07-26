@@ -39,7 +39,7 @@ public class Character : MonoBehaviour
 	{
 		UpdateInput();	
 		
-		if(mCollidable.SphereNavMeshCollision == false) // On-rails move... TODO: could auto-detect corridors easily (add info in the waypoints)
+		if((mCollidable.CachedNearest != null) && (mCollidable.CachedNearest.mIsCorridor)) // automatic on-rails navigation in corridors
 		{
 			Vector3 prevPos = mMoveController.Up * Planet.Instance.Radius;		
 			Vector3 newPos = mMoveController.MovedUp(mRotation) * Planet.Instance.Radius;
