@@ -6,8 +6,9 @@ using System.Collections.Generic;
 public class Character : MonoBehaviour
 {	
 	// ------------ Public, editable in the GUI, serialized
-	public float									WalkSpeed = 20.0f;
-	public float									Drag = 0.5f;
+	public float									MaxSpeed = 20.0f;
+	public float									Accelleration = 5.0f;
+	public float									Inertia = 0.9f;
 
 	// ------------ Public, serialized
 	
@@ -112,8 +113,9 @@ public class Character : MonoBehaviour
 	
 	void UpdateInput()
 	{
-		float angularSpeed = WalkSpeed * Time.deltaTime;
+		// NOTE: the * 2.0 in the angles are due to the lerp 0.5 -- HACK, not proper physics...
 		
+		float angularSpeed = (Accelleration * 2.0f) * Time.deltaTime;
 		Vector3 perpDirection = new Vector3(Input.GetAxis("Vertical"), 0, -Input.GetAxis("Horizontal"));
 		
 		if(perpDirection != Vector3.zero)
@@ -123,11 +125,23 @@ public class Character : MonoBehaviour
 		}
 		else
 			mRotation = Quaternion.identity; // we could avoid the special case as both .Normalize and .AngleAxis work with 0,0,0
+			
+		float currAngle;
+		Vector3 currAxis;
+		mCurrRotation.ToAngleAxis(out currAngle, out currAxis);
+		
+		currAngle = Mathf.Min (MaxSpeed, currAngle) * Inertia * 2.0f;
 		
 		mRotation = Quaternion.Lerp (
 			mRotation,
+			Quaternion.AngleAxis(currAngle, currAxis),
+			0.5f);
+		
+		/*mRotation = Quaternion.Lerp (
+			mRotation,
 			mCurrRotation,
-			Drag);
+			Inertia);*/
+			
 		mCurrRotation = mRotation;	
 			
 		// TODO: facing from direction, not from mouse
