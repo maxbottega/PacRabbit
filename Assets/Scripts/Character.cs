@@ -22,7 +22,8 @@ public class Character : MonoBehaviour
 	
 	// ------------ Private
 	private Quaternion	 							mRotation 		= Quaternion.identity;
-	private Quaternion						 		mCurrRotation	= Quaternion.identity;
+	private Quaternion						 		mPrevRotation	= Quaternion.identity;
+	private Vector3									mPrevDirection  = Vector3.zero;
 	private Collidable								mCollidable 	= null;
 	//private float									mFacingAngle 	= 0;
 	private SphereTransform							mMoveController	= null;	
@@ -42,37 +43,9 @@ public class Character : MonoBehaviour
 	{
 		UpdateInput();
 										
-		if((mCollidable.CachedNearest != null) && (mCollidable.CachedNearest.mIsCorridor)) // automatic on-rails navigation in corridors
+		if((mCollidable.CachedNearest != null) && (mCollidable.CachedNearest.mIsCorridor)) // Automatic "on-rails" navigation in corridors
 		{
-			Vector3 prevPos = mMoveController.Up * Planet.Instance.Radius;		
-			Vector3 newPos = mMoveController.MovedUp(mRotation) * Planet.Instance.Radius;
-			
-			mCollidable.CachedNearest = NavigationManager.FindClosestWaypoint(prevPos, mCollidable.CachedNearest, NavigationManager.instance.waypointList);
-			
-			Vector3 movementDirection = (newPos - prevPos);
-			float movementLength = movementDirection.magnitude; // TODO: this is constant for a given WalkSpeed
-			
-			Vector3 currentWaypointPos = mCollidable.CachedNearest.Position;
-			Vector3 chosenPos = Vector3.zero;
-			float chosenDirectionDot = -1.0f;
-			
-			foreach(WayPoint w in mCollidable.CachedNearest.connections)
-			{
-				Vector3 candidateDirection = (w.Position - currentWaypointPos).normalized;			
-				float cosAngleTimesLenght = Vector3.Dot (candidateDirection, movementDirection);
-				
-				if(cosAngleTimesLenght > chosenDirectionDot) // TODO: under a given angle we should make the choice based on previous direction, NOT current input!
-				{
-					chosenPos = prevPos + candidateDirection * movementLength;
-					
-					// smootly converge to the path
-					chosenPos = Vector3.Lerp(chosenPos, NavigationManager.PointNearestSegment(chosenPos, w.Position, currentWaypointPos), 0.1f);
-					
-					chosenDirectionDot = cosAngleTimesLenght;
-				}
-			}
-
-			mMoveController.Move (chosenPos);
+			MovementOnRails();
 		}
 		else
 		{
@@ -81,6 +54,53 @@ public class Character : MonoBehaviour
 		
 		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
 	}	
+	
+	void MovementOnRails()
+	{
+		Vector3 prevPos = mMoveController.Up * Planet.Instance.Radius;		
+		Vector3 newPos = mMoveController.MovedUp(mRotation) * Planet.Instance.Radius;
+		
+		mCollidable.CachedNearest = NavigationManager.FindClosestWaypoint(prevPos, mCollidable.CachedNearest, NavigationManager.instance.waypointList);
+		
+		Vector3 movementDirection = (newPos - prevPos);
+		float movementLength = movementDirection.magnitude; // TODO: this is constant for a given WalkSpeed
+		
+		Vector3 currentWaypointPos = mCollidable.CachedNearest.Position;
+		
+		Vector3 chosenPos = Vector3.zero;
+		float chosenDirectionDot = -1.0f;
+		Vector3 chosenPosUsingPrev = Vector3.zero;
+		float chosenDirectionUsingPrevDot = -1.0f;			
+		
+		foreach(WayPoint w in mCollidable.CachedNearest.connections)
+		{
+			Vector3 candidateDirection = (w.Position - currentWaypointPos).normalized;			
+			float cosAngleTimesLenght = Vector3.Dot (candidateDirection, movementDirection);
+			
+			if(cosAngleTimesLenght > chosenDirectionDot)
+			{
+				chosenPos = prevPos + candidateDirection * movementLength;
+				// smootly converge to the path
+				chosenPos = Vector3.Lerp(chosenPos, NavigationManager.PointNearestSegment(chosenPos, w.Position, currentWaypointPos), 0.1f);
+				chosenDirectionDot = cosAngleTimesLenght;
+			}
+			
+			cosAngleTimesLenght = Vector3.Dot (candidateDirection, mPrevDirection);
+			if(cosAngleTimesLenght > chosenDirectionUsingPrevDot)
+			{
+				chosenPosUsingPrev = prevPos + candidateDirection * movementLength;
+				// smootly converge to the path
+				chosenPosUsingPrev = Vector3.Lerp(chosenPosUsingPrev, NavigationManager.PointNearestSegment(chosenPosUsingPrev, w.Position, currentWaypointPos), 0.1f);
+				chosenDirectionUsingPrevDot = cosAngleTimesLenght;
+			}
+		}
+		
+		if(chosenDirectionUsingPrevDot > chosenDirectionDot)
+			chosenPos = chosenPosUsingPrev;
+		
+		mMoveController.Move (chosenPos);
+		mPrevDirection = movementDirection;
+	}
 	
 	public void OnCollision(Collidable other)
 	{
@@ -128,7 +148,7 @@ public class Character : MonoBehaviour
 			
 		float currAngle;
 		Vector3 currAxis;
-		mCurrRotation.ToAngleAxis(out currAngle, out currAxis);
+		mPrevRotation.ToAngleAxis(out currAngle, out currAxis);
 		
 		currAngle = Mathf.Min (MaxSpeed, currAngle) * Inertia * 2.0f;
 		
@@ -142,7 +162,7 @@ public class Character : MonoBehaviour
 			mCurrRotation,
 			Inertia);*/
 			
-		mCurrRotation = mRotation;	
+		mPrevRotation = mRotation;	
 			
 		// TODO: facing from direction, not from mouse
 		/* Facing 1 frame late...because of camera LateUpdate
