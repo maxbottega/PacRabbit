@@ -9,6 +9,7 @@ public class Character : MonoBehaviour
 	public float									MaxSpeed = 20.0f;
 	public float									Accelleration = 5.0f;
 	public float									Inertia = 0.9f;
+	public bool										PacmanMovement = false;
 
 	// ------------ Public, serialized
 	
@@ -70,7 +71,9 @@ public class Character : MonoBehaviour
 		Vector3 chosenPos = Vector3.zero;
 		float chosenDirectionDot = -1.0f;
 		Vector3 chosenPosUsingPrev = Vector3.zero;
-		float chosenDirectionUsingPrevDot = -1.0f;			
+		float chosenDirectionUsingPrevDot = -1.0f;
+		
+		const float smoothing = 0.1f; // TODO: this should be probably proportional to the movement speed*deltatime
 		
 		foreach(WayPoint w in mCollidable.CachedNearest.connections)
 		{
@@ -81,7 +84,7 @@ public class Character : MonoBehaviour
 			{
 				chosenPos = prevPos + candidateDirection * movementLength;
 				// smootly converge to the path
-				chosenPos = Vector3.Lerp(chosenPos, NavigationManager.PointNearestSegment(chosenPos, w.Position, currentWaypointPos), 0.1f);
+				chosenPos = Vector3.Lerp(chosenPos, NavigationManager.PointNearestSegment(chosenPos, w.Position, currentWaypointPos), smoothing);
 				chosenDirectionDot = cosAngleTimesLenght;
 			}
 			
@@ -90,7 +93,7 @@ public class Character : MonoBehaviour
 			{
 				chosenPosUsingPrev = prevPos + candidateDirection * movementLength;
 				// smootly converge to the path
-				chosenPosUsingPrev = Vector3.Lerp(chosenPosUsingPrev, NavigationManager.PointNearestSegment(chosenPosUsingPrev, w.Position, currentWaypointPos), 0.1f);
+				chosenPosUsingPrev = Vector3.Lerp(chosenPosUsingPrev, NavigationManager.PointNearestSegment(chosenPosUsingPrev, w.Position, currentWaypointPos), smoothing);
 				chosenDirectionUsingPrevDot = cosAngleTimesLenght;
 			}
 		}
@@ -144,24 +147,30 @@ public class Character : MonoBehaviour
 			mRotation = Quaternion.AngleAxis (angularSpeed, perpDirection);
 		}
 		else
-			mRotation = Quaternion.identity; // we could avoid the special case as both .Normalize and .AngleAxis work with 0,0,0
+		{
+			if(!PacmanMovement)
+				mRotation = Quaternion.identity; // we could avoid the special case as both .Normalize and .AngleAxis work with 0,0,0
+		}	
 			
-		float currAngle;
-		Vector3 currAxis;
-		mPrevRotation.ToAngleAxis(out currAngle, out currAxis);
-		
-		currAngle = Mathf.Min (MaxSpeed, currAngle) * Inertia * 2.0f;
-		
-		mRotation = Quaternion.Lerp (
-			mRotation,
-			Quaternion.AngleAxis(currAngle, currAxis),
-			0.5f);
-		
-		/*mRotation = Quaternion.Lerp (
-			mRotation,
-			mCurrRotation,
-			Inertia);*/
+		if(!PacmanMovement)
+		{
+			float currAngle;
+			Vector3 currAxis;
+			mPrevRotation.ToAngleAxis(out currAngle, out currAxis);
 			
+			currAngle = Mathf.Min (MaxSpeed, currAngle) * Inertia * 2.0f;
+			
+			mRotation = Quaternion.Lerp (
+				mRotation,
+				Quaternion.AngleAxis(currAngle, currAxis),
+				0.5f);
+			
+			/*mRotation = Quaternion.Lerp (
+				mRotation,
+				mCurrRotation,
+				Inertia);*/
+		}
+		
 		mPrevRotation = mRotation;	
 			
 		// TODO: facing from direction, not from mouse
