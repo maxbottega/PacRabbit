@@ -7,25 +7,25 @@ public class Character : MonoBehaviour
 {	
 	// ------------ Public, editable in the GUI, serialized
 	public float									WalkSpeed = 20.0f;
+	public float									Drag = 0.5f;
 
 	// ------------ Public, serialized
 	
 	
 	// ------------ Public, non-serialized
-	
 	// This will be useful on mobile
 	//#if ((UNITY_IPHONE || UNITY_ANDROID) && !UNITY_EDITOR)
 	//[System.NonSerialized] public Joystick     m_LeftJoystick;
 	//[System.NonSerialized] public Joystick     m_RightJoystick;
 	//#endif
 	
-	[System.NonSerialized] public Vector3			mLightDirection = Vector3.right;
-	[System.NonSerialized] public Quaternion 		mRotation 		= Quaternion.identity;
-
+	// ------------ Private
+	private Quaternion	 							mRotation 		= Quaternion.identity;
+	private Quaternion						 		mCurrRotation	= Quaternion.identity;
 	private Collidable								mCollidable 	= null;
-	private float									mFacingAngle 	= 0;
+	//private float									mFacingAngle 	= 0;
 	private SphereTransform							mMoveController	= null;	
-	private PlayMakerFSM							mPlaymaker			= null;
+	private PlayMakerFSM							mPlaymaker		= null;
 
 	void Start () 
 	{
@@ -39,8 +39,8 @@ public class Character : MonoBehaviour
 	
 	void Update()
 	{
-		UpdateInput();	
-		
+		UpdateInput();
+										
 		if((mCollidable.CachedNearest != null) && (mCollidable.CachedNearest.mIsCorridor)) // automatic on-rails navigation in corridors
 		{
 			Vector3 prevPos = mMoveController.Up * Planet.Instance.Radius;		
@@ -60,7 +60,7 @@ public class Character : MonoBehaviour
 				Vector3 candidateDirection = (w.Position - currentWaypointPos).normalized;			
 				float cosAngleTimesLenght = Vector3.Dot (candidateDirection, movementDirection);
 				
-				if(cosAngleTimesLenght > chosenDirectionDot)
+				if(cosAngleTimesLenght > chosenDirectionDot) // TODO: under a given angle we should make the choice based on previous direction, NOT current input!
 				{
 					chosenPos = prevPos + candidateDirection * movementLength;
 					
@@ -112,15 +112,25 @@ public class Character : MonoBehaviour
 	
 	void UpdateInput()
 	{
-		Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-		direction.Normalize();
-
-		float speed = WalkSpeed * Time.deltaTime /* * direction.magnitude */;
-		Vector3 perpendicular = new Vector3(direction.z, 0, -direction.x);
-		mRotation = Quaternion.AngleAxis (speed, perpendicular);
+		float angularSpeed = WalkSpeed * Time.deltaTime;
 		
+		Vector3 perpDirection = new Vector3(Input.GetAxis("Vertical"), 0, -Input.GetAxis("Horizontal"));
+		
+		if(perpDirection != Vector3.zero)
+		{
+			perpDirection.Normalize();
+			mRotation = Quaternion.AngleAxis (angularSpeed, perpDirection);
+		}
+		else
+			mRotation = Quaternion.identity; // we could avoid the special case as both .Normalize and .AngleAxis work with 0,0,0
+		
+		mRotation = Quaternion.Lerp (
+			mRotation,
+			mCurrRotation,
+			Drag);
+		mCurrRotation = mRotation;	
+			
 		// TODO: facing from direction, not from mouse
-		
 		/* Facing 1 frame late...because of camera LateUpdate
 		{
 			Vector3 planePoint = transform.up * Planet.GetRadius();
@@ -135,10 +145,4 @@ public class Character : MonoBehaviour
 			mFacingAngle = Mathf.Atan2 (mousePoint.x, mousePoint.z) * Mathf.Rad2Deg;
 		}*/
 	}
-
-	#if UNITY_EDITOR 
-	void OnDrawGizmos() 
-	{
-	}
-	#endif
 }

@@ -19795,6 +19795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WalkSpeed: 20
+  Drag: .899999976
 --- !u!114 &2011921439
 MonoBehaviour:
   m_ObjectHideFlags: 0
