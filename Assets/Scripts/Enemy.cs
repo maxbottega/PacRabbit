@@ -61,6 +61,7 @@ public class Enemy : MonoBehaviour
 		if(enemy!=null)
 		{
 			mPlaymaker.SendEvent("EnemyCollision");
+Debug.Log ("enemy collided:"+this.name);
 			return;
 		}
 		
@@ -69,10 +70,12 @@ public class Enemy : MonoBehaviour
 		if(character!=null)
 		{
 			mPlaymaker.SendEvent("CharacterCollision");
+Debug.Log ("character collided:"+this.name);
 			return;	
 		}
 		
 		mPlaymaker.SendEvent("OtherCollision");
+Debug.Log ("other collided:"+this.name);
 	}
 
 	void Start () 

@@ -128,6 +128,7 @@ public class Character : MonoBehaviour
 		if(enemy!=null)
 		{
 			mPlaymaker.SendEvent("EnemyCollision");
+Debug.Log ("enemy collided:"+this.name);
 			return;
 		}
 		
