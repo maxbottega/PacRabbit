@@ -33,7 +33,19 @@ MonoBehaviour:
     colorVariables: []
     rectVariables: []
     quaternionVariables: []
-    gameObjectVariables: []
+    gameObjectVariables:
+    - useVariable: 1
+      name: player
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: timer
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
     objectVariables: []
     materialVariables: []
     textureVariables: []
@@ -48,3 +60,28 @@ MonoBehaviour:
   - PLAYER/trans_back
   - GAME/over
   - GAME/win
+  - Timer/Start
+  - Timer/Stop
+  - Timer/BonusTime
+  - GAME/overByTimeUp
+  - NGUI / ON CLICK
+  - NGUI / ON DOUBLE CLICK
+  - NGUI / ON DRAG
+  - NGUI / ON DRAG FINISHED
+  - NGUI / ON DROP
+  - NGUI / ON HOVER - EXIT
+  - NGUI / ON HOVER - HOVERING
+  - NGUI / ON INPUT
+  - NGUI / ON KEY
+  - NGUI / ON MOUSEWHEEL SCROLL
+  - NGUI / ON PRESS - PRESSED
+  - NGUI / ON PRESS - RELEASED
+  - NGUI / ON SCROLLBAR CHANGE
+  - NGUI / ON SELECT - PRESSED
+  - NGUI / ON SELECT - RELEASED
+  - NGUI / ON SELECTION CHANGE
+  - NGUI / ON SLIDER CHANGE
+  - NGUI / ON SUBMIT
+  - NGUI / ON TOOLTIP - HIDE
+  - NGUI / ON TOOLTIP - SHOW
+  - GAME/start
