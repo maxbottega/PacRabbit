@@ -45,6 +45,30 @@ public class WayPoint : MonoBehaviour, IPathNode
 		get { return mPosition; }
 	}
 	
+	public System.Collections.Generic.IEnumerable<WayPoint> CurrentAndConnections
+	{
+		get
+		{
+			yield return this;
+			foreach(WayPoint w in connections)
+				yield return w;
+			
+			yield break;
+		}
+	}
+	
+	public System.Collections.Generic.IEnumerable<WayPoint> ConnectedConnections
+	{
+		get
+		{
+			foreach(WayPoint w in connections)
+				foreach(WayPoint ww in w.connections)
+					yield return ww;
+					
+			yield break;
+		}
+	}
+	
 	void Awake()
 	{
 		mPosition = transform.position;
@@ -85,7 +109,7 @@ public class WayPoint : MonoBehaviour, IPathNode
 		else	
 			Gizmos.color = Color.green;
 		
-		Gizmos.DrawSphere(transform.position, 0.25f);
+		Gizmos.DrawSphere(transform.position, 0.15f);
 		
 		foreach (WayPoint neighbor in connections)
 		{

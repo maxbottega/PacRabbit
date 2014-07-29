@@ -47,10 +47,12 @@ public class Character : MonoBehaviour
 		if((mCollidable.CachedNearest != null) && (mCollidable.CachedNearest.mIsCorridor)) // Automatic "on-rails" navigation in corridors
 		{
 			MovementOnRails();
+			mCollidable.SphereNavMeshCollision = false;
 		}
 		else
 		{
 			mMoveController.Move(mRotation);
+			mCollidable.SphereNavMeshCollision = true;
 		}
 		
 		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
@@ -77,13 +79,16 @@ public class Character : MonoBehaviour
 		
 		foreach(WayPoint w in mCollidable.CachedNearest.connections)
 		{
-			Vector3 candidateDirection = (w.Position - currentWaypointPos).normalized;			
+			Vector3 candidateDirection = (w.Position - currentWaypointPos);
+			if (candidateDirection == Vector3.zero)
+				continue; // note that normalized handles zero
+			else
+				candidateDirection.Normalize();
+					
 			float cosAngleTimesLenght = Vector3.Dot (candidateDirection, movementDirection);
-			
 			if(cosAngleTimesLenght > chosenDirectionDot)
 			{
 				chosenPos = prevPos + candidateDirection * movementLength;
-				// smootly converge to the path
 				chosenPos = Vector3.Lerp(chosenPos, NavigationManager.PointNearestSegment(chosenPos, w.Position, currentWaypointPos), smoothing);
 				chosenDirectionDot = cosAngleTimesLenght;
 			}
@@ -92,17 +97,18 @@ public class Character : MonoBehaviour
 			if(cosAngleTimesLenght > chosenDirectionUsingPrevDot)
 			{
 				chosenPosUsingPrev = prevPos + candidateDirection * movementLength;
-				// smootly converge to the path
 				chosenPosUsingPrev = Vector3.Lerp(chosenPosUsingPrev, NavigationManager.PointNearestSegment(chosenPosUsingPrev, w.Position, currentWaypointPos), smoothing);
 				chosenDirectionUsingPrevDot = cosAngleTimesLenght;
 			}
 		}
 		
-		if(chosenDirectionUsingPrevDot > chosenDirectionDot)
+		if( (chosenDirectionUsingPrevDot > chosenDirectionDot) && (chosenDirectionDot < 0.5f * movementLength ) )
 			chosenPos = chosenPosUsingPrev;
 		
+	//Debug.DrawLine(currentWaypointPos * 1.1f, (currentWaypointPos+movementDirection.normalized)*1.1f, chosenPos == chosenPosUsingPrev?Color.black:Color.white);
+		
 		mMoveController.Move (chosenPos);
-		mPrevDirection = movementDirection;
+		mPrevDirection = (chosenPos - prevPos);
 	}
 	
 	public void OnCollision(Collidable other)
