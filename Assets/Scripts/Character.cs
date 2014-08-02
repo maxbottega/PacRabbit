@@ -120,8 +120,6 @@ public class Character : MonoBehaviour
 			enemy.gameObject.SetActive (false);
 */		
 			
-		Enemy enemy = other.GetComponent<Enemy> ();
-		
 		if(mPlaymaker.Fsm.EventTarget != null)
 		{
 			Debug.LogError ("EventTarget set in Enemy FSM - this might cause issues so we reset it");
@@ -131,10 +129,22 @@ public class Character : MonoBehaviour
 			mPlaymaker.Fsm.EventTarget = null;
 		}
 		
+		Enemy enemy = other.GetComponent<Enemy> ();
 		if(enemy!=null)
 		{
-			mPlaymaker.SendEvent("EnemyCollision");
-Debug.Log ("enemy collided:"+this.name);
+			//mPlaymaker.SendEvent("EnemyCollision");
+			
+			// Note: SendEvent uses GetFsmEvent which creates the event if it doesn't exist - TODO: cache?
+			HutongGames.PlayMaker.FsmEvent ev = HutongGames.PlayMaker.FsmEvent.FindEvent("EnemyCollision");
+			
+			if(ev != null)
+			{
+				mPlaymaker.Fsm.Event(ev);
+Debug.Log ("EnemyCollision sent: "+this.name+" fsm:"+mPlaymaker.FsmName);
+			}
+			else
+Debug.Log ("EnemyCollision: "+this.name+" failed, no event in fsm:"+mPlaymaker.FsmName);			
+
 			return;
 		}
 		

@@ -46,9 +46,7 @@ public class Enemy : MonoBehaviour
 	}
 	
 	public void OnCollision(Collidable other)
-	{
-		Enemy enemy = other.GetComponent<Enemy> ();
-		
+	{		
 		if(mPlaymaker.Fsm.EventTarget != null)
 		{
 			Debug.LogError ("EventTarget set in Enemy FSM - this might cause issues so we reset it");
@@ -57,22 +55,45 @@ public class Enemy : MonoBehaviour
 			// about in on some forums...
 			mPlaymaker.Fsm.EventTarget = null;
 		}
-		
+	
+		Enemy enemy = other.GetComponent<Enemy> ();	
 		if(enemy!=null)
 		{
-			mPlaymaker.SendEvent("EnemyCollision");
-Debug.Log ("enemy collided:"+this.name);
+			//mPlaymaker.SendEvent("EnemyCollision");
+			
+			// Note: SendEvent uses GetFsmEvent which creates the event if it doesn't exist - TODO: cache?
+			HutongGames.PlayMaker.FsmEvent ev = HutongGames.PlayMaker.FsmEvent.FindEvent("EnemyCollision");
+			
+			if(ev != null)
+			{
+				mPlaymaker.Fsm.Event(ev);
+Debug.Log ("EnemyCollision sent: "+this.name+" fsm:"+mPlaymaker.FsmName);
+			}
+			else
+Debug.Log ("EnemyCollision: "+this.name+" failed, no event in fsm:"+mPlaymaker.FsmName);			
+			
 			return;
 		}
 		
-		Character character = other.GetComponent<Character> ();
-		
+		Character character = other.GetComponent<Character> ();		
 		if(character!=null)
 		{
-			mPlaymaker.SendEvent("CharacterCollision");
-Debug.Log ("character collided:"+this.name);
-			return;	
+			//mPlaymaker.SendEvent("CharacterCollision");
+			
+			// Note: SendEvent uses GetFsmEvent which creates the event if it doesn't exist - TODO: cache?
+			HutongGames.PlayMaker.FsmEvent ev = HutongGames.PlayMaker.FsmEvent.FindEvent("CharacterCollision");
+			
+			if(ev != null)
+			{
+				mPlaymaker.Fsm.Event(ev);
+Debug.Log ("CharacterCollision sent: "+this.name+" fsm:"+mPlaymaker.FsmName);
+			}
+			else
+Debug.Log ("CharacterCollision: "+this.name+" failed, no event in fsm:"+mPlaymaker.FsmName);			
+		
+			return;
 		}
+		
 		
 		mPlaymaker.SendEvent("OtherCollision");
 Debug.Log ("other collided:"+this.name);

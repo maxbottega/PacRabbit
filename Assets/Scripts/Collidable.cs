@@ -10,6 +10,7 @@ public class Collidable : MonoBehaviour
 	public float							RadiusForNavMesh = 0.75f;
 	public bool 							Static 	= false;
 	public bool								SphereNavMeshCollision = true;
+	public int								Layer = 0;
 
 	// ------------ Public, serialized
 	
@@ -19,12 +20,11 @@ public class Collidable : MonoBehaviour
 	[System.NonSerialized] public float 	AngleRadius = 1;
 	[System.NonSerialized] public bool 		Colliding 	= false;
 	[System.NonSerialized] public bool 		Active 		= true;
-
-	[System.NonSerialized]public Vector3 	Min = Vector3.zero;
-	[System.NonSerialized]public Vector3 	Max = Vector3.zero;
-	[System.NonSerialized]public float 		MinValue = 0.0f;
-	[System.NonSerialized]public float 		MaxValue = 0.0f;
-	[System.NonSerialized]public WayPoint	CachedNearest = null;
+	[System.NonSerialized] public Vector3 	Min = Vector3.zero;
+	[System.NonSerialized] public Vector3 	Max = Vector3.zero;
+	[System.NonSerialized] public float 	MinValue = 0.0f;
+	[System.NonSerialized] public float 	MaxValue = 0.0f;
+	[System.NonSerialized] public WayPoint	CachedNearest = null;
 
 	public delegate void 					CollisionCallback(Collidable other);
 	[System.NonSerialized] public CollisionCallback OnCollision;

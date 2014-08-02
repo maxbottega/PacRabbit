@@ -5,23 +5,27 @@ using System.Collections.Generic;
 public class CollisionManager : MonoBehaviour 
 {
 	// ------------ Public, editable in the GUI, serialized
+	public bool									CollisionLayer0 = true;
+	public bool									CollisionLayer1 = true;
+	public bool									CollisionLayer2 = true;
 	
 	// ------------ Public, serialized
 	
 	// ------------ Public, non-serialized
 	[System.NonSerialized] public int 			mNumColliders = 0;
-	[System.NonSerialized] public bool 			m_SAP = false;
-	[System.NonSerialized] public bool 			m_CompareTo = true;
-	[System.NonSerialized] public bool	 		m_BreakSAPCycle = false;
-	[System.NonSerialized] public bool 			m_AdaptiveSweepAxis = true;
-	[System.NonSerialized] public int 			m_IterationCount = 10;
-	[System.NonSerialized] public float 		m_Relaxation = 0.8f;
-	[System.NonSerialized] public bool    	 	m_CheckSort = false;
-	[System.NonSerialized] public float			m_CollisionErrorInterpolation = 1.0f;
-	[System.NonSerialized] public bool    		m_LinearTest = true;
 	[System.NonSerialized] List<Collidable> 	mColliders = new List<Collidable>();
 
 	// ------------ Private
+	private int									mLayerMask = 0;
+	private bool 								m_SAP = false;
+	private bool 								m_CompareTo = true;
+	private bool	 							m_BreakSAPCycle = false;
+	private bool 								m_AdaptiveSweepAxis = true;
+	private int 								m_IterationCount = 10;
+	private float 								m_Relaxation = 0.8f;
+	private bool    						 	m_CheckSort = false;
+	private float								m_CollisionErrorInterpolation = 1.0f;
+	private bool    							m_LinearTest = true;
 	private delegate void 						SweepFuncion();
 	private SweepFuncion 						mSweepFunction;
 	private Quaternion 							_quaternionIdentity = Quaternion.identity; // was this an optimization?
@@ -51,6 +55,8 @@ public class CollisionManager : MonoBehaviour
 	// NOTE: Due to ExecutionOrderManager we know this Update is after SphereTransform Update which is after all other components Updates
 	void Update () 
 	{
+		mLayerMask = (CollisionLayer0 ? 1 : 0) | (CollisionLayer1 ? 2 : 0) | (CollisionLayer2 ? 4 : 0);
+		
 		if (m_SAP==true) 
 			UpdateDynamicCollisionsSingleSAP();
 		else 
@@ -133,6 +139,7 @@ public class CollisionManager : MonoBehaviour
 			Collidable current = mColliders[colliderIndex];
 			
 			if (!current.gameObject.activeInHierarchy) continue;
+			if ( ((1<<current.Layer) & mLayerMask) == 0 ) continue;
 			
 			for (int activeIndex = colliderIndex+1; activeIndex<endIndex; activeIndex++)
 			{
@@ -177,8 +184,9 @@ public class CollisionManager : MonoBehaviour
 				Collidable current = mColliders[colliderIndex];
 				
 				if (!current.gameObject.activeInHierarchy) continue;
+				if ( ((1<<current.Layer) & mLayerMask) == 0 ) continue;
 			
-				//positions summ for variance
+				//positions sum for variance
 				s += current.Center;
 				s2 += Vector3.Scale (current.Center, current.Center);
 				
