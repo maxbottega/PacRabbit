@@ -41,7 +41,18 @@ public class SphereTransform : MonoBehaviour
 	void Awake()
 	{
 		mPivot = transform.parent;
-		mRotation = mPivot.transform.rotation;
+		
+		if(mPivot)
+		{
+			mRotation = mPivot.transform.rotation;
+			if(mPivot.transform.position != Vector3.zero)
+			{
+				Debug.LogError("Wrong pivot, has to be in zero:" + name);
+				mPivot.transform.position = Vector3.zero;
+			}	
+		}
+		else
+			Debug.LogWarning("No parent pivot for an object that has SphereTransform:" + name);
 	}
 	
 	void Update()
@@ -57,7 +68,8 @@ public class SphereTransform : MonoBehaviour
 	
 	public void ApplyCachedTransform ()
 	{
-		mPivot.rotation = mRotation;
+		if(mPivot)
+			mPivot.rotation = mRotation;
 	}
 	
 	public void Move (Quaternion deltaRotation)

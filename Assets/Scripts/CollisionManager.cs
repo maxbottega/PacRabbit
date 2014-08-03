@@ -112,6 +112,11 @@ public class CollisionManager : MonoBehaviour
 			float angleError = (radiusSumAngle - angle) * m_Relaxation;
 			float colliderMassRatio = collider.Mass / (collider.Mass+other.Mass);
 			
+			if(collider.Static)
+				colliderMassRatio = 1.0f;
+			if(other.Static)
+				colliderMassRatio = 0.0f;
+			
 			Vector3 rotationAxis = Vector3.Cross(other.Up, collider.Up);
 			colliderError = Quaternion.AngleAxis(angleError*(1.0f-colliderMassRatio), rotationAxis);	
 			otherError = Quaternion.AngleAxis(-angleError*(colliderMassRatio), rotationAxis);
@@ -121,6 +126,7 @@ public class CollisionManager : MonoBehaviour
 			
 			if (collider.OnCollision!=null)
 				collider.OnCollision(other);
+				
 			if (other.OnCollision!=null)
 				other.OnCollision(collider);
 			
