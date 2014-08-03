@@ -28,15 +28,33 @@ public class Character : MonoBehaviour
 	private Collidable								mCollidable 	= null;
 	//private float									mFacingAngle 	= 0;
 	private SphereTransform							mMoveController	= null;	
-	private PlayMakerFSM							mPlaymaker		= null;
+	private List<PlayMakerFSM>						mEnemyCollisionFSMs = new List<PlayMakerFSM>();
+	private List<PlayMakerFSM>						mOtherCollisionFSMs = new List<PlayMakerFSM>();
 
-	void Start () 
+	void Awake () 
 	{
 		mMoveController = GetComponent<SphereTransform>();
 		mCollidable 	= GetComponent<Collidable> ();
-		mPlaymaker 		= GetComponent<PlayMakerFSM> ();
 		
-		if (mCollidable && mPlaymaker)
+		PlayMakerFSM[] FSMs = GetComponents<PlayMakerFSM>();
+		bool hasCollisionFSMs = false;
+		
+		foreach(PlayMakerFSM fsm in FSMs)
+		{
+			if(fsm.Fsm.HasEvent("EnemyCollision"))
+			{
+				mEnemyCollisionFSMs.Add(fsm);
+				hasCollisionFSMs = true;
+			}
+			
+			if(fsm.Fsm.HasEvent("OtherCollision"))
+			{
+				mOtherCollisionFSMs.Add(fsm);
+				hasCollisionFSMs = true;
+			}
+		}
+		
+		if (mCollidable && hasCollisionFSMs) // register callback that sends events to playmaker
 			mCollidable.OnCollision = new Collidable.CollisionCallback(OnCollision);
 	}
 	
@@ -112,45 +130,45 @@ public class Character : MonoBehaviour
 	}
 	
 	public void OnCollision(Collidable other)
-	{
-/*
-		Enemy enemy = other.GetComponent<Enemy> ();
-		
-		if (enemy != null)
-			enemy.gameObject.SetActive (false);
-*/		
-			
-		if(mPlaymaker.Fsm.EventTarget != null)
-		{
-			Debug.LogError ("EventTarget set in Enemy FSM - this might cause issues so we reset it");
-			// EventTarget might redirect SendEvent to another target, we check here to be safe as it seems
-			// to be a possible cause of nasty bugs, but I haven't verified this directly yet, just reading
-			// about in on some forums...
-			mPlaymaker.Fsm.EventTarget = null;
-		}
-		
-		Enemy enemy = other.GetComponent<Enemy> ();
+	{		
+		Enemy enemy = other.GetComponent<Enemy> ();	
 		if(enemy!=null)
-		{
-			//mPlaymaker.SendEvent("EnemyCollision");
-			
-			// Note: SendEvent uses GetFsmEvent which creates the event if it doesn't exist - TODO: cache?
-			HutongGames.PlayMaker.FsmEvent ev = HutongGames.PlayMaker.FsmEvent.FindEvent("EnemyCollision");
-			
-			if(ev != null)
+		{	
+			foreach(PlayMakerFSM fsm in mEnemyCollisionFSMs)
 			{
-				mPlaymaker.Fsm.Event(ev);
-Debug.Log ("EnemyCollision sent: "+this.name+" fsm:"+mPlaymaker.FsmName);
+				if(fsm.Fsm.EventTarget != null)
+				{
+					Debug.LogError ("EventTarget set in Enemy FSM - this might cause issues so we reset it");
+					// EventTarget might redirect SendEvent to another target, we check here to be safe as it seems
+					// to be a possible cause of nasty bugs, but I haven't verified this directly yet, just reading
+					// about in on some forums...
+					fsm.Fsm.EventTarget = null;
+				}
+				
+				//TODO: Cache event HutongGames.PlayMaker.FsmEvent ev = HutongGames.PlayMaker.FsmEvent.FindEvent("EnemyCollision");	
+				fsm.Fsm.Event("EnemyCollision");
+Debug.Log ("EnemyCollision sent: "+this.name+" fsm:"+fsm.FsmName);
 			}
-			else
-Debug.Log ("EnemyCollision: "+this.name+" failed, no event in fsm:"+mPlaymaker.FsmName);			
-
+			
 			return;
 		}
 		
-		mPlaymaker.SendEvent("OtherCollision");
+		foreach(PlayMakerFSM fsm in mOtherCollisionFSMs)
+		{
+			if(fsm.Fsm.EventTarget != null)
+			{
+				Debug.LogError ("EventTarget set in Enemy FSM - this might cause issues so we reset it");
+				// EventTarget might redirect SendEvent to another target, we check here to be safe as it seems
+				// to be a possible cause of nasty bugs, but I haven't verified this directly yet, just reading
+				// about in on some forums...
+				fsm.Fsm.EventTarget = null;
+			}
+			
+			//TODO: Cache event HutongGames.PlayMaker.FsmEvent ev = HutongGames.PlayMaker.FsmEvent.FindEvent("OtherCollision");	
+			fsm.Fsm.Event("OtherCollision");
+Debug.Log ("OtherCollision sent: "+this.name+" fsm:"+fsm.FsmName);
+		}
 	}
-	
 	void UpdateInput()
 	{
 		// NOTE: the * 2.0 in the angles are due to the lerp 0.5 -- HACK, not proper physics...

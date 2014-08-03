@@ -18,8 +18,11 @@ public class Enemy : MonoBehaviour
 	// ------------ Private	
 	private SphereTransform							mMoveController 	= null;	
 	private Collidable								mCollidable 		= null;
-	private PlayMakerFSM							mPlaymaker			= null;
+	private List<PlayMakerFSM>						mEnemyCollisionFSMs = new List<PlayMakerFSM>();
+	private List<PlayMakerFSM>						mCharacterCollisionFSMs = new List<PlayMakerFSM>();
+	private List<PlayMakerFSM>						mOtherCollisionFSMs = new List<PlayMakerFSM>();
 	
+		
 	public float DistanceToTarget
 	{
 		get
@@ -38,65 +41,96 @@ public class Enemy : MonoBehaviour
 		mMoveController 	= GetComponent<SphereTransform>();
 		mCollidable 		= GetComponent<Collidable> ();
 
-		mPlaymaker = GetComponent<PlayMakerFSM> ();
+		PlayMakerFSM[] FSMs = GetComponents<PlayMakerFSM>();
+		bool hasCollisionFSMs = false;
+		
+		foreach(PlayMakerFSM fsm in FSMs)
+		{
+			if(fsm.Fsm.HasEvent("EnemyCollision"))
+			{
+				mEnemyCollisionFSMs.Add(fsm);
+				hasCollisionFSMs = true;
+			}
+			
+			if(fsm.Fsm.HasEvent("CharacterCollision"))
+			{
+				mCharacterCollisionFSMs.Add(fsm);
+				hasCollisionFSMs = true;
+			}
+			
+			if(fsm.Fsm.HasEvent("OtherCollision"))
+			{
+				mOtherCollisionFSMs.Add(fsm);
+				hasCollisionFSMs = true;
+			}
+		}
 
-		if (mCollidable && mPlaymaker) // register callback that sends events to playmaker
+		if (mCollidable && hasCollisionFSMs) // register callback that sends events to playmaker
 			mCollidable.OnCollision = new Collidable.CollisionCallback(OnCollision);
 			
 	}
 	
 	public void OnCollision(Collidable other)
 	{		
-		if(mPlaymaker.Fsm.EventTarget != null)
-		{
-			Debug.LogError ("EventTarget set in Enemy FSM - this might cause issues so we reset it");
-			// EventTarget might redirect SendEvent to another target, we check here to be safe as it seems
-			// to be a possible cause of nasty bugs, but I haven't verified this directly yet, just reading
-			// about in on some forums...
-			mPlaymaker.Fsm.EventTarget = null;
-		}
-	
 		Enemy enemy = other.GetComponent<Enemy> ();	
 		if(enemy!=null)
-		{
-			//mPlaymaker.SendEvent("EnemyCollision");
-			
-			// Note: SendEvent uses GetFsmEvent which creates the event if it doesn't exist - TODO: cache?
-			HutongGames.PlayMaker.FsmEvent ev = HutongGames.PlayMaker.FsmEvent.FindEvent("EnemyCollision");
-			
-			if(ev != null)
+		{	
+			foreach(PlayMakerFSM fsm in mEnemyCollisionFSMs)
 			{
-				mPlaymaker.Fsm.Event(ev);
-Debug.Log ("EnemyCollision sent: "+this.name+" fsm:"+mPlaymaker.FsmName);
+				if(fsm.Fsm.EventTarget != null)
+				{
+					Debug.LogError ("EventTarget set in Enemy FSM - this might cause issues so we reset it");
+					// EventTarget might redirect SendEvent to another target, we check here to be safe as it seems
+					// to be a possible cause of nasty bugs, but I haven't verified this directly yet, just reading
+					// about in on some forums...
+					fsm.Fsm.EventTarget = null;
+				}
+		
+				//TODO: Cache event HutongGames.PlayMaker.FsmEvent ev = HutongGames.PlayMaker.FsmEvent.FindEvent("EnemyCollision");	
+				fsm.Fsm.Event("EnemyCollision");
+Debug.Log ("EnemyCollision sent: "+this.name+" fsm:"+fsm.FsmName);
 			}
-			else
-Debug.Log ("EnemyCollision: "+this.name+" failed, no event in fsm:"+mPlaymaker.FsmName);			
-			
+				
 			return;
 		}
 		
-		Character character = other.GetComponent<Character> ();		
+		Character character = other.GetComponent<Character> ();	
 		if(character!=null)
-		{
-			//mPlaymaker.SendEvent("CharacterCollision");
-			
-			// Note: SendEvent uses GetFsmEvent which creates the event if it doesn't exist - TODO: cache?
-			HutongGames.PlayMaker.FsmEvent ev = HutongGames.PlayMaker.FsmEvent.FindEvent("CharacterCollision");
-			
-			if(ev != null)
+		{	
+			foreach(PlayMakerFSM fsm in mCharacterCollisionFSMs)
 			{
-				mPlaymaker.Fsm.Event(ev);
-Debug.Log ("CharacterCollision sent: "+this.name+" fsm:"+mPlaymaker.FsmName);
+				if(fsm.Fsm.EventTarget != null)
+				{
+					Debug.LogError ("EventTarget set in Enemy FSM - this might cause issues so we reset it");
+					// EventTarget might redirect SendEvent to another target, we check here to be safe as it seems
+					// to be a possible cause of nasty bugs, but I haven't verified this directly yet, just reading
+					// about in on some forums...
+					fsm.Fsm.EventTarget = null;
+				}
+				
+				//TODO: Cache event HutongGames.PlayMaker.FsmEvent ev = HutongGames.PlayMaker.FsmEvent.FindEvent("CharacterCollision");	
+				fsm.Fsm.Event("CharacterCollision");
+Debug.Log ("CharacterCollision sent: "+this.name+" fsm:"+fsm.FsmName);
 			}
-			else
-Debug.Log ("CharacterCollision: "+this.name+" failed, no event in fsm:"+mPlaymaker.FsmName);			
-		
+			
 			return;
 		}
 		
-		
-		mPlaymaker.SendEvent("OtherCollision");
-Debug.Log ("other collided:"+this.name);
+		foreach(PlayMakerFSM fsm in mOtherCollisionFSMs)
+		{
+			if(fsm.Fsm.EventTarget != null)
+			{
+				Debug.LogError ("EventTarget set in Enemy FSM - this might cause issues so we reset it");
+				// EventTarget might redirect SendEvent to another target, we check here to be safe as it seems
+				// to be a possible cause of nasty bugs, but I haven't verified this directly yet, just reading
+				// about in on some forums...
+				fsm.Fsm.EventTarget = null;
+			}
+			
+			//TODO: Cache event HutongGames.PlayMaker.FsmEvent ev = HutongGames.PlayMaker.FsmEvent.FindEvent("OtherCollision");	
+			fsm.Fsm.Event("OtherCollision");
+Debug.Log ("OtherCollision sent: "+this.name+" fsm:"+fsm.FsmName);
+		}
 	}
 
 	void Start () 
@@ -105,12 +139,7 @@ Debug.Log ("other collided:"+this.name);
 	}
 
 	void Update () 
-	{
-		if (mPlaymaker != null)
-			return; // TODO: we really will always have playmaker attached, this is temporary
-		
-		if (mMoveController)
-			FollowPointOnNavMesh(Time.deltaTime, Speed, Target.position);
+	{		
 	}
 	
 	public void FollowPoint(float dt, float speed, Vector3 chasePos)
