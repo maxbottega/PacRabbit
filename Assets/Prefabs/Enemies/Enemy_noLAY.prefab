@@ -96,7 +96,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400010}
   m_Layer: 10
-  m_Name: Enemy_LAY0
+  m_Name: Enemy_noLAY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -350,7 +350,7 @@ MonoBehaviour:
   fsm:
     usedInTemplate: {fileID: 0}
     name: BEHAVIOUR
-    startState: check player state
+    startState: hunt
     states:
     - name: wander
       description: 
@@ -559,8 +559,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 464
-        y: 112
+        x: 429
+        y: 115
         width: 104
         height: 16
       isBreakpoint: 0
@@ -1060,6 +1060,47 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000000000001000000000000000c000000180000001a000000
         paramByteDataSize: 0000000000000000000000000c0000000c0000000200000001000000
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 536
+        y: 126
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: ENEMY/escape
       isSystemEvent: 0
@@ -1193,14 +1234,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56d865886826741c58f5768dd113a554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 20
+  Speed: 19
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100016}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
   m_Name: 
@@ -1227,7 +1268,7 @@ MonoBehaviour:
           name: PlayerEnteredDangerDistance
           isSystemEvent: 0
           isGlobal: 0
-        toState: 'check layer '
+        toState: send "Enemy/Hunt" event
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2163,7 +2204,7 @@ MonoBehaviour:
         serializedVersion: 2
         x: 240
         y: 192
-        width: 200
+        width: 211
         height: 48
       isBreakpoint: 0
       isSequence: 0
@@ -2564,103 +2605,6 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000f00000014000000
         paramByteDataSize: 000000000f0000000500000001000000
-    - name: 'check layer '
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 272
-        y: 112
-        width: 141
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: sameLayer
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: check enemy BEHAVIOUR state
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.GetFsmState
-        - HutongGames.PlayMaker.Actions.StringCompare
-        customNames:
-        - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: 5be7d1ab3ba14957
-        unityObjectParams:
-        - {fileID: 0}
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 1
-            name: CollisionManager
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
-        - useVariable: 1
-          name: CMState
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
-        - useVariable: 1
-          name: CMState
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Layer0
-        fsmObjectParams: []
-        fsmVarParams: []
-        byteData: 0073616d654c61796572000100
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 0500000014000000120000001200000001000000120000001200000017000000170000001100000001000000
-        paramName:
-        - fsmComponent
-        - gameObject
-        - fsmName
-        - storeResult
-        - everyFrame
-        - stringVariable
-        - compareTo
-        - equalEvent
-        - notEqualEvent
-        - storeResult
-        - everyFrame
-        paramDataPos: 00000000000000000000000001000000000000000200000003000000010000000a0000000a0000000c000000
-        paramByteDataSize: 0000000000000000000000000000000001000000000000000000000009000000000000000200000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -2688,7 +2632,7 @@ MonoBehaviour:
         name: CharacterCollision
         isSystemEvent: 0
         isGlobal: 0
-      toState: 'check layer '
+      toState: check enemy BEHAVIOUR state
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
