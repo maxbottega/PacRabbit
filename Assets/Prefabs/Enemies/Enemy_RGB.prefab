@@ -32,7 +32,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   m_Layer: 10
-  m_Name: Enemy_PM
+  m_Name: Enemy_RGB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -866,6 +866,7 @@ MonoBehaviour:
   RadiusForNavMesh: .75
   Static: 0
   SphereNavMeshCollision: 1
+  Layer: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
