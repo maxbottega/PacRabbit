@@ -55,7 +55,7 @@ public class CollisionManager : MonoBehaviour
 	// NOTE: Due to ExecutionOrderManager we know this Update is after SphereTransform Update which is after all other components Updates
 	void Update () 
 	{
-		mLayerMask = (CollisionLayer0 ? 1 : 0) | (CollisionLayer1 ? 2 : 0) | (CollisionLayer2 ? 4 : 0);
+		mLayerMask = (CollisionLayer0 ? 1 : 0) + (CollisionLayer1 ? 2 : 0) + (CollisionLayer2 ? 4 : 0);
 		
 		if (m_SAP==true) 
 			UpdateDynamicCollisionsSingleSAP();
@@ -151,8 +151,9 @@ public class CollisionManager : MonoBehaviour
 			{
 				Collidable active = mColliders[activeIndex];
 				
-				if (current==active) continue;
 				if (!active.gameObject.activeInHierarchy) continue;
+				if ( ((1<<active.Layer) & mLayerMask) == 0 ) continue;
+				
 				if (active.Static && current.Static) continue;
 				if (Physics.GetIgnoreLayerCollision(current.gameObject.layer, active.gameObject.layer)) continue; 
 				
@@ -201,6 +202,8 @@ public class CollisionManager : MonoBehaviour
 					Collidable active = mColliders[activeIndex];
 					
 					if (!active.gameObject.activeInHierarchy) continue;
+					if ( ((1<<active.Layer) & mLayerMask) == 0 ) continue;
+					
 					if (active.Static && current.Static) continue;
 					if (Physics.GetIgnoreLayerCollision(current.gameObject.layer, active.gameObject.layer)) continue; 
 					
