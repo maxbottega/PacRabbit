@@ -5,10 +5,7 @@ using System.Collections.Generic;
 public class CollisionManager : MonoBehaviour 
 {
 	// ------------ Public, editable in the GUI, serialized
-	public bool									CollisionLayer0 = true;
-	public bool									CollisionLayer1 = true;
-	public bool									CollisionLayer2 = true;
-	
+
 	// ------------ Public, serialized
 	
 	// ------------ Public, non-serialized
@@ -16,7 +13,6 @@ public class CollisionManager : MonoBehaviour
 	[System.NonSerialized] List<Collidable> 	mColliders = new List<Collidable>();
 
 	// ------------ Private
-	private int									mLayerMask = 0;
 	private bool 								m_SAP = false;
 	private bool 								m_CompareTo = true;
 	private bool	 							m_BreakSAPCycle = false;
@@ -54,9 +50,7 @@ public class CollisionManager : MonoBehaviour
 	
 	// NOTE: Due to ExecutionOrderManager we know this Update is after SphereTransform Update which is after all other components Updates
 	void Update () 
-	{
-		mLayerMask = (CollisionLayer0 ? 1 : 0) + (CollisionLayer1 ? 2 : 0) + (CollisionLayer2 ? 4 : 0);
-		
+	{		
 		if (m_SAP==true) 
 			UpdateDynamicCollisionsSingleSAP();
 		else 
@@ -145,15 +139,13 @@ public class CollisionManager : MonoBehaviour
 			Collidable current = mColliders[colliderIndex];
 			
 			if (!current.gameObject.activeInHierarchy) continue;
-			if ( current.Layer != -1 && ((1<<current.Layer) & mLayerMask) == 0 ) continue;
 			
 			for (int activeIndex = colliderIndex+1; activeIndex<endIndex; activeIndex++)
 			{
 				Collidable active = mColliders[activeIndex];
 				
 				if (!active.gameObject.activeInHierarchy) continue;
-				if ( active.Layer != -1 && ((1<<active.Layer) & mLayerMask) == 0 ) continue;
-				
+				if (active.Layer != current.Layer) continue;
 				if (active.Static && current.Static) continue;
 				if (Physics.GetIgnoreLayerCollision(current.gameObject.layer, active.gameObject.layer)) continue; 
 				
@@ -191,7 +183,6 @@ public class CollisionManager : MonoBehaviour
 				Collidable current = mColliders[colliderIndex];
 				
 				if (!current.gameObject.activeInHierarchy) continue;
-				if ( current.Layer != -1 && ((1<<current.Layer) & mLayerMask) == 0 ) continue;
 			
 				//positions sum for variance
 				s += current.Center;
@@ -202,8 +193,7 @@ public class CollisionManager : MonoBehaviour
 					Collidable active = mColliders[activeIndex];
 					
 					if (!active.gameObject.activeInHierarchy) continue;
-					if ( active.Layer != -1 && ((1<<active.Layer) & mLayerMask) == 0 ) continue;
-					
+					if (active.Layer != current.Layer) continue;
 					if (active.Static && current.Static) continue;
 					if (Physics.GetIgnoreLayerCollision(current.gameObject.layer, active.gameObject.layer)) continue; 
 					
