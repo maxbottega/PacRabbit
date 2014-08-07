@@ -145,14 +145,14 @@ public class CollisionManager : MonoBehaviour
 			Collidable current = mColliders[colliderIndex];
 			
 			if (!current.gameObject.activeInHierarchy) continue;
-			if ( ((1<<current.Layer) & mLayerMask) == 0 ) continue;
+			if ( current.Layer != -1 && ((1<<current.Layer) & mLayerMask) == 0 ) continue;
 			
 			for (int activeIndex = colliderIndex+1; activeIndex<endIndex; activeIndex++)
 			{
 				Collidable active = mColliders[activeIndex];
 				
 				if (!active.gameObject.activeInHierarchy) continue;
-				if ( ((1<<active.Layer) & mLayerMask) == 0 ) continue;
+				if ( active.Layer != -1 && ((1<<active.Layer) & mLayerMask) == 0 ) continue;
 				
 				if (active.Static && current.Static) continue;
 				if (Physics.GetIgnoreLayerCollision(current.gameObject.layer, active.gameObject.layer)) continue; 
@@ -191,7 +191,7 @@ public class CollisionManager : MonoBehaviour
 				Collidable current = mColliders[colliderIndex];
 				
 				if (!current.gameObject.activeInHierarchy) continue;
-				if ( ((1<<current.Layer) & mLayerMask) == 0 ) continue;
+				if ( current.Layer != -1 && ((1<<current.Layer) & mLayerMask) == 0 ) continue;
 			
 				//positions sum for variance
 				s += current.Center;
@@ -202,7 +202,7 @@ public class CollisionManager : MonoBehaviour
 					Collidable active = mColliders[activeIndex];
 					
 					if (!active.gameObject.activeInHierarchy) continue;
-					if ( ((1<<active.Layer) & mLayerMask) == 0 ) continue;
+					if ( active.Layer != -1 && ((1<<active.Layer) & mLayerMask) == 0 ) continue;
 					
 					if (active.Static && current.Static) continue;
 					if (Physics.GetIgnoreLayerCollision(current.gameObject.layer, active.gameObject.layer)) continue; 
