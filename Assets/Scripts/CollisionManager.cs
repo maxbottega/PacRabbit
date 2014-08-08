@@ -31,10 +31,10 @@ public class CollisionManager : MonoBehaviour
 		mSweepFunction = new SweepFuncion(this.SweepXAxis);
 	}
 	
-	public float CollisionErrorInterpolation
+/*	public float CollisionErrorInterpolation
 	{
 		get { return m_CollisionErrorInterpolation; }
-	}
+	}*/
 	
 	public void AddCollider(Collidable collider)
 	{
@@ -145,9 +145,16 @@ public class CollisionManager : MonoBehaviour
 				Collidable active = mColliders[activeIndex];
 				
 				if (!active.gameObject.activeInHierarchy) continue;
-				if (active.Layer != current.Layer) continue;
+				
+				if (active.CollideWithOtherLayersOnly || current.CollideWithOtherLayersOnly)
+				{
+					if (active.Layer == current.Layer) continue;
+				}
+				else
+					if (active.Layer != current.Layer) continue;
+					
 				if (active.Static && current.Static) continue;
-				if (Physics.GetIgnoreLayerCollision(current.gameObject.layer, active.gameObject.layer)) continue; 
+				//if (Physics.GetIgnoreLayerCollision(current.gameObject.layer, active.gameObject.layer)) continue; 
 				
 				ResolveCoupleCollision(current, active);
 			}
@@ -193,9 +200,16 @@ public class CollisionManager : MonoBehaviour
 					Collidable active = mColliders[activeIndex];
 					
 					if (!active.gameObject.activeInHierarchy) continue;
-					if (active.Layer != current.Layer) continue;
+					
+					if (active.CollideWithOtherLayersOnly || current.CollideWithOtherLayersOnly)
+					{
+						if (active.Layer == current.Layer) continue;
+					}
+					else
+						if (active.Layer != current.Layer) continue;
+					
 					if (active.Static && current.Static) continue;
-					if (Physics.GetIgnoreLayerCollision(current.gameObject.layer, active.gameObject.layer)) continue; 
+					//if (Physics.GetIgnoreLayerCollision(current.gameObject.layer, active.gameObject.layer)) continue; 
 					
 					float currentEnd = current.MaxValue;
 					float activeStart = active.MinValue;

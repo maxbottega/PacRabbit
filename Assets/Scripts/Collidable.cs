@@ -11,6 +11,7 @@ public class Collidable : MonoBehaviour
 	public bool 							Static 	= false;
 	public bool								SphereNavMeshCollision = true;
 	public int								Layer = 0;
+	public bool								CollideWithOtherLayersOnly = false;
 
 	// ------------ Public, serialized
 	
