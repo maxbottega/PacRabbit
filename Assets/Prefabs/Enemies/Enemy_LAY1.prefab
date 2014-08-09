@@ -1017,7 +1017,7 @@ MonoBehaviour:
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
-          name: player
+          name: Player
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -1035,7 +1035,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 
+          value: TRANSFORMATION
         - useVariable: 0
           name: 
           tooltip: 
@@ -1182,6 +1182,7 @@ MonoBehaviour:
   Static: 0
   SphereNavMeshCollision: 1
   Layer: 1
+  CollideWithOtherLayersOnly: 0
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1193,7 +1194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56d865886826741c58f5768dd113a554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 15
+  Speed: 7
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1

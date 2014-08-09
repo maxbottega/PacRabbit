@@ -451,7 +451,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010100
+        actionEnabled: 000100
         actionIsOpen: 010101
         actionStartIndex: 00000000080000000d000000
         actionHashCodes: f4920b95c8d4d49f5d0b71a4
@@ -467,7 +467,7 @@ MonoBehaviour:
         - ownerOption: 1
           gameObject:
             useVariable: 1
-            name: player
+            name: 
             tooltip: 
             showInInspector: 0
             networkSync: 0

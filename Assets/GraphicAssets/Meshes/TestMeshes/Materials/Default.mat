@@ -24,7 +24,7 @@ Material:
         first:
           name: _MatCap
         second:
-          m_Texture: {fileID: 2800000, guid: fe5fd871c97249b4d89f44293a31c0cb, type: 3}
+          m_Texture: {fileID: 2800000, guid: bbdc5d7cea9afb549bebb88cb105621a, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats: {}

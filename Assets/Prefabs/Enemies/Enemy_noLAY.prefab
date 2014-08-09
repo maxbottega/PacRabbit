@@ -1130,7 +1130,8 @@ MonoBehaviour:
   RadiusForNavMesh: .75
   Static: 0
   SphereNavMeshCollision: 1
-  Layer: 1
+  Layer: 0
+  CollideWithOtherLayersOnly: 0
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1142,7 +1143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56d865886826741c58f5768dd113a554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 19
+  Speed: 5
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1
