@@ -106,3 +106,4 @@ MonoBehaviour:
   - Layer/0
   - Layer/1
   - Layer/2
+  - PLAYER/CollidedObstacle
