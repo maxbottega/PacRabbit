@@ -1,0 +1,565 @@
+fileFormatVersion: 2
+guid: f850f1a6d8bf64be59eb308d97ceba20
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: mario
+    100002: //RootNode
+    100004: mario_All_Root
+    100006: mario_ArmL1
+    100008: mario_ArmL1_dummy
+    100010: mario_ArmL2
+    100012: mario_ArmL2_dummy
+    100014: mario_ArmR1
+    100016: mario_ArmR1_dummy
+    100018: mario_ArmR2
+    100020: mario_ArmR2_dummy
+    100022: mario_Cap0
+    100024: mario_CapPosition
+    100026: mario_Center
+    100028: mario_Center_dummy
+    100030: mario_Eye0
+    100032: mario_EyePosition
+    100034: mario_Face0
+    100036: mario_FacePosition
+    100038: mario_FootL
+    100040: mario_FootL_dummy
+    100042: mario_FootR
+    100044: mario_FootR_dummy
+    100046: mario_HandL
+    100048: mario_HandL0
+    100050: mario_HandL_dummy
+    100052: mario_HandR
+    100054: mario_HandR0
+    100056: mario_HandR_dummy
+    100058: mario_Head
+    100060: mario_Head_dummy
+    100062: mario_Hip
+    100064: mario_JointRoot
+    100066: mario_LegL1
+    100068: mario_LegL1_dummy
+    100070: mario_LegL2
+    100072: mario_LegL2_dummy
+    100074: mario_LegR1
+    100076: mario_LegR1_dummy
+    100078: mario_LegR2
+    100080: mario_LegR2_dummy
+    100082: mario_PartsControl
+    100084: mario_PartsControl_dummy
+    100086: mario_ShoulderL
+    100088: mario_ShoulderR
+    100090: mario_Spine1
+    100092: mario_Spine1_dummy
+    100094: mario_Spine2
+    100096: mario_Spine2_dummy
+    100098: Point001
+    400000: mario
+    400002: //RootNode
+    400004: mario_All_Root
+    400006: mario_ArmL1
+    400008: mario_ArmL1_dummy
+    400010: mario_ArmL2
+    400012: mario_ArmL2_dummy
+    400014: mario_ArmR1
+    400016: mario_ArmR1_dummy
+    400018: mario_ArmR2
+    400020: mario_ArmR2_dummy
+    400022: mario_Cap0
+    400024: mario_CapPosition
+    400026: mario_Center
+    400028: mario_Center_dummy
+    400030: mario_Eye0
+    400032: mario_EyePosition
+    400034: mario_Face0
+    400036: mario_FacePosition
+    400038: mario_FootL
+    400040: mario_FootL_dummy
+    400042: mario_FootR
+    400044: mario_FootR_dummy
+    400046: mario_HandL
+    400048: mario_HandL0
+    400050: mario_HandL_dummy
+    400052: mario_HandR
+    400054: mario_HandR0
+    400056: mario_HandR_dummy
+    400058: mario_Head
+    400060: mario_Head_dummy
+    400062: mario_Hip
+    400064: mario_JointRoot
+    400066: mario_LegL1
+    400068: mario_LegL1_dummy
+    400070: mario_LegL2
+    400072: mario_LegL2_dummy
+    400074: mario_LegR1
+    400076: mario_LegR1_dummy
+    400078: mario_LegR2
+    400080: mario_LegR2_dummy
+    400082: mario_PartsControl
+    400084: mario_PartsControl_dummy
+    400086: mario_ShoulderL
+    400088: mario_ShoulderR
+    400090: mario_Spine1
+    400092: mario_Spine1_dummy
+    400094: mario_Spine2
+    400096: mario_Spine2_dummy
+    400098: Point001
+    4300000: mario
+    7400000: mario galaxy original
+    9500000: //RootNode
+    13700000: mario
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: mario_JointRoot
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_LegL1
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_LegR1
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_LegL2
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_LegR2
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_FootL
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_FootR
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_Spine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_Spine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_ShoulderL
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_ShoulderR
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_ArmL1
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_ArmR1
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_ArmL2
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_ArmR2
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_HandL
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_HandR
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mario_Eye0
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: mario galaxy(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Point001
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 2.18556941e-08, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_All_Root
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_Center_dummy
+      position: {x: -0, y: .594999969, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_Center
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_JointRoot
+      position: {x: 0, y: -.12865299, z: -.0399999917}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_Spine1_dummy
+      position: {x: -0, y: .00999999978, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_Spine1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: .5, y: -.499952048, z: -.5, w: .500047982}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_Spine2_dummy
+      position: {x: -.129999995, y: 0, z: 0}
+      rotation: {x: -1.98284531e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_Spine2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -1.98284531e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_Head_dummy
+      position: {x: -.239999846, y: 0, z: 0}
+      rotation: {x: -1.98284531e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_Head
+      position: {x: -7.62939436e-08, y: 0, z: 0}
+      rotation: {x: .000270574441, y: -.000202770199, z: -.707058787, w: .707154691}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_CapPosition
+      position: {x: -0, y: -1.52587887e-07, z: -7.45058043e-11}
+      rotation: {x: .707106829, y: -2.78478365e-05, z: -.707106829, w: -2.78478365e-05}
+      scale: {x: .999999881, y: .99999994, z: 1}
+      transformModified: 1
+    - name: mario_Cap0
+      position: {x: -7.6461582e-08, y: .000419235206, z: -.000451281056}
+      rotation: {x: -3.38546997e-05, y: 8.17778855e-05, z: -9.05714569e-06, w: 1}
+      scale: {x: .999999881, y: .99999994, z: 1}
+      transformModified: 1
+    - name: mario_EyePosition
+      position: {x: -0, y: -1.52587887e-07, z: -7.45058043e-11}
+      rotation: {x: .707106829, y: -2.78478365e-05, z: -.707106829, w: -2.78478365e-05}
+      scale: {x: .999999881, y: .99999994, z: 1}
+      transformModified: 1
+    - name: mario_Eye0
+      position: {x: -1.06207463e-05, y: -.959997177, z: .040065188}
+      rotation: {x: -3.38546997e-05, y: 8.17778855e-05, z: -9.05714569e-06, w: 1}
+      scale: {x: .999999881, y: .99999994, z: 1}
+      transformModified: 1
+    - name: mario_FacePosition
+      position: {x: -0, y: -1.52587887e-07, z: -7.45058043e-11}
+      rotation: {x: .707106829, y: -2.78478365e-05, z: -.707106829, w: -2.78478365e-05}
+      scale: {x: .999999881, y: .99999994, z: 1}
+      transformModified: 1
+    - name: mario_Face0
+      position: {x: -1.01234763e-08, y: 7.62939436e-08, z: -4.76837148e-09}
+      rotation: {x: -3.38546997e-05, y: 8.17778855e-05, z: -9.05714569e-06, w: 1}
+      scale: {x: .999999881, y: .99999994, z: 1}
+      transformModified: 1
+    - name: mario_ShoulderR
+      position: {x: -.0799999237, y: .00999999698, z: -.0299999937}
+      rotation: {x: -.499780834, y: -.500219107, z: -.499780834, w: .500219107}
+      scale: {x: 1, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: mario_ArmR1_dummy
+      position: {x: -.139999762, y: -6.10351549e-07, z: -1.96695328e-05}
+      rotation: {x: 1.20280462e-24, y: 1.32249767e-12, z: -9.09494702e-13, w: 1}
+      scale: {x: 1, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: mario_ArmR1
+      position: {x: -0, y: 0, z: -2.38418574e-09}
+      rotation: {x: -.000485419994, y: -7.02355246e-05, z: 2.58851264e-06, w: .999999881}
+      scale: {x: 1, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: mario_ArmR2_dummy
+      position: {x: -.156000063, y: -3.05175774e-07, z: 4.76837148e-09}
+      rotation: {x: 3.63797859e-12, y: -9.58833013e-12, z: -1.45446393e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_ArmR2
+      position: {x: -0, y: 0, z: -2.38418574e-09}
+      rotation: {x: 7.73321858e-12, y: .000143766403, z: -2.84853705e-08, w: 1}
+      scale: {x: 1.00000012, y: .999999881, z: .999999821}
+      transformModified: 1
+    - name: mario_HandR_dummy
+      position: {x: -.179999962, y: -1.52587887e-07, z: 7.15255721e-09}
+      rotation: {x: 0, y: 1.4988013e-12, z: -0, w: 1}
+      scale: {x: .999999881, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: mario_HandR
+      position: {x: 7.62939436e-08, y: 0, z: 0}
+      rotation: {x: -.536191225, y: -.460875481, z: -.536277294, w: .46097675}
+      scale: {x: 1.00000012, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: mario_HandR0
+      position: {x: 1.81603427e-05, y: -6.89697263e-05, z: -1.65176389e-05}
+      rotation: {x: -4.9591843e-05, y: 4.98287009e-05, z: 1.57380928e-05, w: 1}
+      scale: {x: .999999881, y: .99999994, z: 1.00000024}
+      transformModified: 1
+    - name: mario_ShoulderL
+      position: {x: -.0800001472, y: .00999999698, z: .0299999993}
+      rotation: {x: .499999851, y: .500000179, z: -.499999851, w: .500000179}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_ArmL1_dummy
+      position: {x: -.139999807, y: -7.62939436e-08, z: -2.14576712e-08}
+      rotation: {x: -2.288715e-09, y: 5.23796631e-12, z: 7.27595761e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_ArmL1
+      position: {x: 1.90734859e-08, y: 7.62939436e-08, z: -2.38418574e-09}
+      rotation: {x: 6.2554426e-07, y: 5.23797065e-12, z: 7.27595414e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_ArmL2_dummy
+      position: {x: -.156000078, y: -7.62939436e-08, z: -1.66893006e-08}
+      rotation: {x: -2.288715e-09, y: 4.4060311e-12, z: 7.27595761e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_ArmL2
+      position: {x: 3.81469718e-08, y: 7.62939436e-08, z: -4.76837148e-09}
+      rotation: {x: 1, y: -6.90036783e-09, z: .000144004851, w: 4.79681294e-05}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: mario_HandL_dummy
+      position: {x: -.179999962, y: -7.62939436e-08, z: -1.90734859e-08}
+      rotation: {x: 0, y: -1.09867671e-11, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: mario_HandL
+      position: {x: 3.81469718e-08, y: -7.62939436e-08, z: 0}
+      rotation: {x: .535615861, y: -.461474895, z: .535996139, w: .461372674}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: mario_HandL0
+      position: {x: 1.82342519e-05, y: 6.95037816e-05, z: -1.65557849e-05}
+      rotation: {x: -2.15754335e-06, y: -.000221682771, z: -5.31540754e-05, w: 1}
+      scale: {x: 1.00000024, y: 1, z: 1.00000036}
+      transformModified: 1
+    - name: mario_Hip
+      position: {x: -0, y: -.00999999978, z: 4.76837148e-09}
+      rotation: {x: .50000006, y: .499951988, z: .49999994, w: .500048041}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_LegL1_dummy
+      position: {x: -.069999963, y: .0227672197, z: -.114999987}
+      rotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_LegL1
+      position: {x: -3.81469718e-08, y: 3.81469718e-08, z: 1.90734859e-08}
+      rotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_LegL2_dummy
+      position: {x: -.197287798, y: 3.81469718e-08, z: 8.58306848e-08}
+      rotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_LegL2
+      position: {x: 1.90734859e-08, y: 0, z: -9.53674295e-09}
+      rotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_FootL_dummy
+      position: {x: -.144612268, y: 3.26538066e-05, z: 9.53674295e-09}
+      rotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_FootL
+      position: {x: 9.53674295e-09, y: 0, z: 0}
+      rotation: {x: -1.80921788e-07, y: 8.42067962e-08, z: -.610306919, w: .792165041}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_LegR1_dummy
+      position: {x: -.0699998811, y: .0227672197, z: .115000032}
+      rotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_LegR1
+      position: {x: -3.81469718e-08, y: 3.81469718e-08, z: -9.53674295e-09}
+      rotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_LegR2_dummy
+      position: {x: -.197287709, y: 3.81469718e-08, z: 7.62939436e-08}
+      rotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_LegR2
+      position: {x: -3.81469718e-08, y: 0, z: -1.90734859e-08}
+      rotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_FootR_dummy
+      position: {x: -.144612238, y: 3.27205635e-05, z: 9.53674295e-09}
+      rotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_FootR
+      position: {x: -3.81469718e-08, y: 0, z: 9.53674295e-09}
+      rotation: {x: -1.80921788e-07, y: 8.42067962e-08, z: -.610306919, w: .792165041}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_PartsControl_dummy
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mario_PartsControl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 8.74227766e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 

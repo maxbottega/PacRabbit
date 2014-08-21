@@ -1,0 +1,2065 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: .25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_Fog: 0
+  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: .00999999978
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: .5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 0}
+  m_ObjectHideFlags: 0
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  m_LightProbes: {fileID: 0}
+  m_Lightmaps: []
+  m_LightmapsMode: 1
+  m_BakedColorSpace: 0
+  m_UseDualLightmapsInForward: 0
+  m_LightmapEditorSettings:
+    m_Resolution: 50
+    m_LastUsedResolution: 0
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_BounceBoost: 1
+    m_BounceIntensity: 1
+    m_SkyLightColor: {r: .860000014, g: .930000007, b: 1, a: 1}
+    m_SkyLightIntensity: 0
+    m_Quality: 0
+    m_Bounces: 1
+    m_FinalGatherRays: 1000
+    m_FinalGatherContrastThreshold: .0500000007
+    m_FinalGatherGradientThreshold: 0
+    m_FinalGatherInterpolationPoints: 15
+    m_AOAmount: 0
+    m_AOMaxDistance: .100000001
+    m_AOContrast: 1
+    m_LODSurfaceMappingDistance: 1
+    m_Padding: 0
+    m_TextureCompression: 0
+    m_LockAtlas: 0
+--- !u!196 &5
+NavMeshSettings:
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    agentRadius: .5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: .400000006
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    widthInaccuracy: 16.666666
+    heightInaccuracy: 10
+  m_NavMesh: {fileID: 0}
+--- !u!1 &25193465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100076, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 25193466}
+  m_Layer: 0
+  m_Name: mario_LegR1_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &25193466
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400076, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 25193465}
+  m_LocalRotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -.0699998811, y: .0227672197, z: .115000032}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1212104144}
+  m_Father: {fileID: 1255428186}
+  m_RootOrder: 1
+--- !u!1 &30677733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100048, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 30677734}
+  m_Layer: 0
+  m_Name: mario_HandL0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &30677734
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400048, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 30677733}
+  m_LocalRotation: {x: -2.15754335e-06, y: -.000221682771, z: -5.31540754e-05, w: 1}
+  m_LocalPosition: {x: 1.82342519e-05, y: 6.95037816e-05, z: -1.65557849e-05}
+  m_LocalScale: {x: 1.00000024, y: 1, z: 1.00000036}
+  m_Children: []
+  m_Father: {fileID: 198202781}
+  m_RootOrder: 0
+--- !u!1 &101082218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100034, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 101082219}
+  m_Layer: 0
+  m_Name: mario_Face0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &101082219
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400034, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 101082218}
+  m_LocalRotation: {x: -3.38546997e-05, y: 8.17778855e-05, z: -9.05714569e-06, w: 1}
+  m_LocalPosition: {x: -1.01234763e-08, y: 7.62939436e-08, z: -4.76837148e-09}
+  m_LocalScale: {x: .999999881, y: .99999994, z: 1}
+  m_Children: []
+  m_Father: {fileID: 451038609}
+  m_RootOrder: 0
+--- !u!1 &136430280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100064, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 136430281}
+  - 114: {fileID: 136430283}
+  - 114: {fileID: 136430282}
+  m_Layer: 0
+  m_Name: mario_JointRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &136430281
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400064, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136430280}
+  m_LocalRotation: {x: 2.18556941e-08, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 9.57999992, z: -.039999973}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1255428186}
+  - {fileID: 869458500}
+  m_Father: {fileID: 1558481895}
+  m_RootOrder: 1
+--- !u!114 &136430282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136430280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2e4483d6224af896dece607848c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WalkSpeed: 20
+--- !u!114 &136430283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136430280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10c6f7678c22410fbc137d4c9183805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &170257305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100080, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 170257306}
+  m_Layer: 0
+  m_Name: mario_LegR2_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &170257306
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400080, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 170257305}
+  m_LocalRotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -.197287709, y: 3.81469718e-08, z: 7.62939436e-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1999028522}
+  m_Father: {fileID: 1212104144}
+  m_RootOrder: 0
+--- !u!1 &193628014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100022, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 193628015}
+  m_Layer: 0
+  m_Name: mario_Cap0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &193628015
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400022, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 193628014}
+  m_LocalRotation: {x: -3.38546997e-05, y: 8.17778855e-05, z: -9.05714569e-06, w: 1}
+  m_LocalPosition: {x: -7.6461582e-08, y: .000419235206, z: -.000451281056}
+  m_LocalScale: {x: .999999881, y: .99999994, z: 1}
+  m_Children: []
+  m_Father: {fileID: 944960256}
+  m_RootOrder: 0
+--- !u!1 &198202780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100046, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 198202781}
+  m_Layer: 0
+  m_Name: mario_HandL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &198202781
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400046, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 198202780}
+  m_LocalRotation: {x: -3.16152899e-08, y: -.707106829, z: -3.16152899e-08, w: .707106829}
+  m_LocalPosition: {x: 3.81469718e-08, y: -7.62939436e-08, z: 0}
+  m_LocalScale: {x: .99999994, y: 1, z: .99999994}
+  m_Children:
+  - {fileID: 30677734}
+  m_Father: {fileID: 230879770}
+  m_RootOrder: 0
+--- !u!1 &217584905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100032, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 217584906}
+  m_Layer: 0
+  m_Name: mario_EyePosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &217584906
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400032, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 217584905}
+  m_LocalRotation: {x: .707106829, y: -2.78478365e-05, z: -.707106829, w: -2.78478365e-05}
+  m_LocalPosition: {x: -0, y: -1.52587887e-07, z: -7.45058043e-11}
+  m_LocalScale: {x: .999999881, y: .99999994, z: 1}
+  m_Children:
+  - {fileID: 562963990}
+  m_Father: {fileID: 341034233}
+  m_RootOrder: 1
+--- !u!1 &229427495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100086, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 229427496}
+  m_Layer: 0
+  m_Name: mario_ShoulderL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &229427496
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400086, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 229427495}
+  m_LocalRotation: {x: .499999851, y: .500000179, z: -.499999851, w: .500000179}
+  m_LocalPosition: {x: -.0800001472, y: .00999999698, z: .0299999993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 545384223}
+  m_Father: {fileID: 448424345}
+  m_RootOrder: 1
+--- !u!1 &230879769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100050, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 230879770}
+  m_Layer: 0
+  m_Name: mario_HandL_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &230879770
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400050, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230879769}
+  m_LocalRotation: {x: 0, y: -1.09867671e-11, z: -0, w: 1}
+  m_LocalPosition: {x: -.179999962, y: -7.62939436e-08, z: -1.90734859e-08}
+  m_LocalScale: {x: 1, y: 1, z: 1.00000012}
+  m_Children:
+  - {fileID: 198202781}
+  m_Father: {fileID: 1700650623}
+  m_RootOrder: 0
+--- !u!1 &248480760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100018, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 248480761}
+  m_Layer: 0
+  m_Name: mario_ArmR2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &248480761
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400018, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248480760}
+  m_LocalRotation: {x: 7.73321858e-12, y: .000143766403, z: -2.84853705e-08, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: -2.38418574e-09}
+  m_LocalScale: {x: 1.00000012, y: .999999881, z: .999999821}
+  m_Children:
+  - {fileID: 1031505160}
+  m_Father: {fileID: 2077900437}
+  m_RootOrder: 0
+--- !u!1 &327926979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100090, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 327926980}
+  m_Layer: 0
+  m_Name: mario_Spine1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &327926980
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400090, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327926979}
+  m_LocalRotation: {x: .5, y: -.499952048, z: -.5, w: .500047982}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1341450962}
+  m_Father: {fileID: 869458500}
+  m_RootOrder: 0
+--- !u!1 &341034232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100058, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 341034233}
+  m_Layer: 0
+  m_Name: mario_Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &341034233
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400058, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 341034232}
+  m_LocalRotation: {x: .000270574441, y: -.000202770199, z: -.707058787, w: .707154691}
+  m_LocalPosition: {x: -7.62939436e-08, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 944960256}
+  - {fileID: 217584906}
+  - {fileID: 451038609}
+  m_Father: {fileID: 659229141}
+  m_RootOrder: 0
+--- !u!1 &364512375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100054, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 364512376}
+  m_Layer: 0
+  m_Name: mario_HandR0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &364512376
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400054, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364512375}
+  m_LocalRotation: {x: -4.9591843e-05, y: 4.98287009e-05, z: 1.57380928e-05, w: 1}
+  m_LocalPosition: {x: 1.81603427e-05, y: -6.89697263e-05, z: -1.65176389e-05}
+  m_LocalScale: {x: .999999881, y: .99999994, z: 1.00000024}
+  m_Children: []
+  m_Father: {fileID: 1814917545}
+  m_RootOrder: 0
+--- !u!1 &378452520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100012, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 378452521}
+  m_Layer: 0
+  m_Name: mario_ArmL2_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &378452521
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400012, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 378452520}
+  m_LocalRotation: {x: -2.288715e-09, y: 4.4060311e-12, z: 7.27595761e-12, w: 1}
+  m_LocalPosition: {x: -.156000078, y: -7.62939436e-08, z: -1.66893006e-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1700650623}
+  m_Father: {fileID: 1709573417}
+  m_RootOrder: 0
+--- !u!1 &423283334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 423283335}
+  - 20: {fileID: 423283339}
+  - 124: {fileID: 423283338}
+  - 92: {fileID: 423283337}
+  - 81: {fileID: 423283336}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &423283335
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423283334}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1769889000}
+  m_RootOrder: 0
+--- !u!81 &423283336
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423283334}
+  m_Enabled: 1
+--- !u!92 &423283337
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423283334}
+  m_Enabled: 1
+--- !u!124 &423283338
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423283334}
+  m_Enabled: 1
+--- !u!20 &423283339
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423283334}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+--- !u!1 &448424344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100094, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 448424345}
+  m_Layer: 0
+  m_Name: mario_Spine2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &448424345
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400094, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 448424344}
+  m_LocalRotation: {x: -1.98284531e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 659229141}
+  - {fileID: 229427496}
+  - {fileID: 1535959106}
+  m_Father: {fileID: 1341450962}
+  m_RootOrder: 0
+--- !u!1 &451038608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100036, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 451038609}
+  m_Layer: 0
+  m_Name: mario_FacePosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &451038609
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400036, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 451038608}
+  m_LocalRotation: {x: .707106829, y: -2.78478365e-05, z: -.707106829, w: -2.78478365e-05}
+  m_LocalPosition: {x: -0, y: -1.52587887e-07, z: -7.45058043e-11}
+  m_LocalScale: {x: .999999881, y: .99999994, z: 1}
+  m_Children:
+  - {fileID: 101082219}
+  m_Father: {fileID: 341034233}
+  m_RootOrder: 2
+--- !u!1 &538678092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 538678093}
+  - 33: {fileID: 538678095}
+  - 23: {fileID: 538678094}
+  m_Layer: 0
+  m_Name: dirt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &538678093
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 538678092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1648836561}
+  m_RootOrder: 0
+--- !u!23 &538678094
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: ad3ff037218a54759ac74ee3c2c0609c,
+    type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 538678092}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 82eec66b85477490b91613539d948d37, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &538678095
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: ad3ff037218a54759ac74ee3c2c0609c,
+    type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 538678092}
+  m_Mesh: {fileID: 4300002, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+--- !u!1 &545384222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 545384223}
+  m_Layer: 0
+  m_Name: mario_ArmL1_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &545384223
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 545384222}
+  m_LocalRotation: {x: -2.288715e-09, y: 5.23796631e-12, z: 7.27595761e-12, w: 1}
+  m_LocalPosition: {x: -.139999807, y: -7.62939436e-08, z: -2.14576712e-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1709573417}
+  m_Father: {fileID: 229427496}
+  m_RootOrder: 0
+--- !u!1 &548216053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 548216054}
+  - 33: {fileID: 548216056}
+  - 23: {fileID: 548216055}
+  m_Layer: 0
+  m_Name: rock2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &548216054
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 548216053}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1648836561}
+  m_RootOrder: 3
+--- !u!23 &548216055
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300006, guid: ad3ff037218a54759ac74ee3c2c0609c,
+    type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 548216053}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 90444d57938de49d3bf334e7febe7054, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &548216056
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300006, guid: ad3ff037218a54759ac74ee3c2c0609c,
+    type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 548216053}
+  m_Mesh: {fileID: 4300006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+--- !u!1 &562963989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100030, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 562963990}
+  m_Layer: 0
+  m_Name: mario_Eye0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562963990
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400030, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 562963989}
+  m_LocalRotation: {x: -3.38546997e-05, y: 8.17778855e-05, z: -9.05714569e-06, w: 1}
+  m_LocalPosition: {x: -1.06207463e-05, y: -.959997177, z: .040065188}
+  m_LocalScale: {x: .999999881, y: .99999994, z: 1}
+  m_Children: []
+  m_Father: {fileID: 217584906}
+  m_RootOrder: 0
+--- !u!1 &624116948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100040, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 624116949}
+  m_Layer: 0
+  m_Name: mario_FootL_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &624116949
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400040, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 624116948}
+  m_LocalRotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -.144612268, y: 3.26538066e-05, z: 9.53674295e-09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1830744278}
+  m_Father: {fileID: 1698353529}
+  m_RootOrder: 0
+--- !u!1 &659229140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100060, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 659229141}
+  m_Layer: 0
+  m_Name: mario_Head_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &659229141
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400060, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659229140}
+  m_LocalRotation: {x: -1.98284531e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -.239999846, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 341034233}
+  m_Father: {fileID: 448424345}
+  m_RootOrder: 0
+--- !u!1 &661207463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 661207464}
+  m_Layer: 0
+  m_Name: MANAGERS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &661207464
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 661207463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1593677220}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!1 &668048251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 668048252}
+  m_Layer: 0
+  m_Name: UTILS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &668048252
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 668048251}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!1 &668118266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 668118268}
+  - 108: {fileID: 668118267}
+  m_Layer: 0
+  m_Name: Directional light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &668118267
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 668118266}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: 3
+    m_Strength: 1
+    m_Bias: 0
+    m_Softness: 8
+    m_SoftnessFade: 5
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &668118268
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 668118266}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+--- !u!1 &745384092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 745384095}
+  - 33: {fileID: 745384094}
+  - 23: {fileID: 745384093}
+  m_Layer: 0
+  m_Name: dirt2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &745384093
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300002, guid: ad3ff037218a54759ac74ee3c2c0609c,
+    type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 745384092}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: ca8096e29ec0f4520baede0afbb4c66e, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &745384094
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300002, guid: ad3ff037218a54759ac74ee3c2c0609c,
+    type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 745384092}
+  m_Mesh: {fileID: 4300004, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+--- !u!4 &745384095
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 745384092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1648836561}
+  m_RootOrder: 1
+--- !u!1 &869458499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100092, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 869458500}
+  m_Layer: 0
+  m_Name: mario_Spine1_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &869458500
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400092, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 869458499}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: .00999999978, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 327926980}
+  m_Father: {fileID: 136430281}
+  m_RootOrder: 1
+--- !u!1 &944960255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100024, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 944960256}
+  m_Layer: 0
+  m_Name: mario_CapPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &944960256
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400024, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 944960255}
+  m_LocalRotation: {x: .707106829, y: -2.78478365e-05, z: -.707106829, w: -2.78478365e-05}
+  m_LocalPosition: {x: -0, y: -1.52587887e-07, z: -7.45058043e-11}
+  m_LocalScale: {x: .999999881, y: .99999994, z: 1}
+  m_Children:
+  - {fileID: 193628015}
+  m_Father: {fileID: 341034233}
+  m_RootOrder: 0
+--- !u!1001 &945651201
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -.194762558
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: .980850458
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+      propertyPath: m_RootMapOrder
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: .0799999982
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: .0799999982
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: .0799999982
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+  m_ParentPrefab: {fileID: 100100000, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+  m_RootGameObject: {fileID: 1648836560}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &948205339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100044, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 948205340}
+  m_Layer: 0
+  m_Name: mario_FootR_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &948205340
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400044, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 948205339}
+  m_LocalRotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -.144612238, y: 3.27205635e-05, z: 9.53674295e-09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1982840801}
+  m_Father: {fileID: 1999028522}
+  m_RootOrder: 0
+--- !u!1 &1029078720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100072, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1029078721}
+  m_Layer: 0
+  m_Name: mario_LegL2_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1029078721
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400072, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1029078720}
+  m_LocalRotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -.197287798, y: 3.81469718e-08, z: 8.58306848e-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1698353529}
+  m_Father: {fileID: 1997209498}
+  m_RootOrder: 0
+--- !u!1 &1031505159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100056, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1031505160}
+  m_Layer: 0
+  m_Name: mario_HandR_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1031505160
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400056, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031505159}
+  m_LocalRotation: {x: 0, y: 1.4988013e-12, z: -0, w: 1}
+  m_LocalPosition: {x: -.179999962, y: -1.52587887e-07, z: 7.15255721e-09}
+  m_LocalScale: {x: .999999881, y: 1.00000012, z: 1.00000012}
+  m_Children:
+  - {fileID: 1814917545}
+  m_Father: {fileID: 248480761}
+  m_RootOrder: 0
+--- !u!1 &1032025671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100068, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1032025672}
+  m_Layer: 0
+  m_Name: mario_LegL1_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1032025672
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400068, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1032025671}
+  m_LocalRotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -.069999963, y: .0227672197, z: -.114999987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1997209498}
+  m_Father: {fileID: 1255428186}
+  m_RootOrder: 0
+--- !u!1 &1096742758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1096742759}
+  - 137: {fileID: 1096742760}
+  m_Layer: 0
+  m_Name: mario
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1096742759
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1096742758}
+  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1558481895}
+  m_RootOrder: 0
+--- !u!137 &1096742760
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13700000, guid: f850f1a6d8bf64be59eb308d97ceba20,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1096742758}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: da174a47af950445c937303898dffd4d, type: 2}
+  - {fileID: 2100000, guid: da174a47af950445c937303898dffd4d, type: 2}
+  - {fileID: 2100000, guid: 672005b0c8cd24cbfacf9ae849770f20, type: 2}
+  - {fileID: 2100000, guid: d0bef948396a34202bf507bbffef7a9f, type: 2}
+  - {fileID: 2100000, guid: d0bef948396a34202bf507bbffef7a9f, type: 2}
+  - {fileID: 2100000, guid: 5d79722b8cc48413b92815a8fba1191f, type: 2}
+  - {fileID: 2100000, guid: 370bfa74d034541219c4653f8d13ffdb, type: 2}
+  - {fileID: 2100000, guid: fedfcc69323014eada85ad10b6b2a12d, type: 2}
+  - {fileID: 2100000, guid: 02173f0deb1444e53a10425e6ec43033, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_Mesh: {fileID: 4300000, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_Bones:
+  - {fileID: 193628015}
+  - {fileID: 562963990}
+  - {fileID: 101082219}
+  - {fileID: 30677734}
+  - {fileID: 364512376}
+  - {fileID: 327926980}
+  - {fileID: 1401578718}
+  - {fileID: 248480761}
+  - {fileID: 1535959106}
+  - {fileID: 1814917545}
+  - {fileID: 1700650623}
+  - {fileID: 198202781}
+  - {fileID: 1709573417}
+  - {fileID: 229427496}
+  - {fileID: 448424345}
+  - {fileID: 1255428186}
+  - {fileID: 1997209498}
+  - {fileID: 1212104144}
+  - {fileID: 1698353529}
+  - {fileID: 1999028522}
+  - {fileID: 1982840801}
+  - {fileID: 1830744278}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 327926980}
+  m_AABB:
+    m_Center: {x: -.116213053, y: .0749765486, z: -1.93119049e-05}
+    m_Extent: {x: .793810725, y: .35403651, z: .764984846}
+  m_DirtyAABB: 0
+--- !u!1 &1212104143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100074, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1212104144}
+  m_Layer: 0
+  m_Name: mario_LegR1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1212104144
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400074, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1212104143}
+  m_LocalRotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.81469718e-08, y: 3.81469718e-08, z: -9.53674295e-09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 170257306}
+  m_Father: {fileID: 25193466}
+  m_RootOrder: 0
+--- !u!1 &1226146514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1226146516}
+  - 108: {fileID: 1226146515}
+  m_Layer: 0
+  m_Name: Directional light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1226146515
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1226146514}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: 3
+    m_Strength: 1
+    m_Bias: 0
+    m_Softness: 8
+    m_SoftnessFade: 5
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &1226146516
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1226146514}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+--- !u!1 &1255428185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100062, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1255428186}
+  m_Layer: 0
+  m_Name: mario_Hip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1255428186
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400062, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1255428185}
+  m_LocalRotation: {x: .50000006, y: .499951988, z: .49999994, w: .500048041}
+  m_LocalPosition: {x: -0, y: -.00999999978, z: 4.76837148e-09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1032025672}
+  - {fileID: 25193466}
+  m_Father: {fileID: 136430281}
+  m_RootOrder: 0
+--- !u!1 &1341450961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100096, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1341450962}
+  m_Layer: 0
+  m_Name: mario_Spine2_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1341450962
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400096, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1341450961}
+  m_LocalRotation: {x: -1.98284531e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -.129999995, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 448424345}
+  m_Father: {fileID: 327926980}
+  m_RootOrder: 0
+--- !u!1 &1401578717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100014, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1401578718}
+  m_Layer: 0
+  m_Name: mario_ArmR1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1401578718
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400014, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1401578717}
+  m_LocalRotation: {x: -.000485419994, y: -7.02355246e-05, z: 2.58851264e-06, w: .999999881}
+  m_LocalPosition: {x: -0, y: 0, z: -2.38418574e-09}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1.00000012}
+  m_Children:
+  - {fileID: 2077900437}
+  m_Father: {fileID: 2114209001}
+  m_RootOrder: 0
+--- !u!1 &1535959105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100088, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1535959106}
+  m_Layer: 0
+  m_Name: mario_ShoulderR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1535959106
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400088, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1535959105}
+  m_LocalRotation: {x: -.499780834, y: -.500219107, z: -.499780834, w: .500219107}
+  m_LocalPosition: {x: -.0799999237, y: .00999999698, z: -.0299999937}
+  m_LocalScale: {x: 1, y: .99999994, z: .99999994}
+  m_Children:
+  - {fileID: 2114209001}
+  m_Father: {fileID: 448424345}
+  m_RootOrder: 2
+--- !u!1 &1558481894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1558481895}
+  m_Layer: 0
+  m_Name: mario galaxy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1558481895
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1558481894}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1096742759}
+  - {fileID: 136430281}
+  - {fileID: 1769889000}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+--- !u!1 &1593677219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1593677220}
+  - 114: {fileID: 1593677221}
+  m_Layer: 0
+  m_Name: CollisionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1593677220
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1593677219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 661207464}
+  m_RootOrder: 0
+--- !u!114 &1593677221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1593677219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99125b06607d14026a6235614ec2a92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1648836560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1648836561}
+  - 114: {fileID: 1648836562}
+  m_Layer: 0
+  m_Name: Hole Planet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1648836561
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 1648836560}
+  m_LocalRotation: {x: -.194762558, y: 0, z: 0, w: .980850458}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .0799999982, y: .0799999982, z: .0799999982}
+  m_Children:
+  - {fileID: 538678093}
+  - {fileID: 745384095}
+  - {fileID: 2104660731}
+  - {fileID: 548216054}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+--- !u!114 &1648836562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648836560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea81bdc716e4b4a239e13be5b3c87ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Radius: 9
+--- !u!1 &1698353528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100070, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1698353529}
+  m_Layer: 0
+  m_Name: mario_LegL2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1698353529
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400070, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698353528}
+  m_LocalRotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.90734859e-08, y: 0, z: -9.53674295e-09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 624116949}
+  m_Father: {fileID: 1029078721}
+  m_RootOrder: 0
+--- !u!1 &1700650622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100010, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1700650623}
+  m_Layer: 0
+  m_Name: mario_ArmL2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1700650623
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400010, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700650622}
+  m_LocalRotation: {x: 1, y: -6.90036783e-09, z: .000144004851, w: 4.79681294e-05}
+  m_LocalPosition: {x: 3.81469718e-08, y: 7.62939436e-08, z: -4.76837148e-09}
+  m_LocalScale: {x: 1, y: 1, z: .99999994}
+  m_Children:
+  - {fileID: 230879770}
+  m_Father: {fileID: 378452521}
+  m_RootOrder: 0
+--- !u!1 &1709573416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1709573417}
+  m_Layer: 0
+  m_Name: mario_ArmL1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1709573417
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1709573416}
+  m_LocalRotation: {x: 6.2554426e-07, y: 5.23797065e-12, z: 7.27595414e-12, w: 1}
+  m_LocalPosition: {x: 1.90734859e-08, y: 7.62939436e-08, z: -2.38418574e-09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 378452521}
+  m_Father: {fileID: 545384223}
+  m_RootOrder: 0
+--- !u!1 &1769888999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1769889000}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1769889000
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1769888999}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 9.57999992, z: -.039999973}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 423283335}
+  m_Father: {fileID: 1558481895}
+  m_RootOrder: 2
+--- !u!1 &1814917544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100052, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1814917545}
+  m_Layer: 0
+  m_Name: mario_HandR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1814917545
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400052, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814917544}
+  m_LocalRotation: {x: -2.06519599e-06, y: -.707106829, z: -2.06519599e-06, w: .707106829}
+  m_LocalPosition: {x: 7.62939436e-08, y: 0, z: 0}
+  m_LocalScale: {x: 1.00000012, y: .999999881, z: .999999881}
+  m_Children:
+  - {fileID: 364512376}
+  m_Father: {fileID: 1031505160}
+  m_RootOrder: 0
+--- !u!1 &1830744277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100038, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1830744278}
+  m_Layer: 0
+  m_Name: mario_FootL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1830744278
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400038, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1830744277}
+  m_LocalRotation: {x: -1.80921788e-07, y: 8.42067962e-08, z: -.610306919, w: .792165041}
+  m_LocalPosition: {x: 9.53674295e-09, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 624116949}
+  m_RootOrder: 0
+--- !u!1 &1982840800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100042, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1982840801}
+  m_Layer: 0
+  m_Name: mario_FootR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1982840801
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400042, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1982840800}
+  m_LocalRotation: {x: -1.80921788e-07, y: 8.42067962e-08, z: -.610306919, w: .792165041}
+  m_LocalPosition: {x: -3.81469718e-08, y: 0, z: 9.53674295e-09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 948205340}
+  m_RootOrder: 0
+--- !u!1 &1997209497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100066, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1997209498}
+  m_Layer: 0
+  m_Name: mario_LegL1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1997209498
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400066, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1997209497}
+  m_LocalRotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.81469718e-08, y: 3.81469718e-08, z: 1.90734859e-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1029078721}
+  m_Father: {fileID: 1032025672}
+  m_RootOrder: 0
+--- !u!1 &1999028521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100078, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1999028522}
+  m_Layer: 0
+  m_Name: mario_LegR2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1999028522
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400078, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1999028521}
+  m_LocalRotation: {x: -1.9798308e-12, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.81469718e-08, y: 0, z: -1.90734859e-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 948205340}
+  m_Father: {fileID: 170257306}
+  m_RootOrder: 0
+--- !u!1 &2077900436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100020, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2077900437}
+  m_Layer: 0
+  m_Name: mario_ArmR2_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2077900437
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400020, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2077900436}
+  m_LocalRotation: {x: 3.63797859e-12, y: -9.58833013e-12, z: -1.45446393e-08, w: 1}
+  m_LocalPosition: {x: -.156000063, y: -3.05175774e-07, z: 4.76837148e-09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 248480761}
+  m_Father: {fileID: 1401578718}
+  m_RootOrder: 0
+--- !u!1 &2104660730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2104660731}
+  - 33: {fileID: 2104660733}
+  - 23: {fileID: 2104660732}
+  m_Layer: 0
+  m_Name: grass
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2104660731
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 2104660730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1648836561}
+  m_RootOrder: 2
+--- !u!23 &2104660732
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300004, guid: ad3ff037218a54759ac74ee3c2c0609c,
+    type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 2104660730}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: dac2653d2b7284f1da075077e85cb0f7, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &2104660733
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300004, guid: ad3ff037218a54759ac74ee3c2c0609c,
+    type: 3}
+  m_PrefabInternal: {fileID: 945651201}
+  m_GameObject: {fileID: 2104660730}
+  m_Mesh: {fileID: 4300000, guid: ad3ff037218a54759ac74ee3c2c0609c, type: 3}
+--- !u!1 &2114209000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100016, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2114209001}
+  m_Layer: 0
+  m_Name: mario_ArmR1_dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2114209001
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400016, guid: f850f1a6d8bf64be59eb308d97ceba20, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2114209000}
+  m_LocalRotation: {x: 1.20280462e-24, y: 1.32249767e-12, z: -9.09494702e-13, w: 1}
+  m_LocalPosition: {x: -.139999762, y: -6.10351549e-07, z: -1.96695328e-05}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1.00000012}
+  m_Children:
+  - {fileID: 1401578718}
+  m_Father: {fileID: 1535959106}
+  m_RootOrder: 0

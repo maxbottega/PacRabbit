@@ -30,12 +30,8 @@ public class Planet : MonoBehaviour
 	void OnDrawGizmos() 
 	{
 		// This is where the planet thinks to be
-		Gizmos.color = Color.blue;
+		Gizmos.color = Color.red;
 		Gizmos.DrawSphere(Vector3.zero, Radius);
-		
-		// This is the reference axis, all objects are expressed as rotations of this
-		Gizmos.color = Color.blue;
-		Gizmos.DrawSphere(Vector3.up * Radius, 1.0f);
 	}
 #endif
 }

@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 8f867e51678604b3782e92821871d400
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: brass
+    100002: broof
+    100004: dirt
+    100006: gdoor
+    100008: grass
+    100010: groof
+    100012: //RootNode
+    100014: leaf
+    100016: pebbles
+    100018: pflower
+    100020: rock
+    100022: stone
+    100024: stump
+    100026: tree
+    100028: water
+    100030: wflower
+    100032: wood
+    100034: yflower
+    400000: brass
+    400002: broof
+    400004: dirt
+    400006: gdoor
+    400008: grass
+    400010: groof
+    400012: //RootNode
+    400014: leaf
+    400016: pebbles
+    400018: pflower
+    400020: rock
+    400022: stone
+    400024: stump
+    400026: tree
+    400028: water
+    400030: wflower
+    400032: wood
+    400034: yflower
+    2300000: brass
+    2300002: broof
+    2300004: dirt
+    2300006: gdoor
+    2300008: grass
+    2300010: groof
+    2300012: leaf
+    2300014: pebbles
+    2300016: pflower
+    2300018: rock
+    2300020: stone
+    2300022: stump
+    2300024: tree
+    2300026: water
+    2300028: wflower
+    2300030: wood
+    2300032: yflower
+    3300000: brass
+    3300002: broof
+    3300004: dirt
+    3300006: gdoor
+    3300008: grass
+    3300010: groof
+    3300012: leaf
+    3300014: pebbles
+    3300016: pflower
+    3300018: rock
+    3300020: stone
+    3300022: stump
+    3300024: tree
+    3300026: water
+    3300028: wflower
+    3300030: wood
+    3300032: yflower
+    4300000: stone
+    4300002: water
+    4300004: broof
+    4300006: groof
+    4300008: gdoor
+    4300010: pflower
+    4300012: wflower
+    4300014: yflower
+    4300016: brass
+    4300018: leaf
+    4300020: pebbles
+    4300022: stump
+    4300024: grass
+    4300026: rock
+    4300028: dirt
+    4300030: tree
+    4300032: wood
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

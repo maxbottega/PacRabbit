@@ -23,8 +23,16 @@ public class Character : MonoBehaviour
 	[System.NonSerialized] public Quaternion 		mRotation 		= Quaternion.identity;
 
 	private Collidable								mCollidable 	= null;
-	//[System.NonSerialized] float					mFacingAngle 	= 0;
+	[System.NonSerialized] float					mFacingAngle 	= 0;
+	[System.NonSerialized] public Vector3			mLocoDir 		= Vector3.right;
 	[System.NonSerialized] SphereTransform			mMoveController	= null;	
+	
+	// Movement Physics
+	[System.NonSerialized] public Vector3			mVelocityVec 		= Vector3.zero;
+	[System.NonSerialized] public Vector3			mAccelerationVec	= Vector3.zero;
+	
+	[System.NonSerialized] public Vector3			mGravity			= Vector3.zero;
+	
 
 	void Start () 
 	{
@@ -40,7 +48,7 @@ public class Character : MonoBehaviour
 		UpdateInput();
 		mMoveController.Move(mRotation);
 		
-		//transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
+		transform.localRotation = Quaternion.AngleAxis (mFacingAngle, Vector3.up);
 	}	
 	
 	public void OnCollision(Collidable other)
@@ -54,28 +62,20 @@ public class Character : MonoBehaviour
 	
 	void UpdateInput()
 	{
-		Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-		direction.Normalize();
-
-		float speed = WalkSpeed * Time.deltaTime /* * direction.magnitude */;
-		Vector3 perpendicular = new Vector3(direction.z, 0, -direction.x);
-		mRotation = Quaternion.AngleAxis (speed, perpendicular);
+		Vector3 inputVec = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+		bool input = inputVec.sqrMagnitude > Mathf.Epsilon;
 		
-		// TODO: facing from direction, not from mouse
+		mAccelerationVec = inputVec -  mVelocityVec;
+		mVelocityVec = mVelocityVec + mAccelerationVec * Time.deltaTime -  mVelocityVec * 0.05f;
 		
-		/* Facing 1 frame late...because of camera LateUpdate
-		{
-			Vector3 planePoint = transform.up * Planet.GetRadius();
-			Plane charPlane = new Plane(transform.up, planePoint);
-			float distance = 0;
-			Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-			charPlane.Raycast(mouseRay, out distance);
-			Vector3 mousePoint = mouseRay.GetPoint(distance);
+		Vector3 perpendicular = new Vector3(mVelocityVec.normalized.z, 0, -mVelocityVec.normalized.x);
+		mRotation = Quaternion.AngleAxis (mVelocityVec.magnitude, perpendicular);
+		Debug.Log (mVelocityVec.magnitude + mAccelerationVec.magnitude);
+		
+		if (!Mathf.Approximately(mVelocityVec.magnitude, 0.0f))
+			mFacingAngle = Mathf.Atan2 (mVelocityVec.normalized.x, mVelocityVec.normalized.z) * Mathf.Rad2Deg;
 			
-			mousePoint = Quaternion.Inverse(mMoveController.Rotation) * mousePoint;
-			mFacingAngle = Mathf.Atan2 (mousePoint.x, mousePoint.z) * Mathf.Rad2Deg;
-		}*/
+		bool jump = Input.GetKey(KeyCode.Space);
 	}
 
 	#if UNITY_EDITOR 
