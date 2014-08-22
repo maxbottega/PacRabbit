@@ -151,6 +151,7 @@ GameObject:
   - 114: {fileID: 11400006}
   - 114: {fileID: 11400016}
   - 114: {fileID: 11400018}
+  - 114: {fileID: 11400014}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: dynamic_collider
@@ -357,7 +358,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 256
+        x: 240
         y: 112
         width: 125
         height: 16
@@ -559,7 +560,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 464
+        x: 400
         y: 112
         width: 104
         height: 16
@@ -768,8 +769,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 640
-        y: 336
+        x: 560
+        y: 192
         width: 100
         height: 16
       isBreakpoint: 0
@@ -1065,8 +1066,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 624
-        y: 256
+        x: 544
+        y: 112
         width: 121
         height: 32
       isBreakpoint: 0
@@ -1276,6 +1277,404 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 12
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: LAYER2WORKAROUND
+    startState: State 3
+    states:
+    - name: State 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 224
+        y: 112
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetProperty
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: d23668dc
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams:
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 11400010}
+          TargetTypeName: Collidable
+          PropertyName: Layer
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 4
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Int32
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          setProperty: 1
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 2400000001000000
+        paramName:
+        - targetProperty
+        - everyFrame
+        paramDataPos: 0000000000000000
+        paramByteDataSize: 0000000001000000
+    - name: State 3
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetProperty
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: d23668dc
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams:
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 11400010}
+          TargetTypeName: Collidable
+          PropertyName: Layer
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 2
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Int32
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          setProperty: 1
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 2400000001000000
+        paramName:
+        - targetProperty
+        - everyFrame
+        paramDataPos: 0000000000000000
+        paramByteDataSize: 0000000001000000
+    events:
+    - name: Layer/0
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Layer/1
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Layer/2
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Layer/3
+      isSystemEvent: 0
+      isGlobal: 1
+    globalTransitions:
+    - fsmEvent:
+        name: Layer/2
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 2
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Layer/0
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 3
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Layer/1
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 3
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Layer/3
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 3
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: used to workaround the collision switch from layer 2
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
 --- !u!114 &11400016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1298,7 +1697,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 64
-        y: 144
+        y: 176
         width: 100
         height: 16
       isBreakpoint: 0
@@ -1333,14 +1732,14 @@ MonoBehaviour:
         paramName: []
         paramDataPos: 
         paramByteDataSize: 
-    - name: check enemy BEHAVIOUR state
+    - name: check  PLAYER status
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 240
-        y: 192
-        width: 200
+        y: 224
+        width: 163
         height: 48
       isBreakpoint: 0
       isSequence: 0
@@ -1371,7 +1770,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010100
+        actionEnabled: 010001
         actionIsOpen: 010101
         actionStartIndex: 00000000050000000b000000
         actionHashCodes: 5be7d1ab3ba149577768d955
@@ -1379,10 +1778,10 @@ MonoBehaviour:
         - {fileID: 0}
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
-        - ownerOption: 0
+        - ownerOption: 1
           gameObject:
-            useVariable: 0
-            name: 
+            useVariable: 1
+            name: Player
             tooltip: 
             showInInspector: 0
             networkSync: 0
@@ -1399,15 +1798,15 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: BEHAVIOUR
+          value: STATUS
         - useVariable: 1
-          name: behaviourState
+          name: statusS
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 
         - useVariable: 1
-          name: behaviourState
+          name: statusS
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -1419,33 +1818,39 @@ MonoBehaviour:
           networkSync: 0
           value: hunt
         - useVariable: 1
-          name: behaviourState
+          name: statusS
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 
         - useVariable: 1
-          name: huntString
+          name: NormalString
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: hunt
+          value: normal
         - useVariable: 1
-          name: wanderString
+          name: SprintString
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: wander
+          value: sprinting
+        - useVariable: 1
+          name: TranformSprint
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: transformed
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 006b696c6c6469650001006b696c6c6b696c6c646965000000
-        arrayParamSizes: 0200000002000000
+        byteData: 006b696c6c6469650001006b696c6c646965646965646965000000
+        arrayParamSizes: 0300000003000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmString
         - HutongGames.PlayMaker.FsmEvent
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0500000014000000120000001200000001000000120000001200000017000000170000001100000001000000120000000c00000012000000120000000c0000001700000017000000170000001100000001000000
+        paramDataType: 0500000014000000120000001200000001000000120000001200000017000000170000001100000001000000120000000c0000001200000012000000120000000c000000170000001700000017000000170000001100000001000000
         paramName:
         - fsmComponent
         - gameObject
@@ -1462,21 +1867,23 @@ MonoBehaviour:
         - CompareTos
         - 
         - 
+        - 
         - CompareEvents
+        - 
         - 
         - 
         - NoMatchEvent
         - CaseSensitive
         - everyFrame
-        paramDataPos: 000000000000000000000000010000000000000002000000030000000100000005000000080000000a00000004000000000000000500000006000000010000000b0000000f000000130000001600000018000000
-        paramByteDataSize: 000000000000000000000000000000000100000000000000000000000400000003000000020000000100000000000000000000000000000000000000000000000400000004000000030000000200000001000000
+        paramDataPos: 000000000000000000000000010000000000000002000000030000000100000005000000080000000a0000000400000000000000050000000600000007000000010000000b0000000f0000001200000015000000180000001a000000
+        paramByteDataSize: 0000000000000000000000000000000001000000000000000000000004000000030000000200000001000000000000000000000000000000000000000000000000000000040000000300000003000000030000000200000001000000
     - name: deactivate self
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 160
-        y: 448
+        x: 176
+        y: 464
         width: 117
         height: 16
       isBreakpoint: 0
@@ -1531,8 +1938,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 640
-        y: 320
+        x: 384
+        y: 416
         width: 100
         height: 16
       isBreakpoint: 0
@@ -1611,7 +2018,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 176
-        y: 384
+        y: 416
         width: 101
         height: 32
       isBreakpoint: 0
@@ -1659,8 +2066,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 192
-        y: 320
+        x: 176
+        y: 368
         width: 126
         height: 32
       isBreakpoint: 0
@@ -1746,7 +2153,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 272
+        x: 288
         y: 112
         width: 100
         height: 32
@@ -1758,7 +2165,7 @@ MonoBehaviour:
           name: sameLayer
           isSystemEvent: 0
           isGlobal: 0
-        toState: check enemy BEHAVIOUR state
+        toState: check  PLAYER status
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1843,8 +2250,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 496
-        y: 256
+        x: 384
+        y: 368
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1935,7 +2342,7 @@ MonoBehaviour:
         name: CharacterCollision
         isSystemEvent: 0
         isGlobal: 0
-      toState: check enemy BEHAVIOUR state
+      toState: check  PLAYER status
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
@@ -1951,23 +2358,29 @@ MonoBehaviour:
         networkSync: 0
         value: 
       - useVariable: 1
-        name: behaviourState
+        name: NormalString
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: normal
+      - useVariable: 1
+        name: SprintString
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: sprinting
+      - useVariable: 1
+        name: TranformSprint
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: transformed
+      - useVariable: 1
+        name: statusS
         tooltip: 
         showInInspector: 0
         networkSync: 0
         value: 
-      - useVariable: 1
-        name: huntString
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: hunt
-      - useVariable: 1
-        name: wanderString
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: wander
       vector2Variables: []
       vector3Variables: []
       colorVariables: []

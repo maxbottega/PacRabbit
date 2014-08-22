@@ -107,3 +107,7 @@ MonoBehaviour:
   - Layer/1
   - Layer/2
   - PLAYER/CollidedObstacle
+  - PLAYER/sprint
+  - Layer/3
+  - PLAYER/normal
+  - PLAYER/sprinting

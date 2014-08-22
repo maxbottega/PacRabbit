@@ -17,5 +17,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TestScenes/SandBox.unity
   - enabled: 0
     path: Assets/Scenes/TestScenes/2LayersWIP.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/2Layers_with_transform.unity
+  - enabled: 0
+    path: Assets/Scenes/TestScenes/3Layers_with_transform_and_sprint.unity
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/3Layers_with_gates_transform_and_sprint_MAC.unity
