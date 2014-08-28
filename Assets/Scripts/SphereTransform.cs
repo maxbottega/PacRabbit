@@ -40,6 +40,11 @@ public class SphereTransform : MonoBehaviour
 	
 	void Awake()
 	{
+		Setup();
+	}
+	
+	public void Setup()
+	{
 		mPivot = transform.parent;
 		
 		if(mPivot)

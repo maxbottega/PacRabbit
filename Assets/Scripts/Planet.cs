@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class Planet : MonoBehaviour 
 {
 	// ------------ Public, editable in the GUI, serialized
@@ -12,7 +12,7 @@ public class Planet : MonoBehaviour
 	// ------------ Public, non-serialized
 	[System.NonSerialized] static public Planet Instance = null;
 	
-	void Awake() 
+	void Awake()
 	{
 		Instance = this;
 	}
@@ -22,9 +22,9 @@ public class Planet : MonoBehaviour
 		Application.targetFrameRate = 60; 
 	}
 	
-	void Update()
-	{
-	}
+	//void Update()
+	//{
+	//}
 
 #if UNITY_EDITOR 
 	void OnDrawGizmosSelected() 

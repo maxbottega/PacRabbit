@@ -10,9 +10,9 @@ public class Character : MonoBehaviour
 	public float									Accelleration = 5.0f;
 	public float									Inertia = 0.9f;
 	public bool										PacmanMovement = false;
+	public bool										InCorridorsNavmeshCollision = false;
 
 	// ------------ Public, serialized
-	
 	
 	// ------------ Public, non-serialized
 	// This will be useful on mobile
@@ -65,7 +65,7 @@ public class Character : MonoBehaviour
 		if((mCollidable.CachedNearest != null) && (mCollidable.CachedNearest.mIsCorridor)) // Automatic "on-rails" navigation in corridors
 		{
 			MovementOnRails();
-			mCollidable.SphereNavMeshCollision = false;
+			mCollidable.SphereNavMeshCollision = InCorridorsNavmeshCollision;
 		}
 		else
 		{

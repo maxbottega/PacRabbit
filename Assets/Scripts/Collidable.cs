@@ -7,8 +7,9 @@ public class Collidable : MonoBehaviour
 	// ------------ Public, editable in the GUI, serialized
 	public float 							Radius 	= 1.0f;
 	public float 							Mass 	= 1.0f;
+	public float							CapsuleLength = 0.0f; // note: only for static colliders
 	public float							RadiusForNavMesh = 0.75f;
-	public bool 							Static 	= false;
+	public bool 							Static = false;
 	public bool								SphereNavMeshCollision = true;
 	public int								Layer = 0;
 	public bool								CollideWithOtherLayersOnly = false;
@@ -29,7 +30,9 @@ public class Collidable : MonoBehaviour
 
 	public delegate void 					CollisionCallback(Collidable other);
 	[System.NonSerialized] public CollisionCallback OnCollision;
-	
+
+	[System.NonSerialized] public Vector3	CapsuleArm = Vector3.zero;
+			
 	// ------------ Private	
 	private float 							PlanetRadius 		= 1;
 	private CollisionManager 				mCollisionManager 	= null;	
@@ -37,15 +40,17 @@ public class Collidable : MonoBehaviour
 	void Awake()
 	{
 		SphereTransf = GetComponent<SphereTransform> ();
-		mCollisionManager = FindObjectOfType(typeof(CollisionManager)) as CollisionManager;
+		mCollisionManager = FindObjectOfType(typeof(CollisionManager)) as CollisionManager; 
 	}
 	
 	void Start ()
 	{	
-		mCollisionManager.AddCollider(this);
+		if(mCollisionManager)
+			mCollisionManager.AddCollider(this);
 
 		PlanetRadius 	= Planet.Instance.Radius;
 		Center 			= Up * PlanetRadius;
+		CapsuleArm 		= (transform.rotation * Vector3.right) * CapsuleLength;
 		AngleRadius 	= 2*Mathf.Asin(Radius/(2*PlanetRadius))*Mathf.Rad2Deg; 
 
 		// These are used by the CollisionManager for SAP
@@ -78,34 +83,42 @@ public class Collidable : MonoBehaviour
 	public Quaternion Rotation
 	{
 		get { return SphereTransf.Rotation; }
-		//set { m_SphereTransform.Rotation = value; }
 	}
 	
 	public Vector3 Up
 	{
 		get { return SphereTransf.Up; }
-		//set { m_SphereTransform.Up = value; }
 	}
-	
-/*	
-	public Vector3 Right
-	{
-		get { return m_SphereTransform.Right; }
-		set { m_SphereTransform.Right = value; }
-	}
-	
-	public Vector3 Fwd
-	{
-		get { return m_SphereTransform.Fwd; }
-		set { m_SphereTransform.Fwd = value; }
-	}
-*/
-	// Debug
+
 #if UNITY_EDITOR 
 	void OnDrawGizmos() 
-	{
-		Gizmos.color = Colliding ? Color.red : Color.white;
-	    Gizmos.DrawSphere(Center, Radius);
+	{	
+		if(!SphereTransf) // In edit mode we didn't run Awake and Start...
+		{
+			SphereTransf = GetComponent<SphereTransform> ();			
+			SphereTransf.Setup();
+			PlanetRadius = (FindObjectOfType(typeof(Planet)) as Planet).Radius;
+		}
+		
+		Center = (Rotation * Vector3.up) * PlanetRadius;
+		
+		if( CapsuleLength == 0.0f || (!Static) )
+		{
+			Gizmos.color = Colliding ? Color.red : Color.white;
+			
+	    	Gizmos.DrawWireSphere(Center, Radius);
+		}
+		else
+		{
+			Gizmos.color = Colliding ? Color.red : Color.yellow;
+			
+			CapsuleArm = (transform.rotation * Vector3.right) * CapsuleLength;
+			
+			Gizmos.DrawLine(Center - CapsuleArm, Center + CapsuleArm);
+			Gizmos.DrawWireSphere(Center, Radius);
+			Gizmos.DrawWireSphere(Center - CapsuleArm, Radius);
+			Gizmos.DrawWireSphere(Center + CapsuleArm, Radius);			
+		}
 	}
 #endif
 

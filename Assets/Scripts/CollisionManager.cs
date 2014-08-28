@@ -92,28 +92,52 @@ public class CollisionManager : MonoBehaviour
 		}
 	}
 	
+	static public Vector3 PointNearestSegment(Vector3 point, Vector3 edgeA, Vector3 edgeB)
+	{
+		Vector3 v0p = point - edgeA;
+		Vector3 v0v1 = edgeB - edgeA;
+		float len2 = v0v1.sqrMagnitude;
+		float dot = Vector3.Dot(v0p, v0v1);
+		float t = dot / len2;
+		
+		t = Mathf.Clamp01(t);
+		
+		Vector3 closest = edgeA + v0v1 * t;
+		
+		return closest;
+	}
+	
 	bool ResolveCoupleCollision(Collidable collider, Collidable other)
 	{
 		Quaternion colliderError = _quaternionIdentity;
 		Quaternion otherError = _quaternionIdentity;
-
+		
+		Vector3 colliderUp = collider.Up;
+		Vector3 otherUp = other.Up;
+		
+		if(collider.Static && (collider.CapsuleLength != 0))
+			colliderUp = PointNearestSegment(otherUp, colliderUp - collider.CapsuleArm, colliderUp + collider.CapsuleArm);
+		
+		if(other.Static && (other.CapsuleLength != 0))
+			otherUp = PointNearestSegment(colliderUp, otherUp - other.CapsuleArm, otherUp + other.CapsuleArm);
+		
 		float radiusSumAngle = collider.AngleRadius + other.AngleRadius;
-		float dot = Vector3.Dot(collider.Up, other.Up);
+		float dot = Vector3.Dot(colliderUp, otherUp);
 		float angle = Mathf.Acos (dot) * Mathf.Rad2Deg;
 		
 		if (angle<radiusSumAngle)
 		{
 			float angleError = (radiusSumAngle - angle) * m_Relaxation;
-			float colliderMassRatio = collider.Mass / (collider.Mass+other.Mass);
 			
+			float colliderMassRatio = collider.Mass / (collider.Mass + other.Mass);
 			if(collider.Static)
 				colliderMassRatio = 1.0f;
 			if(other.Static)
 				colliderMassRatio = 0.0f;
 			
-			Vector3 rotationAxis = Vector3.Cross(other.Up, collider.Up);
-			colliderError = Quaternion.AngleAxis(angleError*(1.0f-colliderMassRatio), rotationAxis);	
-			otherError = Quaternion.AngleAxis(-angleError*(colliderMassRatio), rotationAxis);
+			Vector3 rotationAxis = Vector3.Cross(otherUp, colliderUp);
+			colliderError = Quaternion.AngleAxis(angleError * (1.0f-colliderMassRatio), rotationAxis);	
+			otherError = Quaternion.AngleAxis(-angleError * (colliderMassRatio), rotationAxis);
 			
 			collider.SphereTransf.ImmediateSet(colliderError * collider.Rotation);
 			other.SphereTransf.ImmediateSet(otherError * other.Rotation);
