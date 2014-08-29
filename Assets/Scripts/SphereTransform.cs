@@ -14,7 +14,7 @@ public class SphereTransform : MonoBehaviour
 	
 	// ------------ Private
 	private Quaternion 		mRotation;
-	private Vector3 		mUp;
+	public 	Vector3 		mUp;
 	private Vector3			mUpPrevious;
 	private Transform		mPivot = null;
 	

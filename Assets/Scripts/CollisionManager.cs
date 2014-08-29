@@ -139,9 +139,24 @@ public class CollisionManager : MonoBehaviour
 			colliderError = Quaternion.AngleAxis(angleError * (1.0f-colliderMassRatio), rotationAxis);	
 			otherError = Quaternion.AngleAxis(-angleError * (colliderMassRatio), rotationAxis);
 			
-			collider.SphereTransf.ImmediateSet(colliderError * collider.Rotation);
-			other.SphereTransf.ImmediateSet(otherError * other.Rotation);
+			if (other.Static)
+			{
+				collider.SphereTransf.ImmediateSet(Quaternion.FromToRotation(Vector3.up, collider.SphereTransf.UpPreviousUpdate));
+			}
+			else
+			{
+				collider.SphereTransf.ImmediateSet(colliderError * collider.Rotation);
+			}
 			
+			if (collider.Static)
+			{
+				other.SphereTransf.ImmediateSet(Quaternion.FromToRotation(Vector3.up, other.SphereTransf.UpPreviousUpdate));
+			}
+			else
+			{
+				other.SphereTransf.ImmediateSet(otherError * other.Rotation);
+			}
+				
 			if (collider.OnCollision!=null)
 				collider.OnCollision(other);
 				
