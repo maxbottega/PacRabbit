@@ -11,6 +11,7 @@ public class Character : MonoBehaviour
 	public float									Inertia = 0.9f;
 	public bool										PacmanMovement = false;
 	public bool										InCorridorsNavmeshCollision = false;
+	public float									OnRailsSmoother = 0.05f; // TODO: there is still a fundamental problem, I think, movement shouldn't be so choppy w/o smoothing.
 
 	// ------------ Public, serialized
 	
@@ -93,7 +94,8 @@ public class Character : MonoBehaviour
 		Vector3 chosenPosUsingPrev = Vector3.zero;
 		float chosenDirectionUsingPrevDot = -1.0f;
 		
-		const float smoothing = 0.1f; // TODO: this should be probably proportional to the movement speed*deltatime
+		float angularSpeed = (Accelleration * 2.0f) * Time.deltaTime;
+		float smoothing = Mathf.Clamp01( angularSpeed * OnRailsSmoother ); // 1 = immediate snapping
 		
 		foreach(WayPoint w in mCollidable.CachedNearest.connections)
 		{
@@ -169,6 +171,7 @@ Debug.Log ("EnemyCollision sent: "+this.name+" fsm:"+fsm.FsmName);
 Debug.Log ("OtherCollision sent: "+this.name+" fsm:"+fsm.FsmName);
 		}
 	}
+	
 	void UpdateInput()
 	{
 		// NOTE: the * 2.0 in the angles are due to the lerp 0.5 -- HACK, not proper physics...
