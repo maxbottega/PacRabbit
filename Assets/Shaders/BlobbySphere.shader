@@ -53,8 +53,8 @@
 
 			float DistanceEstimator(float3 worldPoint)
 			{
-				float3 OBJCENTER = (float3)0;
-				float OBJSCALE = 0.7;			
+				float3 OBJCENTER = float3(0,0,0);
+				float OBJSCALE = 0.7;
 
 				float3 worldPointMod = worldPoint;
 				float d = length(worldPointMod - OBJCENTER) - OBJSCALE;
@@ -95,24 +95,24 @@
 					hitPoint = rayOrig + distanceTravelled * rayDir;
 					distance = DistanceEstimator(hitPoint);
 					
-	//				distance = min(distance, 1.f/(1.f+steps));
-	//				distance = min(distance, 0.5*sign(distance));
+//					distance = min(distance, 1.f/(1.f+steps));
+//					distance = min(distance, 0.5*sign(distance));
 					distanceTravelled += distance; //* (1.f + 2.f/(1.f+steps)); //"overrelaxation"
 					// The "max" is optional but it avoids finding intersections past the ray origin
-	//				distanceTravelled = max(distanceTravelled, 0);	
+//					distanceTravelled = max(distanceTravelled, 0);	
 			
-	//				 This following check disallows backstepping and will "fill" holes
-	//				if (distance < MIN_SURFACE_DISTANCE) break; //As an optimization a dynamic branch could be used every N steps
-	//				if(distanceTravelled > maxTravel) break;//As an optimization a dynamic branch could be used every N steps
+//					 This following check disallows backstepping and will "fill" holes
+//					if (distance < MIN_SURFACE_DISTANCE) break; //As an optimization a dynamic branch could be used every N steps
+//					if(distanceTravelled > maxTravel) break;//As an optimization a dynamic branch could be used every N steps
 				}
 				
 				const float2 NORM_EPS = {0.1, 0};
-	//			hitNormal = // finite difference estimator
-	//				normalize(float3(
-	//					DistanceEstimator(hitPoint+NORM_EPS.xyy) - DistanceEstimator(hitPoint-NORM_EPS.xyy),
-	//					DistanceEstimator(hitPoint+NORM_EPS.yxy) - DistanceEstimator(hitPoint-NORM_EPS.yxy),
-	//					DistanceEstimator(hitPoint+NORM_EPS.yyx) - DistanceEstimator(hitPoint-NORM_EPS.yyx)
-	//				));
+//				hitNormal = // finite difference estimator
+//					normalize(float3(
+//						DistanceEstimator(hitPoint+NORM_EPS.xyy) - DistanceEstimator(hitPoint-NORM_EPS.xyy),
+//						DistanceEstimator(hitPoint+NORM_EPS.yxy) - DistanceEstimator(hitPoint-NORM_EPS.yxy),
+//						DistanceEstimator(hitPoint+NORM_EPS.yyx) - DistanceEstimator(hitPoint-NORM_EPS.yyx)
+//					));
 					
 				hitNormal = // finite difference estimator, de(x) - de(x+eps) assuming de(x)==0 as we're near the surface
 					normalize(float3(
@@ -146,7 +146,9 @@
 					worldPos, worldNormal, 1, hitPoint, hitNormal
 				);
 				
-				o.color = dist.xxx;
+				//hitPoint *= 1 - (length(v.vertex.xyz)-1) * 0.1;
+				
+				o.color = dist.xxx * (hitNormal.y*0.5+0.5);
 				o.pos = mul (UNITY_MATRIX_VP, float4(hitPoint, 1));
 				
 				return o;
