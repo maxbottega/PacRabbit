@@ -45,12 +45,19 @@ public class NavigationManager : MonoBehaviour
 		float len2 = v0v1.sqrMagnitude;
 		float dot = Vector3.Dot(v0p, v0v1);
 		float t = dot / len2;
-		
 		t = Mathf.Clamp01(t);
-		
 		Vector3 closest = edgeA + v0v1 * t;
-
+		
 		return closest;
+	}
+	
+	static public Vector3 PointLineProjection (Vector3 point, Vector3 edgeA, Vector3 edgeB)
+	{
+		Vector3 v0p = point - edgeA;
+		Vector3 v0v1Dir = (edgeB - edgeA).normalized;
+		
+		float t = Vector3.Dot (v0p, v0v1Dir);
+		return (edgeA + v0v1Dir * t);
 	}
 
 	static public Vector3 PointSegmentCollision(Vector3 point, CollisionEdge edge, float radius, out Vector3 displacementNormal)
@@ -239,7 +246,7 @@ Debug.DrawLine(point, newPoint, Color.blue);
 		
 		return newNearest;
 	}
-
+	
 	public void CalculatePath(Vector3 position, Vector3 targetPosition,  List<WayPoint> path)
 	{
 		WayPoint start = FindClosestWaypoint (position, null, waypointList);

@@ -77,9 +77,10 @@ public class SphereTransform : MonoBehaviour
 			mPivot.rotation = mRotation;
 	}
 	
-	public void Move (Quaternion deltaRotation)
+	// Adding the Space parameter is useful when the rotation specified is in local space.
+	public void Move (Quaternion deltaRotation, Space space)
 	{
-		mRotation *= deltaRotation;
+		mRotation = space==Space.Self ? mRotation * deltaRotation : deltaRotation * mRotation;
 	}
 	
 	public Vector3 MovedUp(Quaternion deltaRotation)
@@ -96,7 +97,7 @@ public class SphereTransform : MonoBehaviour
 		Quaternion yRot = Quaternion.AngleAxis (angle, Vector3.up);
 		Quaternion xRot = Quaternion.AngleAxis (speed, Vector3.right);
 		
-		Move (xRot*yRot);
+		Move (xRot*yRot, Space.World);
 	}
 	
 	public void Move (Vector3 targetPosition)
