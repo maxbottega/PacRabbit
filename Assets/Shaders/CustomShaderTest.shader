@@ -27,6 +27,7 @@
 			
 			// http://docs.unity3d.com/Manual/SL-ShaderPrograms.html
 			#pragma target 3.0
+			#pragma glsl // otherwise target 3.0 on OpenGL/OSX has 1024 instructions limit! 4.0/5.0 are DX11 only
 			#pragma vertex vs
 			#pragma fragment ps
 			
