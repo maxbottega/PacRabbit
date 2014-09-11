@@ -49,7 +49,8 @@
 			
 			half4 ps (vertexOut i) : COLOR
 			{
-				float3 col = texCUBE(_SpecularRadianceTex, float4(i.wnormal, 0) ).rgb;
+				float4 rgbm = texCUBE(_SpecularRadianceTex, float4(i.wnormal, 0) );
+				float3 col = rgbm.rgb * rgbm.a * 4;
 				
 				// Reinhard
 				col *= 4;
