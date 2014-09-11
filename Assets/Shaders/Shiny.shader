@@ -3,6 +3,7 @@
 	Properties // http://docs.unity3d.com/Manual/SL-Properties.html http://docs.unity3d.com/Manual/SL-PropertiesInPrograms.html
 	{
 		_SpecularRadianceTex ("SpecularRadianceTex", CUBE) = "" {}
+		_Test ("test", Range (0, 10)) = 0
 	}
 
 	SubShader // http://docs.unity3d.com/Manual/SL-SubShader.html
@@ -11,7 +12,7 @@
 		{
 			Tags // http://docs.unity3d.com/Manual/SL-PassTags.html
 			{
-				"LightMode" = "Vertex" // "ForwardBase" 
+				"LightMode" = "ForwardBase" 
 				"RenderType" = "Opaque"
 			}
 			CGPROGRAM	
@@ -26,10 +27,13 @@
 			
 			// --- Properties
 			samplerCUBE _SpecularRadianceTex;
+			float _Test;
+			
 			struct vertexOut 
 			{
-				float4 pos : SV_POSITION;
+				float4 pos : SV_POSITION;				
 				float3 wnormal : TEXCOORD0;
+				float3 wpos : TEXCOORD1;
 			};
 			
 			vertexOut vs (appdata_base v) // http://docs.unity3d.com/Manual/SL-VertexProgramInputs.html
@@ -43,20 +47,24 @@
 				
 				o.pos = mul (UNITY_MATRIX_MVP, float4(v.vertex.xyz, 1));
 				o.wnormal = worldNormal;
+				o.wpos = mul (UNITY_MATRIX_MV, float4(v.vertex.xyz, 1)).xyz;
 				
 				return o;
 			}
 			
 			half4 ps (vertexOut i) : COLOR
 			{
-				float4 rgbm = texCUBE(_SpecularRadianceTex, float4(i.wnormal, 0) );
+			    float3 view = normalize(_WorldSpaceCameraPos - float3(i.wpos));
+			    float3 refl = reflect(view, i.wnormal);
+			
+				float4 rgbm = texCUBE(_SpecularRadianceTex, float4(refl, _Test) );
 				float3 col = rgbm.rgb * rgbm.a * 4;
 				
 				// Reinhard
 				col *= 4;
 				col = col / (1.0.xxx + col);
 				col = pow(col,1/2.2);
-				
+
 				return half4 (col, 1);
 			}
 			

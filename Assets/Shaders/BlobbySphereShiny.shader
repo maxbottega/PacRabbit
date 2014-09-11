@@ -136,8 +136,8 @@
 				
 				//hitPoint *= 1 - (length(v.vertex.xyz)-1) * 0.1;
 				
-				o.color = dist.xxx * (hitNormal.y*0.5+0.5);
-				o.pos = mul (UNITY_MATRIX_VP, float4(hitPoint, 1));
+				o.color = dist.xxx; // * (hitNormal.y*0.5+0.5);
+				o.pos = mul (UNITY_MATRIX_MVP, float4(hitPoint, 1)); // UNITY_MATRIX_VP doesn't work in win?!?
 				o.wnormal = hitNormal;
 				
 				return o;
@@ -145,7 +145,7 @@
 			
 			half4 ps (vertexOut i) : COLOR
 			{
-				float4 rgbm = texCUBE(_SpecularRadianceTex, float4(i.wnormal, i.color.x) );
+				float4 rgbm = texCUBE(_SpecularRadianceTex, float4(i.wnormal, i.color.x * 7) );
 				float3 col = rgbm.rgb * rgbm.a * 4;
 				col *= i.color;
 				

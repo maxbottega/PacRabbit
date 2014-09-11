@@ -44,7 +44,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
   tangentSpace:
-    normalSmoothAngle: 60
+    normalSmoothAngle: 75
     splitTangentsAcrossUV: 1
     normalImportMode: 1
     tangentImportMode: 1
