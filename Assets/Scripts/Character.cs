@@ -57,7 +57,6 @@ public class Character : MonoBehaviour
 		mCollidable.CachedNearest = NavigationManager.FindClosestWaypoint(transform.position, mCollidable.CachedNearest, NavigationManager.instance.waypointList);
 		mTargetWPPos = mCollidable.CachedNearest.connections[0].Position;
 		mMoveController.ImmediateSet (Quaternion.FromToRotation(Vector3.up, mCollidable.CachedNearest.Position.normalized));
-		
 	}
 	
 	

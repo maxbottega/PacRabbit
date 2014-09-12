@@ -50,7 +50,7 @@ public class CollisionManager : MonoBehaviour
 	
 	// NOTE: Due to ExecutionOrderManager we know this Update is after SphereTransform Update which is after all other components Updates
 	void Update () 
-	{		
+	{	
 		if (m_SAP==true) 
 			UpdateDynamicCollisionsSingleSAP();
 		else 
