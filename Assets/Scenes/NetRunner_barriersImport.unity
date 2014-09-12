@@ -9707,7 +9707,7 @@ Transform:
   - {fileID: 633028109}
   - {fileID: 1608170912}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!114 &231116510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12120,7 +12120,7 @@ Transform:
   - {fileID: 1139812935}
   - {fileID: 1724399397}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &317505203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12157,8 +12157,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.84130859, y: .0385131836, z: 4.06530762}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 408702737}
+  m_Children:
+  - {fileID: 1089369682}
+  - {fileID: 1163806937}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1 &329285424
 GameObject:
@@ -17165,8 +17167,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 327872457}
-  - {fileID: 1163806937}
   - {fileID: 1806678041}
   - {fileID: 1730407191}
   m_Father: {fileID: 0}
@@ -33279,11 +33279,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1089369680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.3183589, y: 7.27638817, z: -2.94255805}
+  m_LocalPosition: {x: -7.15966749, y: 7.23787498, z: -7.00786591}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 327872457}
+  m_RootOrder: 0
 --- !u!1 &1092390779
 GameObject:
   m_ObjectHideFlags: 0
@@ -38494,10 +38494,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1163806936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.84130859, y: .0385131836, z: 4.06530762}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 408702737}
+  m_Father: {fileID: 327872457}
   m_RootOrder: 1
 --- !u!114 &1163806938
 MonoBehaviour:
@@ -38661,9 +38661,9 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 0}
+            value: {fileID: 1434343539}
           TargetTypeName: Collidable
-          PropertyName: 
+          PropertyName: Layer
           BoolParameter:
             useVariable: 0
             name: 
@@ -38738,7 +38738,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            typeName: 
+            typeName: System.Int32
             value: {fileID: 0}
           MaterialParameter:
             useVariable: 0
@@ -39242,9 +39242,9 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 0}
-          TargetTypeName: 
-          PropertyName: 
+            value: {fileID: 1434343539}
+          TargetTypeName: Collidable
+          PropertyName: Layer
           BoolParameter:
             useVariable: 0
             name: 
@@ -39265,7 +39265,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: 0
+            value: 1
           GameObjectParameter:
             useVariable: 0
             name: 
@@ -39319,7 +39319,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            typeName: 
+            typeName: System.Int32
             value: {fileID: 0}
           MaterialParameter:
             useVariable: 0
@@ -39599,7 +39599,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 000001010101010101010101010100
-        actionIsOpen: 000001010101000000000000000000
+        actionIsOpen: 000001010101000000000000010000
         actionStartIndex: 000000000300000006000000090000000c0000000f000000120000001c000000260000002b000000300000003a000000400000004200000046000000
         actionHashCodes: b3086782b3086782b3086782b3086782437581ed437581edb5f4916bb5f4916b3913626139136261c0983c993ff43992d23668dceec9d968b4797e4a
         unityObjectParams: []
@@ -39681,7 +39681,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 0}
+            value: {fileID: 1434343539}
           TargetTypeName: Collidable
           PropertyName: Layer
           BoolParameter:
@@ -58199,7 +58199,7 @@ Transform:
   - {fileID: 1434343535}
   - {fileID: 187517296}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1559816161
 GameObject:
   m_ObjectHideFlags: 0
@@ -63903,7 +63903,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 408702737}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!1 &1734552467
 GameObject:
   m_ObjectHideFlags: 0
@@ -67978,7 +67978,7 @@ Transform:
   m_Children:
   - {fileID: 2027630951}
   m_Father: {fileID: 408702737}
-  m_RootOrder: 2
+  m_RootOrder: 0
 --- !u!1 &1813906573
 GameObject:
   m_ObjectHideFlags: 0
