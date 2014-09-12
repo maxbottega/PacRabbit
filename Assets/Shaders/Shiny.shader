@@ -54,11 +54,17 @@
 			
 			half4 ps (vertexOut i) : COLOR
 			{
-			    float3 view = normalize(_WorldSpaceCameraPos - float3(i.wpos));
-			    float3 refl = reflect(view, i.wnormal);
+				float3 view = normalize(_WorldSpaceCameraPos - float3(i.wpos));
+				float3 norm = normalize(i.wnormal);
+			    float3 refl = reflect(view, norm);
+				float fresnel = saturate(pow(1 - dot(view, norm), 4) + 0.1);
 			
-				float4 rgbm = texCUBE(_SpecularRadianceTex, float4(refl, _Test) );
-				float3 col = rgbm.rgb * rgbm.a * 4;
+				float4 rgbm = texCUBElod(_SpecularRadianceTex, float4(refl, _Test) );
+				float3 spec = rgbm.rgb * rgbm.a * 4;
+				rgbm = texCUBElod(_SpecularRadianceTex, float4(norm, 7) );
+				float3 diff = rgbm.rgb * rgbm.a * 4;
+				
+				float3 col = spec * fresnel + diff * (1-fresnel) * float3(0.1, 0.1, 0.1);
 				
 				// Reinhard
 				col *= 4;

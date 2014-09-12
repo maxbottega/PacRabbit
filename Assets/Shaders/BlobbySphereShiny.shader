@@ -116,8 +116,9 @@
 			struct vertexOut 
 			{
 				float4 pos : SV_POSITION;
-				float3 color : COLOR0;
+				float color : COLOR0;
 				float3 wnormal : TEXCOORD0;
+				float3 wpos : TEXCOORD1;
 			};
 			vertexOut vs (appdata_base v) // http://docs.unity3d.com/Manual/SL-VertexProgramInputs.html
 			{
@@ -136,7 +137,8 @@
 				
 				//hitPoint *= 1 - (length(v.vertex.xyz)-1) * 0.1;
 				
-				o.color = dist.xxx; // * (hitNormal.y*0.5+0.5);
+				o.color = dist.x; // * (hitNormal.y*0.5+0.5);
+				o.wpos = mul (UNITY_MATRIX_MV, float4(hitPoint, 1)); 
 				o.pos = mul (UNITY_MATRIX_MVP, float4(hitPoint, 1)); // UNITY_MATRIX_VP doesn't work in win?!?
 				o.wnormal = hitNormal;
 				
@@ -145,9 +147,17 @@
 			
 			half4 ps (vertexOut i) : COLOR
 			{
-				float4 rgbm = texCUBE(_SpecularRadianceTex, float4(i.wnormal, i.color.x * 7) );
-				float3 col = rgbm.rgb * rgbm.a * 4;
-				col *= i.color;
+				float3 view = normalize(_WorldSpaceCameraPos - float3(i.wpos));
+				float3 norm = normalize(i.wnormal);
+			    float3 refl = reflect(view, norm);
+				float fresnel = saturate(pow(1 - dot(view, norm), 4) + 0.01);
+			
+				float4 rgbm = texCUBElod(_SpecularRadianceTex, float4(refl, i.color * 7) );
+				float3 spec = rgbm.rgb * rgbm.a * 8;
+				rgbm = texCUBElod(_SpecularRadianceTex, float4(norm, 7) );
+				float3 diff = rgbm.rgb * rgbm.a * 8;
+				
+				float3 col = spec * fresnel * i.color + diff * (1-fresnel) * float3(0.1, 0, 0);
 				
 				// Reinhard
 				col *= 4;
