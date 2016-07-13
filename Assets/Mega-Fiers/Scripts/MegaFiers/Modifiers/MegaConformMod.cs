@@ -86,8 +86,8 @@ public class MegaConformMod : MegaModifier
 	{
 		if ( target )
 		{
-			if ( conformCollider != target.collider )
-				conformCollider = target.collider;
+			if ( conformCollider != target.GetComponent<Collider>() )
+				conformCollider = target.GetComponent<Collider>();
 
 			if ( conformCollider == null )
 				return false;

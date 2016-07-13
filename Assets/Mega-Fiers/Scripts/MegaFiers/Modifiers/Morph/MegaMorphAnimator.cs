@@ -345,9 +345,9 @@ public class MegaMorphAnimator : MonoBehaviour
 
 	void DoLinkedUpdate()
 	{
-		if ( animation != null )
+		if ( GetComponent<Animation>() != null )
 		{
-			foreach ( AnimationState state in animation )
+			foreach ( AnimationState state in GetComponent<Animation>() )
 			{
 				if ( state.enabled )
 				{
@@ -366,7 +366,7 @@ public class MegaMorphAnimator : MonoBehaviour
 
 								if ( wm == WrapMode.Default )
 								{
-									wm = animation.wrapMode;
+									wm = GetComponent<Animation>().wrapMode;
 								}
 
 								switch ( clip.wrapMode )

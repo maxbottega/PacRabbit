@@ -16,7 +16,7 @@ public class MegaCharacterFollow : MonoBehaviour
 
 		Vector3 p = transform.position;
 		Vector3 np = path.FindNearestPointWorld(p, 5, ref kn, ref tangent, ref alpha);
-		rigidbody.MovePosition(np);
+		GetComponent<Rigidbody>().MovePosition(np);
 	}
 
 	public bool rot = false;

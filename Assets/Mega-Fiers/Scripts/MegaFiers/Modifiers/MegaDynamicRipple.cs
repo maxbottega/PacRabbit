@@ -888,7 +888,7 @@ public class MegaDynamicRipple : MegaModifier
 	{
 		p = transform.worldToLocalMatrix.MultiplyPoint(p);
 
-		BoxCollider bc = (BoxCollider)collider;
+		BoxCollider bc = (BoxCollider)GetComponent<Collider>();
 		if ( bc.size.x != 0.0f )
 			p.x /= bc.size.x;
 

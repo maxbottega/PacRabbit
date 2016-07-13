@@ -82,7 +82,7 @@ public class MegaCopyObject
 			Mesh mesh = mf.sharedMesh;
 			Mesh clonemesh = new Mesh();
 			clonemesh.vertices = mesh.vertices;
-			clonemesh.uv1 = mesh.uv1;
+			clonemesh.uv2 = mesh.uv2;
 			clonemesh.uv2 = mesh.uv2;
 			clonemesh.uv = mesh.uv;
 			clonemesh.normals = mesh.normals;
@@ -220,7 +220,7 @@ public class MegaCopyObject
 			//mod.verts.CopyTo(clonemesh.vertices, 0);
 
 			clonemesh.vertices = mod.verts;	//mesh.vertices;
-			clonemesh.uv1 = mesh.uv1;
+			clonemesh.uv2 = mesh.uv2;
 			clonemesh.uv2 = mesh.uv2;
 			clonemesh.uv = mod.uvs;	//mesh.uv;
 			clonemesh.normals = mod.norms;	//mesh.normals;
@@ -576,7 +576,7 @@ public class MegaCopyObject
 				Mesh mesh = skinmesh[i].sharedMesh;
 				Mesh clonemesh = new Mesh();
 				clonemesh.vertices = mesh.vertices;
-				clonemesh.uv1 = mesh.uv1;
+				clonemesh.uv2 = mesh.uv2;
 				clonemesh.uv2 = mesh.uv2;
 				clonemesh.uv = mesh.uv;
 				clonemesh.normals = mesh.normals;
@@ -608,7 +608,7 @@ public class MegaCopyObject
 				Mesh mesh = mf.sharedMesh;
 				Mesh clonemesh = new Mesh();
 				clonemesh.vertices = mesh.vertices;
-				clonemesh.uv1 = mesh.uv1;
+				clonemesh.uv2 = mesh.uv2;
 				clonemesh.uv2 = mesh.uv2;
 				clonemesh.uv = mesh.uv;
 				clonemesh.normals = mesh.normals;

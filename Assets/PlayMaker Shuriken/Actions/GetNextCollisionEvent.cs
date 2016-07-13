@@ -46,7 +46,7 @@ namespace HutongGames.PlayMaker.Actions
 		}
 
 		// cache the gameObject so we no if it changes
-		private ParticleSystem.CollisionEvent[] collisionEvents;
+		private ParticleCollisionEvent[] collisionEvents;
 
 		// increment a index as we loop through Collision Events
 		private int nextIndex = 0;

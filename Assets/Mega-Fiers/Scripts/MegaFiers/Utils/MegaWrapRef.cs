@@ -128,7 +128,7 @@ public class MegaWrapRef : MonoBehaviour
 	{
 		Mesh clonemesh = new Mesh();
 		clonemesh.vertices = m.vertices;
-		clonemesh.uv1 = m.uv1;
+		clonemesh.uv2 = m.uv2;
 		clonemesh.uv2 = m.uv2;
 		clonemesh.uv = m.uv;
 		clonemesh.normals = m.normals;

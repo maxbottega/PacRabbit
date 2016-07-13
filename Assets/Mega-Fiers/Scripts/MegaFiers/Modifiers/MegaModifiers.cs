@@ -611,7 +611,7 @@ public class MegaModifiers : MonoBehaviour
 
 	public MegaModifier Add(string type)
 	{
-		MegaModifier mod = (MegaModifier)gameObject.AddComponent(type);
+		MegaModifier mod = (MegaModifier)UnityEngineInternal.APIUpdaterRuntimeServices.AddComponent(gameObject, "Assets/Mega-Fiers/Scripts/MegaFiers/Modifiers/MegaModifiers.cs (614,36)", type);
 
 		if ( mod != null )
 			BuildList();

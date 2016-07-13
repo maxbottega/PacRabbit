@@ -13,13 +13,13 @@ var _startSpeed:float=0;
 function OnDrawGizmosSelected () {
 	if(Application.isEditor){
 		if(_startSize ==0){
-			_startSize = transform.particleSystem.startSize;
-			_gravityModifier = transform.particleSystem.gravityModifier;
-			_startSpeed = transform.particleSystem.startSpeed;
+			_startSize = transform.GetComponent.<ParticleSystem>().startSize;
+			_gravityModifier = transform.GetComponent.<ParticleSystem>().gravityModifier;
+			_startSpeed = transform.GetComponent.<ParticleSystem>().startSpeed;
 		}else{
-		transform.particleSystem.startSize = _startSize * multiplier;
-		transform.particleSystem.gravityModifier = _gravityModifier * multiplier;
-		transform.particleSystem.startSpeed = _startSpeed * multiplier;
+		transform.GetComponent.<ParticleSystem>().startSize = _startSize * multiplier;
+		transform.GetComponent.<ParticleSystem>().gravityModifier = _gravityModifier * multiplier;
+		transform.GetComponent.<ParticleSystem>().startSpeed = _startSpeed * multiplier;
 		}
 	}
 }

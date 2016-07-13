@@ -4254,7 +4254,7 @@ public class MegaShape : MonoBehaviour
 
 		if ( target )
 		{
-			conformCollider = target.collider;	//GetComponent<MeshCollider>();
+			conformCollider = target.GetComponent<Collider>();	//GetComponent<MeshCollider>();
 		}
 	}
 
@@ -4284,7 +4284,7 @@ public class MegaShape : MonoBehaviour
 		{
 			//MeshFilter mf = target.GetComponent<MeshFilter>();
 			//targetMesh = mf.sharedMesh;
-			conformCollider = target.collider;	//GetComponent<MeshCollider>();
+			conformCollider = target.GetComponent<Collider>();	//GetComponent<MeshCollider>();
 		}
 	}
 

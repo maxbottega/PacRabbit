@@ -172,7 +172,7 @@ public class MegaFFD : MegaModifier
 		if ( modobj != null )
 			modobj.ModReset(this);
 
-		if ( renderer != null )
+		if ( GetComponent<Renderer>() != null )
 		{
 			Mesh ms = MegaUtils.GetSharedMesh(gameObject);
 
@@ -213,7 +213,7 @@ public class MegaFFD : MegaModifier
 	[ContextMenu("Fit FFD to Mesh")]
 	public void FitFFDToMesh()
 	{
-		if ( renderer != null )
+		if ( GetComponent<Renderer>() != null )
 		{
 			Mesh ms = MegaUtils.GetSharedMesh(gameObject);
 

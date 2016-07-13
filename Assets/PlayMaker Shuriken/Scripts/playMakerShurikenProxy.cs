@@ -5,7 +5,7 @@ using HutongGames.PlayMaker;
 public class playMakerShurikenProxy : MonoBehaviour {
 	
 
-	private ParticleSystem.CollisionEvent[] collisionEvents = new ParticleSystem.CollisionEvent[16];
+	private ParticleCollisionEvent[] collisionEvents = new ParticleCollisionEvent[16];
 	
 	private PlayMakerFSM _fsm;
 	
@@ -20,7 +20,7 @@ public class playMakerShurikenProxy : MonoBehaviour {
 
 	}
 	
-	public ParticleSystem.CollisionEvent[] GetCollisionEvents()
+	public ParticleCollisionEvent[] GetCollisionEvents()
 	{
 		return collisionEvents;
 	}
@@ -32,11 +32,11 @@ public class playMakerShurikenProxy : MonoBehaviour {
 		
         particleSystem = other.GetComponent<ParticleSystem>();
 		
-        int safeLength = particleSystem.safeCollisionEventSize;
+        int safeLength = particleSystem.GetSafeCollisionEventSize();
        // if (collisionEvents.Length < safeLength)
            
 		
-		collisionEvents = new ParticleSystem.CollisionEvent[safeLength];
+		collisionEvents = new ParticleCollisionEvent[safeLength];
 		int numCollisionEvents = particleSystem.GetCollisionEvents(gameObject, collisionEvents);
 		
 	

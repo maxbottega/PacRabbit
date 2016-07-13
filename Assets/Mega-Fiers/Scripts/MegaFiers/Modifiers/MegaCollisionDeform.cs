@@ -518,7 +518,7 @@ public class MegaCollisionDeform : MegaModifier
 		if ( hitObject )
 		{
 			//localPos = transform.worldToLocalMatrix.MultiplyPoint(hitObject.transform.position);
-			col = hitObject.collider;
+			col = hitObject.GetComponent<Collider>();
 		}
 
 		if ( hitObject == null )

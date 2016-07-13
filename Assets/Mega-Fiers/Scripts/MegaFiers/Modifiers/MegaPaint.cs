@@ -187,7 +187,7 @@ public class MegaPaint : MegaModifier
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			if ( Physics.Raycast(ray, out hit) )
 			{
-				if ( hit.collider == gameObject.collider )
+				if ( hit.collider == gameObject.GetComponent<Collider>() )
 				{
 					hadahit = true;
 					relativePoint = hit.collider.transform.InverseTransformPoint(hit.point);

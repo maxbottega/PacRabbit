@@ -85,7 +85,7 @@ public class MegaPush : MegaModifier
 
 	void Reset()
 	{
-		if ( renderer != null )
+		if ( GetComponent<Renderer>() != null )
 		{
 			Mesh ms = MegaUtils.GetSharedMesh(gameObject);
 
